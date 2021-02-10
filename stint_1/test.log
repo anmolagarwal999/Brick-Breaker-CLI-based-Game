@@ -1,0 +1,438 @@
+DEBUG:rows are 33
+DEBUG:columns are are 97
+DEBUG:----------------------------------------
+DEBUG:conf.min height is   22
+DEBUG:conf.min width is   60
+DEBUG:----------------------------------------
+DEBUG:conf.BUFFER DOWN IS is   10
+DEBUG:conf.BUFFER RIGHT  is   10
+DEBUG:----------------------------------------
+INFO:Inside SCREEN class's INIT()
+DEBUG:info box height is 7
+DEBUG:----------------------------------------
+DEBUG:Setting screens tot_rows as 30
+DEBUG:Setting screens tot_cols as 87
+INFO:
+
+arr is ['\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m']
+
+
+INFO:
+
+arr is ['\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m']
+
+
+INFO:
+
+arr is ['\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m']
+
+
+INFO:
+
+arr is ['\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m']
+
+
+INFO:
+
+arr is ['\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m']
+
+
+INFO:
+
+arr is ['\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m']
+
+
+INFO:
+
+arr is ['\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m']
+
+
+DEBUG:self.backboard SHAPE IS is  (30, 87)
+DEBUG:self.backboard is  [['\x1b[40m' '\x1b[40m' '\x1b[40m' ... '\x1b[40m' '\x1b[40m' '\x1b[40m']
+ ['\x1b[40m' '\x1b[40m' '\x1b[40m' ... '\x1b[40m' '\x1b[40m' '\x1b[40m']
+ ['\x1b[40m' '\x1b[40m' '\x1b[40m' ... '\x1b[40m' '\x1b[40m' '\x1b[40m']
+ ...
+ ['\x1b[41m' '\x1b[41m' '\x1b[41m' ... '\x1b[41m' '\x1b[41m' '\x1b[41m']
+ ['\x1b[41m' '\x1b[41m' '\x1b[41m' ... '\x1b[41m' '\x1b[41m' '\x1b[41m']
+ ['\x1b[40m' '\x1b[40m' '\x1b[40m' ... '\x1b[40m' '\x1b[40m' '\x1b[40m']]
+DEBUG:----------------------------------------
+DEBUG:Finally is self.backboard is  
+[['\x1b[40m' '\x1b[40m' '\x1b[40m' ... '\x1b[40m' '\x1b[40m' '\x1b[40m']
+ ['\x1b[40m' '\x1b[40m' '\x1b[40m' ... '\x1b[40m' '\x1b[40m' '\x1b[40m']
+ ['\x1b[40m' '\x1b[40m' '\x1b[40m' ... '\x1b[40m' '\x1b[40m' '\x1b[40m']
+ ...
+ ['\x1b[41m' '\x1b[41m' '\x1b[41m' ... '\x1b[41m' '\x1b[41m' '\x1b[41m']
+ ['\x1b[41m' '\x1b[41m' '\x1b[41m' ... '\x1b[41m' '\x1b[41m' '\x1b[41m']
+ ['\x1b[40m' '\x1b[40m' '\x1b[40m' ... '\x1b[40m' '\x1b[40m' '\x1b[40m']]
+
+
+DEBUG:Finally is self.foreboard (SHAPE: (30, 87) is  
+[[' ' ' ' ' ' ... ' ' ' ' ' ']
+ [' ' ' ' ' ' ... ' ' ' ' ' ']
+ [' ' ' ' ' ' ... ' ' ' ' ' ']
+ ...
+ [' ' ' ' ' ' ... ' ' ' ' ' ']
+ [' ' ' ' ' ' ... ' ' ' ' ' ']
+ [' ' ' ' ' ' ... ' ' ' ' ' ']]
+
+
+INFO:Inside init() of paddle class with attributes
+{'_len_c': 11, '_len_r': 1, '_left_c': 38, '_left_r': 0, 'is_magnet': False, 'ascii_repr': array([['[', '-', '-', '-', '-', '-', '-', '-', '-', '-', ']']],
+      dtype='<U1')}
+
+INFO:Inside init() of BALL class with attributes
+{'len_c': 1, 'len_r': 1, '_left_c': 43, '_left_r': 1, '_is_stuck': True, 'offset_from_center': 0, 'isVisible': True, '_vel_r': 1, '_vel_c': 0, 'is_boss': False, 'ball_last_tended': 33581.526871716, 'ascii_repr': array([['O']], dtype='<U1')}
+
+INFO:#### ## Inside play function of GAME class ## ######
+CRITICAL:-14:2
+CRITICAL:-13:3
+CRITICAL:-12:4
+CRITICAL:-11:5
+CRITICAL:-10:1
+CRITICAL:-9:2
+CRITICAL:-8:3
+CRITICAL:-7:4
+CRITICAL:-6:5
+CRITICAL:-5:1
+CRITICAL:-4:2
+CRITICAL:-3:3
+CRITICAL:-2:4
+CRITICAL:-1:5
+CRITICAL:0:1
+CRITICAL:1:2
+CRITICAL:2:3
+CRITICAL:3:4
+CRITICAL:4:5
+CRITICAL:5:1
+CRITICAL:6:2
+CRITICAL:7:3
+CRITICAL:8:4
+CRITICAL:9:5
+CRITICAL:10:1
+CRITICAL:11:2
+CRITICAL:
+
+CRITICAL:-15:1
+CRITICAL:-14:2
+CRITICAL:-13:3
+CRITICAL:-12:4
+CRITICAL:-11:5
+CRITICAL:-10:1
+CRITICAL:-9:2
+CRITICAL:-8:3
+CRITICAL:-7:4
+CRITICAL:-6:5
+CRITICAL:-5:1
+CRITICAL:-4:2
+CRITICAL:-3:3
+CRITICAL:-2:4
+CRITICAL:-1:5
+CRITICAL:0:1
+CRITICAL:1:2
+CRITICAL:2:3
+CRITICAL:3:4
+CRITICAL:4:5
+CRITICAL:5:1
+CRITICAL:6:2
+CRITICAL:7:3
+CRITICAL:8:4
+CRITICAL:9:5
+CRITICAL:10:1
+CRITICAL:
+
+CRITICAL:-16:5
+CRITICAL:-15:1
+CRITICAL:-14:2
+CRITICAL:-13:3
+CRITICAL:-12:4
+CRITICAL:-11:5
+CRITICAL:-10:1
+CRITICAL:-9:2
+CRITICAL:-8:3
+CRITICAL:-7:4
+CRITICAL:-6:5
+CRITICAL:-5:1
+CRITICAL:-4:2
+CRITICAL:-3:3
+CRITICAL:-2:4
+CRITICAL:-1:5
+CRITICAL:0:1
+CRITICAL:1:2
+CRITICAL:2:3
+CRITICAL:3:4
+CRITICAL:4:5
+CRITICAL:5:1
+CRITICAL:6:2
+CRITICAL:7:3
+CRITICAL:8:4
+CRITICAL:9:5
+CRITICAL:
+
+CRITICAL:-17:4
+CRITICAL:-16:5
+CRITICAL:-15:1
+CRITICAL:-14:2
+CRITICAL:-13:3
+CRITICAL:-12:4
+CRITICAL:-11:5
+CRITICAL:-10:1
+CRITICAL:-9:2
+CRITICAL:-8:3
+CRITICAL:-7:4
+CRITICAL:-6:5
+CRITICAL:-5:1
+CRITICAL:-4:2
+CRITICAL:-3:3
+CRITICAL:-2:4
+CRITICAL:-1:5
+CRITICAL:0:1
+CRITICAL:1:2
+CRITICAL:2:3
+CRITICAL:3:4
+CRITICAL:4:5
+CRITICAL:5:1
+CRITICAL:6:2
+CRITICAL:7:3
+CRITICAL:8:4
+CRITICAL:
+
+CRITICAL:-18:3
+CRITICAL:-17:4
+CRITICAL:-16:5
+CRITICAL:-15:1
+CRITICAL:-14:2
+CRITICAL:-13:3
+CRITICAL:-12:4
+CRITICAL:-11:5
+CRITICAL:-10:1
+CRITICAL:-9:2
+CRITICAL:-8:3
+CRITICAL:-7:4
+CRITICAL:-6:5
+CRITICAL:-5:1
+CRITICAL:-4:2
+CRITICAL:-3:3
+CRITICAL:-2:4
+CRITICAL:-1:5
+CRITICAL:0:1
+CRITICAL:1:2
+CRITICAL:2:3
+CRITICAL:3:4
+CRITICAL:4:5
+CRITICAL:5:1
+CRITICAL:6:2
+CRITICAL:7:3
+CRITICAL:
+
+CRITICAL:-19:2
+CRITICAL:-18:3
+CRITICAL:-17:4
+CRITICAL:-16:5
+CRITICAL:-15:1
+CRITICAL:-14:2
+CRITICAL:-13:3
+CRITICAL:-12:4
+CRITICAL:-11:5
+CRITICAL:-10:1
+CRITICAL:-9:2
+CRITICAL:-8:3
+CRITICAL:-7:4
+CRITICAL:-6:5
+CRITICAL:-5:1
+CRITICAL:-4:2
+CRITICAL:-3:3
+CRITICAL:-2:4
+CRITICAL:-1:5
+CRITICAL:0:1
+CRITICAL:1:2
+CRITICAL:2:3
+CRITICAL:3:4
+CRITICAL:4:5
+CRITICAL:5:1
+CRITICAL:6:2
+CRITICAL:
+
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43
+INFO:vertical prediction called
+INFO:Returning 1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 43

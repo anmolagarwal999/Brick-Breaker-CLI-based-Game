@@ -1,0 +1,28 @@
+from colorama import Fore, Back, Style
+
+INFO_RIGHT = 10
+INFO_DOWN = 10
+
+MIN_HEIGHT = 22
+MIN_WIDTH = 60
+
+
+TOT_LIVES=1
+TOT_TIME=100
+SCORE_BRICK_DESTROYED=[0,1,2,3,4,1]
+SCORE_POWERUP_PICKED=10
+SCORE_LIFE_BONUS=20
+
+DEFAULT_PADDLE_LEN=11
+MAX_PADDLE_LEN=21
+MIN_PADDLE_LEN=3
+
+# print(f"{Back.GREEN}Green Background")
+# print(f"{Back.YELLOW}Yellow Background")
+# print(f"{Back.BLUE}Blue Background")
+BRICKS_BGCOLORS=["",Back.GREEN,Back.YELLOW,Back.BLUE,Back.WHITE,Back.CYAN]
+
+POWERUP_DURATION=5
+
+BG_COLOR = Back.BLACK
+DETAILS_BG_COLOR=Back.RED
