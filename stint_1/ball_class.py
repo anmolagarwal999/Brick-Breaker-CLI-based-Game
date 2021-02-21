@@ -5,12 +5,8 @@ import config as conf
 
 ###############################################################
 import logging
-
-
 def part():
     logging.debug("----------------------------------------")
-
-
 logging.basicConfig(filename='test.log',
                     level=logging.DEBUG,
                     filemode='w',

@@ -33,8 +33,8 @@ class Canvas:
     RESET_CURSOR_ANSI = "\033[0;0H" # https://forums.macrumors.com/threads/clear-screen-function.1292111/post-14014870
 
     def __init__(self, just_game_height, just_game_width, info_box_height):
-        logging.info("Inside SCREEN class's INIT()")
-        logging.debug(f"info box height is {info_box_height}")
+        #logging.info("Inside SCREEN class's INIT()")
+        #logging.debug(f"info box height is {info_box_height}")
 
         ###########################################################################]
         self._just_game_height=just_game_height
@@ -42,8 +42,8 @@ class Canvas:
         self._tot_screen_rows = just_game_height+info_box_height
         self._tot_screen_cols = just_game_width
         part()
-        logging.debug(f"Setting screens tot_rows as {self._tot_screen_rows}")
-        logging.debug(f"Setting screens tot_cols as {self._tot_screen_cols}")
+        #logging.debug(f"Setting screens tot_rows as {self._tot_screen_rows}")
+        #logging.debug(f"Setting screens tot_cols as {self._tot_screen_cols}")
         # logging.debug(f"conf . BGCOLOR IS  as {conf.BG_COLOR}")
         ##################################################################################################
 
@@ -53,14 +53,8 @@ class Canvas:
         for i in range(0,self._just_game_height):
             #https://stackoverflow.com/a/3881504/6427607
             arr=[conf.BG_COLOR]*self._tot_screen_cols
-            #logging.info(f"\n\narr is {arr}\n\n")
             self._bg_layer.append(arr)
 
-        # initializing score board layer
-        # for i in range(0,self._info_box_height):
-        #     arr=[conf.DETAILS_BG_COLOR]*self._tot_screen_cols
-        #     logging.info(f"\n\narr is {arr}\n\n")
-        #     self._bg_layer.append(arr)
         for i in range(0,self._info_box_height):
             if i==0:
                 arr=[Back.GREEN]*self._tot_screen_cols
@@ -79,20 +73,15 @@ class Canvas:
         # part()
 
         #############################################################################################################
-        self._fore_board = np.full((self._tot_screen_rows, self._tot_screen_cols), ' ')
+        self._fg_layer = np.full((self._tot_screen_rows, self._tot_screen_cols), ' ')
         #############################################################################
 
-        # logging.debug(
-        #     f"Finally is self.backboard is  \n{self._bg_layer}\n\n")
-        # logging.debug(
-        #     f"Finally is self.foreboard (SHAPE: {self._fore_board.shape} is  \n{self._fore_board}\n\n"
-        # )
 
-    def clear_foreground(self):
+    def clear_canvas(self):
         '''Clearing the front part of the canvas'''
         for i in range(0, self._tot_screen_rows):
             for j in range(self._tot_screen_cols):
-                self._fore_board[i][j] = ' '
+                self._fg_layer[i][j] = ' '
 
 
         #################################################################################
@@ -102,14 +91,8 @@ class Canvas:
         for i in range(0,self._just_game_height):
             #https://stackoverflow.com/a/3881504/6427607
             arr=[conf.BG_COLOR]*self._tot_screen_cols
-            #logging.info(f"\n\narr is {arr}\n\n")
             self._bg_layer.append(arr)
-
-        # initializing score board layer
-        # for i in range(0,self._info_box_height):
-        #     arr=[conf.DETAILS_BG_COLOR]*self._tot_screen_cols
-        #     logging.info(f"\n\narr is {arr}\n\n")
-        #     self._bg_layer.append(arr)
+        
         for i in range(0,self._info_box_height):
             if i==0:
                 arr=[Back.GREEN]*self._tot_screen_cols
@@ -130,7 +113,7 @@ class Canvas:
             start_row_num = game_powerup.left_r
             end_col_num = game_powerup.left_c + game_powerup.len_c
             end_row_num = game_powerup.left_r + game_powerup.len_r
-            self._fore_board[start_row_num:end_row_num, start_col_num:
+            self._fg_layer[start_row_num:end_row_num, start_col_num:
                             end_col_num] = game_powerup.ascii_repr[:]
             self._bg_layer[start_row_num:end_row_num, start_col_num:
                             end_col_num] = conf.BG_COLOR
@@ -152,7 +135,7 @@ class Canvas:
         #logging.info(f"Start col num is {start_col_num}\nend_col_num is {end_col_num}")
         #logging.info(f"Start row num is {start_row_num}\nend_row_num is {end_row_num}")
 
-        self._fore_board[start_row_num:end_row_num, start_col_num:
+        self._fg_layer[start_row_num:end_row_num, start_col_num:
                          end_col_num] = ascii_form[:]
         self._bg_layer[start_row_num:end_row_num, start_col_num:
                          end_col_num] = bg_string
@@ -163,7 +146,7 @@ class Canvas:
         start_row_num = game_brick.left_r
         end_col_num = game_brick.left_c + game_brick.len_c
         end_row_num = game_brick.left_r + game_brick.len_r
-        self._fore_board[start_row_num:end_row_num, start_col_num:
+        self._fg_layer[start_row_num:end_row_num, start_col_num:
                          end_col_num] = ''
         #logging.info(f"end col num is {end_col_num}")
         self._bg_layer[start_row_num:end_row_num, start_col_num:
@@ -184,7 +167,7 @@ class Canvas:
         start_row_num = game_brick.left_r
         end_col_num = game_brick.left_c + game_brick.len_c
         end_row_num = game_brick.left_r + game_brick.len_r
-        self._fore_board[start_row_num:end_row_num, start_col_num:
+        self._fg_layer[start_row_num:end_row_num, start_col_num:
                          end_col_num] = game_brick.ascii_repr[:]
         self._bg_layer[start_row_num:end_row_num, start_col_num:
                          end_col_num] = conf.BRICKS_BGCOLORS[
@@ -198,19 +181,22 @@ class Canvas:
         
         #logging.info("Using the SETTING CURSON ON TOP ANSI SEQUENCE")
         print(self.RESET_CURSOR_ANSI)
+
+        # Printing the console
         for i in range(self._just_game_height):
             curr_i=i
-            curr_i=self._just_game_height-i-1
+            # curr_i=self._just_game_height-i-1
             for j in range(self._tot_screen_cols):
                 curr_j=j
-                print(self._bg_layer[curr_i][curr_j] + self._fore_board[curr_i][curr_j], end='')
+                print(self._bg_layer[curr_i][curr_j] + self._fg_layer[curr_i][curr_j], end='')
             print('')
 
+        # Printing the menu
         for i in range(self._just_game_height,self._tot_screen_rows):
             curr_i=i
             for j in range(self._tot_screen_cols):
                 curr_j=j
-                print(self._bg_layer[curr_i][curr_j] + self._fore_board[curr_i][curr_j], end='')
+                print(self._bg_layer[curr_i][curr_j] + self._fg_layer[curr_i][curr_j], end='')
             print('')
         
 

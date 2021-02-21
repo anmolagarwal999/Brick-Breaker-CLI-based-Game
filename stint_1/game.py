@@ -78,7 +78,7 @@ class Game:
         self._overall_start_time = clock()
 
         self._available_powerups=[ExpandPaddle, ShrinkPaddle, FastBall, ThruBall,BallMultiplier,PaddleGrab]
-        self._available_powerups=[ExpandPaddle, ShrinkPaddle]
+        # self._available_powerups=[PaddleGrab]
         self.bricks_list = []
         self.init_new_life()
 
@@ -94,22 +94,22 @@ class Game:
         PaddleGrab.cnt=0
 
         # Making the game paddle
-        self.game_paddle = PaddleClass(self.just_game_cols // 2)
+        self._game_paddle = PaddleClass(self.just_game_cols // 2)
 
         # A new game ball
-        random_offset=random.randint(0, self.game_paddle.len_c-1)
-        offset_from_centre=(random_offset-self.game_paddle.len_c//2)//2
+        random_offset=random.randint(0, self._game_paddle.len_c-1)
+        offset_from_centre=(random_offset-self._game_paddle.len_c//2)//2
         original_ball = BallClass(
-            self.game_paddle.left_c + random_offset, 1, True, 1,
+            self._game_paddle.left_c + random_offset, 1, True, 1,
             offset_from_centre,offset_from_centre)
         self.balls_list = [original_ball]
         termios.tcflush(sys.stdin, termios.TCIOFLUSH)
 
     def paint_objs(self):
         '''Paints all the objects into CANVAS for the current iteration'''
-        self._screen.clear_foreground()
-        self._screen.add_entity(self.game_paddle.left_c, self.game_paddle.left_r, \
-            self.game_paddle.len_c, self.game_paddle.len_r, self.game_paddle.ascii_repr,"")
+        self._screen.clear_canvas()
+        self._screen.add_entity(self._game_paddle.left_c, self._game_paddle.left_r, \
+            self._game_paddle.len_c, self._game_paddle.len_r, self._game_paddle.ascii_repr,"")
 
         for this_ball in self.balls_list:
             assert(this_ball.isVisible==True);
@@ -139,24 +139,31 @@ class Game:
             string_up += "\033[F"
         print(string_up)
 
-        cnt = 0
-        for i in self.curr_powerups_list:
-            if i.status == "active":
-                cnt += 1
+        # cnt = 0
+        # for i in self.curr_powerups_list:
+        #     if i.status == "active":
+        #         cnt += 1
+        # assert(cnt==PowerupsClass.tot_active_powerups)
                 
         thru_ball_there = True if ThruBall.cnt>0 else False
         paddle_grab_there = True if PaddleGrab.cnt>0 else False
+
+        # logging.info(f"Compare between {PaddleGrab.cnt} and {self._game_paddle.is_magnet}")
+        # assert(PaddleGrab.cnt==self._game_paddle.is_magnet)
         
         speeds_list = []
         for i in self.balls_list:
             speeds_list.append(f"{i.vel_r}:{i.vel_c}")
         time_stats=self.get_time_left()
+        str_print=str(speeds_list)
+        lim=min(15,len(str_print))
+        str_print=str_print[:lim]
         print(f"Score now is {str(self._score).ljust(10)}", end='')
         print(f"Lives left  is {str(self._lives_left).ljust(4)}")
-        print(f"Balls Horizontal speed (INERTIA) are {speeds_list}")
+        print(f"Balls Horizontal vel(INERTIA): {str_print}")
         print(f"Time elapsed:{str(time_stats[0]).ljust(4)} | Time left:{time_stats[1]}")        
-        print(f"No of active powerups is {str(cnt).ljust(3)}|", end='')
-        #print(f"Paddle length is {str(self.game_paddle.len_c).ljust(4)}")
+        print(f"No of active powerups is {str(PowerupsClass.tot_active_powerups).ljust(3)}|", end='')
+        #print(f"Paddle length is {str(self._game_paddle.len_c).ljust(4)}")
         print(f" No of breakable bricks:{BricksClass.tot_breakable_bricks}")
         print(f"ThruBall:{thru_ball_there} | PaddleGrab:{paddle_grab_there}")
         print(Back.BLACK)
@@ -178,7 +185,7 @@ class Game:
                     color_code = 2
                 elif color_code == 2:
                     color_code = 4
-                logging.critical(f"{seq_in_row-i}:{color_code}")
+                #logging.critical(f"{seq_in_row-i}:{color_code}")
                 decided_class = NormalBrick
                 if color_code == 4:
                     decided_class = UnbreakableBrick
@@ -187,7 +194,7 @@ class Game:
                 self.bricks_list.append(
                     decided_class(i, j, seq_in_row, (seq_in_row - i),
                                   color_code))
-            logging.critical("\n")
+            #logging.critical("\n")
 
     def handle_input(self):
         '''Handles paddle movement, Moves balls alongwith paddle if stuck, releases any stuck ball if 's' is pressed '''
@@ -197,12 +204,12 @@ class Game:
             logging.info(f"\n[PRESSED {inp}]\n")
             paddle_new_details = None
             if inp == 'a':
-                paddle_new_details = self.game_paddle.change_x(
+                paddle_new_details = self._game_paddle.change_x(
                     -1, self.just_game_cols)
                 # DEAL WITH CASE WHEN BALL IS STUCK ALSO
                 ret_val = True
             elif inp == 'd':
-                paddle_new_details = self.game_paddle.change_x(
+                paddle_new_details = self._game_paddle.change_x(
                     1, self.just_game_cols)
                 # DEAL WITH CASE WHEN BALL IS STUCK ALSO
                 ret_val = True
@@ -225,7 +232,7 @@ class Game:
 
     def did_ball_collide_with_wall(self, prob_c, prob_r):
         '''Checks if ball collided with the ball'''
-        logging.critical(f"BALL WALL insvestigation is {prob_r}:{prob_c}")
+        #logging.critical(f"BALL WALL insvestigation is {prob_r}:{prob_c}")
         if prob_c < 0 or prob_c >= self.just_game_cols:
             return True
         if prob_r < -1 or prob_r >= self._just_game_rows:
@@ -252,19 +259,19 @@ class Game:
         and
         handles the sticky paddle case
         '''
-        dc = prob_c - self.game_paddle.left_c
-        if self.game_paddle.left_r == prob_r and (dc >= 0 and
-                                                  dc < self.game_paddle.len_c):
-            speed_inc_dist = prob_c - (self.game_paddle.left_c +
-                                       self.game_paddle.len_c // 2)
+        dc = prob_c - self._game_paddle.left_c
+        if self._game_paddle.left_r == prob_r and (dc >= 0 and
+                                                  dc < self._game_paddle.len_c):
+            speed_inc_dist = prob_c - (self._game_paddle.left_c +
+                                       self._game_paddle.len_c // 2)
             logging.debug(f"speed inc is {speed_inc_dist}")
             ball_obj.impact_velocity(speed_inc_dist // 2)
 
-            logging.info(f"Is paddle magnetic : {self.game_paddle.is_magnet}")
-            if self.game_paddle.is_magnet == True:
+            logging.info(f"Is paddle magnetic : {self._game_paddle.is_magnet}")
+            if self._game_paddle.is_magnet >0 :
                 ball_obj.capture()
                 ball_obj.offset_from_center = prob_c - (
-                    self.game_paddle.left_c + self.game_paddle.len_c // 2)
+                    self._game_paddle.left_c + self._game_paddle.len_c // 2)
             return True
         return False
 
@@ -279,7 +286,7 @@ class Game:
     def random_yes_or_no():
         rand_float=random.uniform(0, 1)
         logging.info(f"rand float is {rand_float}")
-        if rand_float>0.01:
+        if rand_float>0.3:
             return True
         logging.info("Randomness says NO")
         return False
@@ -291,6 +298,8 @@ class Game:
             return
         self.curr_powerup_idx = (self.curr_powerup_idx + 1) % (len(
             self._available_powerups))
+
+        # self.curr_powerup_idx = random.randint(0,len(self._available_powerups)-1)
 
         chosen_powerup_cls = self._available_powerups[self.curr_powerup_idx]
         
@@ -307,15 +316,17 @@ class Game:
 
     def hit_brick(self, brick_obj, is_forced, is_origin_brick=True):
         # Hit brick
-        logging.critical(f"Inside HIT brick function for {brick_obj.__dict__}")
+        #logging.critical(f"Inside HIT brick function for {brick_obj.__dict__}")
         #assert (brick_obj.isVisible == True)
         if brick_obj.isVisible and brick_obj.damage(is_forced):
             # brick broken => take score of breaking this brick
+            # if brick is still unbroken and is now broken, then 
             self._score += brick_obj.score_bounty
             self._screen.finish_brick(brick_obj)
             self.bricks_list.remove(brick_obj)
 
             if is_origin_brick:
+                # generate powerup with probability only if the brick is the first one to be broken                
                 self.try_powerup_generation(brick_obj.left_r, brick_obj.left_c)
 
             unlucky_neighbors = brick_obj.get_unlucky_friends()
@@ -330,6 +341,8 @@ class Game:
                 if self.is_there(sad_brick.left_r, sad_brick.seq_id,
                                  unlucky_neighbors):
                     #logging.info(f"Sad brick credentials are {sad_brick.__dict__}\n")
+
+                    # this brick will be a part of DFS NOW
                     chosen_ones.append(sad_brick)
                 else:
                     #logging.info(f"UNSad brick credentials are {sad_brick.__dict__}\n")
@@ -364,6 +377,7 @@ class Game:
         ########### Collision with wall ##########################
         if self.did_ball_collide_with_wall(prob_c, prob_r):
             #logging.debug("Collision with wall")
+            # Collision while moving horizontally => can be the left, right walls only and not the top wall
             ball_obj.flip_horizontal_velocity()
         elif (self.did_ball_collide_with_bricks(prob_c, prob_r, ball_obj)):
             #logging.debug("Collision with BRICK")
@@ -392,6 +406,7 @@ class Game:
             ball_obj.flip_vertical_velocity()
         elif (self.did_ball_collide_with_paddle(prob_c, prob_r, ball_obj)):
             logging.debug("Vertical Collision with PADDLE")
+            # Even if the ball stuck due to magnet, reverse velocity will be helpful for the next time the ball gets released
             ball_obj.flip_vertical_velocity()
         else:
             if prob_r < 0:
@@ -415,9 +430,10 @@ class Game:
 
     def did_powerup_collide_with_paddle(self, curr_powerup):
         # just_game_rows, just_game_cols
-        dc = curr_powerup.left_c - self.game_paddle.left_c
-        if self.game_paddle.left_r == curr_powerup.left_r and (
-                dc >= 0 and dc < self.game_paddle.len_c):
+        dc = curr_powerup.left_c - self._game_paddle.left_c
+        '''This works bcoz powerups have size 1 x 1, reimplement if you change powerup size'''
+        if self._game_paddle.left_r == curr_powerup.left_r and (
+                dc >= 0 and dc < self._game_paddle.len_c):
             return True
         return False
 
@@ -432,6 +448,10 @@ class Game:
         for i in eliminate_list:
             self.curr_powerups_list.remove(i)
 
+    @property
+    def game_paddle(self):
+        return self._game_paddle
+
     def move_powerups(self):
         eliminate_list = []
 
@@ -439,12 +459,17 @@ class Game:
         for curr_powerup in self.curr_powerups_list:
             if curr_powerup.status == "in_air":
                 curr_powerup.move()
+
+                # if powerup touched the paddle
                 if curr_powerup.left_r == 0:
+
+                    # valid contact between paddle and powerup=> activate powerup
                     if self.did_powerup_collide_with_paddle(curr_powerup):
                         curr_powerup.activate_powerup(
                             self)  # sending the game obj to powerups
                         self._score += conf.SCORE_POWERUP_PICKED
                     else:
+                        # powerup touched floor but not did not hit paddle
                         curr_powerup.eliminate()
                         eliminate_list.append(curr_powerup)
         for i in eliminate_list:
@@ -465,9 +490,9 @@ class Game:
 
         while True:
             paddle_last_tended = clock()
-            # logging.error(f"Paddle len theoretical is {self.game_paddle.len_c} and actual is {self.game_paddle.ascii_repr.shape}")
+            # logging.error(f"Paddle len theoretical is {self._game_paddle.len_c} and actual is {self._game_paddle.ascii_repr.shape}")
             assert (
-                self.game_paddle.len_c == self.game_paddle.ascii_repr.shape[1])
+                self._game_paddle.len_c == self._game_paddle.ascii_repr.shape[1])
 
             if self.handle_input():  # found a keystroke
                 pass
@@ -516,6 +541,7 @@ class Game:
             self.print_game_details()
 
             if BricksClass.tot_breakable_bricks==0:
+                self._score+=conf.SCORE_LIFE_BONUS*self._lives_left
                 self.game_over_screen("Congrats! You broke all the breakable bricks")
 
             if self.get_time_left()[1] < 0:

@@ -21,7 +21,7 @@ class PaddleClass:
         self._len_r=1
         self._left_c=paddle_center_c-self._len_c//2
         self._left_r=0
-        self._is_magnet=False
+        self._is_magnet=0
         self._ascii_repr=self.get_ascii_rep_str(self._len_c)
         logging.info(f"Inside init() of paddle class with attributes\n{self.__dict__}\n")
 
@@ -48,6 +48,10 @@ class PaddleClass:
     @property
     def is_magnet(self):
         return self._is_magnet
+    def magnetize(self):
+        self._is_magnet+=1
+    def demagnetize(self):
+        self._is_magnet-=1
 
     def change_x(self,dx,right_limit):
         dx*=4
@@ -86,6 +90,8 @@ class PaddleClass:
             return False
         self._len_c+=inc_val
         self._left_c=max(0,self._left_c-inc_val//2)
+
+        # Imperative check: imagine scenario where cannot move +1 as right is blocked by wall, divert entire extension to left
         if self._left_c+self._len_c>=tot_width:
             self._left_c-=1+self._left_c+self._len_c-tot_width
         self._ascii_repr=self.get_ascii_rep_str(self._len_c)

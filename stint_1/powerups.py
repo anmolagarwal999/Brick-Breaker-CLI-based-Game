@@ -5,8 +5,6 @@ import sys
 from time import monotonic as clock, sleep
 ###############################################################
 import logging
-
-
 def part():
     logging.debug("----------------------------------------")
 logging.basicConfig(filename='test.log',
@@ -59,6 +57,7 @@ class PowerupsClass:
         self._left_r += self._vel_r
 
     def deactivate_powerup(self, game_obj):
+        PowerupsClass.tot_active_powerups-=1
         logging.debug("Deactivation is redundant for this powerup")
 
     def eliminate(self):
@@ -93,6 +92,8 @@ class ExpandPaddle(PowerupsClass):
         return True
 
     def deactivate_powerup(self, game_obj):
+        PowerupsClass.tot_active_powerups-=1
+
         if self.had_impact_on_paddle:
             game_obj.game_paddle.decrease_paddle_size(ExpandPaddle.increment_val)
 
@@ -114,6 +115,8 @@ class ShrinkPaddle(PowerupsClass):
 
     def deactivate_powerup(self, game_obj):
         logging.info("")
+        PowerupsClass.tot_active_powerups-=1
+
         if self.had_impact_on_paddle:
             game_obj.game_paddle.increase_paddle_size(game_obj.just_game_cols,ShrinkPaddle.decrement_val)
 
@@ -129,6 +132,8 @@ class FastBall(PowerupsClass):
         PowerupsClass.tot_active_powerups+=1
         self._status="active"
         self.affected_balls=[]
+
+        # Store only those balls which were there during the time when this powerup hit the paddle
         for ball_obj in game_obj.balls_list:
             if ball_obj.boost_velocity(1):
                 self.affected_balls.append(ball_obj)
@@ -136,6 +141,7 @@ class FastBall(PowerupsClass):
 
     def deactivate_powerup(self, game_obj):
         # TAKE CARE OF THIS, you might decrease speed of ball which was not even born when this powerup was activated
+        PowerupsClass.tot_active_powerups-=1
         
         for ball_obj in self.affected_balls:
             ball_obj.deboost_velocity(1)
@@ -160,6 +166,8 @@ class ThruBall(PowerupsClass):
     def deactivate_powerup(self, game_obj):
         # TAKE CARE OF THIS, you might decrease speed of ball which was not even born when this powerup was activated
         ThruBall.cnt-=1
+        PowerupsClass.tot_active_powerups-=1
+
         for ball_obj in game_obj.balls_list:
             ball_obj.is_boss_cnt-=1
    
@@ -176,11 +184,13 @@ class PaddleGrab(PowerupsClass):
         self._status="active"
         PowerupsClass.tot_active_powerups+=1
         PaddleGrab.cnt+=1
-        game_obj.game_paddle.is_magnet=True
+        game_obj.game_paddle.magnetize()
 
     def deactivate_powerup(self, game_obj):
         PaddleGrab.cnt-=1
-        game_obj.game_paddle.is_magnet=False
+        PowerupsClass.tot_active_powerups-=1
+        game_obj.game_paddle.demagnetize()
+
 
 class BallMultiplier(PowerupsClass):
     
@@ -200,6 +210,7 @@ class BallMultiplier(PowerupsClass):
 
         backup_list=game_obj.balls_list.copy()
         for demo_ball in backup_list:            
+            # 
             new_ball=BallClass(demo_ball.left_c, demo_ball.left_r, demo_ball.is_stuck,demo_ball.vel_r,-demo_ball.vel_c)
             logging.info("New ball appended")
             game_obj.balls_list.append(new_ball)
