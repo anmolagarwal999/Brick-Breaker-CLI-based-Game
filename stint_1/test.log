@@ -17,7 +17,7 @@ INFO:Inside init() of paddle class with attributes
       dtype='<U1')}
 
 INFO:Inside init() of BALL class with attributes
-{'len_c': 1, 'len_r': 1, '_left_c': 34, '_left_r': 1, '_is_stuck': True, 'offset_from_center': 0, 'isVisible': True, '_vel_r': 1, '_vel_c': 0, 'is_boss': False, 'ball_last_tended_h': 74337.854496113, 'ball_last_tended_v': 74337.854497035, 'ascii_repr': array([['O']], dtype='<U1')}
+{'len_c': 1, 'len_r': 1, '_left_c': 34, '_left_r': 1, '_is_stuck': True, 'offset_from_center': 0, 'isVisible': True, '_vel_r': 1, '_vel_c': 0, 'is_boss': False, 'ball_last_tended_h': 75220.621946532, 'ball_last_tended_v': 75220.62194768, 'ascii_repr': array([['O']], dtype='<U1')}
 
 INFO:#### ## Inside play function of GAME class ## ######
 CRITICAL:-14:2
@@ -198,710 +198,2158 @@ CRITICAL:
 
 INFO:vertical prediction called
 INFO:Returning 1
+INFO:
+[PRESSED s]
+
+INFO:vertical prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 2:34
+CRITICAL:Vertical row of ball is 2
+INFO:vertical prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 3:34
+CRITICAL:Vertical row of ball is 3
+INFO:vertical prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 4:34
+CRITICAL:Vertical row of ball is 4
+INFO:vertical prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 5:34
+CRITICAL:Vertical row of ball is 5
+INFO:vertical prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 6:34
+CRITICAL:Vertical row of ball is 6
+INFO:vertical prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 7:34
+CRITICAL:Vertical row of ball is 7
+INFO:vertical prediction called
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 8:34
+CRITICAL:Vertical row of ball is 8
+INFO:vertical prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 9:34
+CRITICAL:Vertical row of ball is 9
+INFO:vertical prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 10:34
+CRITICAL:Vertical row of ball is 10
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 33
+INFO:Curr right x is 43
+INFO:vertical prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 11:34
+CRITICAL:Vertical row of ball is 11
+INFO:vertical prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 12:34
+CRITICAL:Vertical row of ball is 12
+INFO:vertical prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 13:34
+CRITICAL:Vertical row of ball is 13
+INFO:vertical prediction called
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 14:34
+CRITICAL:Vertical row of ball is 14
+INFO:vertical prediction called
+INFO:Returning 15
+CRITICAL:BALL WALL insvestigation is 15:34
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 32, 'seq_id': 10, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 32, 'seq_id': 10, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 32, 'seq_id': 10, 'sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Inside init() of POWERUPS class with attributes
+{'len_c': 1, 'len_r': 1, 'left_r': 15, 'left_c': 32, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['&']], dtype='<U1')}
+
+INFO:Inside init() of POWERUPS class with attributes
+{'len_c': 1, 'len_r': 1, 'left_r': 15, 'left_c': 32, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['&']], dtype='<U1')}
+
+INFO:Powerup appended
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+INFO:vertical prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 13:34
+CRITICAL:Vertical row of ball is 13
+INFO:vertical prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 12:34
+CRITICAL:Vertical row of ball is 12
+INFO:vertical prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 11:34
+CRITICAL:Vertical row of ball is 11
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 29
+INFO:Curr right x is 39
+INFO:vertical prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 10:34
+CRITICAL:Vertical row of ball is 10
+INFO:vertical prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 9:34
+CRITICAL:Vertical row of ball is 9
+INFO:vertical prediction called
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 8:34
+CRITICAL:Vertical row of ball is 8
+INFO:vertical prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 7:34
+CRITICAL:Vertical row of ball is 7
+INFO:vertical prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 6:34
+CRITICAL:Vertical row of ball is 6
+INFO:vertical prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 5:34
+CRITICAL:Vertical row of ball is 5
+INFO:vertical prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 4:34
+CRITICAL:Vertical row of ball is 4
+INFO:vertical prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 3:34
+CRITICAL:Vertical row of ball is 3
+INFO:vertical prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 2:34
+CRITICAL:Vertical row of ball is 2
 INFO:vertical prediction called
 INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 1:34
+CRITICAL:Vertical row of ball is 1
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 0
+CRITICAL:BALL WALL insvestigation is 0:34
+DEBUG:speed inc is 0
+DEBUG:Vertical Collision with PADDLE
+CRITICAL:Vertical velocity FLIPPED
+INFO:vertical prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 2:34
+CRITICAL:Vertical row of ball is 2
+INFO:vertical prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 3:34
+CRITICAL:Vertical row of ball is 3
+INFO:vertical prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 4:34
+CRITICAL:Vertical row of ball is 4
+INFO:vertical prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 5:34
+CRITICAL:Vertical row of ball is 5
+INFO:vertical prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 6:34
+CRITICAL:Vertical row of ball is 6
+INFO:vertical prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 7:34
+CRITICAL:Vertical row of ball is 7
 INFO:
 [PRESSED a]
 
 INFO:Curr left x is 25
 INFO:Curr right x is 35
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 8:34
+CRITICAL:Vertical row of ball is 8
+INFO:vertical prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 9:34
+CRITICAL:Vertical row of ball is 9
+INFO:vertical prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 10:34
+CRITICAL:Vertical row of ball is 10
+INFO:vertical prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 11:34
+CRITICAL:Vertical row of ball is 11
+INFO:vertical prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 12:34
+CRITICAL:Vertical row of ball is 12
+INFO:vertical prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 13:34
+CRITICAL:Vertical row of ball is 13
+INFO:vertical prediction called
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 14:34
+CRITICAL:Vertical row of ball is 14
+INFO:vertical prediction called
+INFO:Returning 15
+CRITICAL:BALL WALL insvestigation is 15:34
+CRITICAL:Vertical row of ball is 15
+INFO:vertical prediction called
+INFO:Returning 16
+CRITICAL:BALL WALL insvestigation is 16:34
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 32, 'seq_id': 10, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 32, 'seq_id': 10, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 32, 'seq_id': 10, 'sum_id': -6, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Inside init() of POWERUPS class with attributes
+{'len_c': 1, 'len_r': 1, 'left_r': 16, 'left_c': 32, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['&']], dtype='<U1')}
+
+INFO:Inside init() of POWERUPS class with attributes
+{'len_c': 1, 'len_r': 1, 'left_r': 16, 'left_c': 32, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['&']], dtype='<U1')}
+
+INFO:Powerup appended
+CRITICAL:coordinates are [[15, 9], [15, 10], [15, 11], [16, 9], [16, 11], [17, 9], [17, 10], [17, 11]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 29, 'seq_id': 9, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 29, 'seq_id': 9, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 29, 'seq_id': 9, 'sum_id': -6, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[14, 8], [14, 9], [14, 10], [15, 8], [15, 10], [16, 8], [16, 9], [16, 10]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 26, 'seq_id': 8, 'sum_id': -7, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 26, 'seq_id': 8, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 26, 'seq_id': 8, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 26, 'seq_id': 8, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 26, 'seq_id': 8, 'sum_id': -8, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 29, 'seq_id': 9, 'sum_id': -7, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 29, 'seq_id': 9, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 35, 'seq_id': 11, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 35, 'seq_id': 11, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 35, 'seq_id': 11, 'sum_id': -4, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 29, 'seq_id': 9, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 35, 'seq_id': 11, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 35, 'seq_id': 11, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 35, 'seq_id': 11, 'sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 29, 'seq_id': 9, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 29, 'seq_id': 9, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 29, 'seq_id': 9, 'sum_id': -8, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 32, 'seq_id': 10, 'sum_id': -7, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 32, 'seq_id': 10, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 35, 'seq_id': 11, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 35, 'seq_id': 11, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 35, 'seq_id': 11, 'sum_id': -6, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[16, 10], [16, 11], [16, 12], [17, 10], [17, 12], [18, 10], [18, 11], [18, 12]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 38, 'seq_id': 12, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 38, 'seq_id': 12, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 38, 'seq_id': 12, 'sum_id': -4, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 38, 'seq_id': 12, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 38, 'seq_id': 12, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 38, 'seq_id': 12, 'sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 32, 'seq_id': 10, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 32, 'seq_id': 10, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 32, 'seq_id': 10, 'sum_id': -8, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 35, 'seq_id': 11, 'sum_id': -7, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 35, 'seq_id': 11, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 38, 'seq_id': 12, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 38, 'seq_id': 12, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 38, 'seq_id': 12, 'sum_id': -6, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[17, 11], [17, 12], [17, 13], [18, 11], [18, 13], [19, 11], [19, 12], [19, 13]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 41, 'seq_id': 13, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 41, 'seq_id': 13, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 41, 'seq_id': 13, 'sum_id': -4, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 41, 'seq_id': 13, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 41, 'seq_id': 13, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 41, 'seq_id': 13, 'sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 35, 'seq_id': 11, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 35, 'seq_id': 11, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 35, 'seq_id': 11, 'sum_id': -8, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 38, 'seq_id': 12, 'sum_id': -7, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 38, 'seq_id': 12, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 41, 'seq_id': 13, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 41, 'seq_id': 13, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 41, 'seq_id': 13, 'sum_id': -6, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[18, 12], [18, 13], [18, 14], [19, 12], [19, 14], [20, 12], [20, 13], [20, 14]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 44, 'seq_id': 14, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 44, 'seq_id': 14, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 44, 'seq_id': 14, 'sum_id': -4, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 44, 'seq_id': 14, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 44, 'seq_id': 14, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 44, 'seq_id': 14, 'sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 38, 'seq_id': 12, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 38, 'seq_id': 12, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 38, 'seq_id': 12, 'sum_id': -8, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 41, 'seq_id': 13, 'sum_id': -7, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 41, 'seq_id': 13, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 44, 'seq_id': 14, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 44, 'seq_id': 14, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 44, 'seq_id': 14, 'sum_id': -6, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[19, 13], [19, 14], [19, 15], [20, 13], [20, 15], [21, 13], [21, 14], [21, 15]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 47, 'seq_id': 15, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 47, 'seq_id': 15, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 47, 'seq_id': 15, 'sum_id': -4, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 47, 'seq_id': 15, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 47, 'seq_id': 15, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 47, 'seq_id': 15, 'sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 41, 'seq_id': 13, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 41, 'seq_id': 13, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 41, 'seq_id': 13, 'sum_id': -8, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 44, 'seq_id': 14, 'sum_id': -7, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 44, 'seq_id': 14, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 47, 'seq_id': 15, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 47, 'seq_id': 15, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 47, 'seq_id': 15, 'sum_id': -6, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[20, 14], [20, 15], [20, 16], [21, 14], [21, 16], [22, 14], [22, 15], [22, 16]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 50, 'seq_id': 16, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 50, 'seq_id': 16, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 50, 'seq_id': 16, 'sum_id': -4, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 50, 'seq_id': 16, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 50, 'seq_id': 16, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 50, 'seq_id': 16, 'sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 44, 'seq_id': 14, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 44, 'seq_id': 14, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 44, 'seq_id': 14, 'sum_id': -8, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 47, 'seq_id': 15, 'sum_id': -7, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 47, 'seq_id': 15, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 50, 'seq_id': 16, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 50, 'seq_id': 16, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 50, 'seq_id': 16, 'sum_id': -6, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[21, 15], [21, 16], [21, 17], [22, 15], [22, 17], [23, 15], [23, 16], [23, 17]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 53, 'seq_id': 17, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 53, 'seq_id': 17, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 53, 'seq_id': 17, 'sum_id': -4, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 53, 'seq_id': 17, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 53, 'seq_id': 17, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 53, 'seq_id': 17, 'sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+INFO:vertical prediction called
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 14:34
+CRITICAL:Vertical row of ball is 14
+INFO:vertical prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 13:34
+CRITICAL:Vertical row of ball is 13
+INFO:vertical prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 12:34
+CRITICAL:Vertical row of ball is 12
+INFO:vertical prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 11:34
+CRITICAL:Vertical row of ball is 11
+INFO:vertical prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 10:34
+CRITICAL:Vertical row of ball is 10
+INFO:vertical prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 9:34
+CRITICAL:Vertical row of ball is 9
+INFO:vertical prediction called
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 8:34
+CRITICAL:Vertical row of ball is 8
+INFO:vertical prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 7:34
+CRITICAL:Vertical row of ball is 7
+INFO:vertical prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 6:34
+CRITICAL:Vertical row of ball is 6
+INFO:vertical prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 5:34
+CRITICAL:Vertical row of ball is 5
+INFO:vertical prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 4:34
+CRITICAL:Vertical row of ball is 4
+INFO:vertical prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 3:34
+CRITICAL:Vertical row of ball is 3
+INFO:vertical prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 2:34
+CRITICAL:Vertical row of ball is 2
 INFO:vertical prediction called
 INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 1:34
+CRITICAL:Vertical row of ball is 1
+INFO:vertical prediction called
+INFO:Returning 0
+CRITICAL:BALL WALL insvestigation is 0:34
+DEBUG:speed inc is 4
+DEBUG:Vertical Collision with PADDLE
+CRITICAL:Vertical velocity FLIPPED
+INFO:horizontal prediction called
+INFO:Returning 35
+CRITICAL:BALL WALL insvestigation is 1:35
+INFO:horizontal prediction called
+INFO:Returning 36
+CRITICAL:BALL WALL insvestigation is 1:36
+INFO:horizontal prediction called
+INFO:Returning 37
+CRITICAL:BALL WALL insvestigation is 1:37
+INFO:vertical prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 2:37
+CRITICAL:Vertical row of ball is 2
+INFO:horizontal prediction called
+INFO:Returning 38
+CRITICAL:BALL WALL insvestigation is 2:38
+INFO:horizontal prediction called
+INFO:Returning 39
+CRITICAL:BALL WALL insvestigation is 2:39
+INFO:horizontal prediction called
+INFO:Returning 40
+CRITICAL:BALL WALL insvestigation is 2:40
+INFO:vertical prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 3:40
+CRITICAL:Vertical row of ball is 3
+INFO:horizontal prediction called
+INFO:Returning 41
+CRITICAL:BALL WALL insvestigation is 3:41
+INFO:horizontal prediction called
+INFO:Returning 42
+CRITICAL:BALL WALL insvestigation is 3:42
+INFO:horizontal prediction called
+INFO:Returning 43
+CRITICAL:BALL WALL insvestigation is 3:43
+INFO:vertical prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 4:43
+CRITICAL:Vertical row of ball is 4
+INFO:horizontal prediction called
+INFO:Returning 44
+CRITICAL:BALL WALL insvestigation is 4:44
+INFO:horizontal prediction called
+INFO:Returning 45
+CRITICAL:BALL WALL insvestigation is 4:45
+INFO:horizontal prediction called
+INFO:Returning 46
+CRITICAL:BALL WALL insvestigation is 4:46
+INFO:vertical prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 5:46
+CRITICAL:Vertical row of ball is 5
+INFO:horizontal prediction called
+INFO:Returning 47
+CRITICAL:BALL WALL insvestigation is 5:47
+INFO:horizontal prediction called
+INFO:Returning 48
+CRITICAL:BALL WALL insvestigation is 5:48
+INFO:horizontal prediction called
+INFO:Returning 49
+CRITICAL:BALL WALL insvestigation is 5:49
+INFO:vertical prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 6:49
+CRITICAL:Vertical row of ball is 6
+INFO:horizontal prediction called
+INFO:Returning 50
+CRITICAL:BALL WALL insvestigation is 6:50
+INFO:horizontal prediction called
+INFO:Returning 51
+CRITICAL:BALL WALL insvestigation is 6:51
+INFO:horizontal prediction called
+INFO:Returning 52
+CRITICAL:BALL WALL insvestigation is 6:52
+INFO:vertical prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 7:52
+CRITICAL:Vertical row of ball is 7
+INFO:horizontal prediction called
+INFO:Returning 53
+CRITICAL:BALL WALL insvestigation is 7:53
+INFO:horizontal prediction called
+INFO:Returning 54
+CRITICAL:BALL WALL insvestigation is 7:54
+INFO:horizontal prediction called
+INFO:Returning 55
+CRITICAL:BALL WALL insvestigation is 7:55
+INFO:vertical prediction called
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 8:55
+CRITICAL:Vertical row of ball is 8
+INFO:horizontal prediction called
+INFO:Returning 56
+CRITICAL:BALL WALL insvestigation is 8:56
+INFO:horizontal prediction called
+INFO:Returning 57
+CRITICAL:BALL WALL insvestigation is 8:57
+INFO:horizontal prediction called
+INFO:Returning 58
+CRITICAL:BALL WALL insvestigation is 8:58
+INFO:vertical prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 9:58
+CRITICAL:Vertical row of ball is 9
+INFO:horizontal prediction called
+INFO:Returning 59
+CRITICAL:BALL WALL insvestigation is 9:59
+INFO:horizontal prediction called
+INFO:Returning 60
+CRITICAL:BALL WALL insvestigation is 9:60
+INFO:horizontal prediction called
+INFO:Returning 61
+CRITICAL:BALL WALL insvestigation is 9:61
+INFO:vertical prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 10:61
+CRITICAL:Vertical row of ball is 10
+INFO:horizontal prediction called
+INFO:Returning 62
+CRITICAL:BALL WALL insvestigation is 10:62
+INFO:horizontal prediction called
+INFO:Returning 63
+CRITICAL:BALL WALL insvestigation is 10:63
+INFO:horizontal prediction called
+INFO:Returning 64
+CRITICAL:BALL WALL insvestigation is 10:64
+INFO:vertical prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 11:64
+CRITICAL:Vertical row of ball is 11
+INFO:horizontal prediction called
+INFO:Returning 65
+CRITICAL:BALL WALL insvestigation is 11:65
+INFO:horizontal prediction called
+INFO:Returning 66
+CRITICAL:BALL WALL insvestigation is 11:66
+INFO:horizontal prediction called
+INFO:Returning 67
+CRITICAL:BALL WALL insvestigation is 11:67
+INFO:vertical prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 12:67
+CRITICAL:Vertical row of ball is 12
+INFO:horizontal prediction called
+INFO:Returning 68
+CRITICAL:BALL WALL insvestigation is 12:68
+INFO:horizontal prediction called
+INFO:Returning 66
+CRITICAL:BALL WALL insvestigation is 12:66
+INFO:horizontal prediction called
+INFO:Returning 65
+CRITICAL:BALL WALL insvestigation is 12:65
+INFO:vertical prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 13:65
+CRITICAL:Vertical row of ball is 13
+INFO:horizontal prediction called
+INFO:Returning 64
+CRITICAL:BALL WALL insvestigation is 13:64
+INFO:horizontal prediction called
+INFO:Returning 63
+CRITICAL:BALL WALL insvestigation is 13:63
+INFO:horizontal prediction called
+INFO:Returning 62
+CRITICAL:BALL WALL insvestigation is 13:62
+INFO:vertical prediction called
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 14:62
+CRITICAL:Vertical row of ball is 14
+INFO:horizontal prediction called
+INFO:Returning 61
+CRITICAL:BALL WALL insvestigation is 14:61
+INFO:horizontal prediction called
+INFO:Returning 60
+CRITICAL:BALL WALL insvestigation is 14:60
+INFO:horizontal prediction called
+INFO:Returning 59
+CRITICAL:BALL WALL insvestigation is 14:59
+INFO:vertical prediction called
+INFO:Returning 15
+CRITICAL:BALL WALL insvestigation is 15:59
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 59, 'seq_id': 19, 'sum_id': 4, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 59, 'seq_id': 19, 'sum_id': 4, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 59, 'seq_id': 19, 'sum_id': 4, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Inside init() of POWERUPS class with attributes
+{'len_c': 1, 'len_r': 1, 'left_r': 15, 'left_c': 59, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['&']], dtype='<U1')}
+
+INFO:Inside init() of POWERUPS class with attributes
+{'len_c': 1, 'len_r': 1, 'left_r': 15, 'left_c': 59, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['&']], dtype='<U1')}
+
+INFO:Powerup appended
+CRITICAL:coordinates are [[14, 18], [14, 19], [14, 20], [15, 18], [15, 20], [16, 18], [16, 19], [16, 20]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 56, 'seq_id': 18, 'sum_id': 3, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 56, 'seq_id': 18, 'sum_id': 3, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 62, 'seq_id': 20, 'sum_id': 5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 62, 'seq_id': 20, 'sum_id': 5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 62, 'seq_id': 20, 'sum_id': 5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 56, 'seq_id': 18, 'sum_id': 2, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 56, 'seq_id': 18, 'sum_id': 2, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 56, 'seq_id': 18, 'sum_id': 2, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 59, 'seq_id': 19, 'sum_id': 3, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 59, 'seq_id': 19, 'sum_id': 3, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 62, 'seq_id': 20, 'sum_id': 4, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 62, 'seq_id': 20, 'sum_id': 4, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 62, 'seq_id': 20, 'sum_id': 4, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[15, 19], [15, 20], [15, 21], [16, 19], [16, 21], [17, 19], [17, 20], [17, 21]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 59, 'seq_id': 19, 'sum_id': 2, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 59, 'seq_id': 19, 'sum_id': 2, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 59, 'seq_id': 19, 'sum_id': 2, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 62, 'seq_id': 20, 'sum_id': 3, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 62, 'seq_id': 20, 'sum_id': 3, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+INFO:horizontal prediction called
+INFO:Returning 58
+CRITICAL:BALL WALL insvestigation is 14:58
+INFO:horizontal prediction called
+INFO:Returning 57
+CRITICAL:BALL WALL insvestigation is 14:57
+INFO:horizontal prediction called
+INFO:Returning 56
+CRITICAL:BALL WALL insvestigation is 14:56
+INFO:vertical prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 13:56
+CRITICAL:Vertical row of ball is 13
+INFO:horizontal prediction called
+INFO:Returning 55
+CRITICAL:BALL WALL insvestigation is 13:55
+INFO:horizontal prediction called
+INFO:Returning 54
+CRITICAL:BALL WALL insvestigation is 13:54
+INFO:horizontal prediction called
+INFO:Returning 53
+CRITICAL:BALL WALL insvestigation is 13:53
+INFO:vertical prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 12:53
+CRITICAL:Vertical row of ball is 12
+INFO:horizontal prediction called
+INFO:Returning 52
+CRITICAL:BALL WALL insvestigation is 12:52
+INFO:horizontal prediction called
+INFO:Returning 51
+CRITICAL:BALL WALL insvestigation is 12:51
+INFO:horizontal prediction called
+INFO:Returning 50
+CRITICAL:BALL WALL insvestigation is 12:50
+INFO:vertical prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 11:50
+CRITICAL:Vertical row of ball is 11
+INFO:horizontal prediction called
+INFO:Returning 49
+CRITICAL:BALL WALL insvestigation is 11:49
+INFO:horizontal prediction called
+INFO:Returning 48
+CRITICAL:BALL WALL insvestigation is 11:48
+INFO:horizontal prediction called
+INFO:Returning 47
+CRITICAL:BALL WALL insvestigation is 11:47
+INFO:vertical prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 10:47
+CRITICAL:Vertical row of ball is 10
+INFO:horizontal prediction called
+INFO:Returning 46
+CRITICAL:BALL WALL insvestigation is 10:46
+INFO:horizontal prediction called
+INFO:Returning 45
+CRITICAL:BALL WALL insvestigation is 10:45
+INFO:horizontal prediction called
+INFO:Returning 44
+CRITICAL:BALL WALL insvestigation is 10:44
+INFO:vertical prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 9:44
+CRITICAL:Vertical row of ball is 9
+INFO:horizontal prediction called
+INFO:Returning 43
+CRITICAL:BALL WALL insvestigation is 9:43
+INFO:horizontal prediction called
+INFO:Returning 42
+CRITICAL:BALL WALL insvestigation is 9:42
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 29
+INFO:Curr right x is 39
+INFO:horizontal prediction called
+INFO:Returning 41
+CRITICAL:BALL WALL insvestigation is 9:41
+INFO:vertical prediction called
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 8:41
+CRITICAL:Vertical row of ball is 8
+INFO:horizontal prediction called
+INFO:Returning 40
+CRITICAL:BALL WALL insvestigation is 8:40
+INFO:horizontal prediction called
+INFO:Returning 39
+CRITICAL:BALL WALL insvestigation is 8:39
+INFO:horizontal prediction called
+INFO:Returning 38
+CRITICAL:BALL WALL insvestigation is 8:38
+INFO:vertical prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 7:38
+CRITICAL:Vertical row of ball is 7
+INFO:horizontal prediction called
+INFO:Returning 37
+CRITICAL:BALL WALL insvestigation is 7:37
+INFO:horizontal prediction called
+INFO:Returning 36
+CRITICAL:BALL WALL insvestigation is 7:36
+INFO:horizontal prediction called
+INFO:Returning 35
+CRITICAL:BALL WALL insvestigation is 7:35
+INFO:vertical prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 6:35
+CRITICAL:Vertical row of ball is 6
+INFO:horizontal prediction called
+INFO:Returning 34
+CRITICAL:BALL WALL insvestigation is 6:34
+INFO:horizontal prediction called
+INFO:Returning 33
+CRITICAL:BALL WALL insvestigation is 6:33
+INFO:horizontal prediction called
+INFO:Returning 32
+CRITICAL:BALL WALL insvestigation is 6:32
+INFO:vertical prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 5:32
+CRITICAL:Vertical row of ball is 5
+INFO:horizontal prediction called
+INFO:Returning 31
+CRITICAL:BALL WALL insvestigation is 5:31
+INFO:horizontal prediction called
+INFO:Returning 30
+CRITICAL:BALL WALL insvestigation is 5:30
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 25
+INFO:Curr right x is 35
+INFO:horizontal prediction called
+INFO:Returning 29
+CRITICAL:BALL WALL insvestigation is 5:29
+INFO:vertical prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 4:29
+CRITICAL:Vertical row of ball is 4
+INFO:horizontal prediction called
+INFO:Returning 28
+CRITICAL:BALL WALL insvestigation is 4:28
+INFO:horizontal prediction called
+INFO:Returning 27
+CRITICAL:BALL WALL insvestigation is 4:27
+INFO:horizontal prediction called
+INFO:Returning 26
+CRITICAL:BALL WALL insvestigation is 4:26
+INFO:vertical prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 3:26
+CRITICAL:Vertical row of ball is 3
+INFO:horizontal prediction called
+INFO:Returning 25
+CRITICAL:BALL WALL insvestigation is 3:25
+INFO:horizontal prediction called
+INFO:Returning 24
+CRITICAL:BALL WALL insvestigation is 3:24
 INFO:
 [PRESSED a]
 
 INFO:Curr left x is 21
 INFO:Curr right x is 31
+INFO:horizontal prediction called
+INFO:Returning 23
+CRITICAL:BALL WALL insvestigation is 3:23
+INFO:vertical prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 2:23
+CRITICAL:Vertical row of ball is 2
+INFO:horizontal prediction called
+INFO:Returning 22
+CRITICAL:BALL WALL insvestigation is 2:22
+INFO:horizontal prediction called
+INFO:Returning 21
+CRITICAL:BALL WALL insvestigation is 2:21
+INFO:horizontal prediction called
+INFO:Returning 20
+CRITICAL:BALL WALL insvestigation is 2:20
 INFO:vertical prediction called
 INFO:Returning 1
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:vertical prediction called
-INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 1:20
+CRITICAL:Vertical row of ball is 1
+INFO:horizontal prediction called
+INFO:Returning 19
+CRITICAL:BALL WALL insvestigation is 1:19
+INFO:horizontal prediction called
+INFO:Returning 18
+CRITICAL:BALL WALL insvestigation is 1:18
 INFO:
 [PRESSED a]
 
 INFO:Curr left x is 17
 INFO:Curr right x is 27
+INFO:horizontal prediction called
+INFO:Returning 17
+CRITICAL:BALL WALL insvestigation is 1:17
 INFO:vertical prediction called
+INFO:Returning 0
+CRITICAL:BALL WALL insvestigation is 0:17
+DEBUG:speed inc is -5
+DEBUG:Vertical Collision with PADDLE
+CRITICAL:Vertical velocity FLIPPED
+INFO:horizontal prediction called
+INFO:Returning 16
+CRITICAL:BALL WALL insvestigation is 1:16
+INFO:horizontal prediction called
+INFO:Returning 15
+CRITICAL:BALL WALL insvestigation is 1:15
+INFO:horizontal prediction called
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 1:14
+INFO:horizontal prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 1:13
+INFO:horizontal prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 1:12
+INFO:horizontal prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 1:11
+INFO:vertical prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 2:11
+CRITICAL:Vertical row of ball is 2
+INFO:horizontal prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 2:10
+INFO:horizontal prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 2:9
+INFO:horizontal prediction called
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 2:8
+INFO:horizontal prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 2:7
+INFO:horizontal prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 2:6
+INFO:horizontal prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 2:5
+INFO:vertical prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 3:5
+CRITICAL:Vertical row of ball is 3
+INFO:horizontal prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 3:4
+INFO:horizontal prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 3:3
+INFO:horizontal prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 3:2
+INFO:horizontal prediction called
 INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 3:1
+INFO:horizontal prediction called
+INFO:Returning 0
+CRITICAL:BALL WALL insvestigation is 3:0
+INFO:horizontal prediction called
+INFO:Returning -1
+CRITICAL:BALL WALL insvestigation is 3:-1
+INFO:vertical prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 4:0
+CRITICAL:Vertical row of ball is 4
+INFO:horizontal prediction called
+INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 4:1
+INFO:horizontal prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 4:2
+INFO:horizontal prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 4:3
+INFO:horizontal prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 4:4
+INFO:horizontal prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 4:5
+INFO:horizontal prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 4:6
+INFO:vertical prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 5:6
+CRITICAL:Vertical row of ball is 5
+INFO:horizontal prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 5:7
+INFO:horizontal prediction called
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 5:8
+INFO:horizontal prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 5:9
+INFO:horizontal prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 5:10
+INFO:horizontal prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 5:11
+INFO:horizontal prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 5:12
+INFO:vertical prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 6:12
+CRITICAL:Vertical row of ball is 6
+INFO:horizontal prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 6:13
+INFO:horizontal prediction called
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 6:14
+INFO:horizontal prediction called
+INFO:Returning 15
+CRITICAL:BALL WALL insvestigation is 6:15
+INFO:horizontal prediction called
+INFO:Returning 16
+CRITICAL:BALL WALL insvestigation is 6:16
+INFO:horizontal prediction called
+INFO:Returning 17
+CRITICAL:BALL WALL insvestigation is 6:17
+INFO:horizontal prediction called
+INFO:Returning 18
+CRITICAL:BALL WALL insvestigation is 6:18
+INFO:vertical prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 7:18
+CRITICAL:Vertical row of ball is 7
+INFO:horizontal prediction called
+INFO:Returning 19
+CRITICAL:BALL WALL insvestigation is 7:19
+INFO:horizontal prediction called
+INFO:Returning 20
+CRITICAL:BALL WALL insvestigation is 7:20
+INFO:horizontal prediction called
+INFO:Returning 21
+CRITICAL:BALL WALL insvestigation is 7:21
+INFO:horizontal prediction called
+INFO:Returning 22
+CRITICAL:BALL WALL insvestigation is 7:22
+INFO:horizontal prediction called
+INFO:Returning 23
+CRITICAL:BALL WALL insvestigation is 7:23
+INFO:horizontal prediction called
+INFO:Returning 24
+CRITICAL:BALL WALL insvestigation is 7:24
+INFO:vertical prediction called
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 8:24
+CRITICAL:Vertical row of ball is 8
+INFO:horizontal prediction called
+INFO:Returning 25
+CRITICAL:BALL WALL insvestigation is 8:25
+INFO:horizontal prediction called
+INFO:Returning 26
+CRITICAL:BALL WALL insvestigation is 8:26
+INFO:horizontal prediction called
+INFO:Returning 27
+CRITICAL:BALL WALL insvestigation is 8:27
+INFO:horizontal prediction called
+INFO:Returning 28
+CRITICAL:BALL WALL insvestigation is 8:28
+INFO:horizontal prediction called
+INFO:Returning 29
+CRITICAL:BALL WALL insvestigation is 8:29
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 21
+INFO:Curr right x is 31
+INFO:horizontal prediction called
+INFO:Returning 30
+CRITICAL:BALL WALL insvestigation is 8:30
+INFO:vertical prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 9:30
+CRITICAL:Vertical row of ball is 9
+INFO:horizontal prediction called
+INFO:Returning 31
+CRITICAL:BALL WALL insvestigation is 9:31
+INFO:horizontal prediction called
+INFO:Returning 32
+CRITICAL:BALL WALL insvestigation is 9:32
+INFO:horizontal prediction called
+INFO:Returning 33
+CRITICAL:BALL WALL insvestigation is 9:33
+INFO:horizontal prediction called
+INFO:Returning 34
+CRITICAL:BALL WALL insvestigation is 9:34
+INFO:horizontal prediction called
+INFO:Returning 35
+CRITICAL:BALL WALL insvestigation is 9:35
+INFO:horizontal prediction called
+INFO:Returning 36
+CRITICAL:BALL WALL insvestigation is 9:36
+INFO:vertical prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 10:36
+CRITICAL:Vertical row of ball is 10
+INFO:horizontal prediction called
+INFO:Returning 37
+CRITICAL:BALL WALL insvestigation is 10:37
+INFO:horizontal prediction called
+INFO:Returning 38
+CRITICAL:BALL WALL insvestigation is 10:38
+INFO:horizontal prediction called
+INFO:Returning 39
+CRITICAL:BALL WALL insvestigation is 10:39
+INFO:horizontal prediction called
+INFO:Returning 40
+CRITICAL:BALL WALL insvestigation is 10:40
+INFO:vertical prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 11:40
+CRITICAL:Vertical row of ball is 11
+INFO:horizontal prediction called
+INFO:Returning 41
+CRITICAL:BALL WALL insvestigation is 11:41
+INFO:horizontal prediction called
+INFO:Returning 42
+CRITICAL:BALL WALL insvestigation is 11:42
+INFO:horizontal prediction called
+INFO:Returning 43
+CRITICAL:BALL WALL insvestigation is 11:43
+INFO:horizontal prediction called
+INFO:Returning 44
+CRITICAL:BALL WALL insvestigation is 11:44
+INFO:horizontal prediction called
+INFO:Returning 45
+CRITICAL:BALL WALL insvestigation is 11:45
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 25
+INFO:Curr right x is 35
+INFO:horizontal prediction called
+INFO:Returning 46
+CRITICAL:BALL WALL insvestigation is 11:46
+INFO:vertical prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 12:46
+CRITICAL:Vertical row of ball is 12
+INFO:horizontal prediction called
+INFO:Returning 47
+CRITICAL:BALL WALL insvestigation is 12:47
+INFO:horizontal prediction called
+INFO:Returning 48
+CRITICAL:BALL WALL insvestigation is 12:48
+INFO:horizontal prediction called
+INFO:Returning 49
+CRITICAL:BALL WALL insvestigation is 12:49
+INFO:horizontal prediction called
+INFO:Returning 50
+CRITICAL:BALL WALL insvestigation is 12:50
+INFO:horizontal prediction called
+INFO:Returning 51
+CRITICAL:BALL WALL insvestigation is 12:51
+INFO:horizontal prediction called
+INFO:Returning 52
+CRITICAL:BALL WALL insvestigation is 12:52
+INFO:vertical prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 13:52
+CRITICAL:Vertical row of ball is 13
+INFO:horizontal prediction called
+INFO:Returning 53
+CRITICAL:BALL WALL insvestigation is 13:53
+INFO:horizontal prediction called
+INFO:Returning 54
+CRITICAL:BALL WALL insvestigation is 13:54
+INFO:horizontal prediction called
+INFO:Returning 55
+CRITICAL:BALL WALL insvestigation is 13:55
+INFO:horizontal prediction called
+INFO:Returning 56
+CRITICAL:BALL WALL insvestigation is 13:56
+INFO:horizontal prediction called
+INFO:Returning 57
+CRITICAL:BALL WALL insvestigation is 13:57
+INFO:horizontal prediction called
+INFO:Returning 58
+CRITICAL:BALL WALL insvestigation is 13:58
+INFO:vertical prediction called
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 14:58
+CRITICAL:Vertical row of ball is 14
+INFO:horizontal prediction called
+INFO:Returning 59
+CRITICAL:BALL WALL insvestigation is 14:59
+INFO:horizontal prediction called
+INFO:Returning 60
+CRITICAL:BALL WALL insvestigation is 14:60
+INFO:horizontal prediction called
+INFO:Returning 61
+CRITICAL:BALL WALL insvestigation is 14:61
+INFO:horizontal prediction called
+INFO:Returning 62
+CRITICAL:BALL WALL insvestigation is 14:62
+INFO:horizontal prediction called
+INFO:Returning 63
+CRITICAL:BALL WALL insvestigation is 14:63
+INFO:horizontal prediction called
+INFO:Returning 64
+CRITICAL:BALL WALL insvestigation is 14:64
+INFO:vertical prediction called
+INFO:Returning 15
+CRITICAL:BALL WALL insvestigation is 15:64
+CRITICAL:Vertical row of ball is 15
+INFO:horizontal prediction called
+INFO:Returning 65
+CRITICAL:BALL WALL insvestigation is 15:65
+INFO:horizontal prediction called
+INFO:Returning 66
+CRITICAL:BALL WALL insvestigation is 15:66
+INFO:horizontal prediction called
+INFO:Returning 67
+CRITICAL:BALL WALL insvestigation is 15:67
+INFO:horizontal prediction called
+INFO:Returning 68
+CRITICAL:BALL WALL insvestigation is 15:68
+INFO:horizontal prediction called
+INFO:Returning 66
+CRITICAL:BALL WALL insvestigation is 15:66
+INFO:horizontal prediction called
+INFO:Returning 65
+CRITICAL:BALL WALL insvestigation is 15:65
+INFO:vertical prediction called
+INFO:Returning 16
+CRITICAL:BALL WALL insvestigation is 16:65
+CRITICAL:Vertical row of ball is 16
+INFO:horizontal prediction called
+INFO:Returning 64
+CRITICAL:BALL WALL insvestigation is 16:64
+INFO:horizontal prediction called
+INFO:Returning 63
+CRITICAL:BALL WALL insvestigation is 16:63
+INFO:horizontal prediction called
+INFO:Returning 62
+CRITICAL:BALL WALL insvestigation is 16:62
+INFO:horizontal prediction called
+INFO:Returning 61
+CRITICAL:BALL WALL insvestigation is 16:61
+INFO:horizontal prediction called
+INFO:Returning 60
+CRITICAL:BALL WALL insvestigation is 16:60
+INFO:horizontal prediction called
+INFO:Returning 59
+CRITICAL:BALL WALL insvestigation is 16:59
+INFO:vertical prediction called
+INFO:Returning 17
+CRITICAL:BALL WALL insvestigation is 17:59
+CRITICAL:Vertical row of ball is 17
+INFO:horizontal prediction called
+INFO:Returning 58
+CRITICAL:BALL WALL insvestigation is 17:58
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 56, 'seq_id': 18, 'sum_id': 1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 56, 'seq_id': 18, 'sum_id': 1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:horizontal prediction called
+INFO:Returning 60
+CRITICAL:BALL WALL insvestigation is 17:60
+INFO:horizontal prediction called
+INFO:Returning 61
+CRITICAL:BALL WALL insvestigation is 17:61
+INFO:horizontal prediction called
+INFO:Returning 62
+CRITICAL:BALL WALL insvestigation is 17:62
+INFO:horizontal prediction called
+INFO:Returning 63
+CRITICAL:BALL WALL insvestigation is 17:63
+INFO:horizontal prediction called
+INFO:Returning 64
+CRITICAL:BALL WALL insvestigation is 17:64
+INFO:vertical prediction called
+INFO:Returning 18
+CRITICAL:BALL WALL insvestigation is 18:64
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 62, 'seq_id': 20, 'sum_id': 2, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 62, 'seq_id': 20, 'sum_id': 2, '_isVisible': True, 'score_bounty': 3, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+INFO:horizontal prediction called
+INFO:Returning 65
+CRITICAL:BALL WALL insvestigation is 17:65
+INFO:horizontal prediction called
+INFO:Returning 66
+CRITICAL:BALL WALL insvestigation is 17:66
+INFO:horizontal prediction called
+INFO:Returning 67
+CRITICAL:BALL WALL insvestigation is 17:67
+INFO:horizontal prediction called
+INFO:Returning 68
+CRITICAL:BALL WALL insvestigation is 17:68
+INFO:horizontal prediction called
+INFO:Returning 66
+CRITICAL:BALL WALL insvestigation is 17:66
+INFO:horizontal prediction called
+INFO:Returning 65
+CRITICAL:BALL WALL insvestigation is 17:65
+INFO:vertical prediction called
+INFO:Returning 16
+CRITICAL:BALL WALL insvestigation is 16:65
+CRITICAL:Vertical row of ball is 16
+INFO:horizontal prediction called
+INFO:Returning 64
+CRITICAL:BALL WALL insvestigation is 16:64
+INFO:horizontal prediction called
+INFO:Returning 63
+CRITICAL:BALL WALL insvestigation is 16:63
+INFO:horizontal prediction called
+INFO:Returning 62
+CRITICAL:BALL WALL insvestigation is 16:62
+INFO:horizontal prediction called
+INFO:Returning 61
+CRITICAL:BALL WALL insvestigation is 16:61
+INFO:horizontal prediction called
+INFO:Returning 60
+CRITICAL:BALL WALL insvestigation is 16:60
+INFO:horizontal prediction called
+INFO:Returning 59
+CRITICAL:BALL WALL insvestigation is 16:59
+INFO:vertical prediction called
+INFO:Returning 15
+CRITICAL:BALL WALL insvestigation is 15:59
+CRITICAL:Vertical row of ball is 15
+INFO:horizontal prediction called
+INFO:Returning 58
+CRITICAL:BALL WALL insvestigation is 15:58
+INFO:horizontal prediction called
+INFO:Returning 57
+CRITICAL:BALL WALL insvestigation is 15:57
+INFO:horizontal prediction called
+INFO:Returning 56
+CRITICAL:BALL WALL insvestigation is 15:56
+INFO:horizontal prediction called
+INFO:Returning 55
+CRITICAL:BALL WALL insvestigation is 15:55
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 53, 'seq_id': 17, 'sum_id': 2, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 53, 'seq_id': 17, 'sum_id': 2, '_isVisible': True, 'score_bounty': 3, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:horizontal prediction called
+INFO:Returning 57
+CRITICAL:BALL WALL insvestigation is 15:57
+INFO:horizontal prediction called
+INFO:Returning 58
+CRITICAL:BALL WALL insvestigation is 15:58
+INFO:vertical prediction called
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 14:58
+CRITICAL:Vertical row of ball is 14
+INFO:horizontal prediction called
+INFO:Returning 59
+CRITICAL:BALL WALL insvestigation is 14:59
+INFO:horizontal prediction called
+INFO:Returning 60
+CRITICAL:BALL WALL insvestigation is 14:60
+INFO:horizontal prediction called
+INFO:Returning 61
+CRITICAL:BALL WALL insvestigation is 14:61
+INFO:horizontal prediction called
+INFO:Returning 62
+CRITICAL:BALL WALL insvestigation is 14:62
+INFO:horizontal prediction called
+INFO:Returning 63
+CRITICAL:BALL WALL insvestigation is 14:63
+INFO:horizontal prediction called
+INFO:Returning 64
+CRITICAL:BALL WALL insvestigation is 14:64
+INFO:vertical prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 13:64
+CRITICAL:Vertical row of ball is 13
+INFO:horizontal prediction called
+INFO:Returning 65
+CRITICAL:BALL WALL insvestigation is 13:65
+INFO:horizontal prediction called
+INFO:Returning 66
+CRITICAL:BALL WALL insvestigation is 13:66
+INFO:horizontal prediction called
+INFO:Returning 67
+CRITICAL:BALL WALL insvestigation is 13:67
+INFO:horizontal prediction called
+INFO:Returning 68
+CRITICAL:BALL WALL insvestigation is 13:68
+INFO:horizontal prediction called
+INFO:Returning 66
+CRITICAL:BALL WALL insvestigation is 13:66
+INFO:vertical prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 12:66
+CRITICAL:Vertical row of ball is 12
+INFO:horizontal prediction called
+INFO:Returning 65
+CRITICAL:BALL WALL insvestigation is 12:65
+INFO:horizontal prediction called
+INFO:Returning 64
+CRITICAL:BALL WALL insvestigation is 12:64
+INFO:horizontal prediction called
+INFO:Returning 63
+CRITICAL:BALL WALL insvestigation is 12:63
+INFO:horizontal prediction called
+INFO:Returning 62
+CRITICAL:BALL WALL insvestigation is 12:62
+INFO:horizontal prediction called
+INFO:Returning 61
+CRITICAL:BALL WALL insvestigation is 12:61
+INFO:vertical prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 11:61
+CRITICAL:Vertical row of ball is 11
+INFO:horizontal prediction called
+INFO:Returning 60
+CRITICAL:BALL WALL insvestigation is 11:60
+INFO:horizontal prediction called
+INFO:Returning 59
+CRITICAL:BALL WALL insvestigation is 11:59
+INFO:horizontal prediction called
+INFO:Returning 58
+CRITICAL:BALL WALL insvestigation is 11:58
+INFO:horizontal prediction called
+INFO:Returning 57
+CRITICAL:BALL WALL insvestigation is 11:57
+INFO:horizontal prediction called
+INFO:Returning 56
+CRITICAL:BALL WALL insvestigation is 11:56
+INFO:vertical prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 10:56
+CRITICAL:Vertical row of ball is 10
+INFO:horizontal prediction called
+INFO:Returning 55
+CRITICAL:BALL WALL insvestigation is 10:55
+INFO:horizontal prediction called
+INFO:Returning 54
+CRITICAL:BALL WALL insvestigation is 10:54
+INFO:horizontal prediction called
+INFO:Returning 53
+CRITICAL:BALL WALL insvestigation is 10:53
+INFO:horizontal prediction called
+INFO:Returning 52
+CRITICAL:BALL WALL insvestigation is 10:52
+INFO:horizontal prediction called
+INFO:Returning 51
+CRITICAL:BALL WALL insvestigation is 10:51
+INFO:vertical prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 9:51
+CRITICAL:Vertical row of ball is 9
+INFO:horizontal prediction called
+INFO:Returning 50
+CRITICAL:BALL WALL insvestigation is 9:50
+INFO:horizontal prediction called
+INFO:Returning 49
+CRITICAL:BALL WALL insvestigation is 9:49
+INFO:horizontal prediction called
+INFO:Returning 48
+CRITICAL:BALL WALL insvestigation is 9:48
+INFO:horizontal prediction called
+INFO:Returning 47
+CRITICAL:BALL WALL insvestigation is 9:47
+INFO:horizontal prediction called
+INFO:Returning 46
+CRITICAL:BALL WALL insvestigation is 9:46
+INFO:vertical prediction called
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 8:46
+CRITICAL:Vertical row of ball is 8
+INFO:horizontal prediction called
+INFO:Returning 45
+CRITICAL:BALL WALL insvestigation is 8:45
+INFO:horizontal prediction called
+INFO:Returning 44
+CRITICAL:BALL WALL insvestigation is 8:44
+INFO:horizontal prediction called
+INFO:Returning 43
+CRITICAL:BALL WALL insvestigation is 8:43
+INFO:horizontal prediction called
+INFO:Returning 42
+CRITICAL:BALL WALL insvestigation is 8:42
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 21
+INFO:Curr right x is 31
+INFO:horizontal prediction called
+INFO:Returning 41
+CRITICAL:BALL WALL insvestigation is 8:41
+INFO:vertical prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 7:41
+CRITICAL:Vertical row of ball is 7
+INFO:horizontal prediction called
+INFO:Returning 40
+CRITICAL:BALL WALL insvestigation is 7:40
+INFO:horizontal prediction called
+INFO:Returning 39
+CRITICAL:BALL WALL insvestigation is 7:39
+INFO:horizontal prediction called
+INFO:Returning 38
+CRITICAL:BALL WALL insvestigation is 7:38
+INFO:horizontal prediction called
+INFO:Returning 37
+CRITICAL:BALL WALL insvestigation is 7:37
+INFO:horizontal prediction called
+INFO:Returning 36
+CRITICAL:BALL WALL insvestigation is 7:36
+INFO:vertical prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 6:36
+CRITICAL:Vertical row of ball is 6
+INFO:horizontal prediction called
+INFO:Returning 35
+CRITICAL:BALL WALL insvestigation is 6:35
+INFO:horizontal prediction called
+INFO:Returning 34
+CRITICAL:BALL WALL insvestigation is 6:34
+INFO:horizontal prediction called
+INFO:Returning 33
+CRITICAL:BALL WALL insvestigation is 6:33
+INFO:horizontal prediction called
+INFO:Returning 32
+CRITICAL:BALL WALL insvestigation is 6:32
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 17
+INFO:Curr right x is 27
+INFO:horizontal prediction called
+INFO:Returning 31
+CRITICAL:BALL WALL insvestigation is 6:31
+INFO:vertical prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 5:31
+CRITICAL:Vertical row of ball is 5
+INFO:horizontal prediction called
+INFO:Returning 30
+CRITICAL:BALL WALL insvestigation is 5:30
+INFO:horizontal prediction called
+INFO:Returning 29
+CRITICAL:BALL WALL insvestigation is 5:29
+INFO:horizontal prediction called
+INFO:Returning 28
+CRITICAL:BALL WALL insvestigation is 5:28
+INFO:horizontal prediction called
+INFO:Returning 27
+CRITICAL:BALL WALL insvestigation is 5:27
+INFO:horizontal prediction called
+INFO:Returning 26
+CRITICAL:BALL WALL insvestigation is 5:26
+INFO:vertical prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 4:26
+CRITICAL:Vertical row of ball is 4
+INFO:horizontal prediction called
+INFO:Returning 25
+CRITICAL:BALL WALL insvestigation is 4:25
+INFO:horizontal prediction called
+INFO:Returning 24
+CRITICAL:BALL WALL insvestigation is 4:24
+INFO:horizontal prediction called
+INFO:Returning 23
+CRITICAL:BALL WALL insvestigation is 4:23
+INFO:horizontal prediction called
+INFO:Returning 22
+CRITICAL:BALL WALL insvestigation is 4:22
 INFO:
 [PRESSED a]
 
 INFO:Curr left x is 13
 INFO:Curr right x is 23
+INFO:horizontal prediction called
+INFO:Returning 21
+CRITICAL:BALL WALL insvestigation is 4:21
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 3:21
+CRITICAL:Vertical row of ball is 3
+INFO:horizontal prediction called
+INFO:Returning 20
+CRITICAL:BALL WALL insvestigation is 3:20
+INFO:horizontal prediction called
+INFO:Returning 19
+CRITICAL:BALL WALL insvestigation is 3:19
+INFO:horizontal prediction called
+INFO:Returning 18
+CRITICAL:BALL WALL insvestigation is 3:18
+INFO:horizontal prediction called
+INFO:Returning 17
+CRITICAL:BALL WALL insvestigation is 3:17
 INFO:
 [PRESSED a]
 
 INFO:Curr left x is 9
 INFO:Curr right x is 19
+INFO:horizontal prediction called
+INFO:Returning 16
+CRITICAL:BALL WALL insvestigation is 3:16
+INFO:vertical prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 2:16
+CRITICAL:Vertical row of ball is 2
+INFO:horizontal prediction called
+INFO:Returning 15
+CRITICAL:BALL WALL insvestigation is 2:15
+INFO:horizontal prediction called
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 2:14
+INFO:horizontal prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 2:13
+INFO:horizontal prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 2:12
+INFO:horizontal prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 2:11
 INFO:vertical prediction called
 INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 1:11
+CRITICAL:Vertical row of ball is 1
+INFO:horizontal prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 1:10
+INFO:horizontal prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 1:9
+INFO:horizontal prediction called
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 1:8
+INFO:horizontal prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 1:7
 INFO:
 [PRESSED a]
 
 INFO:Curr left x is 5
 INFO:Curr right x is 15
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 1
-INFO:Curr right x is 11
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is -3
-INFO:Curr right x is 7
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is -4
-INFO:Curr right x is 6
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is -4
-INFO:Curr right x is 6
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is -4
-INFO:Curr right x is 6
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:
-[PRESSED s]
-
-INFO:vertical prediction called
-INFO:Returning 2
-CRITICAL:BALL WALL insvestigation is 2:5
-CRITICAL:Vertical row of ball is 2
-INFO:vertical prediction called
-INFO:Returning 3
-CRITICAL:BALL WALL insvestigation is 3:5
-CRITICAL:Vertical row of ball is 3
-INFO:vertical prediction called
-INFO:Returning 4
-CRITICAL:BALL WALL insvestigation is 4:5
-CRITICAL:Vertical row of ball is 4
-INFO:vertical prediction called
-INFO:Returning 5
-CRITICAL:BALL WALL insvestigation is 5:5
-CRITICAL:Vertical row of ball is 5
-INFO:vertical prediction called
-INFO:Returning 6
-CRITICAL:BALL WALL insvestigation is 6:5
-CRITICAL:Vertical row of ball is 6
-INFO:vertical prediction called
-INFO:Returning 7
-CRITICAL:BALL WALL insvestigation is 7:5
-CRITICAL:Vertical row of ball is 7
-INFO:vertical prediction called
-INFO:Returning 8
-CRITICAL:BALL WALL insvestigation is 8:5
-CRITICAL:Vertical row of ball is 8
-INFO:vertical prediction called
-INFO:Returning 9
-CRITICAL:BALL WALL insvestigation is 9:5
-CRITICAL:Vertical row of ball is 9
-INFO:
-[PRESSED s]
-
-INFO:vertical prediction called
-INFO:Returning 10
-CRITICAL:BALL WALL insvestigation is 10:5
-CRITICAL:Vertical row of ball is 10
-INFO:vertical prediction called
-INFO:Returning 11
-CRITICAL:BALL WALL insvestigation is 11:5
-CRITICAL:Vertical row of ball is 11
-INFO:vertical prediction called
-INFO:Returning 12
-CRITICAL:BALL WALL insvestigation is 12:5
-CRITICAL:Vertical row of ball is 12
-INFO:vertical prediction called
-INFO:Returning 13
-CRITICAL:BALL WALL insvestigation is 13:5
-CRITICAL:Vertical row of ball is 13
-INFO:vertical prediction called
-INFO:Returning 14
-CRITICAL:BALL WALL insvestigation is 14:5
-CRITICAL:Vertical row of ball is 14
-INFO:vertical prediction called
-INFO:Returning 15
-CRITICAL:BALL WALL insvestigation is 15:5
-CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 5, 'seq_id': 1, 'sum_id': -14, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
-INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 5, 'seq_id': 1, 'sum_id': -14, '_isVisible': True, 'score_bounty': 2, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
-DEBUG:Vertical Collision with BRICK
-CRITICAL:Vertical velocity FLIPPED
-INFO:vertical prediction called
-INFO:Returning 13
-CRITICAL:BALL WALL insvestigation is 13:5
-CRITICAL:Vertical row of ball is 13
-INFO:vertical prediction called
-INFO:Returning 12
-CRITICAL:BALL WALL insvestigation is 12:5
-CRITICAL:Vertical row of ball is 12
-INFO:vertical prediction called
-INFO:Returning 11
-CRITICAL:BALL WALL insvestigation is 11:5
-CRITICAL:Vertical row of ball is 11
-INFO:vertical prediction called
-INFO:Returning 10
-CRITICAL:BALL WALL insvestigation is 10:5
-CRITICAL:Vertical row of ball is 10
-INFO:
-[PRESSED s]
-
-INFO:vertical prediction called
-INFO:Returning 9
-CRITICAL:BALL WALL insvestigation is 9:5
-CRITICAL:Vertical row of ball is 9
-INFO:vertical prediction called
-INFO:Returning 8
-CRITICAL:BALL WALL insvestigation is 8:5
-CRITICAL:Vertical row of ball is 8
-INFO:vertical prediction called
-INFO:Returning 7
-CRITICAL:BALL WALL insvestigation is 7:5
-CRITICAL:Vertical row of ball is 7
-INFO:vertical prediction called
-INFO:Returning 6
-CRITICAL:BALL WALL insvestigation is 6:5
-CRITICAL:Vertical row of ball is 6
-INFO:vertical prediction called
-INFO:Returning 5
-CRITICAL:BALL WALL insvestigation is 5:5
-CRITICAL:Vertical row of ball is 5
-INFO:vertical prediction called
-INFO:Returning 4
-CRITICAL:BALL WALL insvestigation is 4:5
-CRITICAL:Vertical row of ball is 4
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 4
-INFO:Curr right x is 14
-INFO:vertical prediction called
-INFO:Returning 3
-CRITICAL:BALL WALL insvestigation is 3:5
-CRITICAL:Vertical row of ball is 3
-INFO:vertical prediction called
-INFO:Returning 2
-CRITICAL:BALL WALL insvestigation is 2:5
-CRITICAL:Vertical row of ball is 2
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 0
-INFO:Curr right x is 10
-INFO:vertical prediction called
-INFO:Returning 1
-CRITICAL:BALL WALL insvestigation is 1:5
-CRITICAL:Vertical row of ball is 1
-INFO:vertical prediction called
-INFO:Returning 0
-CRITICAL:BALL WALL insvestigation is 0:5
-DEBUG:speed inc is 0
-DEBUG:Vertical Collision with PADDLE
-CRITICAL:Vertical velocity FLIPPED
-INFO:vertical prediction called
-INFO:Returning 2
-CRITICAL:BALL WALL insvestigation is 2:5
-CRITICAL:Vertical row of ball is 2
-INFO:vertical prediction called
-INFO:Returning 3
-CRITICAL:BALL WALL insvestigation is 3:5
-CRITICAL:Vertical row of ball is 3
-INFO:vertical prediction called
-INFO:Returning 4
-CRITICAL:BALL WALL insvestigation is 4:5
-CRITICAL:Vertical row of ball is 4
-INFO:vertical prediction called
-INFO:Returning 5
-CRITICAL:BALL WALL insvestigation is 5:5
-CRITICAL:Vertical row of ball is 5
-INFO:vertical prediction called
-INFO:Returning 6
-CRITICAL:BALL WALL insvestigation is 6:5
-CRITICAL:Vertical row of ball is 6
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is -4
-INFO:Curr right x is 6
-INFO:vertical prediction called
-INFO:Returning 7
-CRITICAL:BALL WALL insvestigation is 7:5
-CRITICAL:Vertical row of ball is 7
-INFO:vertical prediction called
-INFO:Returning 8
-CRITICAL:BALL WALL insvestigation is 8:5
-CRITICAL:Vertical row of ball is 8
-INFO:
-[PRESSED s]
-
-INFO:vertical prediction called
-INFO:Returning 9
-CRITICAL:BALL WALL insvestigation is 9:5
-CRITICAL:Vertical row of ball is 9
-INFO:vertical prediction called
-INFO:Returning 10
-CRITICAL:BALL WALL insvestigation is 10:5
-CRITICAL:Vertical row of ball is 10
-INFO:vertical prediction called
-INFO:Returning 11
-CRITICAL:BALL WALL insvestigation is 11:5
-CRITICAL:Vertical row of ball is 11
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 4
-INFO:Curr right x is 14
-INFO:vertical prediction called
-INFO:Returning 12
-CRITICAL:BALL WALL insvestigation is 12:5
-CRITICAL:Vertical row of ball is 12
-INFO:vertical prediction called
-INFO:Returning 13
-CRITICAL:BALL WALL insvestigation is 13:5
-CRITICAL:Vertical row of ball is 13
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 0
-INFO:Curr right x is 10
-INFO:vertical prediction called
-INFO:Returning 14
-CRITICAL:BALL WALL insvestigation is 14:5
-CRITICAL:Vertical row of ball is 14
-INFO:vertical prediction called
-INFO:Returning 15
-CRITICAL:BALL WALL insvestigation is 15:5
-CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 5, 'seq_id': 1, 'sum_id': -14, '_isVisible': True, 'score_bounty': 2, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
-INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 5, 'seq_id': 1, 'sum_id': -14, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 5, 'seq_id': 1, 'sum_id': -14, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:Inside init() of POWERUPS class with attributes
-{'len_c': 1, 'len_r': 1, 'left_r': 15, 'left_c': 5, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['?']], dtype='<U1')}
-
-INFO:Inside init() of POWERUPS class with attributes
-{'len_c': 1, 'len_r': 1, 'left_r': 15, 'left_c': 5, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['?']], dtype='<U1')}
-
-INFO:Powerup appended
-DEBUG:Vertical Collision with BRICK
-CRITICAL:Vertical velocity FLIPPED
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is -4
-INFO:Curr right x is 6
-INFO:vertical prediction called
-INFO:Returning 13
-CRITICAL:BALL WALL insvestigation is 13:5
-CRITICAL:Vertical row of ball is 13
-INFO:vertical prediction called
-INFO:Returning 12
-CRITICAL:BALL WALL insvestigation is 12:5
-CRITICAL:Vertical row of ball is 12
-INFO:vertical prediction called
-INFO:Returning 11
-CRITICAL:BALL WALL insvestigation is 11:5
-CRITICAL:Vertical row of ball is 11
-INFO:vertical prediction called
-INFO:Returning 10
-CRITICAL:BALL WALL insvestigation is 10:5
-CRITICAL:Vertical row of ball is 10
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is -4
-INFO:Curr right x is 6
-INFO:vertical prediction called
-INFO:Returning 9
-CRITICAL:BALL WALL insvestigation is 9:5
-CRITICAL:Vertical row of ball is 9
-INFO:vertical prediction called
-INFO:Returning 8
-CRITICAL:BALL WALL insvestigation is 8:5
-CRITICAL:Vertical row of ball is 8
-INFO:vertical prediction called
-INFO:Returning 7
-CRITICAL:BALL WALL insvestigation is 7:5
-CRITICAL:Vertical row of ball is 7
-INFO:vertical prediction called
-INFO:Returning 6
-CRITICAL:BALL WALL insvestigation is 6:5
-CRITICAL:Vertical row of ball is 6
-INFO:vertical prediction called
-INFO:Returning 5
-CRITICAL:BALL WALL insvestigation is 5:5
-CRITICAL:Vertical row of ball is 5
-INFO:vertical prediction called
-INFO:Returning 4
-CRITICAL:BALL WALL insvestigation is 4:5
-CRITICAL:Vertical row of ball is 4
-INFO:vertical prediction called
-INFO:Returning 3
-CRITICAL:BALL WALL insvestigation is 3:5
-CRITICAL:Vertical row of ball is 3
-INFO:vertical prediction called
-INFO:Returning 2
-CRITICAL:BALL WALL insvestigation is 2:5
-CRITICAL:Vertical row of ball is 2
-INFO:vertical prediction called
-INFO:Returning 1
-CRITICAL:BALL WALL insvestigation is 1:5
-CRITICAL:Vertical row of ball is 1
-INFO:vertical prediction called
-INFO:Returning 0
-CRITICAL:BALL WALL insvestigation is 0:5
-DEBUG:speed inc is 0
-DEBUG:Vertical Collision with PADDLE
-CRITICAL:Vertical velocity FLIPPED
-DEBUG:Inside DECREASE paddle size
-INFO:Length set is 7, length actual is (1, 7)
-INFO:vertical prediction called
-INFO:Returning 2
-CRITICAL:BALL WALL insvestigation is 2:5
-CRITICAL:Vertical row of ball is 2
-INFO:vertical prediction called
-INFO:Returning 3
-CRITICAL:BALL WALL insvestigation is 3:5
-CRITICAL:Vertical row of ball is 3
-INFO:vertical prediction called
-INFO:Returning 4
-CRITICAL:BALL WALL insvestigation is 4:5
-CRITICAL:Vertical row of ball is 4
-INFO:vertical prediction called
-INFO:Returning 5
-CRITICAL:BALL WALL insvestigation is 5:5
-CRITICAL:Vertical row of ball is 5
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 6
-INFO:Curr right x is 12
-INFO:vertical prediction called
-INFO:Returning 6
-CRITICAL:BALL WALL insvestigation is 6:5
-CRITICAL:Vertical row of ball is 6
-INFO:vertical prediction called
-INFO:Returning 7
-CRITICAL:BALL WALL insvestigation is 7:5
-CRITICAL:Vertical row of ball is 7
-INFO:vertical prediction called
-INFO:Returning 8
-CRITICAL:BALL WALL insvestigation is 8:5
-CRITICAL:Vertical row of ball is 8
-INFO:vertical prediction called
-INFO:Returning 9
-CRITICAL:BALL WALL insvestigation is 9:5
-CRITICAL:Vertical row of ball is 9
-INFO:vertical prediction called
-INFO:Returning 10
-CRITICAL:BALL WALL insvestigation is 10:5
-CRITICAL:Vertical row of ball is 10
-INFO:vertical prediction called
-INFO:Returning 11
-CRITICAL:BALL WALL insvestigation is 11:5
-CRITICAL:Vertical row of ball is 11
-INFO:vertical prediction called
-INFO:Returning 12
-CRITICAL:BALL WALL insvestigation is 12:5
-CRITICAL:Vertical row of ball is 12
-INFO:vertical prediction called
-INFO:Returning 13
-CRITICAL:BALL WALL insvestigation is 13:5
-CRITICAL:Vertical row of ball is 13
-INFO:vertical prediction called
-INFO:Returning 14
-CRITICAL:BALL WALL insvestigation is 14:5
-CRITICAL:Vertical row of ball is 14
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 2
-INFO:Curr right x is 8
-INFO:vertical prediction called
-INFO:Returning 15
-CRITICAL:BALL WALL insvestigation is 15:5
-CRITICAL:Vertical row of ball is 15
-INFO:vertical prediction called
-INFO:Returning 16
-CRITICAL:BALL WALL insvestigation is 16:5
-CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 5, 'seq_id': 1, 'sum_id': -15, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
-INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 5, 'seq_id': 1, 'sum_id': -15, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 5, 'seq_id': 1, 'sum_id': -15, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:Inside init() of POWERUPS class with attributes
-{'len_c': 1, 'len_r': 1, 'left_r': 16, 'left_c': 5, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['?']], dtype='<U1')}
-
-INFO:Inside init() of POWERUPS class with attributes
-{'len_c': 1, 'len_r': 1, 'left_r': 16, 'left_c': 5, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['?']], dtype='<U1')}
-
-INFO:Powerup appended
-DEBUG:Vertical Collision with BRICK
-CRITICAL:Vertical velocity FLIPPED
-INFO:vertical prediction called
-INFO:Returning 14
-CRITICAL:BALL WALL insvestigation is 14:5
-CRITICAL:Vertical row of ball is 14
-INFO:vertical prediction called
-INFO:Returning 13
-CRITICAL:BALL WALL insvestigation is 13:5
-CRITICAL:Vertical row of ball is 13
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is -2
-INFO:Curr right x is 4
-INFO:vertical prediction called
-INFO:Returning 12
-CRITICAL:BALL WALL insvestigation is 12:5
-CRITICAL:Vertical row of ball is 12
-INFO:vertical prediction called
-INFO:Returning 11
-CRITICAL:BALL WALL insvestigation is 11:5
-CRITICAL:Vertical row of ball is 11
-INFO:vertical prediction called
-INFO:Returning 10
-CRITICAL:BALL WALL insvestigation is 10:5
-CRITICAL:Vertical row of ball is 10
-INFO:vertical prediction called
-INFO:Returning 9
-CRITICAL:BALL WALL insvestigation is 9:5
-CRITICAL:Vertical row of ball is 9
-INFO:vertical prediction called
-INFO:Returning 8
-CRITICAL:BALL WALL insvestigation is 8:5
-CRITICAL:Vertical row of ball is 8
-INFO:vertical prediction called
-INFO:Returning 7
-CRITICAL:BALL WALL insvestigation is 7:5
-CRITICAL:Vertical row of ball is 7
-INFO:vertical prediction called
-INFO:Returning 6
-CRITICAL:BALL WALL insvestigation is 6:5
-CRITICAL:Vertical row of ball is 6
-INFO:vertical prediction called
-INFO:Returning 5
-CRITICAL:BALL WALL insvestigation is 5:5
-CRITICAL:Vertical row of ball is 5
-INFO:vertical prediction called
-INFO:Returning 4
-CRITICAL:BALL WALL insvestigation is 4:5
-CRITICAL:Vertical row of ball is 4
-INFO:vertical prediction called
-INFO:Returning 3
-CRITICAL:BALL WALL insvestigation is 3:5
-CRITICAL:Vertical row of ball is 3
-INFO:vertical prediction called
-INFO:Returning 2
-CRITICAL:BALL WALL insvestigation is 2:5
-CRITICAL:Vertical row of ball is 2
-INFO:vertical prediction called
-INFO:Returning 1
-CRITICAL:BALL WALL insvestigation is 1:5
-CRITICAL:Vertical row of ball is 1
-INFO:vertical prediction called
-INFO:Returning 0
-CRITICAL:BALL WALL insvestigation is 0:5
-DEBUG:speed inc is 2
-DEBUG:Vertical Collision with PADDLE
-CRITICAL:Vertical velocity FLIPPED
 INFO:horizontal prediction called
 INFO:Returning 6
 CRITICAL:BALL WALL insvestigation is 1:6
-DEBUG:Inside DECREASE paddle size
-INFO:Length set is 3, length actual is (1, 3)
+INFO:vertical prediction called
+INFO:Returning 0
+CRITICAL:BALL WALL insvestigation is 0:6
+DEBUG:speed inc is -4
+DEBUG:Vertical Collision with PADDLE
+CRITICAL:Vertical velocity FLIPPED
 INFO:horizontal prediction called
-INFO:Returning 7
-CRITICAL:BALL WALL insvestigation is 1:7
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 1:5
+INFO:horizontal prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 1:4
+INFO:horizontal prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 1:3
+INFO:horizontal prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 1:2
+INFO:horizontal prediction called
+INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 1:1
+INFO:horizontal prediction called
+INFO:Returning 0
+CRITICAL:BALL WALL insvestigation is 1:0
+INFO:horizontal prediction called
+INFO:Returning -1
+CRITICAL:BALL WALL insvestigation is 1:-1
 INFO:vertical prediction called
 INFO:Returning 2
-CRITICAL:BALL WALL insvestigation is 2:7
+CRITICAL:BALL WALL insvestigation is 2:0
 CRITICAL:Vertical row of ball is 2
 INFO:horizontal prediction called
-INFO:Returning 8
-CRITICAL:BALL WALL insvestigation is 2:8
+INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 2:1
+INFO:horizontal prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 2:2
+INFO:horizontal prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 2:3
+INFO:horizontal prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 2:4
+INFO:horizontal prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 2:5
+INFO:horizontal prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 2:6
+INFO:horizontal prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 2:7
 INFO:vertical prediction called
 INFO:Returning 3
-CRITICAL:BALL WALL insvestigation is 3:8
+CRITICAL:BALL WALL insvestigation is 3:7
 CRITICAL:Vertical row of ball is 3
+INFO:horizontal prediction called
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 3:8
 INFO:horizontal prediction called
 INFO:Returning 9
 CRITICAL:BALL WALL insvestigation is 3:9
+INFO:horizontal prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 3:10
+INFO:horizontal prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 3:11
+INFO:horizontal prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 3:12
+INFO:horizontal prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 3:13
+INFO:horizontal prediction called
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 3:14
 INFO:vertical prediction called
 INFO:Returning 4
-CRITICAL:BALL WALL insvestigation is 4:9
+CRITICAL:BALL WALL insvestigation is 4:14
 CRITICAL:Vertical row of ball is 4
 INFO:horizontal prediction called
-INFO:Returning 10
-CRITICAL:BALL WALL insvestigation is 4:10
-INFO:vertical prediction called
-INFO:Returning 5
-CRITICAL:BALL WALL insvestigation is 5:10
-CRITICAL:Vertical row of ball is 5
-INFO:horizontal prediction called
-INFO:Returning 11
-CRITICAL:BALL WALL insvestigation is 5:11
-INFO:vertical prediction called
-INFO:Returning 6
-CRITICAL:BALL WALL insvestigation is 6:11
-CRITICAL:Vertical row of ball is 6
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 6
-INFO:Curr right x is 8
-INFO:horizontal prediction called
-INFO:Returning 12
-CRITICAL:BALL WALL insvestigation is 6:12
-INFO:vertical prediction called
-INFO:Returning 7
-CRITICAL:BALL WALL insvestigation is 7:12
-CRITICAL:Vertical row of ball is 7
-INFO:horizontal prediction called
-INFO:Returning 13
-CRITICAL:BALL WALL insvestigation is 7:13
-INFO:vertical prediction called
-INFO:Returning 8
-CRITICAL:BALL WALL insvestigation is 8:13
-CRITICAL:Vertical row of ball is 8
-INFO:horizontal prediction called
-INFO:Returning 14
-CRITICAL:BALL WALL insvestigation is 8:14
-INFO:vertical prediction called
-INFO:Returning 9
-CRITICAL:BALL WALL insvestigation is 9:14
-CRITICAL:Vertical row of ball is 9
-INFO:horizontal prediction called
 INFO:Returning 15
-CRITICAL:BALL WALL insvestigation is 9:15
-INFO:vertical prediction called
-INFO:Returning 10
-CRITICAL:BALL WALL insvestigation is 10:15
-CRITICAL:Vertical row of ball is 10
+CRITICAL:BALL WALL insvestigation is 4:15
 INFO:horizontal prediction called
 INFO:Returning 16
-CRITICAL:BALL WALL insvestigation is 10:16
-INFO:vertical prediction called
-INFO:Returning 11
-CRITICAL:BALL WALL insvestigation is 11:16
-CRITICAL:Vertical row of ball is 11
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 10
-INFO:Curr right x is 12
+CRITICAL:BALL WALL insvestigation is 4:16
 INFO:horizontal prediction called
 INFO:Returning 17
-CRITICAL:BALL WALL insvestigation is 11:17
-INFO:vertical prediction called
-INFO:Returning 12
-CRITICAL:BALL WALL insvestigation is 12:17
-CRITICAL:Vertical row of ball is 12
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 14
-INFO:Curr right x is 16
+CRITICAL:BALL WALL insvestigation is 4:17
 INFO:horizontal prediction called
 INFO:Returning 18
-CRITICAL:BALL WALL insvestigation is 12:18
-INFO:vertical prediction called
-INFO:Returning 13
-CRITICAL:BALL WALL insvestigation is 13:18
-CRITICAL:Vertical row of ball is 13
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 18
-INFO:Curr right x is 20
+CRITICAL:BALL WALL insvestigation is 4:18
 INFO:horizontal prediction called
 INFO:Returning 19
-CRITICAL:BALL WALL insvestigation is 13:19
-INFO:vertical prediction called
-INFO:Returning 14
-CRITICAL:BALL WALL insvestigation is 14:19
-CRITICAL:Vertical row of ball is 14
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 22
-INFO:Curr right x is 24
+CRITICAL:BALL WALL insvestigation is 4:19
 INFO:horizontal prediction called
 INFO:Returning 20
-CRITICAL:BALL WALL insvestigation is 14:20
-INFO:vertical prediction called
-INFO:Returning 15
-CRITICAL:BALL WALL insvestigation is 15:20
-CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 20, 'seq_id': 6, 'sum_id': -9, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
-INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 20, 'seq_id': 6, 'sum_id': -9, '_isVisible': True, 'score_bounty': 2, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
-DEBUG:Vertical Collision with BRICK
-CRITICAL:Vertical velocity FLIPPED
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 26
-INFO:Curr right x is 28
+CRITICAL:BALL WALL insvestigation is 4:20
 INFO:horizontal prediction called
 INFO:Returning 21
-CRITICAL:BALL WALL insvestigation is 14:21
+CRITICAL:BALL WALL insvestigation is 4:21
 INFO:vertical prediction called
-INFO:Returning 13
-CRITICAL:BALL WALL insvestigation is 13:21
-CRITICAL:Vertical row of ball is 13
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 30
-INFO:Curr right x is 32
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 5:21
+CRITICAL:Vertical row of ball is 5
 INFO:horizontal prediction called
 INFO:Returning 22
-CRITICAL:BALL WALL insvestigation is 13:22
+CRITICAL:BALL WALL insvestigation is 5:22
+INFO:horizontal prediction called
+INFO:Returning 23
+CRITICAL:BALL WALL insvestigation is 5:23
+INFO:horizontal prediction called
+INFO:Returning 24
+CRITICAL:BALL WALL insvestigation is 5:24
+INFO:horizontal prediction called
+INFO:Returning 25
+CRITICAL:BALL WALL insvestigation is 5:25
+INFO:horizontal prediction called
+INFO:Returning 26
+CRITICAL:BALL WALL insvestigation is 5:26
+INFO:horizontal prediction called
+INFO:Returning 27
+CRITICAL:BALL WALL insvestigation is 5:27
+INFO:horizontal prediction called
+INFO:Returning 28
+CRITICAL:BALL WALL insvestigation is 5:28
+INFO:vertical prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 6:28
+CRITICAL:Vertical row of ball is 6
+INFO:horizontal prediction called
+INFO:Returning 29
+CRITICAL:BALL WALL insvestigation is 6:29
+INFO:horizontal prediction called
+INFO:Returning 30
+CRITICAL:BALL WALL insvestigation is 6:30
+INFO:horizontal prediction called
+INFO:Returning 31
+CRITICAL:BALL WALL insvestigation is 6:31
+INFO:horizontal prediction called
+INFO:Returning 32
+CRITICAL:BALL WALL insvestigation is 6:32
+INFO:horizontal prediction called
+INFO:Returning 33
+CRITICAL:BALL WALL insvestigation is 6:33
+INFO:horizontal prediction called
+INFO:Returning 34
+CRITICAL:BALL WALL insvestigation is 6:34
+INFO:horizontal prediction called
+INFO:Returning 35
+CRITICAL:BALL WALL insvestigation is 6:35
+INFO:vertical prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 7:35
+CRITICAL:Vertical row of ball is 7
+INFO:horizontal prediction called
+INFO:Returning 36
+CRITICAL:BALL WALL insvestigation is 7:36
+INFO:horizontal prediction called
+INFO:Returning 37
+CRITICAL:BALL WALL insvestigation is 7:37
+INFO:horizontal prediction called
+INFO:Returning 38
+CRITICAL:BALL WALL insvestigation is 7:38
+INFO:horizontal prediction called
+INFO:Returning 39
+CRITICAL:BALL WALL insvestigation is 7:39
+INFO:horizontal prediction called
+INFO:Returning 40
+CRITICAL:BALL WALL insvestigation is 7:40
+INFO:horizontal prediction called
+INFO:Returning 41
+CRITICAL:BALL WALL insvestigation is 7:41
+INFO:horizontal prediction called
+INFO:Returning 42
+CRITICAL:BALL WALL insvestigation is 7:42
+INFO:vertical prediction called
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 8:42
+CRITICAL:Vertical row of ball is 8
+INFO:horizontal prediction called
+INFO:Returning 43
+CRITICAL:BALL WALL insvestigation is 8:43
+INFO:horizontal prediction called
+INFO:Returning 44
+CRITICAL:BALL WALL insvestigation is 8:44
+INFO:horizontal prediction called
+INFO:Returning 45
+CRITICAL:BALL WALL insvestigation is 8:45
+INFO:horizontal prediction called
+INFO:Returning 46
+CRITICAL:BALL WALL insvestigation is 8:46
+INFO:horizontal prediction called
+INFO:Returning 47
+CRITICAL:BALL WALL insvestigation is 8:47
+INFO:horizontal prediction called
+INFO:Returning 48
+CRITICAL:BALL WALL insvestigation is 8:48
+INFO:horizontal prediction called
+INFO:Returning 49
+CRITICAL:BALL WALL insvestigation is 8:49
+INFO:vertical prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 9:49
+CRITICAL:Vertical row of ball is 9
+INFO:horizontal prediction called
+INFO:Returning 50
+CRITICAL:BALL WALL insvestigation is 9:50
+INFO:horizontal prediction called
+INFO:Returning 51
+CRITICAL:BALL WALL insvestigation is 9:51
+INFO:horizontal prediction called
+INFO:Returning 52
+CRITICAL:BALL WALL insvestigation is 9:52
+INFO:horizontal prediction called
+INFO:Returning 53
+CRITICAL:BALL WALL insvestigation is 9:53
+INFO:horizontal prediction called
+INFO:Returning 54
+CRITICAL:BALL WALL insvestigation is 9:54
+INFO:horizontal prediction called
+INFO:Returning 55
+CRITICAL:BALL WALL insvestigation is 9:55
+INFO:horizontal prediction called
+INFO:Returning 56
+CRITICAL:BALL WALL insvestigation is 9:56
+INFO:vertical prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 10:56
+CRITICAL:Vertical row of ball is 10
+INFO:horizontal prediction called
+INFO:Returning 57
+CRITICAL:BALL WALL insvestigation is 10:57
+INFO:horizontal prediction called
+INFO:Returning 58
+CRITICAL:BALL WALL insvestigation is 10:58
+INFO:horizontal prediction called
+INFO:Returning 59
+CRITICAL:BALL WALL insvestigation is 10:59
+INFO:horizontal prediction called
+INFO:Returning 60
+CRITICAL:BALL WALL insvestigation is 10:60
+INFO:horizontal prediction called
+INFO:Returning 61
+CRITICAL:BALL WALL insvestigation is 10:61
+INFO:horizontal prediction called
+INFO:Returning 62
+CRITICAL:BALL WALL insvestigation is 10:62
+INFO:horizontal prediction called
+INFO:Returning 63
+CRITICAL:BALL WALL insvestigation is 10:63
+INFO:vertical prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 11:63
+CRITICAL:Vertical row of ball is 11
+INFO:horizontal prediction called
+INFO:Returning 64
+CRITICAL:BALL WALL insvestigation is 11:64
+INFO:horizontal prediction called
+INFO:Returning 65
+CRITICAL:BALL WALL insvestigation is 11:65
+INFO:horizontal prediction called
+INFO:Returning 66
+CRITICAL:BALL WALL insvestigation is 11:66
+INFO:horizontal prediction called
+INFO:Returning 67
+CRITICAL:BALL WALL insvestigation is 11:67
+INFO:horizontal prediction called
+INFO:Returning 68
+CRITICAL:BALL WALL insvestigation is 11:68
+INFO:horizontal prediction called
+INFO:Returning 66
+CRITICAL:BALL WALL insvestigation is 11:66
+INFO:horizontal prediction called
+INFO:Returning 65
+CRITICAL:BALL WALL insvestigation is 11:65
 INFO:vertical prediction called
 INFO:Returning 12
-CRITICAL:BALL WALL insvestigation is 12:22
+CRITICAL:BALL WALL insvestigation is 12:65
 CRITICAL:Vertical row of ball is 12
-INFO:
-[PRESSED d]
+INFO:horizontal prediction called
+INFO:Returning 64
+CRITICAL:BALL WALL insvestigation is 12:64
+INFO:horizontal prediction called
+INFO:Returning 63
+CRITICAL:BALL WALL insvestigation is 12:63
+INFO:horizontal prediction called
+INFO:Returning 62
+CRITICAL:BALL WALL insvestigation is 12:62
+INFO:horizontal prediction called
+INFO:Returning 61
+CRITICAL:BALL WALL insvestigation is 12:61
+INFO:horizontal prediction called
+INFO:Returning 60
+CRITICAL:BALL WALL insvestigation is 12:60
+INFO:horizontal prediction called
+INFO:Returning 59
+CRITICAL:BALL WALL insvestigation is 12:59
+INFO:horizontal prediction called
+INFO:Returning 58
+CRITICAL:BALL WALL insvestigation is 12:58
+INFO:vertical prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 13:58
+CRITICAL:Vertical row of ball is 13
+INFO:horizontal prediction called
+INFO:Returning 57
+CRITICAL:BALL WALL insvestigation is 13:57
+INFO:horizontal prediction called
+INFO:Returning 56
+CRITICAL:BALL WALL insvestigation is 13:56
+INFO:horizontal prediction called
+INFO:Returning 55
+CRITICAL:BALL WALL insvestigation is 13:55
+INFO:horizontal prediction called
+INFO:Returning 54
+CRITICAL:BALL WALL insvestigation is 13:54
+INFO:horizontal prediction called
+INFO:Returning 53
+CRITICAL:BALL WALL insvestigation is 13:53
+INFO:horizontal prediction called
+INFO:Returning 52
+CRITICAL:BALL WALL insvestigation is 13:52
+INFO:horizontal prediction called
+INFO:Returning 51
+CRITICAL:BALL WALL insvestigation is 13:51
+INFO:vertical prediction called
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 14:51
+CRITICAL:Vertical row of ball is 14
+INFO:horizontal prediction called
+INFO:Returning 50
+CRITICAL:BALL WALL insvestigation is 14:50
+INFO:horizontal prediction called
+INFO:Returning 49
+CRITICAL:BALL WALL insvestigation is 14:49
+INFO:horizontal prediction called
+INFO:Returning 48
+CRITICAL:BALL WALL insvestigation is 14:48
+INFO:horizontal prediction called
+INFO:Returning 47
+CRITICAL:BALL WALL insvestigation is 14:47
+INFO:horizontal prediction called
+INFO:Returning 46
+CRITICAL:BALL WALL insvestigation is 14:46
+INFO:horizontal prediction called
+INFO:Returning 45
+CRITICAL:BALL WALL insvestigation is 14:45
+INFO:horizontal prediction called
+INFO:Returning 44
+CRITICAL:BALL WALL insvestigation is 14:44
+INFO:vertical prediction called
+INFO:Returning 15
+CRITICAL:BALL WALL insvestigation is 15:44
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 44, 'seq_id': 14, 'sum_id': -1, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 44, 'seq_id': 14, 'sum_id': -1, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 44, 'seq_id': 14, 'sum_id': -1, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Inside init() of POWERUPS class with attributes
+{'len_c': 1, 'len_r': 1, 'left_r': 15, 'left_c': 44, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['&']], dtype='<U1')}
 
-INFO:Curr left x is 34
-INFO:Curr right x is 36
+INFO:Inside init() of POWERUPS class with attributes
+{'len_c': 1, 'len_r': 1, 'left_r': 15, 'left_c': 44, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['&']], dtype='<U1')}
+
+INFO:Powerup appended
+CRITICAL:coordinates are [[14, 13], [14, 14], [14, 15], [15, 13], [15, 15], [16, 13], [16, 14], [16, 15]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 41, 'seq_id': 13, 'sum_id': -2, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 41, 'seq_id': 13, 'sum_id': -2, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 47, 'seq_id': 15, 'sum_id': 0, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 47, 'seq_id': 15, 'sum_id': 0, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 47, 'seq_id': 15, 'sum_id': 0, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 41, 'seq_id': 13, 'sum_id': -3, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 41, 'seq_id': 13, 'sum_id': -3, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 41, 'seq_id': 13, 'sum_id': -3, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 44, 'seq_id': 14, 'sum_id': -2, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 44, 'seq_id': 14, 'sum_id': -2, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 47, 'seq_id': 15, 'sum_id': -1, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 47, 'seq_id': 15, 'sum_id': -1, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 47, 'seq_id': 15, 'sum_id': -1, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[15, 14], [15, 15], [15, 16], [16, 14], [16, 16], [17, 14], [17, 15], [17, 16]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 50, 'seq_id': 16, 'sum_id': 1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 50, 'seq_id': 16, 'sum_id': 1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 50, 'seq_id': 16, 'sum_id': 1, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 50, 'seq_id': 16, 'sum_id': 0, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 50, 'seq_id': 16, 'sum_id': 0, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 50, 'seq_id': 16, 'sum_id': 0, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 44, 'seq_id': 14, 'sum_id': -3, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 44, 'seq_id': 14, 'sum_id': -3, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 44, 'seq_id': 14, 'sum_id': -3, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 47, 'seq_id': 15, 'sum_id': -2, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 47, 'seq_id': 15, 'sum_id': -2, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 50, 'seq_id': 16, 'sum_id': -1, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 50, 'seq_id': 16, 'sum_id': -1, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 50, 'seq_id': 16, 'sum_id': -1, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[16, 15], [16, 16], [16, 17], [17, 15], [17, 17], [18, 15], [18, 16], [18, 17]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 53, 'seq_id': 17, 'sum_id': 1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 53, 'seq_id': 17, 'sum_id': 1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 53, 'seq_id': 17, 'sum_id': 1, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 53, 'seq_id': 17, 'sum_id': 0, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 53, 'seq_id': 17, 'sum_id': 0, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 53, 'seq_id': 17, 'sum_id': 0, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 47, 'seq_id': 15, 'sum_id': -3, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 47, 'seq_id': 15, 'sum_id': -3, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 47, 'seq_id': 15, 'sum_id': -3, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 50, 'seq_id': 16, 'sum_id': -2, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 50, 'seq_id': 16, 'sum_id': -2, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 53, 'seq_id': 17, 'sum_id': -1, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 53, 'seq_id': 17, 'sum_id': -1, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 53, 'seq_id': 17, 'sum_id': -1, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[17, 16], [17, 17], [17, 18], [18, 16], [18, 18], [19, 16], [19, 17], [19, 18]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 56, 'seq_id': 18, 'sum_id': 1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 56, 'seq_id': 18, 'sum_id': 1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 56, 'seq_id': 18, 'sum_id': 1, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 56, 'seq_id': 18, 'sum_id': 0, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 56, 'seq_id': 18, 'sum_id': 0, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 56, 'seq_id': 18, 'sum_id': 0, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 50, 'seq_id': 16, 'sum_id': -3, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 50, 'seq_id': 16, 'sum_id': -3, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 50, 'seq_id': 16, 'sum_id': -3, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 53, 'seq_id': 17, 'sum_id': -2, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 53, 'seq_id': 17, 'sum_id': -2, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 56, 'seq_id': 18, 'sum_id': -1, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 56, 'seq_id': 18, 'sum_id': -1, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 56, 'seq_id': 18, 'sum_id': -1, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[18, 17], [18, 18], [18, 19], [19, 17], [19, 19], [20, 17], [20, 18], [20, 19]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 59, 'seq_id': 19, 'sum_id': 1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 59, 'seq_id': 19, 'sum_id': 1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 59, 'seq_id': 19, 'sum_id': 1, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 59, 'seq_id': 19, 'sum_id': 0, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 59, 'seq_id': 19, 'sum_id': 0, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 59, 'seq_id': 19, 'sum_id': 0, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 53, 'seq_id': 17, 'sum_id': -3, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 53, 'seq_id': 17, 'sum_id': -3, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 53, 'seq_id': 17, 'sum_id': -3, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 56, 'seq_id': 18, 'sum_id': -2, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 56, 'seq_id': 18, 'sum_id': -2, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 59, 'seq_id': 19, 'sum_id': -1, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 59, 'seq_id': 19, 'sum_id': -1, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 59, 'seq_id': 19, 'sum_id': -1, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[19, 18], [19, 19], [19, 20], [20, 18], [20, 20], [21, 18], [21, 19], [21, 20]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 62, 'seq_id': 20, 'sum_id': 1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 62, 'seq_id': 20, 'sum_id': 1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 62, 'seq_id': 20, 'sum_id': 1, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 62, 'seq_id': 20, 'sum_id': 0, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 62, 'seq_id': 20, 'sum_id': 0, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 62, 'seq_id': 20, 'sum_id': 0, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 56, 'seq_id': 18, 'sum_id': -3, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 56, 'seq_id': 18, 'sum_id': -3, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 56, 'seq_id': 18, 'sum_id': -3, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 59, 'seq_id': 19, 'sum_id': -2, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 59, 'seq_id': 19, 'sum_id': -2, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 62, 'seq_id': 20, 'sum_id': -1, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 62, 'seq_id': 20, 'sum_id': -1, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 62, 'seq_id': 20, 'sum_id': -1, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[20, 19], [20, 20], [20, 21], [21, 19], [21, 21], [22, 19], [22, 20], [22, 21]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 59, 'seq_id': 19, 'sum_id': -3, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 59, 'seq_id': 19, 'sum_id': -3, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 59, 'seq_id': 19, 'sum_id': -3, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 62, 'seq_id': 20, 'sum_id': -2, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 62, 'seq_id': 20, 'sum_id': -2, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+DEBUG:############################
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+INFO:horizontal prediction called
+INFO:Returning 43
+CRITICAL:BALL WALL insvestigation is 14:43
+INFO:horizontal prediction called
+INFO:Returning 42
+CRITICAL:BALL WALL insvestigation is 14:42
+INFO:horizontal prediction called
+INFO:Returning 41
+CRITICAL:BALL WALL insvestigation is 14:41
+INFO:horizontal prediction called
+INFO:Returning 40
+CRITICAL:BALL WALL insvestigation is 14:40
+INFO:horizontal prediction called
+INFO:Returning 39
+CRITICAL:BALL WALL insvestigation is 14:39
+INFO:horizontal prediction called
+INFO:Returning 38
+CRITICAL:BALL WALL insvestigation is 14:38
+INFO:horizontal prediction called
+INFO:Returning 37
+CRITICAL:BALL WALL insvestigation is 14:37
+INFO:vertical prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 13:37
+CRITICAL:Vertical row of ball is 13
+INFO:horizontal prediction called
+INFO:Returning 36
+CRITICAL:BALL WALL insvestigation is 13:36
+INFO:horizontal prediction called
+INFO:Returning 35
+CRITICAL:BALL WALL insvestigation is 13:35
+INFO:horizontal prediction called
+INFO:Returning 34
+CRITICAL:BALL WALL insvestigation is 13:34
+INFO:horizontal prediction called
+INFO:Returning 33
+CRITICAL:BALL WALL insvestigation is 13:33
+INFO:horizontal prediction called
+INFO:Returning 32
+CRITICAL:BALL WALL insvestigation is 13:32
+INFO:horizontal prediction called
+INFO:Returning 31
+CRITICAL:BALL WALL insvestigation is 13:31
+INFO:horizontal prediction called
+INFO:Returning 30
+CRITICAL:BALL WALL insvestigation is 13:30
+INFO:vertical prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 12:30
+CRITICAL:Vertical row of ball is 12
+INFO:horizontal prediction called
+INFO:Returning 29
+CRITICAL:BALL WALL insvestigation is 12:29
+INFO:horizontal prediction called
+INFO:Returning 28
+CRITICAL:BALL WALL insvestigation is 12:28
+INFO:horizontal prediction called
+INFO:Returning 27
+CRITICAL:BALL WALL insvestigation is 12:27
+INFO:horizontal prediction called
+INFO:Returning 26
+CRITICAL:BALL WALL insvestigation is 12:26
+INFO:horizontal prediction called
+INFO:Returning 25
+CRITICAL:BALL WALL insvestigation is 12:25
+INFO:horizontal prediction called
+INFO:Returning 24
+CRITICAL:BALL WALL insvestigation is 12:24
 INFO:horizontal prediction called
 INFO:Returning 23
 CRITICAL:BALL WALL insvestigation is 12:23
@@ -909,112 +2357,292 @@ INFO:vertical prediction called
 INFO:Returning 11
 CRITICAL:BALL WALL insvestigation is 11:23
 CRITICAL:Vertical row of ball is 11
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 38
-INFO:Curr right x is 40
 INFO:horizontal prediction called
-INFO:Returning 24
-CRITICAL:BALL WALL insvestigation is 11:24
+INFO:Returning 22
+CRITICAL:BALL WALL insvestigation is 11:22
+INFO:horizontal prediction called
+INFO:Returning 21
+CRITICAL:BALL WALL insvestigation is 11:21
+INFO:horizontal prediction called
+INFO:Returning 20
+CRITICAL:BALL WALL insvestigation is 11:20
+INFO:horizontal prediction called
+INFO:Returning 19
+CRITICAL:BALL WALL insvestigation is 11:19
+INFO:horizontal prediction called
+INFO:Returning 18
+CRITICAL:BALL WALL insvestigation is 11:18
+INFO:horizontal prediction called
+INFO:Returning 17
+CRITICAL:BALL WALL insvestigation is 11:17
+INFO:horizontal prediction called
+INFO:Returning 16
+CRITICAL:BALL WALL insvestigation is 11:16
 INFO:vertical prediction called
 INFO:Returning 10
-CRITICAL:BALL WALL insvestigation is 10:24
+CRITICAL:BALL WALL insvestigation is 10:16
 CRITICAL:Vertical row of ball is 10
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 42
-INFO:Curr right x is 44
-INFO:
-DEBUG:Inside increase paddle size
-INFO:Length set is 7, length actual is (1, 7)
 INFO:horizontal prediction called
-INFO:Returning 25
-CRITICAL:BALL WALL insvestigation is 10:25
+INFO:Returning 15
+CRITICAL:BALL WALL insvestigation is 10:15
+INFO:horizontal prediction called
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 10:14
+INFO:horizontal prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 10:13
+INFO:horizontal prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 10:12
+INFO:horizontal prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 10:11
+INFO:horizontal prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 10:10
+INFO:horizontal prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 10:9
 INFO:vertical prediction called
 INFO:Returning 9
-CRITICAL:BALL WALL insvestigation is 9:25
+CRITICAL:BALL WALL insvestigation is 9:9
 CRITICAL:Vertical row of ball is 9
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 44
-INFO:Curr right x is 50
 INFO:horizontal prediction called
-INFO:Returning 26
-CRITICAL:BALL WALL insvestigation is 9:26
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 9:8
+INFO:horizontal prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 9:7
+INFO:horizontal prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 9:6
+INFO:horizontal prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 9:5
+INFO:horizontal prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 9:4
+INFO:horizontal prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 9:3
+INFO:horizontal prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 9:2
 INFO:vertical prediction called
 INFO:Returning 8
-CRITICAL:BALL WALL insvestigation is 8:26
+CRITICAL:BALL WALL insvestigation is 8:2
 CRITICAL:Vertical row of ball is 8
+INFO:horizontal prediction called
+INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 8:1
+INFO:horizontal prediction called
+INFO:Returning 0
+CRITICAL:BALL WALL insvestigation is 8:0
+INFO:horizontal prediction called
+INFO:Returning -1
+CRITICAL:BALL WALL insvestigation is 8:-1
+INFO:horizontal prediction called
+INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 8:1
+INFO:horizontal prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 8:2
+INFO:horizontal prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 8:3
+INFO:horizontal prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 8:4
+INFO:vertical prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 7:4
+CRITICAL:Vertical row of ball is 7
+INFO:horizontal prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 7:5
+INFO:horizontal prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 7:6
+INFO:horizontal prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 7:7
+INFO:horizontal prediction called
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 7:8
+INFO:horizontal prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 7:9
+INFO:horizontal prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 7:10
 INFO:
 [PRESSED d]
 
-INFO:Curr left x is 48
-INFO:Curr right x is 54
+INFO:Curr left x is 9
+INFO:Curr right x is 19
 INFO:horizontal prediction called
-INFO:Returning 27
-CRITICAL:BALL WALL insvestigation is 8:27
-INFO:vertical prediction called
-INFO:Returning 7
-CRITICAL:BALL WALL insvestigation is 7:27
-CRITICAL:Vertical row of ball is 7
-INFO:horizontal prediction called
-INFO:Returning 28
-CRITICAL:BALL WALL insvestigation is 7:28
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 7:11
 INFO:vertical prediction called
 INFO:Returning 6
-CRITICAL:BALL WALL insvestigation is 6:28
+CRITICAL:BALL WALL insvestigation is 6:11
 CRITICAL:Vertical row of ball is 6
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 44
-INFO:Curr right x is 50
 INFO:horizontal prediction called
-INFO:Returning 29
-CRITICAL:BALL WALL insvestigation is 6:29
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 6:12
+INFO:horizontal prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 6:13
+INFO:horizontal prediction called
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 6:14
+INFO:horizontal prediction called
+INFO:Returning 15
+CRITICAL:BALL WALL insvestigation is 6:15
+INFO:horizontal prediction called
+INFO:Returning 16
+CRITICAL:BALL WALL insvestigation is 6:16
+INFO:horizontal prediction called
+INFO:Returning 17
+CRITICAL:BALL WALL insvestigation is 6:17
+INFO:horizontal prediction called
+INFO:Returning 18
+CRITICAL:BALL WALL insvestigation is 6:18
 INFO:vertical prediction called
 INFO:Returning 5
-CRITICAL:BALL WALL insvestigation is 5:29
+CRITICAL:BALL WALL insvestigation is 5:18
 CRITICAL:Vertical row of ball is 5
 INFO:horizontal prediction called
-INFO:Returning 30
-CRITICAL:BALL WALL insvestigation is 5:30
+INFO:Returning 19
+CRITICAL:BALL WALL insvestigation is 5:19
+INFO:horizontal prediction called
+INFO:Returning 20
+CRITICAL:BALL WALL insvestigation is 5:20
+INFO:horizontal prediction called
+INFO:Returning 21
+CRITICAL:BALL WALL insvestigation is 5:21
+INFO:horizontal prediction called
+INFO:Returning 22
+CRITICAL:BALL WALL insvestigation is 5:22
+INFO:horizontal prediction called
+INFO:Returning 23
+CRITICAL:BALL WALL insvestigation is 5:23
+INFO:horizontal prediction called
+INFO:Returning 24
+CRITICAL:BALL WALL insvestigation is 5:24
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 13
+INFO:Curr right x is 23
+INFO:horizontal prediction called
+INFO:Returning 25
+CRITICAL:BALL WALL insvestigation is 5:25
 INFO:vertical prediction called
 INFO:Returning 4
-CRITICAL:BALL WALL insvestigation is 4:30
+CRITICAL:BALL WALL insvestigation is 4:25
 CRITICAL:Vertical row of ball is 4
+INFO:horizontal prediction called
+INFO:Returning 26
+CRITICAL:BALL WALL insvestigation is 4:26
+INFO:horizontal prediction called
+INFO:Returning 27
+CRITICAL:BALL WALL insvestigation is 4:27
+INFO:horizontal prediction called
+INFO:Returning 28
+CRITICAL:BALL WALL insvestigation is 4:28
+INFO:horizontal prediction called
+INFO:Returning 29
+CRITICAL:BALL WALL insvestigation is 4:29
+INFO:horizontal prediction called
+INFO:Returning 30
+CRITICAL:BALL WALL insvestigation is 4:30
 INFO:horizontal prediction called
 INFO:Returning 31
 CRITICAL:BALL WALL insvestigation is 4:31
-INFO:vertical prediction called
-INFO:Returning 3
-CRITICAL:BALL WALL insvestigation is 3:31
-CRITICAL:Vertical row of ball is 3
 INFO:horizontal prediction called
 INFO:Returning 32
-CRITICAL:BALL WALL insvestigation is 3:32
+CRITICAL:BALL WALL insvestigation is 4:32
 INFO:vertical prediction called
-INFO:Returning 2
-CRITICAL:BALL WALL insvestigation is 2:32
-CRITICAL:Vertical row of ball is 2
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 3:32
+CRITICAL:Vertical row of ball is 3
 INFO:horizontal prediction called
 INFO:Returning 33
-CRITICAL:BALL WALL insvestigation is 2:33
-INFO:vertical prediction called
-INFO:Returning 1
-CRITICAL:BALL WALL insvestigation is 1:33
-CRITICAL:Vertical row of ball is 1
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 40
-INFO:Curr right x is 46
+CRITICAL:BALL WALL insvestigation is 3:33
 INFO:horizontal prediction called
 INFO:Returning 34
-CRITICAL:BALL WALL insvestigation is 1:34
+CRITICAL:BALL WALL insvestigation is 3:34
+INFO:horizontal prediction called
+INFO:Returning 35
+CRITICAL:BALL WALL insvestigation is 3:35
+INFO:horizontal prediction called
+INFO:Returning 36
+CRITICAL:BALL WALL insvestigation is 3:36
+INFO:horizontal prediction called
+INFO:Returning 37
+CRITICAL:BALL WALL insvestigation is 3:37
+INFO:horizontal prediction called
+INFO:Returning 38
+CRITICAL:BALL WALL insvestigation is 3:38
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 17
+INFO:Curr right x is 27
+INFO:horizontal prediction called
+INFO:Returning 39
+CRITICAL:BALL WALL insvestigation is 3:39
+INFO:vertical prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 2:39
+CRITICAL:Vertical row of ball is 2
+INFO:horizontal prediction called
+INFO:Returning 40
+CRITICAL:BALL WALL insvestigation is 2:40
+INFO:horizontal prediction called
+INFO:Returning 41
+CRITICAL:BALL WALL insvestigation is 2:41
+INFO:horizontal prediction called
+INFO:Returning 42
+CRITICAL:BALL WALL insvestigation is 2:42
+INFO:horizontal prediction called
+INFO:Returning 43
+CRITICAL:BALL WALL insvestigation is 2:43
+INFO:horizontal prediction called
+INFO:Returning 44
+CRITICAL:BALL WALL insvestigation is 2:44
+INFO:horizontal prediction called
+INFO:Returning 45
+CRITICAL:BALL WALL insvestigation is 2:45
+INFO:horizontal prediction called
+INFO:Returning 46
+CRITICAL:BALL WALL insvestigation is 2:46
+INFO:vertical prediction called
+INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 1:46
+CRITICAL:Vertical row of ball is 1
+INFO:horizontal prediction called
+INFO:Returning 47
+CRITICAL:BALL WALL insvestigation is 1:47
+INFO:horizontal prediction called
+INFO:Returning 48
+CRITICAL:BALL WALL insvestigation is 1:48
+INFO:horizontal prediction called
+INFO:Returning 49
+CRITICAL:BALL WALL insvestigation is 1:49
+INFO:horizontal prediction called
+INFO:Returning 50
+CRITICAL:BALL WALL insvestigation is 1:50
+INFO:horizontal prediction called
+INFO:Returning 51
+CRITICAL:BALL WALL insvestigation is 1:51
+INFO:horizontal prediction called
+INFO:Returning 52
+CRITICAL:BALL WALL insvestigation is 1:52
+INFO:horizontal prediction called
+INFO:Returning 53
+CRITICAL:BALL WALL insvestigation is 1:53
 INFO:vertical prediction called
 INFO:Returning 0
-CRITICAL:BALL WALL insvestigation is 0:34
+CRITICAL:BALL WALL insvestigation is 0:53

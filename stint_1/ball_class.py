@@ -124,17 +124,39 @@ class BallClass:
     def impact_velocity(self,dv):
         self._vel_c+=dv
     
-    def boost_velocity(self,dv):        
-        if self._vel_c>=0:
+    def boost_velocity(self,dv, influence_vertical=False):        
+        if self._vel_c>0:
             self._vel_c+=abs(dv)
-        else:
+        elif self._vel_c<0:
             self._vel_c-=abs(dv)
+        else:
+            # no change
+            return False
+
+        if influence_vertical==True:
+            if self._vel_r>=0:
+                self._vel_r+=abs(dv)
+            else:
+                self._vel_r-=abs(dv)
+
+        return True
         
-    def deboost_velocity(self,dv):        
-        if self._vel_c>=0:
+    def deboost_velocity(self,dv,influence_vertical=False):   
+        if self._vel_c>0:
             self._vel_c-=abs(dv)
-        else:
+        elif self._vel_c<0:
             self._vel_c+=abs(dv)
+        else:
+            # no change
+            pass
+
+        if influence_vertical==True:
+            if self._vel_r>=0:
+                self._vel_r-=abs(dv)
+            else:
+                self._vel_r+=abs(dv)
+
+        
 
     def get_ball_speed_magnitude(self):
         ans = math.sqrt(self._vel_r * self._vel_r + self._vel_c * self._vel_c)

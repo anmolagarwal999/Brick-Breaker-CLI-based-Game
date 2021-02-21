@@ -80,7 +80,7 @@ class Game:
 
         # self.available_powerups=[ExpandPaddle, ShrinkPaddle, FastBall, ThruBall,BallMultiplier,PaddleGrab]
         self.bricks_list = []
-        self.available_powerups = [ShrinkPaddle]
+        self.available_powerups = [FastBall]
         self.init_new_life()
 
         ######################################################################

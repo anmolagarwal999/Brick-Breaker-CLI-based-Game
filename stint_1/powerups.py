@@ -91,15 +91,13 @@ class FastBall(PowerupsClass):
         self.activate_time=clock()
         self.affected_balls=[]
         for ball_obj in game_obj.balls_list:
-            self.affected_balls.append(ball_obj)
-            # ball_obj.vel_r+=1 if ball_obj.vel_r>0 else -1
-            ball_obj.boost_velocity(1)
+            if ball_obj.boost_velocity(1):
+                self.affected_balls.append(ball_obj)
 
     def deactivate_powerup(self, game_obj):
         # TAKE CARE OF THIS, you might decrease speed of ball which was not even born when this powerup was activated
         
         for ball_obj in self.affected_balls:
-            # ball_obj.vel_r-=1 if ball_obj.vel_r>0 else -1
             ball_obj.deboost_velocity(1)
 
 
