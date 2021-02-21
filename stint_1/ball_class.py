@@ -33,7 +33,8 @@ class BallClass:
         self._vel_r = wanted_vel_r  # vertical vel is 1
         self._vel_c = wanted_vel_c  # horizontal vel is zero
         self.is_boss = False
-        self.ball_last_tended = clock()
+        self.ball_last_tended_h = clock()
+        self.ball_last_tended_v = clock()
         self.ascii_repr = np.array([['O']])
         logging.info(
             f"Inside init() of BALL class with attributes\n{self.__dict__}\n")
@@ -59,6 +60,9 @@ class BallClass:
         return self._is_stuck
 
     def release(self):
+        self._is_stuck=False
+        
+    def capture(self):
         self._is_stuck=False
     
     def follow_paddle(self, paddle_center):
@@ -111,12 +115,26 @@ class BallClass:
         if self._vel_r != 0:
             vel_sign = 1 if (self._vel_r > 0) else -1
         self._left_r += vel_sign
+        logging.critical(f"Vertical row of ball is {self._left_r}")
 
     def flip_vertical_velocity(self):
+        logging.critical("Vertical velocity FLIPPED")
         self._vel_r *= -1
 
     def impact_velocity(self,dv):
         self._vel_c+=dv
+    
+    def boost_velocity(self,dv):        
+        if self._vel_c>=0:
+            self._vel_c+=abs(dv)
+        else:
+            self._vel_c-=abs(dv)
+        
+    def deboost_velocity(self,dv):        
+        if self._vel_c>=0:
+            self._vel_c-=abs(dv)
+        else:
+            self._vel_c+=abs(dv)
 
     def get_ball_speed_magnitude(self):
         ans = math.sqrt(self._vel_r * self._vel_r + self._vel_c * self._vel_c)

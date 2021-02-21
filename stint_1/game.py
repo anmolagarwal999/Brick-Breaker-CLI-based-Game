@@ -145,7 +145,7 @@ class Game:
                     thru_ball_there = True
         speeds_list = []
         for i in self.balls_list:
-            speeds_list.append(i.vel_c)
+            speeds_list.append(f"{i.vel_r}:{i.vel_c}")
 
         print(f"Score now is {str(self._score).ljust(10)}", end='')
         print(f"Lives left  is {self._lives_left}")
@@ -258,7 +258,7 @@ class Game:
             ball_obj.impact_velocity(speed_inc_dist // 2)
 
             if self.game_paddle.is_magnet == True:
-                ball_obj.is_stuck = True
+                ball_obj.capture()
                 ball_obj.offset_from_center = prob_c - (
                     self.game_paddle.left_c + self.game_paddle.len_c // 2)
             return True
@@ -381,13 +381,13 @@ class Game:
 
         ########### Collision with wall ##########################
         if self.did_ball_collide_with_wall(prob_c, prob_r):
-            #logging.debug("Collision with wall")
+            logging.debug("Vertical Collision with wall")
             ball_obj.flip_vertical_velocity()
         elif (self.did_ball_collide_with_bricks(prob_c, prob_r, ball_obj)):
-            #logging.debug("Collision with BRICK")
+            logging.debug("Vertical Collision with BRICK")
             ball_obj.flip_vertical_velocity()
         elif (self.did_ball_collide_with_paddle(prob_c, prob_r, ball_obj)):
-            # change vertical woth velocity
+            logging.debug("Vertical Collision with PADDLE")
             ball_obj.flip_vertical_velocity()
         else:
             if prob_r == 0:
@@ -473,18 +473,23 @@ class Game:
                 #logging.info(f"Inside obstacle loop, dis is {clock() - paddle_last_tended}")
                 dup_list = self.balls_list.copy()
                 for this_ball in dup_list:
-                    if ((this_ball.get_ball_speed_magnitude())!=0) and \
-                        clock()-this_ball.ball_last_tended > time_unit_duration/(this_ball.get_ball_speed_magnitude()):
+                    if ((this_ball.vel_c)!=0) and \
+                        clock()-this_ball.ball_last_tended_h > time_unit_duration/abs(this_ball.vel_c):
                         '''update balls position horizontally (if unstuck only)'''
                         self.move_ball_horizontally(this_ball)
 
                         # self.paint_objs()
                         # self._screen.print_board()
                         # print screen
-                        this_ball.ball_last_tended = clock()
-                    else:
-                        #sys.exit()
-                        pass
+                        this_ball.ball_last_tended_h = clock()
+
+                    if ((this_ball.vel_r)!=0) and \
+                        clock()-this_ball.ball_last_tended_v > time_unit_duration/abs(this_ball.vel_r):
+                        '''update balls position vertically (if unstuck only)'''
+                        self.move_ball_vertically(this_ball)
+                        this_ball.ball_last_tended_v = clock()
+
+
             #sys.exit()
             #logging.info("Outside obstacle loop")
             if self.handle_input():  # found a keystroke
@@ -493,8 +498,8 @@ class Game:
             self.move_powerups()
 
             dup_list = self.balls_list.copy()
-            for this_ball in dup_list:
-                self.move_ball_vertically(this_ball)
+            # for this_ball in dup_list:
+            #     self.move_ball_vertically(this_ball)
 
             self.check_powerups_expiry()
             self.paint_objs()

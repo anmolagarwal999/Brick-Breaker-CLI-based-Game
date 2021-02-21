@@ -68,7 +68,7 @@ class Screen:
                 arr=[conf.BG_COLOR]*self._tot_screen_cols
             else:
                 arr=[conf.DETAILS_BG_COLOR]*self._tot_screen_cols
-            logging.info(f"\n\narr is {arr}\n\n")
+            #logging.info(f"\n\narr is {arr}\n\n")
             self._bg_layer.append(arr)
 
         # conversion to an array
@@ -117,7 +117,7 @@ class Screen:
                 arr=[conf.BG_COLOR]*self._tot_screen_cols
             else:
                 arr=[conf.DETAILS_BG_COLOR]*self._tot_screen_cols
-            logging.info(f"\n\narr is {arr}\n\n")
+            #logging.info(f"\n\narr is {arr}\n\n")
             self._bg_layer.append(arr)
 
         # conversion to an array
