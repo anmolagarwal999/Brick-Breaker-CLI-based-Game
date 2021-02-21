@@ -20,19 +20,17 @@ logging.basicConfig(filename='test.log',
 
 class BallClass:
     def __init__(self, wanted_left_c, wanted_left_r, wanted_is_stuck,
-                 wanted_vel_r, wanted_vel_c):
+                 wanted_vel_r, wanted_vel_c, offset_from_center_sent=0):
 
-        self.len_c = 1
-        self.len_r = 1
-        #self.left_c=self.center_c-self.len_c//2
-        self._left_c = wanted_left_c  # let's make this the center column of the paddle for now
-        self._left_r = wanted_left_r  # row number will be 1
+        self._len_c = 1
+        self._len_r = 1
+        self._left_c = wanted_left_c 
+        self._left_r = wanted_left_r  
         self._is_stuck = wanted_is_stuck
-        self.offset_from_center = 0
-        self.isVisible = True
-        self._vel_r = wanted_vel_r  # vertical vel is 1
-        self._vel_c = wanted_vel_c  # horizontal vel is zero
-        # self.is_boss = False
+        self.offset_from_center = offset_from_center_sent
+        self._isVisible = True
+        self._vel_r = wanted_vel_r  
+        self._vel_c = wanted_vel_c  
         self.is_boss_cnt =0
         self.ball_last_tended_h = clock()
         self.ball_last_tended_v = clock()
@@ -47,6 +45,14 @@ class BallClass:
     @property
     def left_r(self):
         return self._left_r
+
+    @property
+    def len_c(self):
+        return self._len_c
+
+    @property
+    def len_r(self):
+        return self._len_r
     
     @property
     def vel_c(self):
@@ -60,11 +66,15 @@ class BallClass:
     def is_stuck(self):
         return self._is_stuck
 
+    @property
+    def isVisible(self):
+        return self._isVisible
+
     def release(self):
         self._is_stuck=False
         
     def capture(self):
-        self._is_stuck=False
+        self._is_stuck=True
     
     def follow_paddle(self, paddle_center):
         self._left_c=paddle_center+self.offset_from_center

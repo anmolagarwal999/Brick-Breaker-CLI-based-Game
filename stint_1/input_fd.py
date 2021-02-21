@@ -3,6 +3,8 @@ import sys
 import atexit
 import termios
 from select import select
+
+# Read theoretical stuff here: https://blog.nelhage.com/2009/12/a-brief-introduction-to-termios-termios3-and-stty/
 class InputHelper:
     def __init__(self):
        
@@ -32,8 +34,7 @@ class InputHelper:
         ECHO in c_lflag controls whether input is immediately re-echoed as output.
         It is independent of ICANON, although they are often turned on and off together.
         When passwd prompts for your password, your terminal is in canonical mode, but ECHO is disabled.
-        
-        
+                
         '''
         self.new_term[3] = (self.new_term[3] & ~termios.ICANON
                             & ~termios.ECHO)
@@ -47,7 +48,7 @@ class InputHelper:
         return sys.stdin.read(1)
 
     def is_pending(self):
-        ''' Returns True if keyboard was hit, False otherwise.      '''
+        ''' Returns True if keyboard was hit, False otherwise. '''
         dr, dw, de = select([sys.stdin], [], [], 0)
         return dr != []
 

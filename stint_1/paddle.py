@@ -1,14 +1,10 @@
 import numpy as np
 import random
 import time
-import sys
-
 import config as conf
 
 ###############################################################
 import logging
-
-
 def part():
     logging.debug("----------------------------------------")
 logging.basicConfig(filename='test.log',
@@ -20,13 +16,13 @@ logging.basicConfig(filename='test.log',
 class PaddleClass:
 
     def __init__(self, paddle_center_c):
-        center_c=paddle_center_c
+        # center_c=paddle_center_c
         self._len_c=conf.DEFAULT_PADDLE_LEN
         self._len_r=1
-        self._left_c=center_c-self._len_c//2
+        self._left_c=paddle_center_c-self._len_c//2
         self._left_r=0
-        self.is_magnet=False
-        self.ascii_repr=self.get_ascii_rep_str(self._len_c)
+        self._is_magnet=False
+        self._ascii_repr=self.get_ascii_rep_str(self._len_c)
         logging.info(f"Inside init() of paddle class with attributes\n{self.__dict__}\n")
 
     @property
@@ -44,6 +40,14 @@ class PaddleClass:
     @property
     def len_r(self):
         return self._len_r
+
+    @property
+    def ascii_repr(self):
+        return self._ascii_repr
+
+    @property
+    def is_magnet(self):
+        return self._is_magnet
 
     def change_x(self,dx,right_limit):
         dx*=4
@@ -84,18 +88,17 @@ class PaddleClass:
         self._left_c=max(0,self._left_c-inc_val//2)
         if self._left_c+self._len_c>=tot_width:
             self._left_c-=1+self._left_c+self._len_c-tot_width
-        self.ascii_repr=self.get_ascii_rep_str(self._len_c)
+        self._ascii_repr=self.get_ascii_rep_str(self._len_c)
         logging.info(f"Length set is {self._len_c}, length actual is {self.ascii_repr.shape}")
         return True
 
     
-    def restore_paddle_size(self):
-        logging.debug("Inside RESTORE paddle size")
-
-        self._len_c=conf.DEFAULT_PADDLE_LEN
-        self._left_c=self._left_c+2
-        elf.ascii_repr=self.get_ascii_rep_str(self._len_c)
-        logging.info(f"Length set is {self._len_c}, length actual is {self.ascii_repr.shape}")
+    # def restore_paddle_size(self):
+    #     logging.debug("Inside RESTORE paddle size")
+    #     self._len_c=conf.DEFAULT_PADDLE_LEN
+    #     self._left_c=self._left_c+2
+    #     elf.ascii_repr=self.get_ascii_rep_str(self._len_c)
+    #     logging.info(f"Length set is {self._len_c}, length actual is {self.ascii_repr.shape}")
     
     def decrease_paddle_size(self,dec_val):
         logging.debug("Inside DECREASE paddle size")
@@ -104,7 +107,7 @@ class PaddleClass:
             return False
         self._len_c=exp_len
         self._left_c=self._left_c+dec_val//2
-        self.ascii_repr=self.get_ascii_rep_str(self._len_c)
+        self._ascii_repr=self.get_ascii_rep_str(self._len_c)
         logging.info(f"Length set is {self._len_c}, length actual is {self.ascii_repr.shape}")
         return True
 

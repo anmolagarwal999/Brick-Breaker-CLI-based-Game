@@ -1,13 +1,13 @@
 import os
 import sys
-import math
+import math,random
 import numpy as np
 import colorama
 from colorama import Fore, Back, Style
 colorama.init(autoreset=False)
 import termios
 from input_fd import InputHelper
-from screen import Screen
+from canvas import Canvas
 import config as conf
 import random
 from time import monotonic as clock, sleep
@@ -68,19 +68,18 @@ class Game:
             )
             sys.exit()
 
-        self._screen = Screen(self._just_game_rows, self.just_game_cols,
+        self._screen = Canvas(self._just_game_rows, self.just_game_cols,
                               self._info_box_height)
 
         #############################################################################
         self._input_stream = InputHelper()
         self._score = 0
         self._lives_left = conf.TOT_LIVES
-        self.frame_count = 0
         self._overall_start_time = clock()
 
-        # self.available_powerups=[ExpandPaddle, ShrinkPaddle, FastBall, ThruBall,BallMultiplier,PaddleGrab]
+        self._available_powerups=[ExpandPaddle, ShrinkPaddle, FastBall, ThruBall,BallMultiplier,PaddleGrab]
+        self._available_powerups=[ExpandPaddle, ShrinkPaddle]
         self.bricks_list = []
-        self.available_powerups = [ThruBall]
         self.init_new_life()
 
         ######################################################################
@@ -91,14 +90,18 @@ class Game:
 
         # Reinit the powerup random list
         self.curr_powerup_idx = 0
+        ThruBall.cnt=0
+        PaddleGrab.cnt=0
 
         # Making the game paddle
         self.game_paddle = PaddleClass(self.just_game_cols // 2)
 
         # A new game ball
+        random_offset=random.randint(0, self.game_paddle.len_c-1)
+        offset_from_centre=(random_offset-self.game_paddle.len_c//2)//2
         original_ball = BallClass(
-            self.game_paddle.left_c + self.game_paddle.len_c // 2, 1, True, 1,
-            0)
+            self.game_paddle.left_c + random_offset, 1, True, 1,
+            offset_from_centre,offset_from_centre)
         self.balls_list = [original_ball]
         termios.tcflush(sys.stdin, termios.TCIOFLUSH)
 
@@ -109,6 +112,7 @@ class Game:
             self.game_paddle.len_c, self.game_paddle.len_r, self.game_paddle.ascii_repr,"")
 
         for this_ball in self.balls_list:
+            assert(this_ball.isVisible==True);
             if this_ball.isVisible:
                 self._screen.add_entity(this_ball.left_c, this_ball.left_r, \
                     this_ball.len_c, this_ball.len_r, this_ball.ascii_repr,conf.BG_COLOR)
@@ -123,10 +127,9 @@ class Game:
 
     def get_time_left(self):
         '''Get time left'''
-        time_now = clock()
-        time_elapsed = time_now - self._overall_start_time
+        time_elapsed = clock() - self._overall_start_time
         time_left = conf.TOT_TIME - time_elapsed
-        return round(time_left, 1)
+        return [round(time_elapsed,1),round(time_left, 1)]
 
     def print_game_details(self):
         '''Printing of game stats'''
@@ -137,29 +140,29 @@ class Game:
         print(string_up)
 
         cnt = 0
-        thru_ball_there = False
         for i in self.curr_powerups_list:
             if i.status == "active":
                 cnt += 1
-                if isinstance(i, ThruBall) == True:
-                    thru_ball_there = True
+                
+        thru_ball_there = True if ThruBall.cnt>0 else False
+        paddle_grab_there = True if PaddleGrab.cnt>0 else False
+        
         speeds_list = []
         for i in self.balls_list:
             speeds_list.append(f"{i.vel_r}:{i.vel_c}")
-
+        time_stats=self.get_time_left()
         print(f"Score now is {str(self._score).ljust(10)}", end='')
-        print(f"Lives left  is {self._lives_left}")
+        print(f"Lives left  is {str(self._lives_left).ljust(4)}")
         print(f"Balls Horizontal speed (INERTIA) are {speeds_list}")
-        print(f"Time left  is {self.get_time_left()}")
-        # print(f"Score now is {str(self._score).ljust(10)}",end='')
-        print(f"Number of powerups there is {str(cnt).ljust(10)}", end='')
-        print(f"Paddle length is {self.game_paddle.len_c}")
-        print(f"Thru ball is : {thru_ball_there}")
+        print(f"Time elapsed:{str(time_stats[0]).ljust(4)} | Time left:{time_stats[1]}")        
+        print(f"No of active powerups is {str(cnt).ljust(3)}|", end='')
+        #print(f"Paddle length is {str(self.game_paddle.len_c).ljust(4)}")
+        print(f" No of breakable bricks:{BricksClass.tot_breakable_bricks}")
+        print(f"ThruBall:{thru_ball_there} | PaddleGrab:{paddle_grab_there}")
         print(Back.BLACK)
 
     def generate_brick_coordinates(self):
         '''Designing layout of bricks'''
-        # h=20, #w=60
 
         # rows go from 0 to tot_r-1 , start from 10, go till end-2
         # cols go from 0 to tot_c-1 , go from 5 to end-5
@@ -257,6 +260,7 @@ class Game:
             logging.debug(f"speed inc is {speed_inc_dist}")
             ball_obj.impact_velocity(speed_inc_dist // 2)
 
+            logging.info(f"Is paddle magnetic : {self.game_paddle.is_magnet}")
             if self.game_paddle.is_magnet == True:
                 ball_obj.capture()
                 ball_obj.offset_from_center = prob_c - (
@@ -271,27 +275,26 @@ class Game:
             return True
         return False
 
+    @staticmethod
+    def random_yes_or_no():
+        rand_float=random.uniform(0, 1)
+        logging.info(f"rand float is {rand_float}")
+        if rand_float>0.01:
+            return True
+        logging.info("Randomness says NO")
+        return False
+
+
     def try_powerup_generation(self, prob_r, prob_c):
 
-        # if len(self.curr_powerups_list)!=0:
-        #     return
+        if self.random_yes_or_no() is False:
+            return
         self.curr_powerup_idx = (self.curr_powerup_idx + 1) % (len(
-            self.available_powerups))
+            self._available_powerups))
 
-        chosen_powerup = self.available_powerups[self.curr_powerup_idx]
-        # if chosen_powerup == ThruBall:
-        #     eliminate_powerup = None
-        #     for already_there_powerup in self.curr_powerups_list:
-        #         if isinstance(
-        #                 already_there_powerup,
-        #                 ThruBall) and already_there_powerup.status == "active":
-        #             eliminate_powerup = already_there_powerup
-        #     if eliminate_powerup is not None:
-        #         eliminate_powerup.status = "inactive"
-        #         self.curr_powerups_list.remove(eliminate_powerup)
-
-        # Create a new powerup and append it to the array
-        new_powerup = chosen_powerup(prob_r, prob_c)
+        chosen_powerup_cls = self._available_powerups[self.curr_powerup_idx]
+        
+        new_powerup = chosen_powerup_cls(prob_r, prob_c)
         self.curr_powerups_list.append(new_powerup)
         logging.info("Powerup appended")
 
@@ -318,7 +321,6 @@ class Game:
             unlucky_neighbors = brick_obj.get_unlucky_friends()
 
             # A sad_brick is surely due to explosion
-            # Confirm with TA if unbreakable brick should break if next to explosive break
 
             chosen_ones = []
             for sad_brick in self.bricks_list:
@@ -344,8 +346,7 @@ class Game:
         bricks_checklist = self.bricks_list.copy()
         for a_brick in bricks_checklist:
             # # proceed only if brick is still visible
-            # if self.bricks_list[i].isVisible==False:
-            #     continue
+            
             if self.did_ball_collide_with_this_brick(prob_c, prob_r, a_brick):
                 self.hit_brick(a_brick, (ball_obj.is_boss_cnt > 0))
                 return True
@@ -399,8 +400,8 @@ class Game:
                 self.balls_list.remove(ball_obj)
                 if len(self.balls_list) == 0:
                     self._lives_left -= 1
+                    sleep(0.7)
                     if self._lives_left == 0:
-                        sleep(1)
                         self.game_over_screen("All lives are over")
                     self.init_new_life()
                     termios.tcflush(
@@ -425,35 +426,31 @@ class Game:
         for powerup in self.curr_powerups_list:
             if powerup.status == "active":
                 if clock() - powerup.activate_time > conf.POWERUP_DURATION:
-                    powerup.status = "inactive"
+                    powerup.eliminate()
                     powerup.deactivate_powerup(self)
                     eliminate_list.append(powerup)
         for i in eliminate_list:
             self.curr_powerups_list.remove(i)
 
     def move_powerups(self):
-
-        # move only if unstuck
-
         eliminate_list = []
 
         # this list contains both types of powerups, in_air and activated
         for curr_powerup in self.curr_powerups_list:
             if curr_powerup.status == "in_air":
-                curr_powerup.left_r += curr_powerup.vel_r
+                curr_powerup.move()
                 if curr_powerup.left_r == 0:
                     if self.did_powerup_collide_with_paddle(curr_powerup):
-                        curr_powerup.status = "active"
                         curr_powerup.activate_powerup(
                             self)  # sending the game obj to powerups
                         self._score += conf.SCORE_POWERUP_PICKED
                     else:
-                        curr_powerup.status = "inactive"
+                        curr_powerup.eliminate()
                         eliminate_list.append(curr_powerup)
         for i in eliminate_list:
             self.curr_powerups_list.remove(i)
 
-    def play(self):
+    def start_game(self):
         logging.info("#### ## Inside play function of GAME class ## ######")
         print("+++++++++++++++++++++++++++++++++++++++++++++++")
         self.generate_brick_coordinates()
@@ -479,6 +476,7 @@ class Game:
             while clock() - paddle_last_tended < time_unit_duration:
                 #logging.info(f"Inside obstacle loop, dis is {clock() - paddle_last_tended}")
                 dup_list = self.balls_list.copy()
+                mandatory_show=False
                 for this_ball in dup_list:
                     if ((this_ball.vel_c)!=0) and \
                         clock()-this_ball.ball_last_tended_h > time_unit_duration/abs(this_ball.vel_c):
@@ -489,7 +487,14 @@ class Game:
                         # self._screen.print_board()
                         # print screen
                         this_ball.ball_last_tended_h = clock()
+                        if this_ball.left_r==0:
+                            mandatory_show=True
 
+                # if mandatory_show:
+                #     self.paint_objs()
+                #     self._screen.print_board()
+
+                for this_ball in dup_list:    
                     if ((this_ball.vel_r)!=0) and \
                         clock()-this_ball.ball_last_tended_v > time_unit_duration/abs(this_ball.vel_r):
                         '''update balls position vertically (if unstuck only)'''
@@ -507,11 +512,11 @@ class Game:
 
             self.check_powerups_expiry()
             self.paint_objs()
-
-            # if len(self.bricks_list) != bricks_length_initial:
-            #     sleep(1)
             self._screen.print_board()
             self.print_game_details()
 
-            if self.get_time_left() < 0:
+            if BricksClass.tot_breakable_bricks==0:
+                self.game_over_screen("Congrats! You broke all the breakable bricks")
+
+            if self.get_time_left()[1] < 0:
                 self.game_over_screen("You LOST ON TIME !!!")

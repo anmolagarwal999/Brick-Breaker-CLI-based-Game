@@ -25,7 +25,7 @@ logging.basicConfig(filename='test.log',
 ##############################################################
 
 
-class Screen:
+class Canvas:
     '''
     CANVAS FOR THE GAME WINDOW
     '''
@@ -177,8 +177,9 @@ class Screen:
             sys.exit("A brick isVisible as False has been sent to add_brick()")
             return
         color_code=game_brick.power_factor
-        if game_brick.score_bounty==5:
+        if game_brick.ascii_repr[0][1]=='5':
             color_code=5
+        # color_code=int(game_brick.ascii_repr[0][1])
         start_col_num = game_brick.left_c
         start_row_num = game_brick.left_r
         end_col_num = game_brick.left_c + game_brick.len_c
@@ -197,16 +198,21 @@ class Screen:
         
         #logging.info("Using the SETTING CURSON ON TOP ANSI SEQUENCE")
         print(self.RESET_CURSOR_ANSI)
-        for i in range(self._tot_screen_rows):
+        for i in range(self._just_game_height):
+            curr_i=i
+            curr_i=self._just_game_height-i-1
             for j in range(self._tot_screen_cols):
-                print(self._bg_layer[i][j] + self._fore_board[i][j], end='')
+                curr_j=j
+                print(self._bg_layer[curr_i][curr_j] + self._fore_board[curr_i][curr_j], end='')
             print('')
-        #logging.info("print_board() done")
 
-        # if should_wait:
-        #     logging.info("Making it wait")
-        #     sleep(5)
-        #     logging.info("Wait over")
+        for i in range(self._just_game_height,self._tot_screen_rows):
+            curr_i=i
+            for j in range(self._tot_screen_cols):
+                curr_j=j
+                print(self._bg_layer[curr_i][curr_j] + self._fore_board[curr_i][curr_j], end='')
+            print('')
+        
 
 
 

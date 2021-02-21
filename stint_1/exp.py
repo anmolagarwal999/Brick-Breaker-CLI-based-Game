@@ -43,26 +43,3 @@ Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
 Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
 Style: DIM, NORMAL, BRIGHT, RESET_ALL
 '''
-
-# powerup=3
-# paddle_obj=2
-
-# '''Method inside INCREASE PADDLE SIZE subclass'''
-# def activate_powerup(self, paddle_obj):
-#     paddle_obj.increase_length(4)
-
-
-# '''Method inside DECREASE PADDLE SIZE subclass'''
-# def activate_powerup(self, paddle_obj):
-#     paddle_obj.decrease_length(4)
-
-
-
-
-
-# '''Doing this in the main GAME class'''
-
-# if powerup is "INCREASE PADDLE SIZE":
-#     paddle_obj.increase_length(4)
-# elif powerup is "DECREASE PADDLE SIZE":
-#     paddle_obj.decrease_length(4)
