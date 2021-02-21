@@ -1,5 +1,5 @@
-DEBUG:rows are 33
-DEBUG:columns are are 97
+DEBUG:rows are 35
+DEBUG:columns are are 70
 DEBUG:----------------------------------------
 DEBUG:conf.min height is   22
 DEBUG:conf.min width is   60
@@ -10,44 +10,44 @@ DEBUG:----------------------------------------
 INFO:Inside SCREEN class's INIT()
 DEBUG:info box height is 7
 DEBUG:----------------------------------------
-DEBUG:Setting screens tot_rows as 30
-DEBUG:Setting screens tot_cols as 87
+DEBUG:Setting screens tot_rows as 32
+DEBUG:Setting screens tot_cols as 60
 INFO:
 
-arr is ['\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m']
-
-
-INFO:
-
-arr is ['\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m']
+arr is ['\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m', '\x1b[42m']
 
 
 INFO:
 
-arr is ['\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m']
+arr is ['\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m']
 
 
 INFO:
 
-arr is ['\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m']
+arr is ['\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m']
 
 
 INFO:
 
-arr is ['\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m']
+arr is ['\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m']
 
 
 INFO:
 
-arr is ['\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m']
+arr is ['\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m']
 
 
 INFO:
 
-arr is ['\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m']
+arr is ['\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m', '\x1b[41m']
 
 
-DEBUG:self.backboard SHAPE IS is  (30, 87)
+INFO:
+
+arr is ['\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m', '\x1b[40m']
+
+
+DEBUG:self.backboard SHAPE IS is  (32, 60)
 DEBUG:self.backboard is  [['\x1b[40m' '\x1b[40m' '\x1b[40m' ... '\x1b[40m' '\x1b[40m' '\x1b[40m']
  ['\x1b[40m' '\x1b[40m' '\x1b[40m' ... '\x1b[40m' '\x1b[40m' '\x1b[40m']
  ['\x1b[40m' '\x1b[40m' '\x1b[40m' ... '\x1b[40m' '\x1b[40m' '\x1b[40m']
@@ -66,7 +66,7 @@ DEBUG:Finally is self.backboard is
  ['\x1b[40m' '\x1b[40m' '\x1b[40m' ... '\x1b[40m' '\x1b[40m' '\x1b[40m']]
 
 
-DEBUG:Finally is self.foreboard (SHAPE: (30, 87) is  
+DEBUG:Finally is self.foreboard (SHAPE: (32, 60) is  
 [[' ' ' ' ' ' ... ' ' ' ' ' ']
  [' ' ' ' ' ' ... ' ' ' ' ' ']
  [' ' ' ' ' ' ... ' ' ' ' ' ']
@@ -77,11 +77,11 @@ DEBUG:Finally is self.foreboard (SHAPE: (30, 87) is
 
 
 INFO:Inside init() of paddle class with attributes
-{'_len_c': 11, '_len_r': 1, '_left_c': 38, '_left_r': 0, 'is_magnet': False, 'ascii_repr': array([['[', '-', '-', '-', '-', '-', '-', '-', '-', '-', ']']],
+{'_len_c': 11, '_len_r': 1, '_left_c': 25, '_left_r': 0, 'is_magnet': False, 'ascii_repr': array([['[', '-', '-', '-', '-', '-', '-', '-', '-', '-', ']']],
       dtype='<U1')}
 
 INFO:Inside init() of BALL class with attributes
-{'len_c': 1, 'len_r': 1, '_left_c': 43, '_left_r': 1, '_is_stuck': True, 'offset_from_center': 0, 'isVisible': True, '_vel_r': 1, '_vel_c': 0, 'is_boss': False, 'ball_last_tended': 33581.526871716, 'ascii_repr': array([['O']], dtype='<U1')}
+{'len_c': 1, 'len_r': 1, '_left_c': 30, '_left_r': 1, '_is_stuck': True, 'offset_from_center': 0, 'isVisible': True, '_vel_r': 1, '_vel_c': 0, 'is_boss': False, 'ball_last_tended': 61150.545855433, 'ascii_repr': array([['O']], dtype='<U1')}
 
 INFO:#### ## Inside play function of GAME class ## ######
 CRITICAL:-14:2
@@ -101,15 +101,6 @@ CRITICAL:-1:5
 CRITICAL:0:1
 CRITICAL:1:2
 CRITICAL:2:3
-CRITICAL:3:4
-CRITICAL:4:5
-CRITICAL:5:1
-CRITICAL:6:2
-CRITICAL:7:3
-CRITICAL:8:4
-CRITICAL:9:5
-CRITICAL:10:1
-CRITICAL:11:2
 CRITICAL:
 
 CRITICAL:-15:1
@@ -129,15 +120,6 @@ CRITICAL:-2:4
 CRITICAL:-1:5
 CRITICAL:0:1
 CRITICAL:1:2
-CRITICAL:2:3
-CRITICAL:3:4
-CRITICAL:4:5
-CRITICAL:5:1
-CRITICAL:6:2
-CRITICAL:7:3
-CRITICAL:8:4
-CRITICAL:9:5
-CRITICAL:10:1
 CRITICAL:
 
 CRITICAL:-16:5
@@ -157,15 +139,6 @@ CRITICAL:-3:3
 CRITICAL:-2:4
 CRITICAL:-1:5
 CRITICAL:0:1
-CRITICAL:1:2
-CRITICAL:2:3
-CRITICAL:3:4
-CRITICAL:4:5
-CRITICAL:5:1
-CRITICAL:6:2
-CRITICAL:7:3
-CRITICAL:8:4
-CRITICAL:9:5
 CRITICAL:
 
 CRITICAL:-17:4
@@ -185,15 +158,6 @@ CRITICAL:-4:2
 CRITICAL:-3:3
 CRITICAL:-2:4
 CRITICAL:-1:5
-CRITICAL:0:1
-CRITICAL:1:2
-CRITICAL:2:3
-CRITICAL:3:4
-CRITICAL:4:5
-CRITICAL:5:1
-CRITICAL:6:2
-CRITICAL:7:3
-CRITICAL:8:4
 CRITICAL:
 
 CRITICAL:-18:3
@@ -213,15 +177,6 @@ CRITICAL:-5:1
 CRITICAL:-4:2
 CRITICAL:-3:3
 CRITICAL:-2:4
-CRITICAL:-1:5
-CRITICAL:0:1
-CRITICAL:1:2
-CRITICAL:2:3
-CRITICAL:3:4
-CRITICAL:4:5
-CRITICAL:5:1
-CRITICAL:6:2
-CRITICAL:7:3
 CRITICAL:
 
 CRITICAL:-19:2
@@ -241,198 +196,845 @@ CRITICAL:-6:5
 CRITICAL:-5:1
 CRITICAL:-4:2
 CRITICAL:-3:3
-CRITICAL:-2:4
-CRITICAL:-1:5
-CRITICAL:0:1
-CRITICAL:1:2
-CRITICAL:2:3
-CRITICAL:3:4
-CRITICAL:4:5
-CRITICAL:5:1
-CRITICAL:6:2
+CRITICAL:
+
+CRITICAL:-20:1
+CRITICAL:-19:2
+CRITICAL:-18:3
+CRITICAL:-17:4
+CRITICAL:-16:5
+CRITICAL:-15:1
+CRITICAL:-14:2
+CRITICAL:-13:3
+CRITICAL:-12:4
+CRITICAL:-11:5
+CRITICAL:-10:1
+CRITICAL:-9:2
+CRITICAL:-8:3
+CRITICAL:-7:4
+CRITICAL:-6:5
+CRITICAL:-5:1
+CRITICAL:-4:2
+CRITICAL:
+
+CRITICAL:-21:5
+CRITICAL:-20:1
+CRITICAL:-19:2
+CRITICAL:-18:3
+CRITICAL:-17:4
+CRITICAL:-16:5
+CRITICAL:-15:1
+CRITICAL:-14:2
+CRITICAL:-13:3
+CRITICAL:-12:4
+CRITICAL:-11:5
+CRITICAL:-10:1
+CRITICAL:-9:2
+CRITICAL:-8:3
+CRITICAL:-7:4
+CRITICAL:-6:5
+CRITICAL:-5:1
 CRITICAL:
 
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
 INFO:Returning 1
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
 INFO:Returning 1
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
+INFO:
+[PRESSED s]
+
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 2:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 3:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 4:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 21
+INFO:Curr right x is 31
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 5:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 6:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 7:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 8:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 9:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 10:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 11:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 12:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 13:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 14:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 15
+CRITICAL:BALL WALL insvestigation is 15:30
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 29, 'seq_id': 9, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 29, 'seq_id': 9, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 29, 'seq_id': 9, 'sum_id': -6, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+INFO:Inside init() of POWERUPS class with attributes
+{'len_c': 1, 'len_r': 1, 'left_r': 15, 'left_c': 29, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['?']], dtype='<U1')}
+
+INFO:Inside init() of POWERUPS class with attributes
+{'len_c': 1, 'len_r': 1, 'left_r': 15, 'left_c': 29, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['?']], dtype='<U1')}
+
+INFO:Powerup appended
+CRITICAL:coordinates are [[14, 8], [14, 9], [14, 10], [15, 8], [15, 10], [16, 8], [16, 9], [16, 10]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 26, 'seq_id': 8, 'sum_id': -7, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 26, 'seq_id': 8, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 32, 'seq_id': 10, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 32, 'seq_id': 10, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 32, 'seq_id': 10, 'sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 26, 'seq_id': 8, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 26, 'seq_id': 8, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 26, 'seq_id': 8, 'sum_id': -8, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 29, 'seq_id': 9, 'sum_id': -7, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 29, 'seq_id': 9, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 32, 'seq_id': 10, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 32, 'seq_id': 10, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 32, 'seq_id': 10, 'sum_id': -6, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[15, 9], [15, 10], [15, 11], [16, 9], [16, 11], [17, 9], [17, 10], [17, 11]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 35, 'seq_id': 11, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 35, 'seq_id': 11, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 15, 'left_c': 35, 'seq_id': 11, 'sum_id': -4, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 35, 'seq_id': 11, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 35, 'seq_id': 11, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 35, 'seq_id': 11, 'sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 29, 'seq_id': 9, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 29, 'seq_id': 9, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 29, 'seq_id': 9, 'sum_id': -8, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 32, 'seq_id': 10, 'sum_id': -7, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 32, 'seq_id': 10, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 35, 'seq_id': 11, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 35, 'seq_id': 11, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 35, 'seq_id': 11, 'sum_id': -6, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[16, 10], [16, 11], [16, 12], [17, 10], [17, 12], [18, 10], [18, 11], [18, 12]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 38, 'seq_id': 12, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 38, 'seq_id': 12, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 38, 'seq_id': 12, 'sum_id': -4, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 38, 'seq_id': 12, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 38, 'seq_id': 12, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 38, 'seq_id': 12, 'sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 32, 'seq_id': 10, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 32, 'seq_id': 10, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 32, 'seq_id': 10, 'sum_id': -8, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 35, 'seq_id': 11, 'sum_id': -7, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 35, 'seq_id': 11, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 38, 'seq_id': 12, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 38, 'seq_id': 12, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 38, 'seq_id': 12, 'sum_id': -6, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[17, 11], [17, 12], [17, 13], [18, 11], [18, 13], [19, 11], [19, 12], [19, 13]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 41, 'seq_id': 13, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 41, 'seq_id': 13, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 17, 'left_c': 41, 'seq_id': 13, 'sum_id': -4, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 41, 'seq_id': 13, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 41, 'seq_id': 13, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 41, 'seq_id': 13, 'sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 35, 'seq_id': 11, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 35, 'seq_id': 11, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 35, 'seq_id': 11, 'sum_id': -8, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 38, 'seq_id': 12, 'sum_id': -7, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 38, 'seq_id': 12, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 41, 'seq_id': 13, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 41, 'seq_id': 13, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 41, 'seq_id': 13, 'sum_id': -6, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[18, 12], [18, 13], [18, 14], [19, 12], [19, 14], [20, 12], [20, 13], [20, 14]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 44, 'seq_id': 14, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 44, 'seq_id': 14, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 18, 'left_c': 44, 'seq_id': 14, 'sum_id': -4, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 44, 'seq_id': 14, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 44, 'seq_id': 14, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 44, 'seq_id': 14, 'sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 38, 'seq_id': 12, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 38, 'seq_id': 12, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 38, 'seq_id': 12, 'sum_id': -8, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 41, 'seq_id': 13, 'sum_id': -7, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 41, 'seq_id': 13, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 44, 'seq_id': 14, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 44, 'seq_id': 14, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 44, 'seq_id': 14, 'sum_id': -6, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[19, 13], [19, 14], [19, 15], [20, 13], [20, 15], [21, 13], [21, 14], [21, 15]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 47, 'seq_id': 15, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 47, 'seq_id': 15, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 19, 'left_c': 47, 'seq_id': 15, 'sum_id': -4, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 47, 'seq_id': 15, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 47, 'seq_id': 15, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 47, 'seq_id': 15, 'sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 41, 'seq_id': 13, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 41, 'seq_id': 13, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 41, 'seq_id': 13, 'sum_id': -8, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 44, 'seq_id': 14, 'sum_id': -7, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 44, 'seq_id': 14, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 47, 'seq_id': 15, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 47, 'seq_id': 15, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 47, 'seq_id': 15, 'sum_id': -6, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[20, 14], [20, 15], [20, 16], [21, 14], [21, 16], [22, 14], [22, 15], [22, 16]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 50, 'seq_id': 16, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 50, 'seq_id': 16, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 50, 'seq_id': 16, 'sum_id': -4, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 50, 'seq_id': 16, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 50, 'seq_id': 16, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 50, 'seq_id': 16, 'sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 44, 'seq_id': 14, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 44, 'seq_id': 14, 'sum_id': -8, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 44, 'seq_id': 14, 'sum_id': -8, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 47, 'seq_id': 15, 'sum_id': -7, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 47, 'seq_id': 15, 'sum_id': -7, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 50, 'seq_id': 16, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 50, 'seq_id': 16, 'sum_id': -6, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 50, 'seq_id': 16, 'sum_id': -6, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[21, 15], [21, 16], [21, 17], [22, 15], [22, 17], [23, 15], [23, 16], [23, 17]]
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 53, 'seq_id': 17, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 53, 'seq_id': 17, 'sum_id': -4, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 21, 'left_c': 53, 'seq_id': 17, 'sum_id': -4, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 53, 'seq_id': 17, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 53, 'seq_id': 17, 'sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 53, 'seq_id': 17, 'sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 13:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 12:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 11:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 10:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 9:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 8:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 25
+INFO:Curr right x is 35
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 7:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 6:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 5:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 4:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 3:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 29
+INFO:Curr right x is 39
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 2:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
 INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 1:30
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 30
 INFO:vertical prediction called
-INFO:Returning 1
+INFO:Returning 0
+CRITICAL:BALL WALL insvestigation is 0:30
+DEBUG:speed inc is -4
 INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
 INFO:print_board() done
 INFO:horizontal prediction called
-INFO:Returning 43
+INFO:Returning 29
+CRITICAL:BALL WALL insvestigation is 1:29
+INFO:horizontal prediction called
+INFO:Returning 28
+CRITICAL:BALL WALL insvestigation is 1:28
+INFO:horizontal prediction called
+INFO:Returning 27
+CRITICAL:BALL WALL insvestigation is 1:27
+DEBUG:Inside DECREASE paddle size
+INFO:Length set is 7, length actual is (1, 7)
+INFO:vertical prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 2:27
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 26
+CRITICAL:BALL WALL insvestigation is 2:26
+INFO:horizontal prediction called
+INFO:Returning 25
+CRITICAL:BALL WALL insvestigation is 2:25
+INFO:vertical prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 3:25
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 24
+CRITICAL:BALL WALL insvestigation is 3:24
+INFO:horizontal prediction called
+INFO:Returning 23
+CRITICAL:BALL WALL insvestigation is 3:23
+INFO:vertical prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 4:23
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 22
+CRITICAL:BALL WALL insvestigation is 4:22
+INFO:horizontal prediction called
+INFO:Returning 21
+CRITICAL:BALL WALL insvestigation is 4:21
+INFO:horizontal prediction called
+INFO:Returning 20
+CRITICAL:BALL WALL insvestigation is 4:20
+INFO:vertical prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 5:20
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 19
+CRITICAL:BALL WALL insvestigation is 5:19
+INFO:horizontal prediction called
+INFO:Returning 18
+CRITICAL:BALL WALL insvestigation is 5:18
+INFO:vertical prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 6:18
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 17
+CRITICAL:BALL WALL insvestigation is 6:17
+INFO:horizontal prediction called
+INFO:Returning 16
+CRITICAL:BALL WALL insvestigation is 6:16
+INFO:vertical prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 7:16
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 15
+CRITICAL:BALL WALL insvestigation is 7:15
+INFO:horizontal prediction called
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 7:14
+INFO:horizontal prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 7:13
+INFO:vertical prediction called
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 8:13
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 8:12
+INFO:horizontal prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 8:11
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 27
+INFO:Curr right x is 33
+INFO:vertical prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 9:11
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 9:10
+INFO:horizontal prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 9:9
+INFO:vertical prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 10:9
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 10:8
+INFO:horizontal prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 10:7
+INFO:horizontal prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 10:6
+INFO:vertical prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 11:6
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 11:5
+INFO:horizontal prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 11:4
+INFO:vertical prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 12:4
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 12:3
+INFO:horizontal prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 12:2
+INFO:vertical prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 13:2
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 13:1
+INFO:horizontal prediction called
+INFO:Returning 0
+CRITICAL:BALL WALL insvestigation is 13:0
+INFO:horizontal prediction called
+INFO:Returning -1
+CRITICAL:BALL WALL insvestigation is 13:-1
+INFO:vertical prediction called
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 14:0
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 14:1
+INFO:horizontal prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 14:2
+INFO:vertical prediction called
+INFO:Returning 15
+CRITICAL:BALL WALL insvestigation is 15:2
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 15:3
+INFO:horizontal prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 15:4
+INFO:vertical prediction called
+INFO:Returning 16
+CRITICAL:BALL WALL insvestigation is 16:4
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 16:5
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 5, 'seq_id': 1, 'sum_id': -15, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 5, 'seq_id': 1, 'sum_id': -15, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 16, 'left_c': 5, 'seq_id': 1, 'sum_id': -15, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+INFO:Inside init() of POWERUPS class with attributes
+{'len_c': 1, 'len_r': 1, 'left_r': 16, 'left_c': 5, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['?']], dtype='<U1')}
+
+INFO:Inside init() of POWERUPS class with attributes
+{'len_c': 1, 'len_r': 1, 'left_r': 16, 'left_c': 5, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['?']], dtype='<U1')}
+
+INFO:Powerup appended
+INFO:horizontal prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 16:3
+INFO:horizontal prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 16:2
+INFO:vertical prediction called
+INFO:Returning 17
+CRITICAL:BALL WALL insvestigation is 17:2
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 17:1
+INFO:horizontal prediction called
+INFO:Returning 0
+CRITICAL:BALL WALL insvestigation is 17:0
+INFO:vertical prediction called
+INFO:Returning 18
+CRITICAL:BALL WALL insvestigation is 18:0
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning -1
+CRITICAL:BALL WALL insvestigation is 18:-1
+INFO:horizontal prediction called
+INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 18:1
+INFO:vertical prediction called
+INFO:Returning 19
+CRITICAL:BALL WALL insvestigation is 19:1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 19:2
+INFO:horizontal prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 19:3
+INFO:horizontal prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 19:4
+INFO:vertical prediction called
+INFO:Returning 20
+CRITICAL:BALL WALL insvestigation is 20:4
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 20:5
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 5, 'seq_id': 1, 'sum_id': -19, '_isVisible': True, 'score_bounty': 2, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 20, 'left_c': 5, 'seq_id': 1, 'sum_id': -19, '_isVisible': True, 'score_bounty': 2, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:horizontal prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 20:3
+INFO:vertical prediction called
+INFO:Returning 21
+CRITICAL:BALL WALL insvestigation is 21:3
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 21:2
+INFO:horizontal prediction called
+INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 21:1
+INFO:vertical prediction called
+INFO:Returning 22
+CRITICAL:BALL WALL insvestigation is 22:1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 0
+CRITICAL:BALL WALL insvestigation is 22:0
+INFO:horizontal prediction called
+INFO:Returning -1
+CRITICAL:BALL WALL insvestigation is 22:-1
+INFO:horizontal prediction called
+INFO:Returning 1
+CRITICAL:BALL WALL insvestigation is 22:1
+INFO:vertical prediction called
+INFO:Returning 23
+CRITICAL:BALL WALL insvestigation is 23:1
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 2
+CRITICAL:BALL WALL insvestigation is 23:2
+INFO:horizontal prediction called
+INFO:Returning 3
+CRITICAL:BALL WALL insvestigation is 23:3
+INFO:vertical prediction called
+INFO:Returning 24
+CRITICAL:BALL WALL insvestigation is 24:3
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 4
+CRITICAL:BALL WALL insvestigation is 24:4
+INFO:horizontal prediction called
+INFO:Returning 5
+CRITICAL:BALL WALL insvestigation is 24:5
+INFO:vertical prediction called
+INFO:Returning 25
+CRITICAL:BALL WALL insvestigation is 25:5
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 6
+CRITICAL:BALL WALL insvestigation is 24:6
+INFO:horizontal prediction called
+INFO:Returning 7
+CRITICAL:BALL WALL insvestigation is 24:7
+INFO:horizontal prediction called
+INFO:Returning 8
+CRITICAL:BALL WALL insvestigation is 24:8
+INFO:vertical prediction called
+INFO:Returning 23
+CRITICAL:BALL WALL insvestigation is 23:8
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 9
+CRITICAL:BALL WALL insvestigation is 23:9
+INFO:horizontal prediction called
+INFO:Returning 10
+CRITICAL:BALL WALL insvestigation is 23:10
+INFO:vertical prediction called
+INFO:Returning 22
+CRITICAL:BALL WALL insvestigation is 22:10
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 8, 'seq_id': 2, 'sum_id': -20, '_isVisible': True, 'score_bounty': 1, 'power_factor': 1, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 8, 'seq_id': 2, 'sum_id': -20, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 8, 'seq_id': 2, 'sum_id': -20, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'ascii_repr': array([['[', 'F', ']']], dtype='<U1')}
+INFO:Inside init() of POWERUPS class with attributes
+{'len_c': 1, 'len_r': 1, 'left_r': 22, 'left_c': 8, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['?']], dtype='<U1')}
+
+INFO:Inside init() of POWERUPS class with attributes
+{'len_c': 1, 'len_r': 1, 'left_r': 22, 'left_c': 8, 'status': 'in_air', 'vel_r': -1, 'ascii_repr': array([['?']], dtype='<U1')}
+
+INFO:Powerup appended
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 11
+CRITICAL:BALL WALL insvestigation is 23:11
+INFO:horizontal prediction called
+INFO:Returning 12
+CRITICAL:BALL WALL insvestigation is 23:12
+INFO:vertical prediction called
+INFO:Returning 24
+CRITICAL:BALL WALL insvestigation is 24:12
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 13
+CRITICAL:BALL WALL insvestigation is 24:13
+INFO:horizontal prediction called
+INFO:Returning 14
+CRITICAL:BALL WALL insvestigation is 24:14
+INFO:horizontal prediction called
+INFO:Returning 15
+CRITICAL:BALL WALL insvestigation is 24:15
+INFO:vertical prediction called
+INFO:Returning 25
+CRITICAL:BALL WALL insvestigation is 25:15
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 16
+CRITICAL:BALL WALL insvestigation is 24:16
+INFO:horizontal prediction called
+INFO:Returning 17
+CRITICAL:BALL WALL insvestigation is 24:17
+INFO:vertical prediction called
+INFO:Returning 23
+CRITICAL:BALL WALL insvestigation is 23:17
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 18
+CRITICAL:BALL WALL insvestigation is 23:18
+INFO:horizontal prediction called
+INFO:Returning 19
+CRITICAL:BALL WALL insvestigation is 23:19
+INFO:vertical prediction called
+INFO:Returning 22
+CRITICAL:BALL WALL insvestigation is 22:19
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 17, 'seq_id': 5, 'sum_id': -17, '_isVisible': True, 'score_bounty': 4, 'power_factor': 4, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 20
+CRITICAL:BALL WALL insvestigation is 23:20
+INFO:horizontal prediction called
+INFO:Returning 21
+CRITICAL:BALL WALL insvestigation is 23:21
+INFO:horizontal prediction called
+INFO:Returning 22
+CRITICAL:BALL WALL insvestigation is 23:22
+INFO:vertical prediction called
+INFO:Returning 24
+CRITICAL:BALL WALL insvestigation is 24:22
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 23
+CRITICAL:BALL WALL insvestigation is 24:23
+INFO:horizontal prediction called
+INFO:Returning 24
+CRITICAL:BALL WALL insvestigation is 24:24
+INFO:vertical prediction called
+INFO:Returning 25
+CRITICAL:BALL WALL insvestigation is 25:24
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 25
+CRITICAL:BALL WALL insvestigation is 24:25
+INFO:horizontal prediction called
+INFO:Returning 26
+CRITICAL:BALL WALL insvestigation is 24:26
+INFO:vertical prediction called
+INFO:Returning 23
+CRITICAL:BALL WALL insvestigation is 23:26
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 27
+CRITICAL:BALL WALL insvestigation is 23:27
+INFO:horizontal prediction called
+INFO:Returning 28
+CRITICAL:BALL WALL insvestigation is 23:28
+INFO:horizontal prediction called
+INFO:Returning 29
+CRITICAL:BALL WALL insvestigation is 23:29
+INFO:vertical prediction called
+INFO:Returning 22
+CRITICAL:BALL WALL insvestigation is 22:29
+CRITICAL:Inside HIT brick function for {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 29, 'seq_id': 9, 'sum_id': -13, '_isVisible': True, 'score_bounty': 3, 'power_factor': 3, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'len_c': 3, 'len_r': 1, 'left_r': 22, 'left_c': 29, 'seq_id': 9, 'sum_id': -13, '_isVisible': True, 'score_bounty': 3, 'power_factor': 2, 'ascii_repr': array([['[', 'T', ']']], dtype='<U1')}
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE
+INFO:print_board() done
+INFO:horizontal prediction called
+INFO:Returning 30
+CRITICAL:BALL WALL insvestigation is 23:30
+INFO:horizontal prediction called
+INFO:Returning 31
+CRITICAL:BALL WALL insvestigation is 23:31
+INFO:vertical prediction called
+INFO:Returning 24
+CRITICAL:BALL WALL insvestigation is 24:31
+INFO:Using the SETTING CURSON ON TOP ANSI SEQUENCE

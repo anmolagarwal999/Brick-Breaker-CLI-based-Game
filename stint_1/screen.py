@@ -129,7 +129,7 @@ class Screen:
                          end_col_num] = bg_string
 
     def finish_brick(self, game_brick):
-        logging.error(f"Inside finsh brick for {game_brick.__dict__}")
+        logging.error(f"Inside finish brick for {game_brick.__dict__}")
         start_col_num = game_brick.left_c
         start_row_num = game_brick.left_r
         end_col_num = game_brick.left_c + game_brick.len_c
@@ -142,9 +142,10 @@ class Screen:
 
     def add_brick(self, game_brick):
         if game_brick.isVisible == False:
+            sys.exit("A brick isVisible as False has been sent to add_brick()")
             return
         color_code=game_brick.power_factor
-        if game_brick.ascii_repr[0][1]=='5':
+        if game_brick.score_bounty==5:
             color_code=5
         start_col_num = game_brick.left_c
         start_row_num = game_brick.left_r
