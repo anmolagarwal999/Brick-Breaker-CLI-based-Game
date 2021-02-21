@@ -240,7 +240,11 @@ class Game:
         pass
 
     def did_ball_collide_with_paddle(self, prob_c, prob_r, ball_obj):
-        '''Checks if the ball collided with the paddle'''
+        '''Checks if the ball collided with the paddle, 
+        Regulates speed
+        and
+        handles the sticky paddle case
+        '''
         dc = prob_c - self.game_paddle.left_c
         if self.game_paddle.left_r == prob_r and (dc >= 0 and
                                                   dc < self.game_paddle.len_c):
@@ -255,22 +259,7 @@ class Game:
                     self.game_paddle.left_c + self.game_paddle.len_c // 2)
             return True
         return False
-
-    # def destroy_this_brick(self, brick_obj):
-
-    #     if brick_obj.isVisible==False:
-    #         return
-    #     brick_obj.isVisible=False
-    #     self._score+=brick_obj.score_bounty
-    #     self._screen.finish_brick(brick_obj)
-    #     unlucky_friends=brick_obj.get_unlucky_friends()
-    #     logging.info(f"unlucky coordinates for power {brick_obj.power_factor} are {unlucky_friends}")
-    #     for a_brick in self.bricks_list:
-    #         logging.error(f"{[a_brick.left_r,a_brick.seq_id]}")
-    #         if [a_brick.left_r,a_brick.seq_id] in unlucky_friends and a_brick.power_factor!=4:
-    #             logging.info("FOund")
-    #             self.destroy_this_brick(a_brick)
-
+    
     def did_ball_collide_with_this_brick(self, prob_c, prob_r, brick_obj):
         '''Returns True if ball collided with THIS brick,false otherwise'''
         dc = prob_c - brick_obj.left_c
@@ -475,6 +464,7 @@ class Game:
             assert (
                 self.game_paddle.len_c == self.game_paddle.ascii_repr.shape[1])
 
+            bricks_length_initial = len(self.bricks_list)
             while clock() - paddle_last_tended < time_unit_duration:
                 #logging.info(f"Inside obstacle loop, dis is {clock() - paddle_last_tended}")
                 dup_list = self.balls_list.copy()
@@ -504,6 +494,9 @@ class Game:
 
             self.check_powerups_expiry()
             self.paint_objs()
+
+            if len(self.bricks_list) != bricks_length_initial:
+                sleep(1)
             self._screen.print_board()
             self.print_game_details()
 
