@@ -171,10 +171,10 @@ class Game:
                 seq_in_row += 1
                 #logging.info(f"Coordinates are {i}:{j}")
                 color_code = ((first_idx + seq_in_row) % 5 + 5) % 5 + 1
-                if color_code==4:
-                    color_code=2
-                elif color_code==2:
-                    color_code=4
+                if color_code == 4:
+                    color_code = 2
+                elif color_code == 2:
+                    color_code = 4
                 logging.critical(f"{seq_in_row-i}:{color_code}")
                 decided_class = NormalBrick
                 if color_code == 4:
@@ -263,7 +263,7 @@ class Game:
                     self.game_paddle.left_c + self.game_paddle.len_c // 2)
             return True
         return False
-    
+
     def did_ball_collide_with_this_brick(self, prob_c, prob_r, brick_obj):
         '''Returns True if ball collided with THIS brick,false otherwise'''
         dc = prob_c - brick_obj.left_c
@@ -273,22 +273,22 @@ class Game:
 
     def try_powerup_generation(self, prob_r, prob_c):
 
-        if len(self.curr_powerups_list)!=0:
-            return
+        # if len(self.curr_powerups_list)!=0:
+        #     return
         self.curr_powerup_idx = (self.curr_powerup_idx + 1) % (len(
             self.available_powerups))
 
         chosen_powerup = self.available_powerups[self.curr_powerup_idx]
-        if chosen_powerup == ThruBall:
-            eliminate_powerup = None
-            for already_there_powerup in self.curr_powerups_list:
-                if isinstance(
-                        already_there_powerup,
-                        ThruBall) and already_there_powerup.status == "active":
-                    eliminate_powerup = already_there_powerup
-            if eliminate_powerup is not None:
-                eliminate_powerup.status = "inactive"
-                self.curr_powerups_list.remove(eliminate_powerup)
+        # if chosen_powerup == ThruBall:
+        #     eliminate_powerup = None
+        #     for already_there_powerup in self.curr_powerups_list:
+        #         if isinstance(
+        #                 already_there_powerup,
+        #                 ThruBall) and already_there_powerup.status == "active":
+        #             eliminate_powerup = already_there_powerup
+        #     if eliminate_powerup is not None:
+        #         eliminate_powerup.status = "inactive"
+        #         self.curr_powerups_list.remove(eliminate_powerup)
 
         # Create a new powerup and append it to the array
         new_powerup = chosen_powerup(prob_r, prob_c)
@@ -347,7 +347,7 @@ class Game:
             # if self.bricks_list[i].isVisible==False:
             #     continue
             if self.did_ball_collide_with_this_brick(prob_c, prob_r, a_brick):
-                self.hit_brick(a_brick, ball_obj.is_boss)
+                self.hit_brick(a_brick, (ball_obj.is_boss_cnt > 0))
                 return True
         return False
 
@@ -496,10 +496,8 @@ class Game:
                         self.move_ball_vertically(this_ball)
                         this_ball.ball_last_tended_v = clock()
 
-
             #sys.exit()
             #logging.info("Outside obstacle loop")
-            
 
             self.move_powerups()
 

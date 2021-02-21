@@ -32,7 +32,8 @@ class BallClass:
         self.isVisible = True
         self._vel_r = wanted_vel_r  # vertical vel is 1
         self._vel_c = wanted_vel_c  # horizontal vel is zero
-        self.is_boss = False
+        # self.is_boss = False
+        self.is_boss_cnt =0
         self.ball_last_tended_h = clock()
         self.ball_last_tended_v = clock()
         self.ascii_repr = np.array([['O']])

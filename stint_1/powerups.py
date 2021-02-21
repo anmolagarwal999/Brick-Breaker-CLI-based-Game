@@ -57,6 +57,7 @@ class ExpandPaddle(PowerupsClass):
     def activate_powerup(self, game_obj):
         self.activate_time=clock()
         self.had_impact_on_paddle=game_obj.game_paddle.increase_paddle_size(game_obj.just_game_cols,ExpandPaddle.increment_val)
+        return True
 
     def deactivate_powerup(self, game_obj):
         if self.had_impact_on_paddle:
@@ -74,6 +75,7 @@ class ShrinkPaddle(PowerupsClass):
     def activate_powerup(self, game_obj):
         self.activate_time=clock()
         self.had_impact_on_paddle=game_obj.game_paddle.decrease_paddle_size(ShrinkPaddle.decrement_val)
+        return True
 
     def deactivate_powerup(self, game_obj):
         logging.info("")
@@ -93,6 +95,7 @@ class FastBall(PowerupsClass):
         for ball_obj in game_obj.balls_list:
             if ball_obj.boost_velocity(1):
                 self.affected_balls.append(ball_obj)
+        return True
 
     def deactivate_powerup(self, game_obj):
         # TAKE CARE OF THIS, you might decrease speed of ball which was not even born when this powerup was activated
@@ -102,6 +105,7 @@ class FastBall(PowerupsClass):
 
 
 class ThruBall(PowerupsClass):
+
     
     def __init__(self,r_num,c_num):
         super().__init__(r_num,c_num,"@")
@@ -111,12 +115,12 @@ class ThruBall(PowerupsClass):
     def activate_powerup(self, game_obj):
         self.activate_time=clock()
         for ball_obj in game_obj.balls_list:
-            ball_obj.is_boss=True
+            ball_obj.is_boss_cnt+=1
 
     def deactivate_powerup(self, game_obj):
         # TAKE CARE OF THIS, you might decrease speed of ball which was not even born when this powerup was activated
         for ball_obj in game_obj.balls_list:
-            ball_obj.is_boss=False
+            ball_obj.is_boss_cnt-=1
    
 class PaddleGrab(PowerupsClass):
     
@@ -142,7 +146,9 @@ class BallMultiplier(PowerupsClass):
     def activate_powerup(self, game_obj):
         self.activate_time=clock()
         if len(game_obj.balls_list)==0:
-            sys.exit('Number of balls is ZERO here, so duplication isn\'t possible')
+            #sys.exit('Number of balls is ZERO here, so duplication isn\'t possible')
+            pass
+        return True
 
         backup_list=game_obj.balls_list.copy()
         for demo_ball in backup_list:            
