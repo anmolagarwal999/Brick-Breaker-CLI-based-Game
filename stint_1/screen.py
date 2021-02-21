@@ -6,7 +6,7 @@ colorama.init(autoreset=False)
 import random
 import time
 import sys
-
+from time import monotonic as clock, sleep
 import config as conf
 from bricks_class import BricksClass,UnbreakableBrick, NormalBrick, ExplosiveBrick
 
@@ -74,19 +74,19 @@ class Screen:
         # conversion to an array
         self._bg_layer=np.array(self._bg_layer)
 
-        logging.debug(f"self.backboard SHAPE IS is  {self._bg_layer.shape}")
-        logging.debug(f"self.backboard is  {self._bg_layer}")
-        part()
+        # logging.debug(f"self.backboard SHAPE IS is  {self._bg_layer.shape}")
+        # logging.debug(f"self.backboard is  {self._bg_layer}")
+        # part()
 
         #############################################################################################################
         self._fore_board = np.full((self._tot_screen_rows, self._tot_screen_cols), ' ')
         #############################################################################
 
-        logging.debug(
-            f"Finally is self.backboard is  \n{self._bg_layer}\n\n")
-        logging.debug(
-            f"Finally is self.foreboard (SHAPE: {self._fore_board.shape} is  \n{self._fore_board}\n\n"
-        )
+        # logging.debug(
+        #     f"Finally is self.backboard is  \n{self._bg_layer}\n\n")
+        # logging.debug(
+        #     f"Finally is self.foreboard (SHAPE: {self._fore_board.shape} is  \n{self._fore_board}\n\n"
+        # )
 
     def clear_foreground(self):
         '''Clearing the front part of the canvas'''
@@ -165,9 +165,10 @@ class Screen:
         end_row_num = game_brick.left_r + game_brick.len_r
         self._fore_board[start_row_num:end_row_num, start_col_num:
                          end_col_num] = ''
-        logging.info(f"end col num is {end_col_num}")
+        #logging.info(f"end col num is {end_col_num}")
         self._bg_layer[start_row_num:end_row_num, start_col_num:
                          end_col_num] = conf.BG_COLOR
+        # self.print_board(True)
         part()
 
 
@@ -189,15 +190,23 @@ class Screen:
                              color_code]
 
 
-    def print_board(self):
+    def print_board(self, should_wait=False):
         '''
         Display canvas on console
         '''
-        logging.info("Using the SETTING CURSON ON TOP ANSI SEQUENCE")
+        
+        #logging.info("Using the SETTING CURSON ON TOP ANSI SEQUENCE")
         print(self.RESET_CURSOR_ANSI)
         for i in range(self._tot_screen_rows):
             for j in range(self._tot_screen_cols):
                 print(self._bg_layer[i][j] + self._fore_board[i][j], end='')
             print('')
-        logging.info("print_board() done")
+        #logging.info("print_board() done")
+
+        # if should_wait:
+        #     logging.info("Making it wait")
+        #     sleep(5)
+        #     logging.info("Wait over")
+
+
 

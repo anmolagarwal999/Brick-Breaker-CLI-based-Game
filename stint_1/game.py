@@ -171,6 +171,10 @@ class Game:
                 seq_in_row += 1
                 #logging.info(f"Coordinates are {i}:{j}")
                 color_code = ((first_idx + seq_in_row) % 5 + 5) % 5 + 1
+                # if color_code==4:
+                #     color_code=2
+                # elif color_code==2:
+                #     color_code=4
                 logging.critical(f"{seq_in_row-i}:{color_code}")
                 decided_class = NormalBrick
                 if color_code == 4:
@@ -464,7 +468,7 @@ class Game:
             assert (
                 self.game_paddle.len_c == self.game_paddle.ascii_repr.shape[1])
 
-            bricks_length_initial = len(self.bricks_list)
+            # bricks_length_initial = len(self.bricks_list)
             while clock() - paddle_last_tended < time_unit_duration:
                 #logging.info(f"Inside obstacle loop, dis is {clock() - paddle_last_tended}")
                 dup_list = self.balls_list.copy()
@@ -495,8 +499,8 @@ class Game:
             self.check_powerups_expiry()
             self.paint_objs()
 
-            if len(self.bricks_list) != bricks_length_initial:
-                sleep(1)
+            # if len(self.bricks_list) != bricks_length_initial:
+            #     sleep(1)
             self._screen.print_board()
             self.print_game_details()
 
