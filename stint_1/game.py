@@ -80,7 +80,7 @@ class Game:
 
         # self.available_powerups=[ExpandPaddle, ShrinkPaddle, FastBall, ThruBall,BallMultiplier,PaddleGrab]
         self.bricks_list = []
-        self.available_powerups = [FastBall]
+        self.available_powerups = [ThruBall]
         self.init_new_life()
 
         ######################################################################
@@ -171,10 +171,10 @@ class Game:
                 seq_in_row += 1
                 #logging.info(f"Coordinates are {i}:{j}")
                 color_code = ((first_idx + seq_in_row) % 5 + 5) % 5 + 1
-                # if color_code==4:
-                #     color_code=2
-                # elif color_code==2:
-                #     color_code=4
+                if color_code==4:
+                    color_code=2
+                elif color_code==2:
+                    color_code=4
                 logging.critical(f"{seq_in_row-i}:{color_code}")
                 decided_class = NormalBrick
                 if color_code == 4:
@@ -225,7 +225,7 @@ class Game:
         logging.critical(f"BALL WALL insvestigation is {prob_r}:{prob_c}")
         if prob_c < 0 or prob_c >= self.just_game_cols:
             return True
-        if prob_r < 0 or prob_r >= self._just_game_rows:
+        if prob_r < -1 or prob_r >= self._just_game_rows:
             return True
         return False
 
@@ -272,6 +272,9 @@ class Game:
         return False
 
     def try_powerup_generation(self, prob_r, prob_c):
+
+        if len(self.curr_powerups_list)!=0:
+            return
         self.curr_powerup_idx = (self.curr_powerup_idx + 1) % (len(
             self.available_powerups))
 
@@ -390,13 +393,14 @@ class Game:
             logging.debug("Vertical Collision with PADDLE")
             ball_obj.flip_vertical_velocity()
         else:
-            if prob_r == 0:
+            if prob_r < 0:
                 '''sys.exit()'''
                 ball_obj.isActive = False
                 self.balls_list.remove(ball_obj)
                 if len(self.balls_list) == 0:
                     self._lives_left -= 1
                     if self._lives_left == 0:
+                        sleep(1)
                         self.game_over_screen("All lives are over")
                     self.init_new_life()
                     termios.tcflush(
@@ -468,6 +472,9 @@ class Game:
             assert (
                 self.game_paddle.len_c == self.game_paddle.ascii_repr.shape[1])
 
+            if self.handle_input():  # found a keystroke
+                pass
+
             # bricks_length_initial = len(self.bricks_list)
             while clock() - paddle_last_tended < time_unit_duration:
                 #logging.info(f"Inside obstacle loop, dis is {clock() - paddle_last_tended}")
@@ -492,8 +499,7 @@ class Game:
 
             #sys.exit()
             #logging.info("Outside obstacle loop")
-            if self.handle_input():  # found a keystroke
-                pass
+            
 
             self.move_powerups()
 
