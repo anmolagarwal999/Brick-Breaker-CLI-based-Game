@@ -159,6 +159,8 @@ class RainbowBrick(BricksClass):
         BricksClass.tot_breakable_bricks+=1
 
     def update_power_factor(self,new_factor):
+        if self.contact_made_yet:
+            return
         self.score_bounty=conf.SCORE_BRICK_DESTROYED[new_factor]
         self.power_factor=new_factor
      

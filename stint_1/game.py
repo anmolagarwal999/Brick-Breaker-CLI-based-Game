@@ -557,6 +557,9 @@ class Game:
             self.curr_powerups_list.remove(i)
 
     def descend_bricks(self):
+        ########COMMENT THIS##########
+        return
+        ##############################
         logging.info("GOing to descend all bricks")
         
         for this_brick in self.bricks_list:
@@ -567,6 +570,12 @@ class Game:
                 if this_brick.left_r==1:
                     self.game_over_screen("Brick touched PADDLE LEVEL. You lost")
 
+    def update_rainbow_bricks(self):
+        dup_bricks_list = self.bricks_list.copy()
+        for this_brick in dup_bricks_list:
+            if isinstance(this_brick, RainbowBrick):
+                new_power=((this_brick.power_factor+1)%3)+1
+                this_brick.update_power_factor(new_power)
 
 
     def start_game(self):
@@ -584,8 +593,11 @@ class Game:
 
         self.did_any_ball_hit_the_paddle=False
 
+        global_cnt=0
+
         while True:
             paddle_last_tended = clock()
+            global_cnt+=1
             # logging.error(f"Paddle len theoretical is {self._game_paddle.len_c} and actual is {self._game_paddle.ascii_repr.shape}")
             assert (
                 self._game_paddle.len_c == self._game_paddle.ascii_repr.shape[1])
@@ -595,6 +607,9 @@ class Game:
             if self.did_any_ball_hit_the_paddle and  conf.TIME_BEFORE_BRICKS_DESCEND<clock()-self.level_start_time:
                 self.descend_bricks()
             self.did_any_ball_hit_the_paddle=False
+
+            
+
 
 
             
@@ -636,6 +651,9 @@ class Game:
             dup_list = self.balls_list.copy()
             # for this_ball in dup_list:
             #     self.move_ball_vertically(this_ball)
+
+            if global_cnt%10==0:
+                self.update_rainbow_bricks()
 
             self.check_powerups_expiry()
             self.paint_objs()
