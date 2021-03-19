@@ -13,7 +13,7 @@ INFO:Inside init() of paddle class with attributes
         '-', ']']], dtype='<U1')}
 
 INFO:Inside init() of BALL class with attributes
-{'_len_c': 1, '_len_r': 1, '_left_c': 40, '_left_r': 1, '_is_stuck': True, 'offset_from_center': 1, '_isVisible': True, '_vel_r': 1, '_vel_c': 1, 'is_boss_cnt': 0, 'ball_last_tended_h': 92518.542304779, 'ball_last_tended_v': 92518.542305485, 'ascii_repr': array([['O']], dtype='<U1')}
+{'_len_c': 1, '_len_r': 1, '_left_c': 37, '_left_r': 1, '_is_stuck': True, 'offset_from_center': 0, '_isVisible': True, '_vel_r': 1, '_vel_c': 0, 'is_boss_cnt': 0, 'ball_last_tended_h': 95300.330137105, 'ball_last_tended_v': 95300.330138578, 'ascii_repr': array([['O']], dtype='<U1')}
 
 INFO:Color code is 6
 INFO:Color code is 3
@@ -178,21 +178,1055 @@ CRITICAL:Vertical row of ball is 8
 CRITICAL:Vertical row of ball is 9
 CRITICAL:Vertical row of ball is 10
 CRITICAL:Vertical row of ball is 11
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 50, '_seq_id': 14, '_sum_id': 2, '_isVisible': True, 'score_bounty': 3, 'power_factor': 2, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 35, '_seq_id': 9, '_sum_id': -3, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 35, '_seq_id': 9, '_sum_id': -3, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:rand float is 0.37069790902854116
+INFO:Inside init() of POWERUPS class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_r': 12, '_left_c': 35, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['+']], dtype='<U1')}
+
+INFO:Inside init() of POWERUPS class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_r': 12, '_left_c': 35, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['+']], dtype='<U1')}
+
+INFO:Powerup appended
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+INFO:
+[PRESSED v]
+
+INFO:Inside init() of BULLET class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_c': 33, '_left_r': 0, '_isVisible': True, '_vel_r': 1, '_vel_c': 0, 'bullet_last_tended_v': 95301.717942226, 'ascii_repr': array([['*']], dtype='<U1')}
+
+CRITICAL:Vertical row of ball is 10
+CRITICAL:Vertical row of BULLET is 1
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of BULLET is 2
+CRITICAL:Vertical row of ball is 8
+CRITICAL:Vertical row of BULLET is 3
+CRITICAL:Vertical row of ball is 7
+CRITICAL:Vertical row of BULLET is 4
+CRITICAL:Vertical row of ball is 6
+CRITICAL:Vertical row of BULLET is 5
+CRITICAL:Vertical row of ball is 5
+CRITICAL:Vertical row of BULLET is 6
+CRITICAL:Vertical row of ball is 4
+CRITICAL:Vertical row of BULLET is 7
+CRITICAL:Vertical row of ball is 3
+CRITICAL:Vertical row of BULLET is 8
+CRITICAL:Vertical row of ball is 2
+CRITICAL:Vertical row of BULLET is 9
+CRITICAL:Vertical row of ball is 1
+CRITICAL:Vertical row of BULLET is 10
+DEBUG:speed inc is 4
+INFO:Is paddle magnetic : 0
+DEBUG:Vertical Collision with PADDLE
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of BULLET is 11
+DEBUG:Inside increase paddle size
+INFO:Length set is 19, length actual is (1, 19)
+CRITICAL:Vertical row of ball is 2
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 32, '_seq_id': 8, '_sum_id': -4, '_isVisible': True, 'score_bounty': 3, 'power_factor': 2, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:BULLET Vertical Collision with BRICK
+CRITICAL:Vertical row of ball is 3
+CRITICAL:Vertical row of ball is 4
+CRITICAL:Vertical row of ball is 5
+CRITICAL:Vertical row of ball is 6
+CRITICAL:Vertical row of ball is 7
+CRITICAL:Vertical row of ball is 8
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of ball is 10
+CRITICAL:Vertical row of ball is 11
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 59, '_seq_id': 17, '_sum_id': 5, '_isVisible': True, 'score_bounty': 2, 'power_factor': 1, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
 DEBUG:Vertical Collision with BRICK
 CRITICAL:Vertical velocity FLIPPED
 CRITICAL:Vertical row of ball is 10
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 28
+INFO:Curr right x is 46
 CRITICAL:Vertical row of ball is 9
 CRITICAL:Vertical row of ball is 8
 CRITICAL:Vertical row of ball is 7
 CRITICAL:Vertical row of ball is 6
+CRITICAL:Vertical row of ball is 5
+CRITICAL:Vertical row of ball is 4
+CRITICAL:Vertical row of ball is 3
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 32
+INFO:Curr right x is 50
+CRITICAL:Vertical row of ball is 2
+CRITICAL:Vertical row of ball is 1
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 36
+INFO:Curr right x is 54
+CRITICAL:Vertical row of ball is 0
+CRITICAL:Vertical velocity FLIPPED
+ERROR:
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+BALL TOUCHED GROUND
+$$$$$$$$$$$$$$$$$$
+CRITICAL:Vertical row of ball is 1
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 40
+INFO:Curr right x is 58
+CRITICAL:Vertical row of ball is 2
+CRITICAL:Vertical row of ball is 3
+CRITICAL:Vertical row of ball is 4
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 44
+INFO:Curr right x is 62
+CRITICAL:Vertical row of ball is 5
+CRITICAL:Vertical row of ball is 6
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 48
+INFO:Curr right x is 66
+CRITICAL:Vertical row of ball is 7
+CRITICAL:Vertical row of ball is 8
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of ball is 10
+CRITICAL:Vertical row of ball is 11
+INFO:
+[PRESSED v]
+
+INFO:Inside init() of BULLET class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_c': 57, '_left_r': 0, '_isVisible': True, '_vel_r': 1, '_vel_c': 0, 'bullet_last_tended_v': 95306.447270283, 'ascii_repr': array([['*']], dtype='<U1')}
+
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 38, '_seq_id': 10, '_sum_id': -2, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 38, '_seq_id': 10, '_sum_id': -2, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:rand float is 0.17068119693356987
+INFO:Randomness says NO
+CRITICAL:coordinates are [[11, 9], [11, 10], [11, 11], [12, 9], [12, 11], [13, 9], [13, 10], [13, 11]]
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 41, '_seq_id': 11, '_sum_id': -1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 41, '_seq_id': 11, '_sum_id': -1, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 35, '_seq_id': 9, '_sum_id': -4, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 35, '_seq_id': 9, '_sum_id': -4, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 38, '_seq_id': 10, '_sum_id': -3, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 38, '_seq_id': 10, '_sum_id': -3, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 41, '_seq_id': 11, '_sum_id': -2, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 41, '_seq_id': 11, '_sum_id': -2, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[12, 10], [12, 11], [12, 12], [13, 10], [13, 12], [14, 10], [14, 11], [14, 12]]
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 44, '_seq_id': 12, '_sum_id': 0, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 44, '_seq_id': 12, '_sum_id': -1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 44, '_seq_id': 12, '_sum_id': -1, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 38, '_seq_id': 10, '_sum_id': -4, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 38, '_seq_id': 10, '_sum_id': -4, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 41, '_seq_id': 11, '_sum_id': -3, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 41, '_seq_id': 11, '_sum_id': -3, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 44, '_seq_id': 12, '_sum_id': -2, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 44, '_seq_id': 12, '_sum_id': -2, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[13, 11], [13, 12], [13, 13], [14, 11], [14, 13], [15, 11], [15, 12], [15, 13]]
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 47, '_seq_id': 13, '_sum_id': 0, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 47, '_seq_id': 13, '_sum_id': -1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 47, '_seq_id': 13, '_sum_id': -1, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 41, '_seq_id': 11, '_sum_id': -4, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 41, '_seq_id': 11, '_sum_id': -4, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 44, '_seq_id': 12, '_sum_id': -3, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 44, '_seq_id': 12, '_sum_id': -3, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 47, '_seq_id': 13, '_sum_id': -2, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 47, '_seq_id': 13, '_sum_id': -2, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[14, 12], [14, 13], [14, 14], [15, 12], [15, 14], [16, 12], [16, 13], [16, 14]]
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 50, '_seq_id': 14, '_sum_id': 0, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 50, '_seq_id': 14, '_sum_id': -1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 50, '_seq_id': 14, '_sum_id': -1, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 44, '_seq_id': 12, '_sum_id': -4, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 44, '_seq_id': 12, '_sum_id': -4, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 47, '_seq_id': 13, '_sum_id': -3, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 47, '_seq_id': 13, '_sum_id': -3, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 50, '_seq_id': 14, '_sum_id': -2, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 50, '_seq_id': 14, '_sum_id': -2, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[15, 13], [15, 14], [15, 15], [16, 13], [16, 15], [17, 13], [17, 14], [17, 15]]
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 53, '_seq_id': 15, '_sum_id': 0, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 53, '_seq_id': 15, '_sum_id': -1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 53, '_seq_id': 15, '_sum_id': -1, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 47, '_seq_id': 13, '_sum_id': -4, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 47, '_seq_id': 13, '_sum_id': -4, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 50, '_seq_id': 14, '_sum_id': -3, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 50, '_seq_id': 14, '_sum_id': -3, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 53, '_seq_id': 15, '_sum_id': -2, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 53, '_seq_id': 15, '_sum_id': -2, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[16, 14], [16, 15], [16, 16], [17, 14], [17, 16], [18, 14], [18, 15], [18, 16]]
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 56, '_seq_id': 16, '_sum_id': 0, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 56, '_seq_id': 16, '_sum_id': -1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 56, '_seq_id': 16, '_sum_id': -1, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 50, '_seq_id': 14, '_sum_id': -4, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 50, '_seq_id': 14, '_sum_id': -4, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 53, '_seq_id': 15, '_sum_id': -3, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 53, '_seq_id': 15, '_sum_id': -3, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 56, '_seq_id': 16, '_sum_id': -2, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 56, '_seq_id': 16, '_sum_id': -2, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[17, 15], [17, 16], [17, 17], [18, 15], [18, 17], [19, 15], [19, 16], [19, 17]]
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 59, '_seq_id': 17, '_sum_id': 0, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 59, '_seq_id': 17, '_sum_id': -1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 59, '_seq_id': 17, '_sum_id': -1, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 53, '_seq_id': 15, '_sum_id': -4, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 53, '_seq_id': 15, '_sum_id': -4, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 56, '_seq_id': 16, '_sum_id': -3, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 56, '_seq_id': 16, '_sum_id': -3, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 59, '_seq_id': 17, '_sum_id': -2, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 59, '_seq_id': 17, '_sum_id': -2, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[18, 16], [18, 17], [18, 18], [19, 16], [19, 18], [20, 16], [20, 17], [20, 18]]
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 62, '_seq_id': 18, '_sum_id': 0, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 62, '_seq_id': 18, '_sum_id': -1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 62, '_seq_id': 18, '_sum_id': -1, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of BULLET is 1
+CRITICAL:Vertical row of ball is 10
+CRITICAL:Vertical row of BULLET is 2
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of BULLET is 3
+CRITICAL:Vertical row of ball is 8
+CRITICAL:Vertical row of BULLET is 4
+CRITICAL:Vertical row of ball is 7
+CRITICAL:Vertical row of BULLET is 5
+CRITICAL:Vertical row of ball is 6
+CRITICAL:Vertical row of BULLET is 6
+CRITICAL:Vertical row of ball is 5
+CRITICAL:Vertical row of BULLET is 7
+CRITICAL:Vertical row of ball is 4
+CRITICAL:Vertical row of BULLET is 8
+CRITICAL:Vertical row of ball is 3
+CRITICAL:Vertical row of BULLET is 9
+CRITICAL:Vertical row of ball is 2
+CRITICAL:Vertical row of BULLET is 10
+CRITICAL:Vertical row of ball is 1
+CRITICAL:Vertical row of BULLET is 11
+CRITICAL:Vertical row of ball is 0
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 56, '_seq_id': 16, '_sum_id': 4, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 56, '_seq_id': 16, '_sum_id': 4, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:rand float is 0.17005715896248974
+INFO:Randomness says NO
+CRITICAL:coordinates are [[11, 15], [11, 16], [11, 17], [12, 15], [12, 17], [13, 15], [13, 16], [13, 17]]
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 53, '_seq_id': 15, '_sum_id': 3, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 53, '_seq_id': 15, '_sum_id': 3, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 59, '_seq_id': 17, '_sum_id': 5, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 59, '_seq_id': 17, '_sum_id': 5, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 53, '_seq_id': 15, '_sum_id': 2, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 53, '_seq_id': 15, '_sum_id': 2, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 56, '_seq_id': 16, '_sum_id': 3, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 56, '_seq_id': 16, '_sum_id': 3, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 59, '_seq_id': 17, '_sum_id': 4, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 59, '_seq_id': 17, '_sum_id': 4, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[12, 16], [12, 17], [12, 18], [13, 16], [13, 18], [14, 16], [14, 17], [14, 18]]
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 62, '_seq_id': 18, '_sum_id': 6, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 62, '_seq_id': 18, '_sum_id': 5, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 62, '_seq_id': 18, '_sum_id': 5, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 56, '_seq_id': 16, '_sum_id': 2, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 56, '_seq_id': 16, '_sum_id': 2, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 59, '_seq_id': 17, '_sum_id': 3, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 59, '_seq_id': 17, '_sum_id': 3, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 62, '_seq_id': 18, '_sum_id': 4, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 62, '_seq_id': 18, '_sum_id': 4, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[13, 17], [13, 18], [13, 19], [14, 17], [14, 19], [15, 17], [15, 18], [15, 19]]
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 59, '_seq_id': 17, '_sum_id': 2, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 59, '_seq_id': 17, '_sum_id': 2, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 62, '_seq_id': 18, '_sum_id': 3, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 62, '_seq_id': 18, '_sum_id': 3, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+DEBUG:BULLET Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+ERROR:
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+BALL TOUCHED GROUND
+$$$$$$$$$$$$$$$$$$
+CRITICAL:Vertical row of ball is 1
+INFO:
+[PRESSED v]
+
+INFO:Inside init() of BULLET class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_c': 57, '_left_r': 0, '_isVisible': True, '_vel_r': 1, '_vel_c': 0, 'bullet_last_tended_v': 95307.920022779, 'ascii_repr': array([['*']], dtype='<U1')}
+
+CRITICAL:Vertical row of ball is 2
+CRITICAL:Vertical row of BULLET is 1
+CRITICAL:Vertical row of ball is 3
+CRITICAL:Vertical row of BULLET is 2
+CRITICAL:Vertical row of ball is 4
+CRITICAL:Vertical row of BULLET is 3
+CRITICAL:Vertical row of ball is 5
+CRITICAL:Vertical row of BULLET is 4
+INFO:
+[PRESSED v]
+
+INFO:Inside init() of BULLET class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_c': 57, '_left_r': 0, '_isVisible': True, '_vel_r': 1, '_vel_c': 0, 'bullet_last_tended_v': 95308.341026285, 'ascii_repr': array([['*']], dtype='<U1')}
+
+CRITICAL:Vertical row of ball is 6
+CRITICAL:Vertical row of BULLET is 5
+CRITICAL:Vertical row of BULLET is 1
+CRITICAL:Vertical row of ball is 7
+CRITICAL:Vertical row of BULLET is 6
+CRITICAL:Vertical row of BULLET is 2
+CRITICAL:Vertical row of ball is 8
+CRITICAL:Vertical row of BULLET is 7
+CRITICAL:Vertical row of BULLET is 3
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of BULLET is 8
+CRITICAL:Vertical row of BULLET is 4
+CRITICAL:Vertical row of ball is 10
+CRITICAL:Vertical row of BULLET is 9
+CRITICAL:Vertical row of BULLET is 5
+CRITICAL:Vertical row of ball is 11
+CRITICAL:Vertical row of BULLET is 10
+CRITICAL:Vertical row of BULLET is 6
+CRITICAL:Vertical row of ball is 12
+CRITICAL:Vertical row of BULLET is 11
+CRITICAL:Vertical row of BULLET is 7
+CRITICAL:Vertical row of ball is 13
+CRITICAL:Vertical row of BULLET is 12
+CRITICAL:Vertical row of BULLET is 8
+CRITICAL:Vertical row of ball is 14
+CRITICAL:Vertical row of BULLET is 13
+CRITICAL:Vertical row of BULLET is 9
+CRITICAL:Vertical row of ball is 15
+CRITICAL:Vertical row of BULLET is 14
+CRITICAL:Vertical row of BULLET is 10
+CRITICAL:Vertical row of ball is 16
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 56, '_seq_id': 16, '_sum_id': 1, '_isVisible': True, 'score_bounty': 3, 'power_factor': 2, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:BULLET Vertical Collision with BRICK
+CRITICAL:Vertical row of BULLET is 11
+CRITICAL:Vertical row of ball is 17
+CRITICAL:Vertical row of BULLET is 12
+CRITICAL:Vertical row of ball is 18
+CRITICAL:Vertical row of BULLET is 13
+CRITICAL:Vertical row of ball is 19
+CRITICAL:Vertical row of BULLET is 14
+CRITICAL:Vertical row of ball is 20
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 56, '_seq_id': 16, '_sum_id': 1, '_isVisible': True, 'score_bounty': 3, 'power_factor': 1, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:BULLET Vertical Collision with BRICK
+INFO:
+[PRESSED v]
+
+INFO:Inside init() of BULLET class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_c': 57, '_left_r': 0, '_isVisible': True, '_vel_r': 1, '_vel_c': 0, 'bullet_last_tended_v': 95309.918166202, 'ascii_repr': array([['*']], dtype='<U1')}
+
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of BULLET is 1
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of BULLET is 2
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of BULLET is 3
+CRITICAL:Vertical row of ball is 24
+CRITICAL:Vertical row of BULLET is 4
+DEBUG:Vertical Collision with wall
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of BULLET is 5
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of BULLET is 6
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of BULLET is 7
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of BULLET is 8
+CRITICAL:Vertical row of ball is 20
+CRITICAL:Vertical row of BULLET is 9
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 20, '_seq_id': 4, '_sum_id': -15, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 20, '_seq_id': 4, '_sum_id': -15, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:rand float is 0.8842898617124864
+INFO:Inside init() of POWERUPS class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_r': 19, '_left_c': 20, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['+']], dtype='<U1')}
+
+INFO:Inside init() of POWERUPS class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_r': 19, '_left_c': 20, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['+']], dtype='<U1')}
+
+INFO:Powerup appended
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of BULLET is 10
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of BULLET is 11
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of BULLET is 12
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of BULLET is 13
+CRITICAL:Vertical row of ball is 24
+CRITICAL:Vertical row of BULLET is 14
+DEBUG:Vertical Collision with wall
+CRITICAL:Vertical velocity FLIPPED
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 56, '_seq_id': 16, '_sum_id': 1, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 56, '_seq_id': 16, '_sum_id': 1, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:rand float is 0.08057157841037177
+INFO:Randomness says NO
+DEBUG:BULLET Vertical Collision with BRICK
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 52
+INFO:Curr right x is 70
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of ball is 22
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 56
+INFO:Curr right x is 74
+INFO:My details are {'_len_c': 19, '_len_r': 1, '_left_c': 55, '_left_r': 0, '_is_magnet': 0, '_ascii_repr': array([['[', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-',
+        '-', '-', '-', '-', '-', ']']], dtype='<U1')}
+Right limit is 74
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of ball is 20
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 41, '_seq_id': 11, '_sum_id': -8, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 41, '_seq_id': 11, '_sum_id': -8, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:rand float is 0.35004203195609507
+INFO:Inside init() of POWERUPS class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_r': 19, '_left_c': 41, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['+']], dtype='<U1')}
+
+INFO:Inside init() of POWERUPS class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_r': 19, '_left_c': 41, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['+']], dtype='<U1')}
+
+INFO:Powerup appended
+CRITICAL:coordinates are [[18, 10], [18, 11], [18, 12], [19, 10], [19, 12], [20, 10], [20, 11], [20, 12]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 38, '_seq_id': 10, '_sum_id': -8, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 38, '_seq_id': 10, '_sum_id': -8, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[17, 9], [17, 10], [17, 11], [18, 9], [18, 11], [19, 9], [19, 10], [19, 11]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 35, '_seq_id': 9, '_sum_id': -8, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 35, '_seq_id': 9, '_sum_id': -8, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[16, 8], [16, 9], [16, 10], [17, 8], [17, 10], [18, 8], [18, 9], [18, 10]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 32, '_seq_id': 8, '_sum_id': -8, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 32, '_seq_id': 8, '_sum_id': -8, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[15, 7], [15, 8], [15, 9], [16, 7], [16, 9], [17, 7], [17, 8], [17, 9]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 29, '_seq_id': 7, '_sum_id': -8, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 29, '_seq_id': 7, '_sum_id': -8, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[14, 6], [14, 7], [14, 8], [15, 6], [15, 8], [16, 6], [16, 7], [16, 8]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 26, '_seq_id': 6, '_sum_id': -8, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 26, '_seq_id': 6, '_sum_id': -8, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[13, 5], [13, 6], [13, 7], [14, 5], [14, 7], [15, 5], [15, 6], [15, 7]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 23, '_seq_id': 5, '_sum_id': -8, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 23, '_seq_id': 5, '_sum_id': -8, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[12, 4], [12, 5], [12, 6], [13, 4], [13, 6], [14, 4], [14, 5], [14, 6]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 20, '_seq_id': 4, '_sum_id': -8, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 20, '_seq_id': 4, '_sum_id': -8, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[11, 3], [11, 4], [11, 5], [12, 3], [12, 5], [13, 3], [13, 4], [13, 5]]
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 17, '_seq_id': 3, '_sum_id': -9, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 17, '_seq_id': 3, '_sum_id': -9, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 23, '_seq_id': 5, '_sum_id': -7, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 23, '_seq_id': 5, '_sum_id': -7, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 17, '_seq_id': 3, '_sum_id': -10, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 17, '_seq_id': 3, '_sum_id': -10, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 20, '_seq_id': 4, '_sum_id': -9, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 20, '_seq_id': 4, '_sum_id': -9, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 26, '_seq_id': 6, '_sum_id': -6, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 26, '_seq_id': 6, '_sum_id': -7, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 26, '_seq_id': 6, '_sum_id': -7, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 20, '_seq_id': 4, '_sum_id': -10, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 20, '_seq_id': 4, '_sum_id': -10, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 23, '_seq_id': 5, '_sum_id': -9, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 23, '_seq_id': 5, '_sum_id': -9, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 29, '_seq_id': 7, '_sum_id': -6, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 29, '_seq_id': 7, '_sum_id': -7, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 29, '_seq_id': 7, '_sum_id': -7, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 23, '_seq_id': 5, '_sum_id': -10, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 23, '_seq_id': 5, '_sum_id': -10, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 26, '_seq_id': 6, '_sum_id': -9, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 26, '_seq_id': 6, '_sum_id': -9, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 32, '_seq_id': 8, '_sum_id': -6, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 32, '_seq_id': 8, '_sum_id': -7, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 32, '_seq_id': 8, '_sum_id': -7, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 26, '_seq_id': 6, '_sum_id': -10, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 26, '_seq_id': 6, '_sum_id': -10, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 29, '_seq_id': 7, '_sum_id': -9, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 29, '_seq_id': 7, '_sum_id': -9, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 35, '_seq_id': 9, '_sum_id': -6, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 35, '_seq_id': 9, '_sum_id': -7, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 35, '_seq_id': 9, '_sum_id': -7, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 29, '_seq_id': 7, '_sum_id': -10, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 29, '_seq_id': 7, '_sum_id': -10, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 32, '_seq_id': 8, '_sum_id': -9, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 32, '_seq_id': 8, '_sum_id': -9, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 38, '_seq_id': 10, '_sum_id': -6, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 38, '_seq_id': 10, '_sum_id': -7, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 38, '_seq_id': 10, '_sum_id': -7, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 32, '_seq_id': 8, '_sum_id': -10, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 32, '_seq_id': 8, '_sum_id': -10, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 35, '_seq_id': 9, '_sum_id': -9, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 35, '_seq_id': 9, '_sum_id': -9, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 41, '_seq_id': 11, '_sum_id': -6, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 41, '_seq_id': 11, '_sum_id': -7, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 41, '_seq_id': 11, '_sum_id': -7, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 35, '_seq_id': 9, '_sum_id': -10, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 35, '_seq_id': 9, '_sum_id': -10, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 38, '_seq_id': 10, '_sum_id': -9, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 38, '_seq_id': 10, '_sum_id': -9, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 44, '_seq_id': 12, '_sum_id': -6, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 44, '_seq_id': 12, '_sum_id': -7, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 44, '_seq_id': 12, '_sum_id': -7, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of ball is 21
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 59
+INFO:Curr right x is 77
+INFO:My details are {'_len_c': 19, '_len_r': 1, '_left_c': 55, '_left_r': 0, '_is_magnet': 0, '_ascii_repr': array([['[', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-',
+        '-', '-', '-', '-', '-', ']']], dtype='<U1')}
+Right limit is 74
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of ball is 24
+DEBUG:Vertical Collision with wall
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of ball is 20
+DEBUG:Inside DECREASE paddle size
+INFO:Length set is 15, length actual is (1, 15)
+CRITICAL:Vertical row of ball is 19
+INFO:
+[PRESSED v]
+
+INFO:Inside init() of BULLET class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_c': 64, '_left_r': 0, '_isVisible': True, '_vel_r': 1, '_vel_c': 0, 'bullet_last_tended_v': 95313.071308037, 'ascii_repr': array([['*']], dtype='<U1')}
+
+CRITICAL:Vertical row of ball is 18
+CRITICAL:Vertical row of BULLET is 1
+CRITICAL:Vertical row of ball is 17
+CRITICAL:Vertical row of BULLET is 2
+CRITICAL:Vertical row of ball is 16
+CRITICAL:Vertical row of BULLET is 3
+CRITICAL:Vertical row of ball is 15
+CRITICAL:Vertical row of BULLET is 4
+CRITICAL:Vertical row of ball is 14
+CRITICAL:Vertical row of BULLET is 5
 INFO:
 [PRESSED a]
 
-INFO:Curr left x is 22
-INFO:Curr right x is 36
+INFO:Curr left x is 53
+INFO:Curr right x is 67
+CRITICAL:Vertical row of ball is 13
+CRITICAL:Vertical row of BULLET is 6
+CRITICAL:Vertical row of ball is 12
+CRITICAL:Vertical row of BULLET is 7
+CRITICAL:Vertical row of ball is 11
+CRITICAL:Vertical row of BULLET is 8
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 49
+INFO:Curr right x is 63
+CRITICAL:Vertical row of ball is 10
+CRITICAL:Vertical row of BULLET is 9
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of BULLET is 10
+CRITICAL:Vertical row of ball is 8
+CRITICAL:Vertical row of BULLET is 11
+CRITICAL:Vertical row of ball is 7
+CRITICAL:Vertical row of BULLET is 12
+CRITICAL:Vertical row of ball is 6
+CRITICAL:Vertical row of BULLET is 13
+CRITICAL:Vertical row of ball is 5
+CRITICAL:Vertical row of BULLET is 14
+CRITICAL:Vertical row of ball is 4
+CRITICAL:Vertical row of BULLET is 15
+CRITICAL:Vertical row of ball is 3
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 62, '_seq_id': 18, '_sum_id': 2, '_isVisible': True, 'score_bounty': 3, 'power_factor': 2, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:BULLET Vertical Collision with BRICK
+CRITICAL:Vertical row of ball is 2
+CRITICAL:Vertical row of ball is 1
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 45
+INFO:Curr right x is 59
+DEBUG:speed inc is -5
+INFO:Is paddle magnetic : 0
+DEBUG:Vertical Collision with PADDLE
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of ball is 2
+CRITICAL:Vertical row of ball is 3
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 41
+INFO:Curr right x is 55
+CRITICAL:Vertical row of ball is 4
+CRITICAL:Vertical row of ball is 5
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 37
+INFO:Curr right x is 51
+CRITICAL:Vertical row of ball is 6
+CRITICAL:Vertical row of ball is 7
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 33
+INFO:Curr right x is 47
+CRITICAL:Vertical row of ball is 8
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of ball is 10
+CRITICAL:Vertical row of ball is 11
+CRITICAL:Vertical row of ball is 12
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 11, '_seq_id': 1, '_sum_id': -11, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 11, '_seq_id': 1, '_sum_id': -11, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:rand float is 0.7396779399159555
+INFO:Inside init() of POWERUPS class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_r': 12, '_left_c': 11, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['+']], dtype='<U1')}
+
+INFO:Inside init() of POWERUPS class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_r': 12, '_left_c': 11, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['+']], dtype='<U1')}
+
+INFO:Powerup appended
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 29
+INFO:Curr right x is 43
+CRITICAL:Vertical row of ball is 13
+CRITICAL:Vertical row of ball is 14
+CRITICAL:Vertical row of ball is 15
+INFO:
+[PRESSED v]
+
+INFO:Inside init() of BULLET class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_c': 36, '_left_r': 0, '_isVisible': True, '_vel_r': 1, '_vel_c': 0, 'bullet_last_tended_v': 95316.537765767, 'ascii_repr': array([['*']], dtype='<U1')}
+
+CRITICAL:Vertical row of ball is 16
+CRITICAL:Vertical row of BULLET is 1
+CRITICAL:Vertical row of ball is 17
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 11, '_seq_id': 1, '_sum_id': -16, '_isVisible': True, 'score_bounty': 3, 'power_factor': 2, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+CRITICAL:Vertical row of BULLET is 2
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 25
+INFO:Curr right x is 39
+CRITICAL:Vertical row of ball is 18
+CRITICAL:Vertical row of BULLET is 3
+CRITICAL:Vertical row of ball is 19
+CRITICAL:Vertical row of BULLET is 4
+CRITICAL:Vertical row of ball is 20
+CRITICAL:Vertical row of BULLET is 5
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 21
+INFO:Curr right x is 35
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of BULLET is 6
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of BULLET is 7
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of BULLET is 8
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 17
+INFO:Curr right x is 31
+CRITICAL:Vertical row of ball is 24
+CRITICAL:Vertical row of BULLET is 9
+DEBUG:Vertical Collision with wall
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of BULLET is 10
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 13
+INFO:Curr right x is 27
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of BULLET is 11
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of BULLET is 12
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of BULLET is 13
+CRITICAL:Vertical row of ball is 20
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 35, '_seq_id': 9, '_sum_id': -5, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 35, '_seq_id': 9, '_sum_id': -5, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:rand float is 0.0062702234736110585
+INFO:Randomness says NO
+DEBUG:BULLET Vertical Collision with BRICK
+CRITICAL:Vertical row of ball is 19
+CRITICAL:Vertical row of ball is 18
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 9
+INFO:Curr right x is 23
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 62, '_seq_id': 18, '_sum_id': 1, '_isVisible': True, 'score_bounty': 3, 'power_factor': 2, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of ball is 19
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 5
+INFO:Curr right x is 19
+CRITICAL:Vertical row of ball is 20
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of ball is 22
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 1
+INFO:Curr right x is 15
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of ball is 24
+INFO:
+[PRESSED v]
+
+INFO:Inside init() of BULLET class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_c': 8, '_left_r': 0, '_isVisible': True, '_vel_r': 1, '_vel_c': 0, 'bullet_last_tended_v': 95318.962731294, 'ascii_repr': array([['*']], dtype='<U1')}
+
+DEBUG:Vertical Collision with wall
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of BULLET is 1
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of BULLET is 2
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of BULLET is 3
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of BULLET is 4
+CRITICAL:Vertical row of ball is 20
+CRITICAL:Vertical row of BULLET is 5
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 5
+INFO:Curr right x is 19
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 23, '_seq_id': 5, '_sum_id': -14, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 23, '_seq_id': 5, '_sum_id': -14, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:rand float is 0.4200570756293297
+INFO:Inside init() of POWERUPS class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_r': 19, '_left_c': 23, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['+']], dtype='<U1')}
+
+INFO:Inside init() of POWERUPS class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_r': 19, '_left_c': 23, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['+']], dtype='<U1')}
+
+INFO:Powerup appended
+CRITICAL:coordinates are [[18, 4], [18, 5], [18, 6], [19, 4], [19, 6], [20, 4], [20, 5], [20, 6]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 20, '_seq_id': 4, '_sum_id': -14, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 20, '_seq_id': 4, '_sum_id': -14, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[17, 3], [17, 4], [17, 5], [18, 3], [18, 5], [19, 3], [19, 4], [19, 5]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 17, '_seq_id': 3, '_sum_id': -14, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 17, '_seq_id': 3, '_sum_id': -14, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[16, 2], [16, 3], [16, 4], [17, 2], [17, 4], [18, 2], [18, 3], [18, 4]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 14, '_seq_id': 2, '_sum_id': -14, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 14, '_seq_id': 2, '_sum_id': -14, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[15, 1], [15, 2], [15, 3], [16, 1], [16, 3], [17, 1], [17, 2], [17, 3]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 11, '_seq_id': 1, '_sum_id': -14, '_isVisible': True, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 11, '_seq_id': 1, '_sum_id': -14, '_isVisible': False, 'score_bounty': 5, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+DEBUG:############################
+CRITICAL:coordinates are [[14, 0], [14, 1], [14, 2], [15, 0], [15, 2], [16, 0], [16, 1], [16, 2]]
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 11, '_seq_id': 1, '_sum_id': -13, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 11, '_seq_id': 1, '_sum_id': -13, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 14, '_seq_id': 2, '_sum_id': -12, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 14, '_seq_id': 2, '_sum_id': -13, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 14, '_seq_id': 2, '_sum_id': -13, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 11, '_seq_id': 1, '_sum_id': -15, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 11, '_seq_id': 1, '_sum_id': -15, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 17, '_seq_id': 3, '_sum_id': -12, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 17, '_seq_id': 3, '_sum_id': -13, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 17, '_seq_id': 3, '_sum_id': -13, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 11, '_seq_id': 1, '_sum_id': -16, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 11, '_seq_id': 1, '_sum_id': -16, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 14, '_seq_id': 2, '_sum_id': -15, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 14, '_seq_id': 2, '_sum_id': -15, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 20, '_seq_id': 4, '_sum_id': -12, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 20, '_seq_id': 4, '_sum_id': -13, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 20, '_seq_id': 4, '_sum_id': -13, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 14, '_seq_id': 2, '_sum_id': -16, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 14, '_seq_id': 2, '_sum_id': -16, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 17, '_seq_id': 3, '_sum_id': -15, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 17, '_seq_id': 3, '_sum_id': -15, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+DEBUG:############################
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 23, '_seq_id': 5, '_sum_id': -12, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 23, '_seq_id': 5, '_sum_id': -13, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 23, '_seq_id': 5, '_sum_id': -13, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 17, '_seq_id': 3, '_sum_id': -16, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 17, '_seq_id': 3, '_sum_id': -16, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 26, '_seq_id': 6, '_sum_id': -12, '_isVisible': False, 'score_bounty': 4, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 26, '_seq_id': 6, '_sum_id': -13, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 26, '_seq_id': 6, '_sum_id': -13, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+DEBUG:############################
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of BULLET is 6
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of BULLET is 7
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 9
+INFO:Curr right x is 23
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of BULLET is 8
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of BULLET is 9
+CRITICAL:Vertical row of ball is 24
+CRITICAL:Vertical row of BULLET is 10
+DEBUG:Vertical Collision with wall
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of BULLET is 11
+INFO:
+[PRESSED v]
+
+INFO:Inside init() of BULLET class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_c': 16, '_left_r': 0, '_isVisible': True, '_vel_r': 1, '_vel_c': 0, 'bullet_last_tended_v': 95320.123624635, 'ascii_repr': array([['*']], dtype='<U1')}
+
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of BULLET is 12
+CRITICAL:Vertical row of BULLET is 1
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of BULLET is 13
+CRITICAL:Vertical row of BULLET is 2
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of BULLET is 14
+CRITICAL:Vertical row of BULLET is 3
+CRITICAL:Vertical row of ball is 20
+CRITICAL:Vertical row of BULLET is 15
+CRITICAL:Vertical row of BULLET is 4
+CRITICAL:Vertical row of ball is 19
+CRITICAL:Vertical row of BULLET is 16
+CRITICAL:Vertical row of BULLET is 5
+CRITICAL:Vertical row of ball is 18
+CRITICAL:Vertical row of BULLET is 17
+CRITICAL:Vertical row of BULLET is 6
+CRITICAL:Vertical row of ball is 17
+CRITICAL:Vertical row of BULLET is 18
+CRITICAL:Vertical row of BULLET is 7
+CRITICAL:Vertical row of ball is 16
+CRITICAL:Vertical row of BULLET is 19
+CRITICAL:Vertical row of BULLET is 8
+CRITICAL:Vertical row of ball is 15
+CRITICAL:Vertical row of BULLET is 20
+CRITICAL:Vertical row of BULLET is 9
+CRITICAL:Vertical row of ball is 14
+CRITICAL:Vertical row of BULLET is 21
+CRITICAL:Vertical row of BULLET is 10
+CRITICAL:Vertical row of ball is 13
+CRITICAL:Vertical row of BULLET is 22
+CRITICAL:Vertical row of BULLET is 11
+CRITICAL:Vertical row of ball is 12
+CRITICAL:Vertical row of BULLET is 23
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 14, '_seq_id': 2, '_sum_id': -10, '_isVisible': True, 'score_bounty': 3, 'power_factor': 2, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:BULLET Vertical Collision with BRICK
+CRITICAL:Vertical row of ball is 11
+CRITICAL:Vertical row of BULLET is 24
+DEBUG:Inside increase paddle size
+INFO:Length set is 19, length actual is (1, 19)
+INFO:
+[PRESSED v]
+
+INFO:Inside init() of BULLET class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_c': 16, '_left_r': 0, '_isVisible': True, '_vel_r': 1, '_vel_c': 0, 'bullet_last_tended_v': 95321.490397264, 'ascii_repr': array([['*']], dtype='<U1')}
+
+CRITICAL:Vertical row of ball is 10
+DEBUG:BULLET Vertical Collision with wall
+CRITICAL:Vertical row of BULLET is 1
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of BULLET is 2
+CRITICAL:Vertical row of ball is 8
+CRITICAL:Vertical row of BULLET is 3
+CRITICAL:Vertical row of ball is 7
+CRITICAL:Vertical row of BULLET is 4
+INFO:
+[PRESSED v]
+
+INFO:Inside init() of BULLET class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_c': 16, '_left_r': 0, '_isVisible': True, '_vel_r': 1, '_vel_c': 0, 'bullet_last_tended_v': 95321.913205694, 'ascii_repr': array([['*']], dtype='<U1')}
+
+CRITICAL:Vertical row of ball is 6
+CRITICAL:Vertical row of BULLET is 5
+CRITICAL:Vertical row of BULLET is 1
+CRITICAL:Vertical row of ball is 5
+CRITICAL:Vertical row of BULLET is 6
+CRITICAL:Vertical row of BULLET is 2
+CRITICAL:Vertical row of ball is 4
+CRITICAL:Vertical row of BULLET is 7
+CRITICAL:Vertical row of BULLET is 3
+CRITICAL:Vertical row of ball is 3
+CRITICAL:Vertical row of BULLET is 8
+CRITICAL:Vertical row of BULLET is 4
+CRITICAL:Vertical row of ball is 2
+CRITICAL:Vertical row of BULLET is 9
+CRITICAL:Vertical row of BULLET is 5
+CRITICAL:Vertical row of ball is 1
+CRITICAL:Vertical row of BULLET is 10
+CRITICAL:Vertical row of BULLET is 6
+CRITICAL:Vertical row of ball is 0
+CRITICAL:Vertical row of BULLET is 11
+CRITICAL:Vertical row of BULLET is 7
+CRITICAL:Vertical velocity FLIPPED
+ERROR:
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+BALL TOUCHED GROUND
+$$$$$$$$$$$$$$$$$$
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 14, '_seq_id': 2, '_sum_id': -10, '_isVisible': True, 'score_bounty': 3, 'power_factor': 1, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:BULLET Vertical Collision with BRICK
+CRITICAL:Vertical row of BULLET is 8
+CRITICAL:Vertical row of ball is 1
+CRITICAL:Vertical row of BULLET is 9
+CRITICAL:Vertical row of ball is 2
+CRITICAL:Vertical row of BULLET is 10
+CRITICAL:Vertical row of ball is 3
+CRITICAL:Vertical row of BULLET is 11
+CRITICAL:Vertical row of ball is 4
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 14, '_seq_id': 2, '_sum_id': -10, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 14, '_seq_id': 2, '_sum_id': -10, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:rand float is 0.27656461744712746
+INFO:Randomness says NO
+DEBUG:BULLET Vertical Collision with BRICK
+CRITICAL:Vertical row of ball is 5
+CRITICAL:Vertical row of ball is 6
+CRITICAL:Vertical row of ball is 7
+CRITICAL:Vertical row of ball is 8
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 11
+INFO:Curr right x is 29
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of ball is 10
+CRITICAL:Vertical row of ball is 11
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 15
+INFO:Curr right x is 33
+CRITICAL:Vertical row of ball is 12
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 14, '_seq_id': 2, '_sum_id': -11, '_isVisible': True, 'score_bounty': 2, 'power_factor': 1, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of ball is 11
+CRITICAL:Vertical row of ball is 10
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of ball is 8
+CRITICAL:Vertical row of ball is 7
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 11
+INFO:Curr right x is 29
+CRITICAL:Vertical row of ball is 6
 CRITICAL:Vertical row of ball is 5
 CRITICAL:Vertical row of ball is 4
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 7
+INFO:Curr right x is 25
 CRITICAL:Vertical row of ball is 3
 CRITICAL:Vertical row of ball is 2
 CRITICAL:Vertical row of ball is 1
@@ -210,10 +1244,16 @@ CRITICAL:Vertical row of ball is 5
 CRITICAL:Vertical row of ball is 6
 CRITICAL:Vertical row of ball is 7
 CRITICAL:Vertical row of ball is 8
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 11
+INFO:Curr right x is 29
 CRITICAL:Vertical row of ball is 9
 CRITICAL:Vertical row of ball is 10
 CRITICAL:Vertical row of ball is 11
 CRITICAL:Vertical row of ball is 12
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 32, '_seq_id': 8, '_sum_id': -4, '_isVisible': True, 'score_bounty': 3, 'power_factor': 1, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
 CRITICAL:Vertical row of ball is 13
 CRITICAL:Vertical row of ball is 14
 CRITICAL:Vertical row of ball is 15
@@ -221,7 +1261,6 @@ CRITICAL:Vertical row of ball is 16
 CRITICAL:Vertical row of ball is 17
 CRITICAL:Vertical row of ball is 18
 CRITICAL:Vertical row of ball is 19
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 62, '_seq_id': 18, '_sum_id': -1, '_isVisible': True, 'score_bounty': 2, 'power_factor': 1, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
 CRITICAL:Vertical row of ball is 20
 CRITICAL:Vertical row of ball is 21
 CRITICAL:Vertical row of ball is 22
@@ -234,9 +1273,19 @@ CRITICAL:Vertical row of ball is 22
 CRITICAL:Vertical row of ball is 21
 CRITICAL:Vertical row of ball is 20
 CRITICAL:Vertical row of ball is 19
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 15
+INFO:Curr right x is 33
 CRITICAL:Vertical row of ball is 18
 CRITICAL:Vertical row of ball is 17
 CRITICAL:Vertical row of ball is 16
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 19
+INFO:Curr right x is 37
 CRITICAL:Vertical row of ball is 15
 CRITICAL:Vertical row of ball is 14
 CRITICAL:Vertical row of ball is 13
@@ -245,6 +1294,179 @@ CRITICAL:Vertical row of ball is 11
 CRITICAL:Vertical row of ball is 10
 CRITICAL:Vertical row of ball is 9
 CRITICAL:Vertical row of ball is 8
+CRITICAL:Vertical row of ball is 7
+INFO:
+[PRESSED v]
+
+INFO:Inside init() of BULLET class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_c': 28, '_left_r': 0, '_isVisible': True, '_vel_r': 1, '_vel_c': 0, 'bullet_last_tended_v': 95329.882419283, 'ascii_repr': array([['*']], dtype='<U1')}
+
+CRITICAL:Vertical row of ball is 6
+CRITICAL:Vertical row of BULLET is 1
+CRITICAL:Vertical row of ball is 5
+CRITICAL:Vertical row of BULLET is 2
+CRITICAL:Vertical row of ball is 4
+CRITICAL:Vertical row of BULLET is 3
+CRITICAL:Vertical row of ball is 3
+CRITICAL:Vertical row of BULLET is 4
+CRITICAL:Vertical row of ball is 2
+CRITICAL:Vertical row of BULLET is 5
+CRITICAL:Vertical row of ball is 1
+CRITICAL:Vertical row of BULLET is 6
+CRITICAL:Vertical row of ball is 0
+CRITICAL:Vertical row of BULLET is 7
+CRITICAL:Vertical velocity FLIPPED
+ERROR:
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+BALL TOUCHED GROUND
+$$$$$$$$$$$$$$$$$$
+CRITICAL:Vertical row of BULLET is 8
+CRITICAL:Vertical row of ball is 1
+CRITICAL:Vertical row of BULLET is 9
+CRITICAL:Vertical row of ball is 2
+CRITICAL:Vertical row of BULLET is 10
+CRITICAL:Vertical row of ball is 3
+CRITICAL:Vertical row of BULLET is 11
+CRITICAL:Vertical row of ball is 4
+CRITICAL:Vertical row of BULLET is 12
+CRITICAL:Vertical row of ball is 5
+CRITICAL:Vertical row of BULLET is 13
+CRITICAL:Vertical row of ball is 6
+CRITICAL:Vertical row of BULLET is 14
+CRITICAL:Vertical row of ball is 7
+CRITICAL:Vertical row of BULLET is 15
+CRITICAL:Vertical row of ball is 8
+CRITICAL:Vertical row of BULLET is 16
+DEBUG:Inside DECREASE paddle size
+INFO:Length set is 15, length actual is (1, 15)
+CRITICAL:Vertical row of ball is 9
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 26, '_seq_id': 6, '_sum_id': -11, '_isVisible': True, 'score_bounty': 2, 'power_factor': 1, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:BULLET Vertical Collision with BRICK
+CRITICAL:Vertical row of ball is 10
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 25
+INFO:Curr right x is 39
+CRITICAL:Vertical row of ball is 11
+CRITICAL:Vertical row of ball is 12
+CRITICAL:Vertical row of ball is 13
+CRITICAL:Vertical row of ball is 14
+CRITICAL:Vertical row of ball is 15
+CRITICAL:Vertical row of ball is 16
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 29
+INFO:Curr right x is 43
+CRITICAL:Vertical row of ball is 17
+CRITICAL:Vertical row of ball is 18
+CRITICAL:Vertical row of ball is 19
+CRITICAL:Vertical row of ball is 20
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of ball is 23
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 25
+INFO:Curr right x is 39
+CRITICAL:Vertical row of ball is 24
+DEBUG:Vertical Collision with wall
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of ball is 22
+INFO:
+[PRESSED v]
+
+INFO:Inside init() of BULLET class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_c': 32, '_left_r': 0, '_isVisible': True, '_vel_r': 1, '_vel_c': 0, 'bullet_last_tended_v': 95333.558681813, 'ascii_repr': array([['*']], dtype='<U1')}
+
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of BULLET is 1
+CRITICAL:Vertical row of ball is 20
+CRITICAL:Vertical row of BULLET is 2
+CRITICAL:Vertical row of ball is 19
+CRITICAL:Vertical row of BULLET is 3
+CRITICAL:Vertical row of ball is 18
+CRITICAL:Vertical row of BULLET is 4
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 62, '_seq_id': 18, '_sum_id': 1, '_isVisible': True, 'score_bounty': 3, 'power_factor': 1, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of BULLET is 5
+CRITICAL:Vertical row of ball is 19
+CRITICAL:Vertical row of BULLET is 6
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 50, '_seq_id': 14, '_sum_id': -5, '_isVisible': True, 'score_bounty': 3, 'power_factor': 2, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+CRITICAL:Vertical row of ball is 20
+CRITICAL:Vertical row of BULLET is 7
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of BULLET is 8
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of BULLET is 9
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of BULLET is 10
+CRITICAL:Vertical row of ball is 24
+CRITICAL:Vertical row of BULLET is 11
+DEBUG:Vertical Collision with wall
+CRITICAL:Vertical velocity FLIPPED
+INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 32, '_seq_id': 8, '_sum_id': -4, '_isVisible': True, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 32, '_seq_id': 8, '_sum_id': -4, '_isVisible': False, 'score_bounty': 3, 'power_factor': 0, 'is_brick_rainbow': False, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:rand float is 0.06330838590013321
+INFO:Randomness says NO
+DEBUG:BULLET Vertical Collision with BRICK
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of ball is 21
+INFO:
+[PRESSED v]
+
+INFO:Inside init() of BULLET class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_c': 32, '_left_r': 0, '_isVisible': True, '_vel_r': 1, '_vel_c': 0, 'bullet_last_tended_v': 95335.135302721, 'ascii_repr': array([['*']], dtype='<U1')}
+
+CRITICAL:Vertical row of ball is 20
+CRITICAL:Vertical row of BULLET is 1
+CRITICAL:Vertical row of ball is 19
+CRITICAL:Vertical row of BULLET is 2
+CRITICAL:Vertical row of ball is 18
+CRITICAL:Vertical row of BULLET is 3
+CRITICAL:Vertical row of ball is 17
+CRITICAL:Vertical row of BULLET is 4
+CRITICAL:Vertical row of ball is 16
+CRITICAL:Vertical row of BULLET is 5
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 23, '_seq_id': 5, '_sum_id': -11, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 23, '_seq_id': 5, '_sum_id': -11, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:rand float is 0.12302429252086289
+INFO:Randomness says NO
+CRITICAL:Vertical row of ball is 15
+CRITICAL:Vertical row of BULLET is 6
+CRITICAL:Vertical row of ball is 14
+CRITICAL:Vertical row of BULLET is 7
+CRITICAL:Vertical row of ball is 13
+CRITICAL:Vertical row of BULLET is 8
+CRITICAL:Vertical row of ball is 12
+CRITICAL:Vertical row of BULLET is 9
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 47, '_seq_id': 13, '_sum_id': 1, '_isVisible': True, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 12, '_left_c': 47, '_seq_id': 13, '_sum_id': 1, '_isVisible': False, 'score_bounty': 1, 'power_factor': 0, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:rand float is 0.9632377590972573
+INFO:Inside init() of POWERUPS class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_r': 12, '_left_c': 47, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['+']], dtype='<U1')}
+
+INFO:Inside init() of POWERUPS class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_r': 12, '_left_c': 47, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['+']], dtype='<U1')}
+
+INFO:Powerup appended
+CRITICAL:Vertical row of ball is 11
+CRITICAL:Vertical row of BULLET is 10
+CRITICAL:Vertical row of ball is 10
+CRITICAL:Vertical row of BULLET is 11
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of BULLET is 12
+CRITICAL:Vertical row of ball is 8
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 32, '_seq_id': 8, '_sum_id': -5, '_isVisible': True, 'score_bounty': 2, 'power_factor': 1, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:BULLET Vertical Collision with BRICK
 CRITICAL:Vertical row of ball is 7
 CRITICAL:Vertical row of ball is 6
 CRITICAL:Vertical row of ball is 5
@@ -264,3 +1486,93 @@ CRITICAL:Vertical row of ball is 3
 CRITICAL:Vertical row of ball is 4
 CRITICAL:Vertical row of ball is 5
 CRITICAL:Vertical row of ball is 6
+CRITICAL:Vertical row of ball is 7
+CRITICAL:Vertical row of ball is 8
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of ball is 10
+CRITICAL:Vertical row of ball is 11
+CRITICAL:Vertical row of ball is 12
+CRITICAL:Vertical row of ball is 13
+CRITICAL:Vertical row of ball is 14
+CRITICAL:Vertical row of ball is 15
+CRITICAL:Vertical row of ball is 16
+CRITICAL:Vertical row of ball is 17
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 44, '_seq_id': 12, '_sum_id': -5, '_isVisible': True, 'score_bounty': 3, 'power_factor': 2, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 47, '_seq_id': 13, '_sum_id': -5, '_isVisible': True, 'score_bounty': 3, 'power_factor': 2, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+INFO:
+[PRESSED v]
+
+INFO:Inside init() of BULLET class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_c': 32, '_left_r': 0, '_isVisible': True, '_vel_r': 1, '_vel_c': 0, 'bullet_last_tended_v': 95339.33631289, 'ascii_repr': array([['*']], dtype='<U1')}
+
+CRITICAL:Vertical row of ball is 16
+CRITICAL:Vertical row of BULLET is 1
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 59, '_seq_id': 17, '_sum_id': 1, '_isVisible': True, 'score_bounty': 3, 'power_factor': 2, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+CRITICAL:Vertical row of ball is 15
+CRITICAL:Vertical row of BULLET is 2
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 53, '_seq_id': 15, '_sum_id': 1, '_isVisible': True, 'score_bounty': 3, 'power_factor': 2, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of BULLET is 3
+CRITICAL:Vertical row of ball is 16
+CRITICAL:Vertical row of BULLET is 4
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 41, '_seq_id': 11, '_sum_id': -5, '_isVisible': True, 'score_bounty': 2, 'power_factor': 1, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 44, '_seq_id': 12, '_sum_id': -5, '_isVisible': True, 'score_bounty': 3, 'power_factor': 1, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of BULLET is 5
+CRITICAL:Vertical row of ball is 15
+CRITICAL:Vertical row of BULLET is 6
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 14, '_left_c': 53, '_seq_id': 15, '_sum_id': 1, '_isVisible': True, 'score_bounty': 3, 'power_factor': 1, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of BULLET is 7
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 59, '_seq_id': 17, '_sum_id': 1, '_isVisible': True, 'score_bounty': 3, 'power_factor': 1, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of BULLET is 8
+CRITICAL:Vertical row of ball is 14
+CRITICAL:Vertical row of BULLET is 9
+CRITICAL:Vertical row of ball is 13
+CRITICAL:Vertical row of BULLET is 10
+CRITICAL:Vertical row of ball is 12
+CRITICAL:Vertical row of BULLET is 11
+CRITICAL:Vertical row of ball is 11
+CRITICAL:Vertical row of BULLET is 12
+CRITICAL:Vertical row of ball is 10
+INFO:Brick trying to break has stuff like {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 32, '_seq_id': 8, '_sum_id': -5, '_isVisible': True, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'contact_made_yet': True, '_len_c': 3, '_len_r': 1, '_left_r': 13, '_left_c': 32, '_seq_id': 8, '_sum_id': -5, '_isVisible': False, 'score_bounty': 2, 'power_factor': 0, 'is_brick_rainbow': True, '_ascii_repr': array([['[', 'R', ']']], dtype='<U1')}
+DEBUG:############################
+INFO:rand float is 0.9522096814638694
+INFO:Inside init() of POWERUPS class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_r': 13, '_left_c': 32, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['+']], dtype='<U1')}
+
+INFO:Inside init() of POWERUPS class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_r': 13, '_left_c': 32, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['+']], dtype='<U1')}
+
+INFO:Powerup appended
+DEBUG:BULLET Vertical Collision with BRICK
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of ball is 8
+CRITICAL:Vertical row of ball is 7
+CRITICAL:Vertical row of ball is 6
+CRITICAL:Vertical row of ball is 5
+CRITICAL:Vertical row of ball is 4
+CRITICAL:Vertical row of ball is 3
+CRITICAL:Vertical row of ball is 2
+CRITICAL:Vertical row of ball is 1
+CRITICAL:Vertical row of ball is 0
+CRITICAL:Vertical velocity FLIPPED
+ERROR:
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+BALL TOUCHED GROUND
+$$$$$$$$$$$$$$$$$$
+CRITICAL:Vertical row of ball is 1
+DEBUG:Inside increase paddle size
+INFO:Length set is 19, length actual is (1, 19)
+CRITICAL:Vertical row of ball is 2
+CRITICAL:Vertical row of ball is 3
+CRITICAL:Vertical row of ball is 4
+CRITICAL:Vertical row of ball is 5
