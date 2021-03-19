@@ -456,6 +456,25 @@ class Game:
             return True
         return False
 
+    def did_ball_collide_with_ufo(self, prob_c, prob_r):
+        '''Checks if the ball collided with the ufo, 
+        Regulates speed
+        and
+        handles the sticky paddle case
+        '''
+
+        if self.game_ufo is None:
+            return False
+
+        dc = prob_c - self.game_ufo.left_c
+
+        ufo_height=self.game_ufo.len_r
+        for offset in range(0, ufo_height):
+            if self.game_ufo.left_r+offset == prob_r and (
+                    dc >= 0 and dc < self.game_ufo.len_c):            
+                return True
+        return False
+
     def did_ball_collide_with_this_brick(self, prob_c, prob_r, brick_obj):
         '''Returns True if ball collided with THIS brick,false otherwise'''
         dc = prob_c - brick_obj.left_c
@@ -564,6 +583,9 @@ class Game:
         elif (self.did_ball_collide_with_bricks(prob_c, prob_r, ball_obj)):
             #logging.debug("Collision with BRICK")
             ball_obj.flip_horizontal_velocity()
+        elif (self.did_ball_collide_with_ufo(prob_c, prob_r)):
+            logging.debug("Horizontal Collision with UFO")
+            ball_obj.flip_horizontal_velocity()
         else:
             ball_obj.move_horizontally()
 
@@ -599,6 +621,9 @@ class Game:
         elif (self.did_ball_collide_with_paddle(prob_c, prob_r, ball_obj)):
             logging.debug("Vertical Collision with PADDLE")
             # Even if the ball stuck due to magnet, reverse velocity will be helpful for the next time the ball gets released
+            ball_obj.flip_vertical_velocity()
+        elif (self.did_ball_collide_with_ufo(prob_c, prob_r)):
+            logging.debug("Vertical Collision with UFO")
             ball_obj.flip_vertical_velocity()
         else:
             if prob_r < 0:
