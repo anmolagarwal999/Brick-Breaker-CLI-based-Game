@@ -21,6 +21,8 @@ from powerups import PowerupsClass, ExpandPaddle, ShrinkPaddle, FastBall, ThruBa
 ###############################################################
 import logging
 
+from ufo_class import UFOClass
+
 
 # tail -f your.log
 def part():
@@ -80,7 +82,9 @@ class Game:
         self._score = 0
         self._lives_left = conf.TOT_LIVES
         self._overall_start_time = clock()
-        self.curr_level = 1
+        self.curr_level = 3
+
+        self.game_ufo=None
 
         # self._available_powerups=[ExpandPaddle, ShrinkPaddle, FastBall, ThruBall,BallMultiplier,PaddleGrab, PaddleShoot]
         self._available_powerups = [PaddleShoot]
@@ -97,6 +101,9 @@ class Game:
         '''IMPLEMENT FUNCTION TO GENERATE NEW BRICK COORDINATES HERE'''
         self.level_start_time = clock()
         self.init_new_life()
+
+        if self.curr_level==3:
+            self.game_ufo=UFOClass(self.game_paddle.left_c+self.game_paddle.len_c//2)
 
         # The first display of the canvas
         BricksClass.tot_breakable_bricks = 0
@@ -168,6 +175,11 @@ class Game:
             self._screen.add_entity(send_bullet.left_c, send_bullet.left_r, send_bullet.len_c,\
                 send_bullet.len_r,send_bullet.ascii_repr, "")
 
+        if self.game_ufo is not None:
+            self._screen.add_entity(self.game_ufo.left_c, self.game_ufo.left_r, self.game_ufo.len_c,\
+                self.game_ufo.len_r,self.game_ufo.ascii_repr, "")
+
+
     def get_time_left(self):
         '''Get time left'''
         time_elapsed = clock() - self._overall_start_time
@@ -224,48 +236,101 @@ class Game:
 
         self.bricks_list = []
 
-        # rows go from 0 to tot_r-1 , start from 10, go till end-2
-        # cols go from 0 to tot_c-1 , go from 5 to end-5
-        first_code = 0
-        for i in range(12, self._just_game_rows - 5):
-            first_idx = (first_code - i)
-            seq_in_row = 0
-            for j in range(11, self.just_game_cols - 10, 3):
-                seq_in_row += 1
-                #logging.info(f"Coordinates are {i}:{j}")
-                color_code = ((first_idx + seq_in_row) % 6 + 6) % 6 + 1
-                #color_code=5
-                # if color_code == 4:
-                #     color_code = 2
-                # elif color_code == 2:
-                #     color_code = 4
+        if self.curr_level!=3:
 
-                if color_code == 1:
-                    color_code = 4
-                elif color_code == 4:
-                    color_code = 1
-                elif color_code == 2:
-                    color_code = 6
-                elif color_code == 6:
-                    color_code = 2
+            # rows go from 0 to tot_r-1 , start from 10, go till end-2
+            # cols go from 0 to tot_c-1 , go from 5 to end-5
+            first_code = 0
+            for i in range(12, self._just_game_rows - 5):
+                first_idx = (first_code - i)
+                seq_in_row = 0
+                for j in range(11, self.just_game_cols - 10, 3):
+                    seq_in_row += 1
+                    #logging.info(f"Coordinates are {i}:{j}")
+                    color_code = ((first_idx + seq_in_row) % 6 + 6) % 6 + 1
+                    #color_code=5
+                    # if color_code == 4:
+                    #     color_code = 2
+                    # elif color_code == 2:
+                    #     color_code = 4
 
-                # if color_code==6:
-                #     color_code=2
-                #logging.critical(f"{seq_in_row-i}:{color_code}")
-                decided_class = NormalBrick
-                logging.info(f"Color code is {color_code}")
-                if color_code == 4:
-                    decided_class = UnbreakableBrick
-                elif color_code == 5:
-                    decided_class = ExplosiveBrick
-                elif color_code == 6:
-                    decided_class = RainbowBrick
-                    test_list = [1, 2, 3]
-                    color_code = random.choice(test_list)
-                self.bricks_list.append(
-                    decided_class(i, j, seq_in_row, (seq_in_row - i),
-                                  color_code))
-            #logging.critical("\n")
+                    if color_code == 1:
+                        color_code = 4
+                    elif color_code == 4:
+                        color_code = 1
+                    elif color_code == 2:
+                        color_code = 6
+                    elif color_code == 6:
+                        color_code = 2
+
+                    # if color_code==6:
+                    #     color_code=2
+                    #logging.critical(f"{seq_in_row-i}:{color_code}")
+                    decided_class = NormalBrick
+                    logging.info(f"Color code is {color_code}")
+                    if color_code == 4:
+                        decided_class = UnbreakableBrick
+                    elif color_code == 5:
+                        decided_class = ExplosiveBrick
+                    elif color_code == 6:
+                        decided_class = RainbowBrick
+                        test_list = [1, 2, 3]
+                        color_code = random.choice(test_list)
+                    self.bricks_list.append(
+                        decided_class(i, j, seq_in_row, (seq_in_row - i),
+                                    color_code))
+                #logging.critical("\n")
+        else:
+
+            self.bricks_list=[]
+            # rows go from 0 to tot_r-1 , start from 10, go till end-2
+            # cols go from 0 to tot_c-1 , go from 5 to end-5
+            first_code = 0
+            for i in range(6, self._just_game_rows - 12):
+                first_idx = (first_code - i)
+                seq_in_row = 0
+                for j in range(11, self.just_game_cols - 10, 3):
+                    seq_in_row += 1
+                    #logging.info(f"Coordinates are {i}:{j}")
+                    color_code = ((first_idx + seq_in_row) % 6 + 6) % 6 + 1
+                    #color_code=5
+                    # if color_code == 4:
+                    #     color_code = 2
+                    # elif color_code == 2:
+                    #     color_code = 4
+
+                    if color_code == 1:
+                        color_code = 4
+                    elif color_code == 4:
+                        color_code = 1
+                    elif color_code == 2:
+                        color_code = 6
+                    elif color_code == 6:
+                        color_code = 2
+                    if color_code==4:
+                    # if color_code==6:
+                    #     color_code=2
+                    #logging.critical(f"{seq_in_row-i}:{color_code}")
+                        decided_class = NormalBrick
+                        logging.info(f"Color code is {color_code}")
+                        if color_code == 4:
+                            decided_class = UnbreakableBrick
+                        elif color_code == 5:
+                            decided_class = ExplosiveBrick
+                        elif color_code == 6:
+                            decided_class = RainbowBrick
+                            test_list = [1, 2, 3]
+                            color_code = random.choice(test_list)
+                        self.bricks_list.append(
+                            decided_class(i, j, seq_in_row, (seq_in_row - i),
+                                        color_code))
+                #logging.critical("\n")
+
+
+
+
+
+
 
     def produce_bullet(self):
         col_val = self.game_paddle.left_c + self.game_paddle.len_c // 2
@@ -392,6 +457,8 @@ class Game:
 
         if self.random_yes_or_no() is False:
             return
+
+            ##########################
         self.curr_powerup_idx = (self.curr_powerup_idx + 1) % (len(
             self._available_powerups))
 
@@ -734,11 +801,14 @@ class Game:
             if self.handle_input():  # found a keystroke
                 logging.info("moving to next level automated")
                 self.next_level()
-
             elif BricksClass.tot_breakable_bricks == 0:
-                logging.info("moving to next level")
-                self.next_level()
-                #break
+
+                if self.curr_level<3:
+                    logging.info("moving to next level")
+                    self.next_level()
+                    #break
+                else:
+                    pass
 
             if self.get_time_left()[1] < 0:
                 self.game_over_screen("You LOST ON TIME !!!")
