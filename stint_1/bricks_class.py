@@ -24,12 +24,9 @@ class BricksClass:
         self._sum_id=sum_id
         self._isVisible=True
         self.score_bounty=conf.SCORE_BRICK_DESTROYED[power_factor]
-        self.power_factor=1 if power_factor==5 else power_factor
-        # self.ascii_repr=np.array([
-        #     ['[','T',']']
-        # ])
+        self.power_factor=1 if power_factor==5 else power_factor       
 
-        self.is_brick_rainbow=is_rainbow
+        self._is_brick_rainbow=is_rainbow
 
         if not is_rainbow:
             self._ascii_repr=np.array([
@@ -160,6 +157,7 @@ class RainbowBrick(BricksClass):
 
     def update_power_factor(self,new_factor):
         if self.contact_made_yet:
+            # Contact made => No need to change color
             return
         self.score_bounty=conf.SCORE_BRICK_DESTROYED[new_factor]
         self.power_factor=new_factor

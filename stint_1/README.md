@@ -13,6 +13,8 @@ The functionality has been inspired from [here](https://www.youtube.com/watch?v=
 - <kbd>a</kbd>: Move paddle towards the left
 - <kbd>d</kbd>: Move paddle towards the right
 - <kbd>s</kbd>: Release the ball from the paddle
+- <kbd>v</kbd>: Produces bullet
+- <kbd>b</kbd>: Next level
 
 ---
 ## Scoring System (can be modified in the  `config.py`)
@@ -34,6 +36,9 @@ The functionality has been inspired from [here](https://www.youtube.com/watch?v=
 - On hitting an explosive brick, a chain reaction is set up which tries 
 - Currently, the effect of FastBall powerup is limited to ball's horizontal velocity only. This can be modified to affect vertical velocity as well by changing the flag variable at an indicated place in the code.
 - logging library was allowed after discussion with TA (does not affect game functionality in any way)
+- The descent of bricks can happen max once every time in a frame rather than always. If two balls hit the paddle, still descending by one unit only
+- If the color of a rainbow brick does not change in a frame, that means that it was of color ‘x’ in prev frame and now, it went to a color ‘x+1’ but ball must have hit it so color again changed to ‘x’;
+
 
 
 
@@ -44,7 +49,9 @@ The functionality has been inspired from [here](https://www.youtube.com/watch?v=
  * `PaddleClass`: handles paddle movement, magnetizing of paddle, paddle length manipulation etc
  * `BricksClass`: has several derived classes which together handle recursive brick breaking, tracking of brick strength
  * `PowerupsClass`: has several derived classes which together handle movement of powerups, activation and deactivations specific to the resepctive powerups, time remaining before deactivation etc 
-`BallClass`: handles ball movement, velocity modification, stickiness to paddle etc.
+ * `BallClass`: handles ball movement, velocity modification, stickiness to paddle etc.
+ * `UFOClass`: handles health, movement etc
+ * `BulletClass`: handles movement, collisions etc
 
 
 ## Object Oriented Concepts

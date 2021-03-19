@@ -17,13 +17,21 @@ class PowerupsClass:
 
     tot_active_powerups=0
 
-    def __init__(self,r_num,c_num,powerup_symbol):
+    def __init__(self,r_num,c_num,powerup_symbol, sent_vel_r, sent_vel_c):
         self._len_c=1
         self._len_r=1 
         self._left_r= r_num 
         self._left_c=c_num
         self._status="in_air" # in_air,active, inactive
-        self._vel_r=-1
+        self._vel_r=sent_vel_r
+        self.its_cnt=0
+        if sent_vel_c<=0:
+            self._vel_c=max(-2,sent_vel_c)
+        if sent_vel_c>0:
+            self._vel_c=min(2,sent_vel_c)
+        
+        self.powerup_last_tended_h = clock()
+        self.powerup_last_tended_v = clock()
         self._ascii_repr=np.array([
             [powerup_symbol]
         ])
@@ -32,6 +40,17 @@ class PowerupsClass:
     @property
     def ascii_repr(self):
         return self._ascii_repr
+
+    def powerup_gravity(self):
+        if self._vel_r<0:
+            if(self.its_cnt%2==1):
+                return
+        self._vel_r-=1
+        if self._vel_r==0:
+            self._vel_r-=1
+        
+
+            
 
     @property
     def status(self):
@@ -53,12 +72,56 @@ class PowerupsClass:
     def len_c(self):
         return self._len_c
 
+    @property
+    def vel_r(self):
+        return self._vel_r
+
+    @property
+    def vel_c(self):
+        return self._vel_c
+
     def move(self):
         self._left_r += self._vel_r
 
+    def get_horizontal_prediction(self):        
+        vel_sign = 0
+        if self._vel_c != 0:
+            vel_sign = 1 if (self._vel_c > 0) else -1
+        prob_c = self._left_c + vel_sign
+        #logging.info(f"Returning {prob_c}")
+        return prob_c
+
+    def move_horizontally(self):        
+        vel_sign = 0
+        if self._vel_c != 0:
+            vel_sign = 1 if (self._vel_c > 0) else -1
+        self._left_c += vel_sign
+
+    def flip_horizontal_velocity(self):
+        self._vel_c *= -1
+
+    def get_vertical_prediction(self):        
+        vel_sign = 0
+        if self._vel_r != 0:
+            vel_sign = 1 if (self._vel_r > 0) else -1
+        prob_r = self._left_r + vel_sign
+        #logging.info(f"Returning {prob_r}")
+        return prob_r
+
+    def move_vertically(self):        
+        vel_sign = 0
+        if self._vel_r != 0:
+            vel_sign = 1 if (self._vel_r > 0) else -1
+        self._left_r += vel_sign
+        logging.critical(f"Vertical row of powerup is {self._left_r}")
+
+    def flip_vertical_velocity(self):
+        #logging.critical("Vertical velocity FLIPPED")
+        self._vel_r *= -1
+
     def deactivate_powerup(self, game_obj):
         PowerupsClass.tot_active_powerups-=1
-        logging.debug("Deactivation is redundant for this powerup")
+        #logging.debug("Deactivation is redundant for this powerup")
 
     def eliminate(self):
         self._status="inactive"
@@ -79,8 +142,8 @@ class ExpandPaddle(PowerupsClass):
     
     increment_val=4
 
-    def __init__(self,r_num,c_num):
-        super().__init__(r_num,c_num,"+")
+    def __init__(self,r_num,c_num, sent_vel_r, sent_vel_c):
+        super().__init__(r_num,c_num,"+", sent_vel_r, sent_vel_c)
         
         logging.info(f"Inside init() of POWERUPS class with attributes\n{self.__dict__}\n")
 
@@ -101,8 +164,8 @@ class ExpandPaddle(PowerupsClass):
 class ShrinkPaddle(PowerupsClass):
     decrement_val=4
 
-    def __init__(self,r_num,c_num):
-        super().__init__(r_num,c_num,"?")
+    def __init__(self,r_num,c_num, sent_vel_r, sent_vel_c):
+        super().__init__(r_num,c_num,"?", sent_vel_r, sent_vel_c)
         
         logging.info(f"Inside init() of POWERUPS class with attributes\n{self.__dict__}\n")
 
@@ -122,8 +185,8 @@ class ShrinkPaddle(PowerupsClass):
 
 class FastBall(PowerupsClass):
     
-    def __init__(self,r_num,c_num):
-        super().__init__(r_num,c_num,"&")
+    def __init__(self,r_num,c_num, sent_vel_r, sent_vel_c):
+        super().__init__(r_num,c_num,"&", sent_vel_r, sent_vel_c)
         
         logging.info(f"Inside init() of POWERUPS class with attributes\n{self.__dict__}\n")
 
@@ -150,8 +213,8 @@ class FastBall(PowerupsClass):
 class ThruBall(PowerupsClass):
 
     cnt=0    
-    def __init__(self,r_num,c_num):
-        super().__init__(r_num,c_num,"@")
+    def __init__(self,r_num,c_num, sent_vel_r, sent_vel_c):
+        super().__init__(r_num,c_num,"@", sent_vel_r, sent_vel_c)
         
         logging.info(f"Inside init() of POWERUPS class with attributes\n{self.__dict__}\n")
 
@@ -174,8 +237,8 @@ class ThruBall(PowerupsClass):
 class PaddleGrab(PowerupsClass):
     cnt=0
     
-    def __init__(self,r_num,c_num):
-        super().__init__(r_num,c_num,"$")
+    def __init__(self,r_num,c_num, sent_vel_r, sent_vel_c):
+        super().__init__(r_num,c_num,"$", sent_vel_r, sent_vel_c)
         
         logging.info(f"Inside init() of POWERUPS class with attributes\n{self.__dict__}\n")
 
@@ -194,8 +257,8 @@ class PaddleGrab(PowerupsClass):
 
 class BallMultiplier(PowerupsClass):
     
-    def __init__(self,r_num,c_num):
-        super().__init__(r_num,c_num,"%")
+    def __init__(self,r_num,c_num, sent_vel_r, sent_vel_c):
+        super().__init__(r_num,c_num,"%", sent_vel_r, sent_vel_c)
         
         logging.info(f"Inside init() of POWERUPS class with attributes\n{self.__dict__}\n")
 
@@ -221,8 +284,8 @@ class BallMultiplier(PowerupsClass):
 class PaddleShoot(PowerupsClass):
     cnt=0
     
-    def __init__(self,r_num,c_num):
-        super().__init__(r_num,c_num,"!")
+    def __init__(self,r_num,c_num, sent_vel_r, sent_vel_c):
+        super().__init__(r_num,c_num,"!", sent_vel_r, sent_vel_c)
         
         logging.info(f"Inside init() of POWERUPS class with attributes\n{self.__dict__}\n")
 

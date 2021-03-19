@@ -1,6 +1,6 @@
 import os
 import sys
-import time
+import time # for endgame screen
 import math, random
 import numpy as np
 import colorama
@@ -17,14 +17,12 @@ from ball_class import BallClass
 from bullet_class import BulletClass
 from bricks_class import BricksClass, UnbreakableBrick, NormalBrick, ExplosiveBrick, RainbowBrick
 from powerups import PowerupsClass, ExpandPaddle, ShrinkPaddle, FastBall, ThruBall, PaddleGrab, BallMultiplier, PaddleShoot
-
-###############################################################
-import logging
-
 from ufo_class import UFOClass
 from ufo_class import BombClass
 
-
+###############################################################
+import logging
+# logging to debug via terminal
 # tail -f your.log
 def part():
     logging.debug("----------------------------------------")
@@ -55,15 +53,14 @@ class Game:
         self._info_box_height = self._entire_screen_rows - self._just_game_rows - 3
 
         ##################################################################
-        logging.debug(f"rows are {rows}")
-        logging.debug(f"columns are are {cols}")
-        part()
-        logging.debug(f"conf.min height is   {conf.MIN_HEIGHT}")
-        logging.debug(f"conf.min width is   {conf.MIN_WIDTH}")
-        part()
-        logging.debug(f"conf.BUFFER DOWN IS is   {conf.INFO_DOWN}")
-        logging.debug(f"conf.BUFFER RIGHT  is   {conf.INFO_RIGHT}")
-        part()
+        # logging.debug(f"rows are {rows}")
+        # logging.debug(f"columns are are {cols}")
+        # logging.debug(f"conf.min height is   {conf.MIN_HEIGHT}")
+        # logging.debug(f"conf.min width is   {conf.MIN_WIDTH}")
+        # part()
+        # logging.debug(f"conf.BUFFER DOWN IS is   {conf.INFO_DOWN}")
+        # logging.debug(f"conf.BUFFER RIGHT  is   {conf.INFO_RIGHT}")
+        # part()
         ##################################################################
 
         if self._just_game_rows < conf.MIN_HEIGHT or self.just_game_cols < conf.MIN_WIDTH:
@@ -83,12 +80,13 @@ class Game:
         self._score = 0
         self._lives_left = conf.TOT_LIVES
         self._overall_start_time = clock()
-        self.curr_level = 3
+        self.curr_level = 1
 
-        self.game_ufo=None
+        self._game_ufo=None
 
         # self._available_powerups=[ExpandPaddle, ShrinkPaddle, FastBall, ThruBall,BallMultiplier,PaddleGrab, PaddleShoot]
-        self._available_powerups = [PaddleShoot]
+        self._available_powerups=[ExpandPaddle, ShrinkPaddle, FastBall, ThruBall,BallMultiplier,PaddleGrab, PaddleShoot]
+        # self._available_powerups = [PaddleGrab]
 
         self.recent_bomb_time=clock()
 
@@ -97,9 +95,15 @@ class Game:
         self.init_new_level()
         self.curr_bombs_list=[]
 
-        self.did_any_ball_hit_the_paddle = False
+        self.last_shot_time=clock()
+
+        self._did_any_ball_hit_the_paddle = False
 
         ######################################################################
+
+    @property
+    def game_paddle(self):
+        return self._game_paddle
 
     def init_new_level(self):
         '''IMPLEMENT FUNCTION TO GENERATE NEW BRICK COORDINATES HERE'''
@@ -107,7 +111,7 @@ class Game:
         self.init_new_life()
 
         if self.curr_level==3:
-            self.game_ufo=UFOClass(self.game_paddle.left_c+self.game_paddle.len_c//2)
+            self._game_ufo=UFOClass(self.game_paddle.left_c+self.game_paddle.len_c//2)
 
         # The first display of the canvas
         BricksClass.tot_breakable_bricks = 0
@@ -117,9 +121,6 @@ class Game:
         self.paint_objs()
         self._screen.print_board()
 
-        # The first painting on the canvas
-        #print(f"{Style.BRIGHT}")
-
     def next_level(self):
         if self.curr_level == conf.TOT_LEVELS:
             self._score += conf.SCORE_LIFE_BONUS * self._lives_left
@@ -127,7 +128,7 @@ class Game:
                 "Congrats! You broke all the breakable bricks OVER ALL LEVELS")
         else:
             self.curr_level += 1
-            logging.info(f"slf curr level is {self.curr_level}")
+            logging.info(f"self curr level is {self.curr_level}")
             self.init_new_level()
 
     def init_new_life(self):
@@ -152,7 +153,7 @@ class Game:
                                   offset_from_centre)
         self.balls_list = [original_ball]
         self.curr_bullets_list = []
-        self.did_any_ball_hit_the_paddle = False
+        self._did_any_ball_hit_the_paddle = False
 
         termios.tcflush(sys.stdin, termios.TCIOFLUSH)
 
@@ -181,17 +182,21 @@ class Game:
             self._screen.add_entity(send_bullet.left_c, send_bullet.left_r, send_bullet.len_c,\
                 send_bullet.len_r,send_bullet.ascii_repr, "")
 
-        if self.game_ufo is not None:
-            self._screen.add_entity(self.game_ufo.left_c, self.game_ufo.left_r, self.game_ufo.len_c,\
-                self.game_ufo.len_r,self.game_ufo.ascii_repr, "")
+        if self._game_ufo is not None:
+            self._screen.add_entity(self._game_ufo.left_c, self._game_ufo.left_r, self._game_ufo.len_c,\
+                self._game_ufo.len_r,self._game_ufo.ascii_repr, "")
 
         for send_bomb in self.curr_bombs_list:
             if send_bomb.status == "in_air":
                 self._screen.add_entity(send_bomb.left_c, send_bomb.left_r, send_bomb.len_c,\
                     send_bomb.len_r,send_bomb.ascii_repr, "")
-
-        
-
+      
+    @staticmethod
+    def is_there(a, b, unlucky_arr):
+        for i in unlucky_arr:
+            if i[0] == a and i[1] == b:
+                return True
+        return False
 
     def get_time_left(self):
         '''Get time left'''
@@ -231,23 +236,27 @@ class Game:
         print(f"Lives left  is {str(self._lives_left).ljust(4)}")
         # print(f"Balls Horizontal vel(INERTIA): {str_print}")
         print(f" Current level is :{self.curr_level}")
-
+        
         if self.curr_level<3:
-            print(
-                f"Time elapsed:{str(time_stats[0]).ljust(4)} | Time left:{time_stats[1]}"
-            )
+            # print(
+            #     f"Time elapsed:{str(time_stats[0]).ljust(4)} | Time left:{time_stats[1]}"
+            # )
+            pass
         else:
+            health_str=""
+            for i in range(0,self._game_ufo.curr_health):
+                health_str+='|'
             print(
-                f"Health left: {self.game_ufo.curr_health}"
+                f"Health left: {self._game_ufo.curr_health} : {health_str}"
             )
 
         time_before_bricks_descend = conf.TIME_BEFORE_BRICKS_DESCEND - (
             clock() - self.level_start_time)
-        print(f"Time before bricks descend is {time_before_bricks_descend}")
+        print(f"Time before bricks descend is {max(0,time_before_bricks_descend)}")
         # print(f"No of active powerups is {str(PowerupsClass.tot_active_powerups).ljust(3)}|", end='')
         #print(f"Paddle length is {str(self._game_paddle.len_c).ljust(4)}")
         print(f"No of breakable bricks:{BricksClass.tot_breakable_bricks}  ", end='')
-        print(f"Shoot t left:{self.get_max_shooting_time_left()}")
+        print(f"Shoot time left:{self.get_max_shooting_time_left()}")
         # print(f"ThruBall:{thru_ball_there} | PaddleGrab:{paddle_grab_there}")s
         print(Back.BLACK)
 
@@ -256,7 +265,7 @@ class Game:
 
         self.bricks_list = []
 
-        if self.curr_level!=3:
+        if self.curr_level==1:
 
             # rows go from 0 to tot_r-1 , start from 10, go till end-2
             # cols go from 0 to tot_c-1 , go from 5 to end-5
@@ -300,6 +309,80 @@ class Game:
                         decided_class(i, j, seq_in_row, (seq_in_row - i),
                                     color_code))
                 #logging.critical("\n")
+        elif self.curr_level==2:
+    
+            # rows go from 0 to tot_r-1 , start from 10, go till end-2
+            # cols go from 0 to tot_c-1 , go from 5 to end-5
+            first_code = 0
+            
+
+            start_row_val=12
+            start_col_val=11
+            end_row_val= self._just_game_rows - 4
+            end_col_val=  (self.just_game_cols -10)
+            end_col_val-=end_col_val%3
+            start_seq_val=0
+            mid_row_val=(start_row_val+end_row_val)//2
+            end_seq_val=(end_col_val-start_col_val)//3
+            mid_seq_val=(start_seq_val+end_seq_val)//2
+            logging.info(f"STart seq val is {start_seq_val}")
+            logging.info(f"END seq val is {end_seq_val}")
+            logging.info(f"STart row val is {start_row_val}")
+            logging.info(f"END row val is {end_row_val}")
+
+            for i in range(start_row_val,end_row_val+1):
+                first_idx = (first_code - i)
+                # if i%4==2:
+                #     continue
+
+                seq_in_row =-1
+                for j in range(start_col_val,end_col_val , 3):
+                    seq_in_row += 1
+                    # if seq_in_row%6==2:
+                    #     continue
+                    #logging.info(f"Coordinates are {i}:{j}")
+                    color_code = ((first_idx + seq_in_row) % 6 + 6) % 6 + 1
+
+                    min_dist=10000000000
+                    min_dist=min(min_dist,i-start_row_val )
+                    min_dist=min(min_dist,end_row_val-i )
+                    min_dist=min(min_dist,seq_in_row-start_seq_val )
+                    min_dist=min(min_dist,end_seq_val-seq_in_row )
+                    min_dist+=3
+
+                    color_code=min_dist%5+1
+                    if color_code==4:
+                        color_code=6
+
+                    if i==mid_row_val or seq_in_row==mid_seq_val:
+                        color_code=4
+                    
+                    # if abs(i-mid_row_val)==1 or abs(seq_in_row-mid_seq_val)==1:
+                    #     color_code=4
+                    # if abs(i-mid_row_val)==0 or abs(seq_in_row-mid_seq_val)==0:
+                    #     continue
+
+                   
+                    
+                    
+
+                   
+                    decided_class = NormalBrick
+                    logging.info(f"Color code is {color_code}")
+                    if color_code == 4:
+                        decided_class = UnbreakableBrick
+                    elif color_code == 5:
+                        decided_class = ExplosiveBrick
+                    elif color_code == 6:
+                        decided_class = RainbowBrick
+                        test_list = [1, 2, 3]
+                        color_code = random.choice(test_list)
+                    # brick_coordinates.append([i,j,seq_in_row])
+                    self.bricks_list.append(
+                        decided_class(i, j, seq_in_row, (seq_in_row - i),
+                                    color_code))
+                #logging.critical("\n")
+        
         else:
 
             self.bricks_list=[]
@@ -312,12 +395,7 @@ class Game:
                 for j in range(11, self.just_game_cols - 10, 3):
                     seq_in_row += 1
                     #logging.info(f"Coordinates are {i}:{j}")
-                    color_code = ((first_idx + seq_in_row) % 6 + 6) % 6 + 1
-                    #color_code=5
-                    # if color_code == 4:
-                    #     color_code = 2
-                    # elif color_code == 2:
-                    #     color_code = 4
+                    color_code = ((first_idx + seq_in_row) % 6 + 6) % 6 + 1                    
 
                     if color_code == 1:
                         color_code = 4
@@ -328,29 +406,48 @@ class Game:
                     elif color_code == 6:
                         color_code = 2
 
-
                     if color_code==4:
                         '''ONLY UNBREAKABLE BRICKS INITIALLY'''                 
-                        decided_class = NormalBrick
-                        logging.info(f"Color code is {color_code}")
-                        if color_code == 4:
-                            decided_class = UnbreakableBrick
-                        elif color_code == 5:
-                            decided_class = ExplosiveBrick
-                        elif color_code == 6:
-                            decided_class = RainbowBrick
-                            test_list = [1, 2, 3]
-                            color_code = random.choice(test_list)
+                        decided_class = UnbreakableBrick
+                        #logging.info(f"Color code is {color_code}")                        
                         self.bricks_list.append(
                             decided_class(i, j, seq_in_row, (seq_in_row - i),
                                         color_code))
-                logging.critical("\n")
+                # logging.critical("\n")
+
+    def try_powerup_generation(self, prob_r, prob_c, curr_vel_r, curr_vel_c):
+    
+        if self.random_yes_or_no() is False or self.curr_level>=3:
+            return
+
+            ##########################
+        self.curr_powerup_idx = (self.curr_powerup_idx + 1) % (len(
+            self._available_powerups))
+
+        # self.curr_powerup_idx = random.randint(0,len(self._available_powerups)-1)
+
+        chosen_powerup_cls = self._available_powerups[self.curr_powerup_idx]
+
+        new_powerup = chosen_powerup_cls(prob_r, prob_c, curr_vel_r, curr_vel_c)
+        self.curr_powerups_list.append(new_powerup)
+        logging.info("Powerup appended")
 
 
-
-
-
-
+    def game_over_screen(self, msg):
+        '''Prints GAME OVER SCREEN'''
+        logging.info(f"Inside game over with message {msg}")
+        print(self.CLEAR_ANSI)
+        print(self.RESET_CURSOR_ANSI)
+        print(f"{Fore.GREEN}{Back.YELLOW}{Style.BRIGHT}")
+        # print("Green Text - Yellow Background - Bright")
+        # print("HELLO")
+        print("GAME OVER".center(os.get_terminal_size().columns))
+        print(f"{msg}".center(os.get_terminal_size().columns))
+        print(f"Your score is {self._score}".center(
+            os.get_terminal_size().columns))
+        # time.sleep(10)
+        sys.exit()
+        #pass
 
     def produce_bullet(self):
         col_val = self.game_paddle.left_c + self.game_paddle.len_c // 2
@@ -383,8 +480,10 @@ class Game:
             elif inp == 'v':
                 '''Bullet produced'''
                 #check if powerup activated
-                if self.game_paddle.is_armed>0:
-                    self.produce_bullet()
+                if clock()-self.last_shot_time>conf.TIME_GAP_BETWEEN_CONSECUTIVE_SHOTS:
+                    if self.game_paddle.is_armed>0:
+                        self.last_shot_time=clock()
+                        self.produce_bullet()
 
             elif inp == 'b':
                 logging.info("attempt to move to next level automatically")
@@ -399,8 +498,8 @@ class Game:
                         ball_obj.follow_paddle(paddle_new_details[0] +
                                                paddle_new_details[1] // 2)
                 ###############################
-                if self.game_ufo is not None:
-                    self.game_ufo.chase_paddle(paddle_new_details[0] +
+                if self._game_ufo is not None:
+                    self._game_ufo.chase_paddle(paddle_new_details[0] +
                                                paddle_new_details[1] // 2,  self.just_game_cols)
                 ############################
 
@@ -409,34 +508,25 @@ class Game:
             )  # to prevent character accumulation in buffer coz  input rate might be faster than frame rate
         return ret_val
 
-    def did_ball_collide_with_wall(self, prob_c, prob_r):
-        '''Checks if ball collided with the ball'''
+    @staticmethod
+    def random_yes_or_no():
+        rand_float = random.uniform(0, 1)
+        logging.info(f"rand float is {rand_float}")
+        if rand_float < conf.POWERUP_PROBABILITY:
+            return True
+        logging.info("Randomness says NO")
+        return False
+    ###########################################################################################
+    def did_entity_collide_with_wall(self, prob_c, prob_r):
+        '''Checks if ball collided with the ball'''        
         '''Also, being used for bullet'''
-        '''Also, being used for bullet'''
-        '''Also, being used for bullet'''
-        '''Also, being used for bullet'''
+        '''Also, being used for POWERUP'''
         #logging.critical(f"BALL WALL insvestigation is {prob_r}:{prob_c}")
         if prob_c < 0 or prob_c >= self.just_game_cols:
             return True
         if prob_r < -1 or prob_r >= self._just_game_rows:
             return True
-        return False
-
-    def game_over_screen(self, msg):
-        '''Prints GAME OVER SCREEN'''
-        logging.info(f"Inside game over with message {msg}")
-        print(self.CLEAR_ANSI)
-        print(self.RESET_CURSOR_ANSI)
-        print(f"{Fore.GREEN}{Back.YELLOW}{Style.BRIGHT}")
-        # print("Green Text - Yellow Background - Bright")
-        # print("HELLO")
-        print("GAME OVER".center(os.get_terminal_size().columns))
-        print(f"{msg}".center(os.get_terminal_size().columns))
-        print(f"Your score is {self._score}".center(
-            os.get_terminal_size().columns))
-        # time.sleep(10)
-        sys.exit()
-        #pass
+        return False    
 
     def did_ball_collide_with_paddle(self, prob_c, prob_r, ball_obj):
         '''Checks if the ball collided with the paddle, 
@@ -460,32 +550,30 @@ class Game:
 
             ########################
             # collision => ball collided with paddle, move bricks appropriately
-            self.did_any_ball_hit_the_paddle = True
+            self._did_any_ball_hit_the_paddle = True
             ########################
             return True
         return False
 
     def did_ball_collide_with_ufo(self, prob_c, prob_r):
         '''Checks if the ball collided with the ufo, 
-        Regulates speed
-        and
-        handles the sticky paddle case
+        and generated defence if needed        
         '''
 
-        if self.game_ufo is None:
+        if self._game_ufo is None:
             return False
 
-        dc = prob_c - self.game_ufo.left_c
+        dc = prob_c - self._game_ufo.left_c
 
-        ufo_height=self.game_ufo.len_r
+        ufo_height=self._game_ufo.len_r
         for offset in range(0, ufo_height):
-            if self.game_ufo.left_r+offset == prob_r and (
-                    dc >= 0 and dc < self.game_ufo.len_c): 
-                earlier_ratio=self.game_ufo.curr_health/conf.UFO_TOTAL_HEALTH
-                self.game_ufo.reduce_health()
-                now_ratio=self.game_ufo.curr_health/conf.UFO_TOTAL_HEALTH
+            if self._game_ufo.left_r+offset == prob_r and (
+                    dc >= 0 and dc < self._game_ufo.len_c): 
+                earlier_ratio=self._game_ufo.curr_health/conf.UFO_TOTAL_HEALTH
+                self._game_ufo.reduce_health()
+                now_ratio=self._game_ufo.curr_health/conf.UFO_TOTAL_HEALTH
                 logging.info(f"Ratios are {earlier_ratio}  ::  {now_ratio}")
-                if self.game_ufo.curr_health<=0:
+                if self._game_ufo.curr_health<=0:
                     self._score+=conf.KILLING_BOSS_SCORE
                     self.game_over_screen("You have killed the BOSS !")
                 elif earlier_ratio>conf.SECOND_THRESHOLD and now_ratio<=conf.SECOND_THRESHOLD:
@@ -503,40 +591,43 @@ class Game:
             return True
         return False
 
-    @staticmethod
-    def random_yes_or_no():
-        rand_float = random.uniform(0, 1)
-        logging.info(f"rand float is {rand_float}")
-        if rand_float > 0.3:
-            return True
-        logging.info("Randomness says NO")
-        return False
+    def did_ball_collide_with_bricks(self, prob_c, prob_r, ball_obj):
+        '''Returns true if collided with a brick and false otherwise, 
+        The true/false helps determine whether to flip ball's velocity or not.
+        '''
+        # invariant= only active bricks present in bricks_list
+        bricks_checklist = self.bricks_list.copy()
+        for a_brick in bricks_checklist:
+            # # proceed only if brick is still visible
 
-    def try_powerup_generation(self, prob_r, prob_c):
-
-        if self.random_yes_or_no() is False or self.curr_level>=3:
-            return
-
-            ##########################
-        self.curr_powerup_idx = (self.curr_powerup_idx + 1) % (len(
-            self._available_powerups))
-
-        # self.curr_powerup_idx = random.randint(0,len(self._available_powerups)-1)
-
-        chosen_powerup_cls = self._available_powerups[self.curr_powerup_idx]
-
-        new_powerup = chosen_powerup_cls(prob_r, prob_c)
-        self.curr_powerups_list.append(new_powerup)
-        logging.info("Powerup appended")
-
-    @staticmethod
-    def is_there(a, b, unlucky_arr):
-        for i in unlucky_arr:
-            if i[0] == a and i[1] == b:
+            if self.did_ball_collide_with_this_brick(prob_c, prob_r, a_brick):
+                self.hit_brick(a_brick, (ball_obj.is_boss_cnt > 0), True, ball_obj.vel_r, ball_obj.vel_c)
                 return True
         return False
+    
+    def move_ball_horizontally(self, ball_obj):
+    
+        # getter implemented in ball class, left_c and left_r are private variables
+        prob_c = ball_obj.get_horizontal_prediction()
+        prob_r = ball_obj.left_r  # ball is not moving horizontally in this case
 
-    def hit_brick(self, brick_obj, is_forced, is_origin_brick=True):
+        if ball_obj.left_c == prob_c:
+            return  # ball did not move => no need to check
+
+        ########### Collision with wall ##########################
+        if self.did_entity_collide_with_wall(prob_c, prob_r):
+            # Collision while moving horizontally => can be the left, right walls only and not the top wall
+            ball_obj.flip_horizontal_velocity()
+        elif (self.did_ball_collide_with_bricks(prob_c, prob_r, ball_obj)):
+            ball_obj.flip_horizontal_velocity()
+        elif (self.did_ball_collide_with_ufo(prob_c, prob_r)):
+            logging.debug("Horizontal Collision with UFO")
+            ball_obj.flip_horizontal_velocity()
+        else:
+            ball_obj.move_horizontally() 
+   
+
+    def hit_brick(self, brick_obj, is_forced, is_powerup_brick=True, curr_vel_r=None, curr_vel_c=None):
         # Hit brick
         #logging.critical(f"Inside HIT brick function for {brick_obj.__dict__}")
         #assert (brick_obj.isVisible == True)
@@ -547,9 +638,9 @@ class Game:
             self._screen.finish_brick(brick_obj)
             self.bricks_list.remove(brick_obj)
 
-            if is_origin_brick:
+            if is_powerup_brick:
                 # generate powerup with probability only if the brick is the first one to be broken
-                self.try_powerup_generation(brick_obj.left_r, brick_obj.left_c)
+                self.try_powerup_generation(brick_obj.left_r, brick_obj.left_c, curr_vel_r, curr_vel_c)
 
             unlucky_neighbors = brick_obj.get_unlucky_friends()
 
@@ -573,27 +664,15 @@ class Game:
             for i in chosen_ones:
                 self.hit_brick(i, True, False)
 
-    def did_ball_collide_with_bricks(self, prob_c, prob_r, ball_obj):
-        '''Returns true if collided with a brick and false otherwise, 
-        The true/false helps determine whether to flip ball's velocity or not.
-        '''
-        # invariant= only active bricks present in bricks_list
-        bricks_checklist = self.bricks_list.copy()
-        for a_brick in bricks_checklist:
-            # # proceed only if brick is still visible
-
-            if self.did_ball_collide_with_this_brick(prob_c, prob_r, a_brick):
-                self.hit_brick(a_brick, (ball_obj.is_boss_cnt > 0))
-                return True
-        return False
+    
 
     def generate_defense(self, level_of_defense):
         logging.info(f"Employing level of defense as {level_of_defense}")
         if level_of_defense==1:
-            row_of_defense=self.game_ufo.left_r-3
+            row_of_defense=self._game_ufo.left_r-3
             default_code=1
         else:
-            row_of_defense=self.game_ufo.left_r-6
+            row_of_defense=self._game_ufo.left_r-6
             default_code=2
           
         i=row_of_defense
@@ -606,44 +685,15 @@ class Game:
                 decided_class(i, j, seq_in_row, (seq_in_row - i),
                             color_code))
 
-    def move_ball_horizontally(self, ball_obj):
-
-        # getter implemented in ball class, left_c and left_r are private variables
-        prob_c = ball_obj.get_horizontal_prediction()
-        prob_r = ball_obj.left_r  # ball is not moving horizontally in this case
-
-        if ball_obj.left_c == prob_c:
-            return  # ball did not move => no need to check
-
-        ########### Collision with wall ##########################
-        if self.did_ball_collide_with_wall(prob_c, prob_r):
-            #logging.debug("Collision with wall")
-            # Collision while moving horizontally => can be the left, right walls only and not the top wall
-            ball_obj.flip_horizontal_velocity()
-        elif (self.did_ball_collide_with_bricks(prob_c, prob_r, ball_obj)):
-            #logging.debug("Collision with BRICK")
-            ball_obj.flip_horizontal_velocity()
-        elif (self.did_ball_collide_with_ufo(prob_c, prob_r)):
-            logging.debug("Horizontal Collision with UFO")
-            ball_obj.flip_horizontal_velocity()
-        else:
-            ball_obj.move_horizontally()
+    
 
         ###  Collision with paddle ########################
         # (TECHNICALLY impossible as collision with paddle can happen only vertically)
 
-    def claim_life(self):
-        self._lives_left -= 1
-        sleep(0.7)
-        if self._lives_left == 0:
-            self.game_over_screen("All lives are over")
-        self.init_new_life()
-        termios.tcflush(
-            sys.stdin, termios.TCIOFLUSH
-        )  # to prevent character accumulation in buffer coz  input rate might be faster than frame rate
+    
 
     def move_ball_vertically(self, ball_obj):
-
+        
         # getter implemented in ball class, left_c and left_r are private variables
         prob_c = ball_obj.left_c
         prob_r = ball_obj.get_vertical_prediction()
@@ -652,7 +702,7 @@ class Game:
             return  # ball did not move => no need to check
 
         ########### Collision with wall ##########################
-        if self.did_ball_collide_with_wall(prob_c, prob_r):
+        if self.did_entity_collide_with_wall(prob_c, prob_r):
             logging.debug("Vertical Collision with wall")
             ball_obj.flip_vertical_velocity()
         elif (self.did_ball_collide_with_bricks(prob_c, prob_r, ball_obj)):
@@ -668,119 +718,46 @@ class Game:
         else:
             if prob_r < 0:
                 ball_obj.flip_vertical_velocity()
+
                 #################RESTORE THIS################################
-                # '''sys.exit()'''
-                # ball_obj.isActive = False
-                # self.balls_list.remove(ball_obj)
-                # if len(self.balls_list) == 0:
-                #     self._lives_left -= 1
-                #     sleep(0.7)
-                #     if self._lives_left == 0:
-                #         self.game_over_screen("All lives are over")
-                #     self.init_new_life()
-                #     termios.tcflush(
-                #         sys.stdin, termios.TCIOFLUSH
-                #     )  # to prevent character accumulation in buffer coz  input rate might be faster than frame rate
+                '''sys.exit()'''
+                ball_obj.isActive = False
+                self.balls_list.remove(ball_obj)
+                if len(self.balls_list) == 0:
+                    '''CLAIM LIFE'''
+                    self.claim_life()
                 #################RESTORE THIS  ENDS################################
 
+                
                 logging.error(
                     "\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\nBALL TOUCHED GROUND\n$$$$$$$$$$$$$$$$$$"
                 )
             else:
                 ball_obj.move_vertically()
 
-
-    def did_bullet_collide_with_bricks(self, prob_c, prob_r, bullet_obj):
-        '''Returns true if collided with a brick and false otherwise, 
-        The true/false helps determine whether to vanish bullet or not
-        '''
-        # invariant= only active bricks present in bricks_list
-        bricks_checklist = self.bricks_list.copy()
-        for a_brick in bricks_checklist:
-            # # proceed only if brick is still visible
-
-            '''Using the ball function for brick also'''
-            if self.did_ball_collide_with_this_brick(prob_c, prob_r, a_brick):
-                # False as not forced
-                self.hit_brick(a_brick, False)
-                return True
-        return False
-
-    def move_bullet_vertically(self, bullet_obj):
-    
-        # getter implemented in bullet class, left_c and left_r are private variables
-        prob_c = bullet_obj.left_c
-        prob_r = bullet_obj.get_vertical_prediction() 
-
-        ########### Collision with wall ##########################
-        '''I am using the function I made for ball here only'''
-        if self.did_ball_collide_with_wall(prob_c, prob_r):
-            logging.debug("BULLET Vertical Collision with wall")
-            bullet_obj.isActive = False
-            self.curr_bullets_list.remove(bullet_obj)
-            #############################################
-        elif (self.did_bullet_collide_with_bricks(prob_c, prob_r, bullet_obj)):
-            logging.debug("BULLET Vertical Collision with BRICK")
-            bullet_obj.isActive = False
-            self.curr_bullets_list.remove(bullet_obj)
-            #################################################       
-        else:
-            bullet_obj.move_vertically()
+    def claim_life(self):
+        self._lives_left -= 1
+        sleep(0.2)
+        if self._lives_left == 0:
+            self.game_over_screen("All lives are over")
+        self.init_new_life()
+        termios.tcflush(
+            sys.stdin, termios.TCIOFLUSH
+        )  # to prevent character accumulation in buffer coz  input rate might be faster than frame rate
 
 
-
-    def did_powerup_collide_with_paddle(self, curr_powerup):
-        # just_game_rows, just_game_cols
-        dc = curr_powerup.left_c - self._game_paddle.left_c
-        '''This works bcoz powerups have size 1 x 1, reimplement if you change powerup size'''
-        if self._game_paddle.left_r == curr_powerup.left_r and (
-                dc >= 0 and dc < self._game_paddle.len_c):
-            return True
-        return False
-
-    def did_bomb_collide_with_paddle(self, curr_bomb):
-        # just_game_rows, just_game_cols
-        dc = curr_bomb.left_c - self._game_paddle.left_c
-        '''This works bcoz bombs have size 1 x 1, reimplement if you change BOMB size'''
-        if self._game_paddle.left_r == curr_bomb.left_r and (
-                dc >= 0 and dc < self._game_paddle.len_c):
-            return True
-        return False
+    #################################################################################################
 
 
-    def get_max_shooting_time_left(self):
-        curr_max=0
-        for powerup in self.curr_powerups_list:
-            if powerup.status == "active":
-                if isinstance(powerup,PaddleShoot):
-                    curr_max=max(curr_max,conf.POWERUP_DURATION-(clock() - powerup.activate_time))
-        return curr_max
-                    
-
-    def check_powerups_expiry(self):
-        eliminate_list = []
-        for powerup in self.curr_powerups_list:
-            if powerup.status == "active":
-                if clock() - powerup.activate_time > conf.POWERUP_DURATION:
-                    powerup.eliminate()
-                    powerup.deactivate_powerup(self)
-                    eliminate_list.append(powerup)
-        for i in eliminate_list:
-            self.curr_powerups_list.remove(i)
-
-    @property
-    def game_paddle(self):
-        return self._game_paddle
-
-    def move_powerups(self):
+    def monitor_powerups(self):
         eliminate_list = []
 
         # this list contains both types of powerups, in_air and activated
         for curr_powerup in self.curr_powerups_list:
             if curr_powerup.status == "in_air":
-                curr_powerup.move()
+                # curr_powerup.move()
 
-                # if powerup touched the paddle
+                # check if powerup touched the paddle
                 if curr_powerup.left_r == 0:
 
                     # valid contact between paddle and powerup=> activate powerup
@@ -795,6 +772,110 @@ class Game:
         for i in eliminate_list:
             self.curr_powerups_list.remove(i)
 
+    def check_powerups_expiry(self):
+        eliminate_list = []
+        for powerup in self.curr_powerups_list:
+            if powerup.status == "active":
+                if clock() - powerup.activate_time > conf.POWERUP_DURATION:
+                    powerup.eliminate()
+                    powerup.deactivate_powerup(self)
+                    eliminate_list.append(powerup)
+        for i in eliminate_list:
+            self.curr_powerups_list.remove(i)
+
+    def did_powerup_collide_with_paddle(self, curr_powerup):
+        # just_game_rows, just_game_cols
+        dc = curr_powerup.left_c - self._game_paddle.left_c
+        '''This works bcoz powerups have size 1 x 1, reimplement if you change powerup size'''
+        if self._game_paddle.left_r == curr_powerup.left_r and (
+                dc >= 0 and dc < self._game_paddle.len_c):
+            return True
+        return False
+        
+    def move_powerup_vertically(self, powerup_obj):
+
+        # getter implemented in powerup class, left_c and left_r are private variables
+        prob_c = powerup_obj.left_c
+        prob_r = powerup_obj.get_vertical_prediction()
+
+        if powerup_obj.left_r == prob_r:
+            return  # powerup did not move => no need to check
+
+        ########### Collision with wall ##########################
+        if self.did_entity_collide_with_wall(prob_c, prob_r):
+            logging.debug("Vertical Collision with wall")
+            powerup_obj.flip_vertical_velocity()   
+        elif (self.did_powerup_collide_with_paddle(powerup_obj)):
+            logging.debug("Vertical Collision with PADDLE")
+            powerup_obj.flip_vertical_velocity()
+  
+        else:
+            if prob_r < 0:
+                powerup_obj.flip_vertical_velocity()              
+                logging.error(
+                    "\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\npowerup TOUCHED GROUND\n$$$$$$$$$$$$$$$$$$"
+                )
+            else:
+                powerup_obj.move_vertically()
+
+    def move_powerup_horizontally(self, powerup_obj):
+        
+        # getter implemented in ball class, left_c and left_r are private variables
+        prob_c = powerup_obj.get_horizontal_prediction()
+        prob_r = powerup_obj.left_r  # powerup is not moving horizontally in this case
+
+        if powerup_obj.left_c == prob_c:
+            return  # powerup did not move => no need to check
+
+        ########### Collision with wall ##########################
+        if self.did_entity_collide_with_wall(prob_c, prob_r):
+            # Collision while moving horizontally => can be the left, right walls only and not the top wall
+            powerup_obj.flip_horizontal_velocity()        
+        else:
+            powerup_obj.move_horizontally()
+
+        ###  Collision with paddle ########################
+        # (TECHNICALLY impossible as collision with paddle can happen only vertically)
+
+
+    ###################################################################################################
+    def did_bullet_collide_with_bricks(self, prob_c, prob_r, bullet_obj):
+        '''Returns true if collided with a brick and false otherwise, 
+        The true/false helps determine whether to vanish bullet or not
+        '''
+        # invariant= only active bricks present in bricks_list
+        bricks_checklist = self.bricks_list.copy()
+        for a_brick in bricks_checklist:
+            # # proceed only if brick is still visible
+            '''Using the ball function for brick also'''
+            if self.did_ball_collide_with_this_brick(prob_c, prob_r, a_brick):
+                # False as not forced
+                self.hit_brick(a_brick, False, False)
+                return True
+        return False
+
+    def move_bullet_vertically(self, bullet_obj):
+    
+        # getter implemented in bullet class, left_c and left_r are private variables
+        prob_c = bullet_obj.left_c
+        prob_r = bullet_obj.get_vertical_prediction() 
+
+        ########### Collision with wall ##########################
+        '''I am using the function I made for ball here only'''
+        if self.did_entity_collide_with_wall(prob_c, prob_r):
+            logging.debug("BULLET Vertical Collision with wall")
+            bullet_obj.isActive = False
+            self.curr_bullets_list.remove(bullet_obj)
+            #############################################
+        elif (self.did_bullet_collide_with_bricks(prob_c, prob_r, bullet_obj)):
+            logging.debug("BULLET Vertical Collision with BRICK")
+            bullet_obj.isActive = False
+            self.curr_bullets_list.remove(bullet_obj)
+            #################################################       
+        else:
+            bullet_obj.move_vertically()
+
+    #################################################################################################
 
     def move_bombs(self):
         eliminate_list = []
@@ -819,13 +900,33 @@ class Game:
 
         if should_eliminate:
             for i in eliminate_list:
-                logging.info(f"Bomb list is {self.curr_bombs_list}")
-                logging.info(f"Bomb TO remove is {self.curr_bombs_list}")
+                #logging.info(f"Bomb list is {self.curr_bombs_list}")
+                #logging.info(f"Bomb TO remove is {self.curr_bombs_list}")
                 self.curr_bombs_list.remove(i)
+
+    def did_bomb_collide_with_paddle(self, curr_bomb):
+        # just_game_rows, just_game_cols
+        dc = curr_bomb.left_c - self._game_paddle.left_c
+        '''This works bcoz bombs have size 1 x 1, reimplement if you change BOMB size'''
+        if self._game_paddle.left_r == curr_bomb.left_r and (
+                dc >= 0 and dc < self._game_paddle.len_c):
+            return True
+        return False
+
+
+    def get_max_shooting_time_left(self):
+        curr_max=0
+        for powerup in self.curr_powerups_list:
+            if powerup.status == "active":
+                if isinstance(powerup,PaddleShoot):
+                    curr_max=max(curr_max,conf.POWERUP_DURATION-(clock() - powerup.activate_time))
+        return curr_max
+
+    ################################################################################             
 
     def descend_bricks(self):
         ########COMMENT THIS##########
-        return
+        # return
         ##############################
         logging.info("GOing to descend all bricks")
 
@@ -858,7 +959,8 @@ class Game:
         # The first display of the canvas
         self._screen.print_board()
 
-        self.did_any_ball_hit_the_paddle = False
+        # for descending
+        self._did_any_ball_hit_the_paddle = False
 
         global_cnt = 0
 
@@ -871,14 +973,15 @@ class Game:
 
             #######################################################################################
             ##########--DESCENT OF BRICKS -- ##########################################
-            if self.did_any_ball_hit_the_paddle and conf.TIME_BEFORE_BRICKS_DESCEND < clock(
+            if self._did_any_ball_hit_the_paddle and conf.TIME_BEFORE_BRICKS_DESCEND < clock(
             ) - self.level_start_time:
                 self.descend_bricks()
-            self.did_any_ball_hit_the_paddle = False
+            self._did_any_ball_hit_the_paddle = False
 
             # bricks_length_initial = len(self.bricks_list)
             while clock() - paddle_last_tended < time_unit_duration:
                 #logging.info(f"Inside obstacle loop, dis is {clock() - paddle_last_tended}")
+                '''BALLS MOVEMENT'''
                 dup_list = self.balls_list.copy()
                 mandatory_show = False
                 for this_ball in dup_list:
@@ -886,24 +989,23 @@ class Game:
                         clock()-this_ball.ball_last_tended_h > time_unit_duration/abs(this_ball.vel_c):
                         '''update balls position horizontally (if unstuck only)'''
                         self.move_ball_horizontally(this_ball)
-
-                        # self.paint_objs()
-                        # self._screen.print_board()
-                        # print screen
+                        
                         this_ball.ball_last_tended_h = clock()
                         if this_ball.left_r == 0:
                             mandatory_show = True
 
-                # if mandatory_show:
-                #     self.paint_objs()
-                #     self._screen.print_board()
+                if mandatory_show:
+                    self.paint_objs()
+                    self._screen.print_board()
 
                 for this_ball in dup_list:
                     if ((this_ball.vel_r)!=0) and \
                         clock()-this_ball.ball_last_tended_v > time_unit_duration/abs(this_ball.vel_r):
                         '''update balls position vertically (if unstuck only)'''
+                        
                         self.move_ball_vertically(this_ball)
                         this_ball.ball_last_tended_v = clock()
+                ################################################################################################
 
                 bullets_dup_list=self.curr_bullets_list.copy()
                 for this_bullet in bullets_dup_list:
@@ -913,21 +1015,64 @@ class Game:
                         self.move_bullet_vertically(this_bullet)
                         this_bullet.bullet_last_tended_v = clock()
 
-    
+                #################################################################################
+                powerups_dup_list=self.curr_powerups_list.copy()
 
-            self.move_powerups()
+                ## horizontal => check walls, paddle
+                for this_powerup in powerups_dup_list:
+                    if ((this_powerup.vel_c)!=0) and \
+                        clock()-this_powerup.powerup_last_tended_h > time_unit_duration/abs(this_powerup.vel_c):
+                        '''update powerups position horizontally (if unstuck only)'''
+                        self.move_powerup_horizontally(this_powerup)
+
+                        # self.paint_objs()
+                        # self._screen.print_board()
+                        # print screen
+                        this_powerup.powerup_last_tended_h = clock()
+                        # if this_powerup.left_r == 0:
+                        #     mandatory_show = True
+
+                # if mandatory_show:
+                #     self.paint_objs()
+                #     self._screen.print_board()
+
+                self.monitor_powerups()
+                powerups_dup_list=self.curr_powerups_list.copy()
+
+
+                ## vertical => check upper wall, paddle
+                for this_powerup in powerups_dup_list:
+                    if ((this_powerup.vel_r)!=0) and \
+                        clock()-this_powerup.powerup_last_tended_v > time_unit_duration/abs(this_powerup.vel_r):
+                        '''update powerups position vertically (if unstuck only)'''
+                        # this_powerup.powerup_gravity()
+                        self.move_powerup_vertically(this_powerup)
+                        this_powerup.powerup_last_tended_v = clock()
+                self.monitor_powerups()
+
+                
+
+                
+                ###############################################################################################
+
+            
+            for this_powerup in self.curr_powerups_list:
+                this_powerup.its_cnt+=1
+                this_powerup.its_cnt%=9
+                if(this_powerup.its_cnt==0):
+                    this_powerup.powerup_gravity()
+            # self.move_powerups()
             self.move_bombs()
 
             if self.curr_level==3:
                 if clock()-self.recent_bomb_time>conf.TIME_BETWEEN_BOMBS:
                     self.recent_bomb_time=clock()
-                    new_bomb=BombClass(self.game_ufo.left_r, self.game_ufo.left_c+self.game_ufo.len_c//2)
+                    new_bomb=BombClass(self._game_ufo.left_r, self._game_ufo.left_c+self._game_ufo.len_c//2)
                     self.curr_bombs_list.append(new_bomb)
 
-            dup_list = self.balls_list.copy()
-            # for this_ball in dup_list:
-            #     self.move_ball_vertically(this_ball)
-
+            # dup_list = self.balls_list.copy()
+            # # for this_ball in dup_list:
+            # #     self.move_ball_vertically(this_ball)
             if global_cnt % 10 == 0:
                 self.update_rainbow_bricks()
 
@@ -940,7 +1085,6 @@ class Game:
                 logging.info("moving to next level automated")
                 self.next_level()
             elif BricksClass.tot_breakable_bricks == 0:
-
                 if self.curr_level<3:
                     logging.info("moving to next level")
                     self.next_level()

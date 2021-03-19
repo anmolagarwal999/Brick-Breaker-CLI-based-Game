@@ -185,7 +185,7 @@ class Canvas:
         # Printing the console
         for i in range(self._just_game_height):
             curr_i=i
-            # curr_i=self._just_game_height-i-1
+            curr_i=self._just_game_height-i-1
             for j in range(self._tot_screen_cols):
                 curr_j=j
                 print(self._bg_layer[curr_i][curr_j] + self._fg_layer[curr_i][curr_j], end='')

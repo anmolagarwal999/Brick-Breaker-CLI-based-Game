@@ -15,11 +15,8 @@ logging.basicConfig(filename='test.log',
 
 class UFOClass:
 
-    def __init__(self, paddle_center_c):
-        # center_c=paddle_center_c
+    def __init__(self, paddle_center_c):     
        
-       
-        # self._ascii_repr=self.get_ascii_rep_str(self._len_c)
         self.ascii_repr = np.array([         
                      
             ['(','-','(','-','_','(','-','_','-',')','_','-',')','-',')'],
@@ -30,7 +27,7 @@ class UFOClass:
         self.len_c=self.ascii_repr.shape[1]
         self.len_r=self.ascii_repr.shape[0]
         self.left_c=paddle_center_c-self.len_c//2
-        self.left_r=22
+        self.left_r=21
         self.curr_health=conf.UFO_TOTAL_HEALTH
 
         logging.info(f"Inside init() of UFO class with attributes\n{self.__dict__}\n")
@@ -50,7 +47,7 @@ class UFOClass:
             self.left_c=0
         else:
             self.left_c=right_limit-self.len_c
-            logging.info(f"My details are {self.__dict__}\nRight limit is {right_limit}")
+            #logging.info(f"My details are {self.__dict__}\nRight limit is {right_limit}")
 
         return [self.left_c, self.len_c]
 

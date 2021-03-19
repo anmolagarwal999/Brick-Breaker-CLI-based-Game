@@ -23,6 +23,7 @@ class PaddleClass:
         self._left_r=0
         self._is_magnet=0
         self._is_armed=0
+        
         self._ascii_repr=self.get_ascii_rep_str(self._len_c)
         logging.info(f"Inside init() of paddle class with attributes\n{self.__dict__}\n")
 
