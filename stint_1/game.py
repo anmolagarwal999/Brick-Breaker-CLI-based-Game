@@ -14,7 +14,7 @@ import random
 from time import monotonic as clock, sleep
 from paddle import PaddleClass
 from ball_class import BallClass
-from bricks_class import BricksClass, UnbreakableBrick, NormalBrick, ExplosiveBrick
+from bricks_class import BricksClass, UnbreakableBrick, NormalBrick, ExplosiveBrick, RainbowBrick
 from powerups import PowerupsClass, ExpandPaddle, ShrinkPaddle, FastBall, ThruBall, PaddleGrab, BallMultiplier
 
 ###############################################################
@@ -87,6 +87,8 @@ class Game:
         self.bricks_list = []
         self.init_new_level()
 
+        self.did_any_ball_hit_the_paddle=False
+
         ######################################################################
 
     def init_new_level(self):
@@ -139,6 +141,9 @@ class Game:
             self._game_paddle.left_c + random_offset, 1, True, 1,
             offset_from_centre,offset_from_centre)
         self.balls_list = [original_ball]
+
+        self.did_any_ball_hit_the_paddle=False
+
         termios.tcflush(sys.stdin, termios.TCIOFLUSH)
 
     def paint_objs(self):
@@ -186,6 +191,7 @@ class Game:
 
         # logging.info(f"Compare between {PaddleGrab.cnt} and {self._game_paddle.is_magnet}")
         # assert(PaddleGrab.cnt==self._game_paddle.is_magnet)
+        #assert(BricksClass.tot_breakable_bricks==len(self.bricks_list))
         
         speeds_list = []
         for i in self.balls_list:
@@ -198,11 +204,13 @@ class Game:
         print(f"Lives left  is {str(self._lives_left).ljust(4)}")
         # print(f"Balls Horizontal vel(INERTIA): {str_print}")
         print(f" Current level is :{self.curr_level}")
-        print(f"Time elapsed:{str(time_stats[0]).ljust(4)} | Time left:{time_stats[1]}")        
-        print(f"No of active powerups is {str(PowerupsClass.tot_active_powerups).ljust(3)}|", end='')
+        print(f"Time elapsed:{str(time_stats[0]).ljust(4)} | Time left:{time_stats[1]}")     
+        time_before_bricks_descend=conf.TIME_BEFORE_BRICKS_DESCEND-(clock()-self.level_start_time)
+        print(f"Time before bricks descend is {time_before_bricks_descend}")        
+        # print(f"No of active powerups is {str(PowerupsClass.tot_active_powerups).ljust(3)}|", end='')
         #print(f"Paddle length is {str(self._game_paddle.len_c).ljust(4)}")
         print(f" No of breakable bricks:{BricksClass.tot_breakable_bricks}")
-        print(f"ThruBall:{thru_ball_there} | PaddleGrab:{paddle_grab_there}")
+        # print(f"ThruBall:{thru_ball_there} | PaddleGrab:{paddle_grab_there}")s
         print(Back.BLACK)
 
     def generate_brick_coordinates(self):
@@ -213,25 +221,41 @@ class Game:
         # rows go from 0 to tot_r-1 , start from 10, go till end-2
         # cols go from 0 to tot_c-1 , go from 5 to end-5
         first_code = 0
-        for i in range(19, self._just_game_rows - 5):
+        for i in range(12, self._just_game_rows - 5):
             first_idx = (first_code - i)
             seq_in_row = 0
-            for j in range(9, self.just_game_cols - 15, 3):
+            for j in range(11, self.just_game_cols - 10, 3):
                 seq_in_row += 1
                 #logging.info(f"Coordinates are {i}:{j}")
-                color_code = ((first_idx + seq_in_row) % 5 + 5) % 5 + 1
-                color_code=5
-                if color_code == 4:
-                    color_code = 2
-                elif color_code == 2:
-                    color_code = 4
+                color_code = ((first_idx + seq_in_row) % 6 + 6) % 6 + 1
+                #color_code=5
+                # if color_code == 4:
+                #     color_code = 2
+                # elif color_code == 2:
+                #     color_code = 4
+
+                if color_code==1:
+                    color_code=4
+                elif color_code==4:
+                    color_code=1
+                elif color_code==2:
+                    color_code=6
+                elif color_code==6:
+                    color_code=2
+
+                # if color_code==6:
+                #     color_code=2
                 #logging.critical(f"{seq_in_row-i}:{color_code}")
                 decided_class = NormalBrick
+                logging.info(f"Color code is {color_code}")
                 if color_code == 4:
                     decided_class = UnbreakableBrick
                 elif color_code == 5:
                     decided_class = ExplosiveBrick
-                logging.info(f"Color code is {color_code}")
+                elif color_code==6:
+                    decided_class=RainbowBrick
+                    test_list = [1, 2,3] 
+                    color_code=random.choice(test_list)
                 self.bricks_list.append(
                     decided_class(i, j, seq_in_row, (seq_in_row - i),
                                   color_code))
@@ -318,6 +342,13 @@ class Game:
                 ball_obj.capture()
                 ball_obj.offset_from_center = prob_c - (
                     self._game_paddle.left_c + self._game_paddle.len_c // 2)
+            
+
+
+            ########################
+            # collision => ball collided with paddle, move bricks appropriately
+            self.did_any_ball_hit_the_paddle=True
+            ########################
             return True
         return False
 
@@ -456,18 +487,22 @@ class Game:
             ball_obj.flip_vertical_velocity()
         else:
             if prob_r < 0:
-                '''sys.exit()'''
-                ball_obj.isActive = False
-                self.balls_list.remove(ball_obj)
-                if len(self.balls_list) == 0:
-                    self._lives_left -= 1
-                    sleep(0.7)
-                    if self._lives_left == 0:
-                        self.game_over_screen("All lives are over")
-                    self.init_new_life()
-                    termios.tcflush(
-                        sys.stdin, termios.TCIOFLUSH
-                    )  # to prevent character accumulation in buffer coz  input rate might be faster than frame rate
+                ball_obj.flip_vertical_velocity()                
+                #################RESTORE THIS################################
+                # '''sys.exit()'''
+                # ball_obj.isActive = False
+                # self.balls_list.remove(ball_obj)
+                # if len(self.balls_list) == 0:
+                #     self._lives_left -= 1
+                #     sleep(0.7)
+                #     if self._lives_left == 0:
+                #         self.game_over_screen("All lives are over")
+                #     self.init_new_life()
+                #     termios.tcflush(
+                #         sys.stdin, termios.TCIOFLUSH
+                #     )  # to prevent character accumulation in buffer coz  input rate might be faster than frame rate
+                #################RESTORE THIS  ENDS################################
+
                 logging.error(
                     "\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\nBALL TOUCHED GROUND\n$$$$$$$$$$$$$$$$$$"
                 )
@@ -521,6 +556,19 @@ class Game:
         for i in eliminate_list:
             self.curr_powerups_list.remove(i)
 
+    def descend_bricks(self):
+        logging.info("GOing to descend all bricks")
+        
+        for this_brick in self.bricks_list:
+            assert(this_brick.isVisible)
+            if this_brick.isVisible:
+                # move it down
+                this_brick.move_brick(-1)
+                if this_brick.left_r==1:
+                    self.game_over_screen("Brick touched PADDLE LEVEL. You lost")
+
+
+
     def start_game(self):
         logging.info("#### ## Inside play function of GAME class ## ######")
         #print("+++++++++++++++++++++++++++++++++++++++++++++++")
@@ -534,11 +582,20 @@ class Game:
         # The first display of the canvas
         self._screen.print_board()
 
+        self.did_any_ball_hit_the_paddle=False
+
         while True:
             paddle_last_tended = clock()
             # logging.error(f"Paddle len theoretical is {self._game_paddle.len_c} and actual is {self._game_paddle.ascii_repr.shape}")
             assert (
                 self._game_paddle.len_c == self._game_paddle.ascii_repr.shape[1])
+
+            #######################################################################################
+            ##########--DESCENT OF BRICKS -- ##########################################
+            if self.did_any_ball_hit_the_paddle and  conf.TIME_BEFORE_BRICKS_DESCEND<clock()-self.level_start_time:
+                self.descend_bricks()
+            self.did_any_ball_hit_the_paddle=False
+
 
             
 
@@ -589,7 +646,7 @@ class Game:
             if self.handle_input():  # found a keystroke
                 logging.info("moving to next level automated")
                 self.next_level()
-                
+
             elif BricksClass.tot_breakable_bricks==0:
                 logging.info("moving to next level")
                 self.next_level()
