@@ -216,3 +216,24 @@ class BallMultiplier(PowerupsClass):
             game_obj.balls_list.append(new_ball)
         return True
 
+
+
+class PaddleShoot(PowerupsClass):
+    cnt=0
+    
+    def __init__(self,r_num,c_num):
+        super().__init__(r_num,c_num,"!")
+        
+        logging.info(f"Inside init() of POWERUPS class with attributes\n{self.__dict__}\n")
+
+    def activate_powerup(self, game_obj):
+        self.activate_time=clock()+5
+        self._status="active"
+        PowerupsClass.tot_active_powerups+=1
+        PaddleShoot.cnt+=1
+        game_obj.game_paddle.arm()
+
+    def deactivate_powerup(self, game_obj):
+        PaddleShoot.cnt-=1
+        PowerupsClass.tot_active_powerups-=1
+        game_obj.game_paddle.dearm()

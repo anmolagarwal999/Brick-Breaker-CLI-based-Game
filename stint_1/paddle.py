@@ -22,6 +22,7 @@ class PaddleClass:
         self._left_c=paddle_center_c-self._len_c//2
         self._left_r=0
         self._is_magnet=0
+        self._is_armed=0
         self._ascii_repr=self.get_ascii_rep_str(self._len_c)
         logging.info(f"Inside init() of paddle class with attributes\n{self.__dict__}\n")
 
@@ -45,6 +46,8 @@ class PaddleClass:
     def ascii_repr(self):
         return self._ascii_repr
 
+
+    #######################################
     @property
     def is_magnet(self):
         return self._is_magnet
@@ -52,6 +55,32 @@ class PaddleClass:
         self._is_magnet+=1
     def demagnetize(self):
         self._is_magnet-=1
+    ##################################
+
+    #######################################
+    @property
+    def is_armed(self):
+        return self._is_armed
+    def arm(self):
+        self._is_armed+=1
+        # Taking care if this is 
+        self.manipulate_ascii_rep_str()
+        
+
+    def dearm(self):
+        self._is_armed-=1
+        self.manipulate_ascii_rep_str()
+    ##################################
+
+    def manipulate_ascii_rep_str(self):
+        if self._is_armed>0:
+            self._ascii_repr[0][0]="^"
+            self._ascii_repr[0][-1]="^"
+        else:
+            self._ascii_repr[0][0]="["
+            self._ascii_repr[0][-1]="]"
+
+
 
     def change_x(self,dx,right_limit):
         dx*=4
@@ -77,6 +106,10 @@ class PaddleClass:
         for i in range(0,wanted_len-2):
             arr.append("-")
         arr.append(']')
+
+        if self._is_armed>0:
+            arr[0]='^'
+            arr[-1]='^'
         return np.array([
             arr
         ])

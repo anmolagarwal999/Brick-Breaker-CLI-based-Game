@@ -16,7 +16,7 @@ from paddle import PaddleClass
 from ball_class import BallClass
 from bullet_class import BulletClass
 from bricks_class import BricksClass, UnbreakableBrick, NormalBrick, ExplosiveBrick, RainbowBrick
-from powerups import PowerupsClass, ExpandPaddle, ShrinkPaddle, FastBall, ThruBall, PaddleGrab, BallMultiplier
+from powerups import PowerupsClass, ExpandPaddle, ShrinkPaddle, FastBall, ThruBall, PaddleGrab, BallMultiplier, PaddleShoot
 
 ###############################################################
 import logging
@@ -82,8 +82,8 @@ class Game:
         self._overall_start_time = clock()
         self.curr_level = 1
 
-        # self._available_powerups=[ExpandPaddle, ShrinkPaddle, FastBall, ThruBall,BallMultiplier,PaddleGrab]
-        self._available_powerups = [ExpandPaddle]
+        # self._available_powerups=[ExpandPaddle, ShrinkPaddle, FastBall, ThruBall,BallMultiplier,PaddleGrab, PaddleShoot]
+        self._available_powerups = [PaddleShoot]
 
         self.bricks_list = []
         self.curr_bullets_list = []
@@ -125,6 +125,7 @@ class Game:
         self.curr_powerup_idx = 0
         ThruBall.cnt = 0
         PaddleGrab.cnt = 0
+        PaddleShoot.cnt = 0
 
         # Making the game paddle
         self._game_paddle = PaddleClass(self.just_game_cols // 2)
@@ -213,7 +214,8 @@ class Game:
         print(f"Time before bricks descend is {time_before_bricks_descend}")
         # print(f"No of active powerups is {str(PowerupsClass.tot_active_powerups).ljust(3)}|", end='')
         #print(f"Paddle length is {str(self._game_paddle.len_c).ljust(4)}")
-        print(f" No of breakable bricks:{BricksClass.tot_breakable_bricks}")
+        print(f"No of breakable bricks:{BricksClass.tot_breakable_bricks}  ", end='')
+        print(f"Shoot t left:{self.get_max_shooting_time_left()}")
         # print(f"ThruBall:{thru_ball_there} | PaddleGrab:{paddle_grab_there}")s
         print(Back.BLACK)
 
@@ -296,7 +298,8 @@ class Game:
             elif inp == 'v':
                 '''Bullet produced'''
                 #check if powerup activated
-                self.produce_bullet()
+                if self.game_paddle.is_armed>0:
+                    self.produce_bullet()
 
             elif inp == 'b':
                 logging.info("attempt to move to next level automatically")
@@ -573,6 +576,16 @@ class Game:
                 dc >= 0 and dc < self._game_paddle.len_c):
             return True
         return False
+
+
+    def get_max_shooting_time_left(self):
+        curr_max=0
+        for powerup in self.curr_powerups_list:
+            if powerup.status == "active":
+                if isinstance(powerup,PaddleShoot):
+                    curr_max=max(curr_max,conf.POWERUP_DURATION-(clock() - powerup.activate_time))
+        return curr_max
+                    
 
     def check_powerups_expiry(self):
         eliminate_list = []
