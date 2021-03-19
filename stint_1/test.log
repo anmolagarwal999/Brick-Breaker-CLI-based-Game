@@ -1,1961 +1,231 @@
 DEBUG:rows are 35
-DEBUG:columns are are 142
+DEBUG:columns are are 84
 DEBUG:----------------------------------------
 DEBUG:conf.min height is   22
-DEBUG:conf.min width is   60
+DEBUG:conf.min width is   70
 DEBUG:----------------------------------------
 DEBUG:conf.BUFFER DOWN IS is   10
 DEBUG:conf.BUFFER RIGHT  is   10
 DEBUG:----------------------------------------
 DEBUG:############################
 INFO:Inside init() of paddle class with attributes
-{'_len_c': 15, '_len_r': 1, '_left_c': 59, '_left_r': 0, '_is_magnet': 0, '_ascii_repr': array([['[', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-',
+{'_len_c': 15, '_len_r': 1, '_left_c': 30, '_left_r': 0, '_is_magnet': 0, '_ascii_repr': array([['[', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-',
         '-', ']']], dtype='<U1')}
 
 INFO:Inside init() of BALL class with attributes
-{'_len_c': 1, '_len_r': 1, '_left_c': 61, '_left_r': 1, '_is_stuck': True, 'offset_from_center': -3, '_isVisible': True, '_vel_r': 1, '_vel_c': -3, 'is_boss_cnt': 0, 'ball_last_tended_h': 50975.548924397, 'ball_last_tended_v': 50975.54892498, 'ascii_repr': array([['O']], dtype='<U1')}
+{'_len_c': 1, '_len_r': 1, '_left_c': 33, '_left_r': 1, '_is_stuck': True, 'offset_from_center': -2, '_isVisible': True, '_vel_r': 1, '_vel_c': -2, 'is_boss_cnt': 0, 'ball_last_tended_h': 78310.849713069, 'ball_last_tended_v': 78310.849714922, 'ascii_repr': array([['O']], dtype='<U1')}
 
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
 INFO:#### ## Inside play function of GAME class ## ######
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:horizontal prediction called
-INFO:Returning 61
 INFO:
-[PRESSED d]
+[PRESSED q]
 
-INFO:Curr left x is 63
-INFO:Curr right x is 77
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:horizontal prediction called
-INFO:Returning 67
+INFO:
+[PRESSED q]
+
+INFO:
+[PRESSED q]
+
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 26
+INFO:Curr right x is 40
 INFO:
 [PRESSED s]
 
-INFO:horizontal prediction called
-INFO:Returning 66
-INFO:vertical prediction called
-INFO:Returning 2
 CRITICAL:Vertical row of ball is 2
-INFO:horizontal prediction called
-INFO:Returning 65
-INFO:horizontal prediction called
-INFO:Returning 64
-INFO:horizontal prediction called
-INFO:Returning 63
-INFO:vertical prediction called
-INFO:Returning 3
 CRITICAL:Vertical row of ball is 3
-INFO:horizontal prediction called
-INFO:Returning 62
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:horizontal prediction called
-INFO:Returning 60
-INFO:vertical prediction called
-INFO:Returning 4
 CRITICAL:Vertical row of ball is 4
-INFO:horizontal prediction called
-INFO:Returning 59
-INFO:horizontal prediction called
-INFO:Returning 58
-INFO:horizontal prediction called
-INFO:Returning 57
-INFO:vertical prediction called
-INFO:Returning 5
 CRITICAL:Vertical row of ball is 5
-INFO:horizontal prediction called
-INFO:Returning 56
-INFO:horizontal prediction called
-INFO:Returning 55
-INFO:horizontal prediction called
-INFO:Returning 54
-INFO:vertical prediction called
-INFO:Returning 6
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 22
+INFO:Curr right x is 36
 CRITICAL:Vertical row of ball is 6
-INFO:horizontal prediction called
-INFO:Returning 53
-INFO:horizontal prediction called
-INFO:Returning 52
-INFO:horizontal prediction called
-INFO:Returning 51
-INFO:vertical prediction called
-INFO:Returning 7
 CRITICAL:Vertical row of ball is 7
-INFO:horizontal prediction called
-INFO:Returning 50
-INFO:horizontal prediction called
-INFO:Returning 49
-INFO:horizontal prediction called
-INFO:Returning 48
-INFO:vertical prediction called
-INFO:Returning 8
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 18
+INFO:Curr right x is 32
 CRITICAL:Vertical row of ball is 8
-INFO:horizontal prediction called
-INFO:Returning 47
-INFO:horizontal prediction called
-INFO:Returning 46
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 59
-INFO:Curr right x is 73
-INFO:horizontal prediction called
-INFO:Returning 45
-INFO:vertical prediction called
-INFO:Returning 9
 CRITICAL:Vertical row of ball is 9
-INFO:horizontal prediction called
-INFO:Returning 44
-INFO:horizontal prediction called
-INFO:Returning 43
-INFO:horizontal prediction called
-INFO:Returning 42
-INFO:vertical prediction called
-INFO:Returning 10
 CRITICAL:Vertical row of ball is 10
-INFO:horizontal prediction called
-INFO:Returning 41
-INFO:horizontal prediction called
-INFO:Returning 40
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 55
-INFO:Curr right x is 69
-INFO:horizontal prediction called
-INFO:Returning 39
-INFO:vertical prediction called
-INFO:Returning 11
 CRITICAL:Vertical row of ball is 11
-INFO:horizontal prediction called
-INFO:Returning 38
-INFO:horizontal prediction called
-INFO:Returning 37
-INFO:horizontal prediction called
-INFO:Returning 36
-INFO:vertical prediction called
-INFO:Returning 12
 CRITICAL:Vertical row of ball is 12
-INFO:horizontal prediction called
-INFO:Returning 35
-INFO:horizontal prediction called
-INFO:Returning 34
-INFO:horizontal prediction called
-INFO:Returning 33
-INFO:vertical prediction called
-INFO:Returning 13
 CRITICAL:Vertical row of ball is 13
-INFO:horizontal prediction called
-INFO:Returning 32
-INFO:horizontal prediction called
-INFO:Returning 31
-INFO:horizontal prediction called
-INFO:Returning 30
-INFO:vertical prediction called
-INFO:Returning 14
 CRITICAL:Vertical row of ball is 14
-INFO:horizontal prediction called
-INFO:Returning 29
-INFO:horizontal prediction called
-INFO:Returning 28
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 51
-INFO:Curr right x is 65
-INFO:horizontal prediction called
-INFO:Returning 27
-INFO:vertical prediction called
-INFO:Returning 15
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 26, '_seq_id': 8, '_sum_id': -7, '_isVisible': True, '_score_bounty': 2, '_power_factor': 1, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
-DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical row of ball is 15
+CRITICAL:Vertical row of ball is 16
+CRITICAL:Vertical row of ball is 17
+CRITICAL:Vertical row of ball is 18
+CRITICAL:Vertical row of ball is 19
+CRITICAL:Vertical row of ball is 20
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of ball is 24
+DEBUG:Vertical Collision with wall
 CRITICAL:Vertical velocity FLIPPED
-INFO:horizontal prediction called
-INFO:Returning 26
-INFO:horizontal prediction called
-INFO:Returning 25
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 47
-INFO:Curr right x is 61
-INFO:horizontal prediction called
-INFO:Returning 24
-INFO:vertical prediction called
-INFO:Returning 13
-CRITICAL:Vertical row of ball is 13
-INFO:horizontal prediction called
-INFO:Returning 23
-INFO:horizontal prediction called
-INFO:Returning 22
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 43
-INFO:Curr right x is 57
-INFO:horizontal prediction called
-INFO:Returning 21
-INFO:vertical prediction called
-INFO:Returning 12
-CRITICAL:Vertical row of ball is 12
-INFO:horizontal prediction called
-INFO:Returning 20
-INFO:horizontal prediction called
-INFO:Returning 19
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 39
-INFO:Curr right x is 53
-INFO:horizontal prediction called
-INFO:Returning 18
-INFO:vertical prediction called
-INFO:Returning 11
-CRITICAL:Vertical row of ball is 11
-INFO:horizontal prediction called
-INFO:Returning 17
-INFO:horizontal prediction called
-INFO:Returning 16
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 35
-INFO:Curr right x is 49
-INFO:horizontal prediction called
-INFO:Returning 15
-INFO:vertical prediction called
-INFO:Returning 10
-CRITICAL:Vertical row of ball is 10
-INFO:horizontal prediction called
-INFO:Returning 14
-INFO:horizontal prediction called
-INFO:Returning 13
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 31
-INFO:Curr right x is 45
-INFO:horizontal prediction called
-INFO:Returning 12
-INFO:vertical prediction called
-INFO:Returning 9
-CRITICAL:Vertical row of ball is 9
-INFO:horizontal prediction called
-INFO:Returning 11
-INFO:horizontal prediction called
-INFO:Returning 10
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 27
-INFO:Curr right x is 41
-INFO:horizontal prediction called
-INFO:Returning 9
-INFO:vertical prediction called
-INFO:Returning 8
-CRITICAL:Vertical row of ball is 8
-INFO:horizontal prediction called
-INFO:Returning 8
-INFO:horizontal prediction called
-INFO:Returning 7
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 23
-INFO:Curr right x is 37
-INFO:horizontal prediction called
-INFO:Returning 6
-INFO:vertical prediction called
-INFO:Returning 7
-CRITICAL:Vertical row of ball is 7
-INFO:horizontal prediction called
-INFO:Returning 5
-INFO:horizontal prediction called
-INFO:Returning 4
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 19
-INFO:Curr right x is 33
-INFO:horizontal prediction called
-INFO:Returning 3
-INFO:vertical prediction called
-INFO:Returning 6
-CRITICAL:Vertical row of ball is 6
-INFO:horizontal prediction called
-INFO:Returning 2
-INFO:horizontal prediction called
-INFO:Returning 1
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 15
-INFO:Curr right x is 29
-INFO:horizontal prediction called
-INFO:Returning 0
-INFO:vertical prediction called
-INFO:Returning 5
-CRITICAL:Vertical row of ball is 5
-INFO:horizontal prediction called
-INFO:Returning -1
-INFO:horizontal prediction called
-INFO:Returning 1
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 11
-INFO:Curr right x is 25
-INFO:horizontal prediction called
-INFO:Returning 2
-INFO:vertical prediction called
-INFO:Returning 4
-CRITICAL:Vertical row of ball is 4
-INFO:horizontal prediction called
-INFO:Returning 3
-INFO:horizontal prediction called
-INFO:Returning 4
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 7
-INFO:Curr right x is 21
-INFO:horizontal prediction called
-INFO:Returning 5
-INFO:vertical prediction called
-INFO:Returning 3
-CRITICAL:Vertical row of ball is 3
-INFO:horizontal prediction called
-INFO:Returning 6
-INFO:horizontal prediction called
-INFO:Returning 7
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 3
-INFO:Curr right x is 17
-INFO:horizontal prediction called
-INFO:Returning 8
-INFO:vertical prediction called
-INFO:Returning 2
-CRITICAL:Vertical row of ball is 2
-INFO:horizontal prediction called
-INFO:Returning 9
-INFO:horizontal prediction called
-INFO:Returning 10
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is -1
-INFO:Curr right x is 13
-INFO:horizontal prediction called
-INFO:Returning 11
-INFO:vertical prediction called
-INFO:Returning 1
-CRITICAL:Vertical row of ball is 1
-INFO:horizontal prediction called
-INFO:Returning 12
-INFO:horizontal prediction called
-INFO:Returning 13
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 4
-INFO:Curr right x is 18
-INFO:horizontal prediction called
-INFO:Returning 14
-INFO:vertical prediction called
-INFO:Returning 0
-DEBUG:speed inc is 3
-INFO:Is paddle magnetic : 0
-DEBUG:Vertical Collision with PADDLE
-CRITICAL:Vertical velocity FLIPPED
-INFO:horizontal prediction called
-INFO:Returning 15
-INFO:horizontal prediction called
-INFO:Returning 16
-INFO:horizontal prediction called
-INFO:Returning 17
-INFO:horizontal prediction called
-INFO:Returning 18
-INFO:vertical prediction called
-INFO:Returning 2
-CRITICAL:Vertical row of ball is 2
-INFO:horizontal prediction called
-INFO:Returning 19
-INFO:horizontal prediction called
-INFO:Returning 20
-INFO:horizontal prediction called
-INFO:Returning 21
-INFO:horizontal prediction called
-INFO:Returning 22
-INFO:vertical prediction called
-INFO:Returning 3
-CRITICAL:Vertical row of ball is 3
-INFO:horizontal prediction called
-INFO:Returning 23
-INFO:horizontal prediction called
-INFO:Returning 24
-INFO:horizontal prediction called
-INFO:Returning 25
-INFO:horizontal prediction called
-INFO:Returning 26
-INFO:vertical prediction called
-INFO:Returning 4
-CRITICAL:Vertical row of ball is 4
-INFO:horizontal prediction called
-INFO:Returning 27
-INFO:horizontal prediction called
-INFO:Returning 28
-INFO:horizontal prediction called
-INFO:Returning 29
-INFO:horizontal prediction called
-INFO:Returning 30
-INFO:vertical prediction called
-INFO:Returning 5
-CRITICAL:Vertical row of ball is 5
-INFO:horizontal prediction called
-INFO:Returning 31
-INFO:horizontal prediction called
-INFO:Returning 32
-INFO:horizontal prediction called
-INFO:Returning 33
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 8
-INFO:Curr right x is 22
-INFO:horizontal prediction called
-INFO:Returning 34
-INFO:vertical prediction called
-INFO:Returning 6
-CRITICAL:Vertical row of ball is 6
-INFO:horizontal prediction called
-INFO:Returning 35
-INFO:horizontal prediction called
-INFO:Returning 36
-INFO:horizontal prediction called
-INFO:Returning 37
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 12
-INFO:Curr right x is 26
-INFO:horizontal prediction called
-INFO:Returning 38
-INFO:vertical prediction called
-INFO:Returning 7
-CRITICAL:Vertical row of ball is 7
-INFO:horizontal prediction called
-INFO:Returning 39
-INFO:horizontal prediction called
-INFO:Returning 40
-INFO:horizontal prediction called
-INFO:Returning 41
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 16
-INFO:Curr right x is 30
-INFO:horizontal prediction called
-INFO:Returning 42
-INFO:vertical prediction called
-INFO:Returning 8
-CRITICAL:Vertical row of ball is 8
-INFO:horizontal prediction called
-INFO:Returning 43
-INFO:horizontal prediction called
-INFO:Returning 44
-INFO:horizontal prediction called
-INFO:Returning 45
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 20
-INFO:Curr right x is 34
-INFO:horizontal prediction called
-INFO:Returning 46
-INFO:vertical prediction called
-INFO:Returning 9
-CRITICAL:Vertical row of ball is 9
-INFO:horizontal prediction called
-INFO:Returning 47
-INFO:horizontal prediction called
-INFO:Returning 48
-INFO:horizontal prediction called
-INFO:Returning 49
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 24
-INFO:Curr right x is 38
-INFO:horizontal prediction called
-INFO:Returning 50
-INFO:vertical prediction called
-INFO:Returning 10
-CRITICAL:Vertical row of ball is 10
-INFO:horizontal prediction called
-INFO:Returning 51
-INFO:horizontal prediction called
-INFO:Returning 52
-INFO:horizontal prediction called
-INFO:Returning 53
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 28
-INFO:Curr right x is 42
-INFO:horizontal prediction called
-INFO:Returning 54
-INFO:vertical prediction called
-INFO:Returning 11
-CRITICAL:Vertical row of ball is 11
-INFO:horizontal prediction called
-INFO:Returning 55
-INFO:horizontal prediction called
-INFO:Returning 56
-INFO:horizontal prediction called
-INFO:Returning 57
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 32
-INFO:Curr right x is 46
-INFO:horizontal prediction called
-INFO:Returning 58
-INFO:vertical prediction called
-INFO:Returning 12
-CRITICAL:Vertical row of ball is 12
-INFO:horizontal prediction called
-INFO:Returning 59
-INFO:horizontal prediction called
-INFO:Returning 60
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 36
-INFO:Curr right x is 50
-INFO:horizontal prediction called
-INFO:Returning 62
-INFO:vertical prediction called
-INFO:Returning 13
-CRITICAL:Vertical row of ball is 13
-INFO:horizontal prediction called
-INFO:Returning 63
-INFO:horizontal prediction called
-INFO:Returning 64
-INFO:horizontal prediction called
-INFO:Returning 65
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 40
-INFO:Curr right x is 54
-INFO:horizontal prediction called
-INFO:Returning 66
-INFO:vertical prediction called
-INFO:Returning 14
-CRITICAL:Vertical row of ball is 14
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:horizontal prediction called
-INFO:Returning 68
-INFO:horizontal prediction called
-INFO:Returning 69
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 44
-INFO:Curr right x is 58
-INFO:horizontal prediction called
-INFO:Returning 70
-INFO:vertical prediction called
-INFO:Returning 15
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 68, '_seq_id': 22, '_sum_id': 7, '_isVisible': True, '_score_bounty': 3, '_power_factor': 2, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
-DEBUG:Vertical Collision with BRICK
-CRITICAL:Vertical velocity FLIPPED
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 72
-INFO:horizontal prediction called
-INFO:Returning 73
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 48
-INFO:Curr right x is 62
-INFO:horizontal prediction called
-INFO:Returning 74
-INFO:vertical prediction called
-INFO:Returning 13
-CRITICAL:Vertical row of ball is 13
-INFO:horizontal prediction called
-INFO:Returning 75
-INFO:horizontal prediction called
-INFO:Returning 76
-INFO:horizontal prediction called
-INFO:Returning 77
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 52
-INFO:Curr right x is 66
-INFO:horizontal prediction called
-INFO:Returning 78
-INFO:vertical prediction called
-INFO:Returning 12
-CRITICAL:Vertical row of ball is 12
-INFO:horizontal prediction called
-INFO:Returning 79
-INFO:horizontal prediction called
-INFO:Returning 80
-INFO:horizontal prediction called
-INFO:Returning 81
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 56
-INFO:Curr right x is 70
-INFO:horizontal prediction called
-INFO:Returning 82
-INFO:vertical prediction called
-INFO:Returning 11
-CRITICAL:Vertical row of ball is 11
-INFO:horizontal prediction called
-INFO:Returning 83
-INFO:horizontal prediction called
-INFO:Returning 84
-INFO:horizontal prediction called
-INFO:Returning 85
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 60
-INFO:Curr right x is 74
-INFO:horizontal prediction called
-INFO:Returning 86
-INFO:vertical prediction called
-INFO:Returning 10
-CRITICAL:Vertical row of ball is 10
-INFO:horizontal prediction called
-INFO:Returning 87
-INFO:horizontal prediction called
-INFO:Returning 88
-INFO:horizontal prediction called
-INFO:Returning 89
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 64
-INFO:Curr right x is 78
-INFO:horizontal prediction called
-INFO:Returning 90
-INFO:vertical prediction called
-INFO:Returning 9
-CRITICAL:Vertical row of ball is 9
-INFO:horizontal prediction called
-INFO:Returning 91
-INFO:horizontal prediction called
-INFO:Returning 92
-INFO:horizontal prediction called
-INFO:Returning 93
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 68
-INFO:Curr right x is 82
-INFO:horizontal prediction called
-INFO:Returning 94
-INFO:vertical prediction called
-INFO:Returning 8
-CRITICAL:Vertical row of ball is 8
-INFO:horizontal prediction called
-INFO:Returning 95
-INFO:horizontal prediction called
-INFO:Returning 96
-INFO:horizontal prediction called
-INFO:Returning 97
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 72
-INFO:Curr right x is 86
-INFO:horizontal prediction called
-INFO:Returning 98
-INFO:vertical prediction called
-INFO:Returning 7
-CRITICAL:Vertical row of ball is 7
-INFO:horizontal prediction called
-INFO:Returning 99
-INFO:horizontal prediction called
-INFO:Returning 100
-INFO:horizontal prediction called
-INFO:Returning 101
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 76
-INFO:Curr right x is 90
-INFO:horizontal prediction called
-INFO:Returning 102
-INFO:vertical prediction called
-INFO:Returning 6
-CRITICAL:Vertical row of ball is 6
-INFO:horizontal prediction called
-INFO:Returning 103
-INFO:horizontal prediction called
-INFO:Returning 104
-INFO:horizontal prediction called
-INFO:Returning 105
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 80
-INFO:Curr right x is 94
-INFO:horizontal prediction called
-INFO:Returning 106
-INFO:vertical prediction called
-INFO:Returning 5
-CRITICAL:Vertical row of ball is 5
-INFO:horizontal prediction called
-INFO:Returning 107
-INFO:horizontal prediction called
-INFO:Returning 108
-INFO:horizontal prediction called
-INFO:Returning 109
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 84
-INFO:Curr right x is 98
-INFO:horizontal prediction called
-INFO:Returning 110
-INFO:vertical prediction called
-INFO:Returning 4
-CRITICAL:Vertical row of ball is 4
-INFO:horizontal prediction called
-INFO:Returning 111
-INFO:horizontal prediction called
-INFO:Returning 112
-INFO:horizontal prediction called
-INFO:Returning 113
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 88
-INFO:Curr right x is 102
-INFO:horizontal prediction called
-INFO:Returning 114
-INFO:vertical prediction called
-INFO:Returning 3
-CRITICAL:Vertical row of ball is 3
-INFO:horizontal prediction called
-INFO:Returning 115
-INFO:horizontal prediction called
-INFO:Returning 116
-INFO:horizontal prediction called
-INFO:Returning 117
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 92
-INFO:Curr right x is 106
-INFO:horizontal prediction called
-INFO:Returning 118
-INFO:vertical prediction called
-INFO:Returning 2
-CRITICAL:Vertical row of ball is 2
-INFO:horizontal prediction called
-INFO:Returning 119
-INFO:horizontal prediction called
-INFO:Returning 120
-INFO:horizontal prediction called
-INFO:Returning 121
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 96
-INFO:Curr right x is 110
-INFO:horizontal prediction called
-INFO:Returning 122
-INFO:vertical prediction called
-INFO:Returning 1
-CRITICAL:Vertical row of ball is 1
-INFO:horizontal prediction called
-INFO:Returning 123
-INFO:horizontal prediction called
-INFO:Returning 124
-INFO:horizontal prediction called
-INFO:Returning 125
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 100
-INFO:Curr right x is 114
-INFO:horizontal prediction called
-INFO:Returning 126
-INFO:vertical prediction called
-INFO:Returning 0
-CRITICAL:Vertical row of ball is 0
-INFO:horizontal prediction called
-INFO:Returning 127
-INFO:horizontal prediction called
-INFO:Returning 128
-INFO:horizontal prediction called
-INFO:Returning 129
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 104
-INFO:Curr right x is 118
-INFO:horizontal prediction called
-INFO:Returning 130
-INFO:vertical prediction called
-INFO:Returning -1
-INFO:Inside init() of paddle class with attributes
-{'_len_c': 15, '_len_r': 1, '_left_c': 59, '_left_r': 0, '_is_magnet': 0, '_ascii_repr': array([['[', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-',
-        '-', ']']], dtype='<U1')}
-
-INFO:Inside init() of BALL class with attributes
-{'_len_c': 1, '_len_r': 1, '_left_c': 60, '_left_r': 1, '_is_stuck': True, 'offset_from_center': -3, '_isVisible': True, '_vel_r': 1, '_vel_c': -3, 'is_boss_cnt': 0, 'ball_last_tended_h': 50983.495930731, 'ball_last_tended_v': 50983.49593255, 'ascii_repr': array([['O']], dtype='<U1')}
-
-ERROR:
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-BALL TOUCHED GROUND
-$$$$$$$$$$$$$$$$$$
-INFO:horizontal prediction called
-INFO:Returning 60
-INFO:horizontal prediction called
-INFO:Returning 60
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 60
-INFO:horizontal prediction called
-INFO:Returning 60
-INFO:horizontal prediction called
-INFO:Returning 60
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 60
-INFO:horizontal prediction called
-INFO:Returning 60
-INFO:horizontal prediction called
-INFO:Returning 60
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 60
-INFO:horizontal prediction called
-INFO:Returning 60
-INFO:horizontal prediction called
-INFO:Returning 60
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 60
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 63
-INFO:Curr right x is 77
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 67
-INFO:Curr right x is 81
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:
-[PRESSED s]
-
-INFO:horizontal prediction called
-INFO:Returning 70
-INFO:vertical prediction called
-INFO:Returning 2
-CRITICAL:Vertical row of ball is 2
-INFO:horizontal prediction called
-INFO:Returning 69
-INFO:horizontal prediction called
-INFO:Returning 68
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:vertical prediction called
-INFO:Returning 3
-CRITICAL:Vertical row of ball is 3
-INFO:horizontal prediction called
-INFO:Returning 66
-INFO:horizontal prediction called
-INFO:Returning 65
-INFO:horizontal prediction called
-INFO:Returning 64
-INFO:vertical prediction called
-INFO:Returning 4
-CRITICAL:Vertical row of ball is 4
-INFO:horizontal prediction called
-INFO:Returning 63
-INFO:horizontal prediction called
-INFO:Returning 62
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:vertical prediction called
-INFO:Returning 5
-CRITICAL:Vertical row of ball is 5
-INFO:horizontal prediction called
-INFO:Returning 60
-INFO:horizontal prediction called
-INFO:Returning 59
-INFO:horizontal prediction called
-INFO:Returning 58
-INFO:vertical prediction called
-INFO:Returning 6
-CRITICAL:Vertical row of ball is 6
-INFO:horizontal prediction called
-INFO:Returning 57
-INFO:horizontal prediction called
-INFO:Returning 56
-INFO:horizontal prediction called
-INFO:Returning 55
-INFO:vertical prediction called
-INFO:Returning 7
-CRITICAL:Vertical row of ball is 7
-INFO:horizontal prediction called
-INFO:Returning 54
-INFO:horizontal prediction called
-INFO:Returning 53
-INFO:horizontal prediction called
-INFO:Returning 52
-INFO:vertical prediction called
-INFO:Returning 8
-CRITICAL:Vertical row of ball is 8
-INFO:horizontal prediction called
-INFO:Returning 51
-INFO:horizontal prediction called
-INFO:Returning 50
-INFO:horizontal prediction called
-INFO:Returning 49
-INFO:vertical prediction called
-INFO:Returning 9
-CRITICAL:Vertical row of ball is 9
-INFO:horizontal prediction called
-INFO:Returning 48
-INFO:horizontal prediction called
-INFO:Returning 47
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 63
-INFO:Curr right x is 77
-INFO:horizontal prediction called
-INFO:Returning 46
-INFO:vertical prediction called
-INFO:Returning 10
-CRITICAL:Vertical row of ball is 10
-INFO:horizontal prediction called
-INFO:Returning 45
-INFO:horizontal prediction called
-INFO:Returning 44
-INFO:horizontal prediction called
-INFO:Returning 43
-INFO:vertical prediction called
-INFO:Returning 11
-CRITICAL:Vertical row of ball is 11
-INFO:horizontal prediction called
-INFO:Returning 42
-INFO:horizontal prediction called
-INFO:Returning 41
-INFO:horizontal prediction called
-INFO:Returning 40
-INFO:vertical prediction called
-INFO:Returning 12
-CRITICAL:Vertical row of ball is 12
-INFO:horizontal prediction called
-INFO:Returning 39
-INFO:horizontal prediction called
-INFO:Returning 38
-INFO:horizontal prediction called
-INFO:Returning 37
-INFO:vertical prediction called
-INFO:Returning 13
-CRITICAL:Vertical row of ball is 13
-INFO:horizontal prediction called
-INFO:Returning 36
-INFO:horizontal prediction called
-INFO:Returning 35
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 59
-INFO:Curr right x is 73
-INFO:horizontal prediction called
-INFO:Returning 34
-INFO:vertical prediction called
-INFO:Returning 14
-CRITICAL:Vertical row of ball is 14
-INFO:horizontal prediction called
-INFO:Returning 33
-INFO:horizontal prediction called
-INFO:Returning 32
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 55
-INFO:Curr right x is 69
-INFO:horizontal prediction called
-INFO:Returning 31
-INFO:vertical prediction called
-INFO:Returning 15
-INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 29, '_seq_id': 9, '_sum_id': -6, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 29, '_seq_id': 9, '_sum_id': -6, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+CRITICAL:Vertical row of ball is 23
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of ball is 20
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 24, '_seq_id': 6, '_sum_id': -13, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 24, '_seq_id': 6, '_sum_id': -13, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
-INFO:rand float is 0.5172910733929703
+INFO:rand float is 0.5082241030672615
 INFO:Inside init() of POWERUPS class with attributes
-{'_len_c': 1, '_len_r': 1, '_left_r': 15, '_left_c': 29, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['?']], dtype='<U1')}
+{'_len_c': 1, '_len_r': 1, '_left_r': 19, '_left_c': 24, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['?']], dtype='<U1')}
 
 INFO:Inside init() of POWERUPS class with attributes
-{'_len_c': 1, '_len_r': 1, '_left_r': 15, '_left_c': 29, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['?']], dtype='<U1')}
+{'_len_c': 1, '_len_r': 1, '_left_r': 19, '_left_c': 24, '_status': 'in_air', '_vel_r': -1, '_ascii_repr': array([['?']], dtype='<U1')}
 
 INFO:Powerup appended
-CRITICAL:coordinates are [[14, 8], [14, 9], [14, 10], [15, 8], [15, 10], [16, 8], [16, 9], [16, 10]]
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 26, '_seq_id': 8, '_sum_id': -7, '_isVisible': True, '_score_bounty': 2, '_power_factor': 0, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 26, '_seq_id': 8, '_sum_id': -7, '_isVisible': False, '_score_bounty': 2, '_power_factor': 0, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[18, 5], [18, 6], [18, 7], [19, 5], [19, 7], [20, 5], [20, 6], [20, 7]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 21, '_seq_id': 5, '_sum_id': -14, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 21, '_seq_id': 5, '_sum_id': -14, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 32, '_seq_id': 10, '_sum_id': -5, '_isVisible': True, '_score_bounty': 1, '_power_factor': 0, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 32, '_seq_id': 10, '_sum_id': -5, '_isVisible': False, '_score_bounty': 1, '_power_factor': 0, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[18, 4], [18, 5], [18, 6], [19, 4], [19, 6], [20, 4], [20, 5], [20, 6]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 18, '_seq_id': 4, '_sum_id': -15, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 18, '_seq_id': 4, '_sum_id': -15, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 26, '_seq_id': 8, '_sum_id': -8, '_isVisible': True, '_score_bounty': 3, '_power_factor': 0, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 26, '_seq_id': 8, '_sum_id': -8, '_isVisible': False, '_score_bounty': 3, '_power_factor': 0, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[18, 3], [18, 4], [18, 5], [19, 3], [19, 5], [20, 3], [20, 4], [20, 5]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 15, '_seq_id': 3, '_sum_id': -16, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 15, '_seq_id': 3, '_sum_id': -16, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 29, '_seq_id': 9, '_sum_id': -7, '_isVisible': True, '_score_bounty': 2, '_power_factor': 0, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 29, '_seq_id': 9, '_sum_id': -7, '_isVisible': False, '_score_bounty': 2, '_power_factor': 0, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[18, 2], [18, 3], [18, 4], [19, 2], [19, 4], [20, 2], [20, 3], [20, 4]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 12, '_seq_id': 2, '_sum_id': -17, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 12, '_seq_id': 2, '_sum_id': -17, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
-INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 32, '_seq_id': 10, '_sum_id': -6, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 32, '_seq_id': 10, '_sum_id': -6, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[18, 1], [18, 2], [18, 3], [19, 1], [19, 3], [20, 1], [20, 2], [20, 3]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 9, '_seq_id': 1, '_sum_id': -18, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 9, '_seq_id': 1, '_sum_id': -18, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
-CRITICAL:coordinates are [[15, 9], [15, 10], [15, 11], [16, 9], [16, 11], [17, 9], [17, 10], [17, 11]]
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 15, '_left_c': 35, '_seq_id': 11, '_sum_id': -4, '_isVisible': False, '_score_bounty': 4, '_power_factor': 0, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[18, 0], [18, 1], [18, 2], [19, 0], [19, 2], [20, 0], [20, 1], [20, 2]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 27, '_seq_id': 7, '_sum_id': -12, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 27, '_seq_id': 7, '_sum_id': -12, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 35, '_seq_id': 11, '_sum_id': -5, '_isVisible': True, '_score_bounty': 1, '_power_factor': 0, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 35, '_seq_id': 11, '_sum_id': -5, '_isVisible': False, '_score_bounty': 1, '_power_factor': 0, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[18, 6], [18, 7], [18, 8], [19, 6], [19, 8], [20, 6], [20, 7], [20, 8]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 30, '_seq_id': 8, '_sum_id': -11, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 30, '_seq_id': 8, '_sum_id': -11, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 29, '_seq_id': 9, '_sum_id': -8, '_isVisible': True, '_score_bounty': 3, '_power_factor': 0, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 29, '_seq_id': 9, '_sum_id': -8, '_isVisible': False, '_score_bounty': 3, '_power_factor': 0, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[18, 7], [18, 8], [18, 9], [19, 7], [19, 9], [20, 7], [20, 8], [20, 9]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 33, '_seq_id': 9, '_sum_id': -10, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 33, '_seq_id': 9, '_sum_id': -10, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 32, '_seq_id': 10, '_sum_id': -7, '_isVisible': True, '_score_bounty': 2, '_power_factor': 0, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 32, '_seq_id': 10, '_sum_id': -7, '_isVisible': False, '_score_bounty': 2, '_power_factor': 0, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[18, 8], [18, 9], [18, 10], [19, 8], [19, 10], [20, 8], [20, 9], [20, 10]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 36, '_seq_id': 10, '_sum_id': -9, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 36, '_seq_id': 10, '_sum_id': -9, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
-INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 35, '_seq_id': 11, '_sum_id': -6, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 35, '_seq_id': 11, '_sum_id': -6, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[18, 9], [18, 10], [18, 11], [19, 9], [19, 11], [20, 9], [20, 10], [20, 11]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 39, '_seq_id': 11, '_sum_id': -8, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 39, '_seq_id': 11, '_sum_id': -8, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
-CRITICAL:coordinates are [[16, 10], [16, 11], [16, 12], [17, 10], [17, 12], [18, 10], [18, 11], [18, 12]]
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 16, '_left_c': 38, '_seq_id': 12, '_sum_id': -4, '_isVisible': False, '_score_bounty': 4, '_power_factor': 0, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[18, 10], [18, 11], [18, 12], [19, 10], [19, 12], [20, 10], [20, 11], [20, 12]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 42, '_seq_id': 12, '_sum_id': -7, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 42, '_seq_id': 12, '_sum_id': -7, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 38, '_seq_id': 12, '_sum_id': -5, '_isVisible': True, '_score_bounty': 1, '_power_factor': 0, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 38, '_seq_id': 12, '_sum_id': -5, '_isVisible': False, '_score_bounty': 1, '_power_factor': 0, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 32, '_seq_id': 10, '_sum_id': -8, '_isVisible': True, '_score_bounty': 3, '_power_factor': 0, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 32, '_seq_id': 10, '_sum_id': -8, '_isVisible': False, '_score_bounty': 3, '_power_factor': 0, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 35, '_seq_id': 11, '_sum_id': -7, '_isVisible': True, '_score_bounty': 2, '_power_factor': 0, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 35, '_seq_id': 11, '_sum_id': -7, '_isVisible': False, '_score_bounty': 2, '_power_factor': 0, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 38, '_seq_id': 12, '_sum_id': -6, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 38, '_seq_id': 12, '_sum_id': -6, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
-DEBUG:############################
-CRITICAL:coordinates are [[17, 11], [17, 12], [17, 13], [18, 11], [18, 13], [19, 11], [19, 12], [19, 13]]
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 17, '_left_c': 41, '_seq_id': 13, '_sum_id': -4, '_isVisible': False, '_score_bounty': 4, '_power_factor': 0, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 41, '_seq_id': 13, '_sum_id': -5, '_isVisible': True, '_score_bounty': 1, '_power_factor': 0, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 41, '_seq_id': 13, '_sum_id': -5, '_isVisible': False, '_score_bounty': 1, '_power_factor': 0, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 35, '_seq_id': 11, '_sum_id': -8, '_isVisible': True, '_score_bounty': 3, '_power_factor': 0, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 35, '_seq_id': 11, '_sum_id': -8, '_isVisible': False, '_score_bounty': 3, '_power_factor': 0, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 38, '_seq_id': 12, '_sum_id': -7, '_isVisible': True, '_score_bounty': 2, '_power_factor': 0, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 38, '_seq_id': 12, '_sum_id': -7, '_isVisible': False, '_score_bounty': 2, '_power_factor': 0, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 41, '_seq_id': 13, '_sum_id': -6, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 41, '_seq_id': 13, '_sum_id': -6, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[18, 11], [18, 12], [18, 13], [19, 11], [19, 13], [20, 11], [20, 12], [20, 13]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 45, '_seq_id': 13, '_sum_id': -6, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 45, '_seq_id': 13, '_sum_id': -6, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
 CRITICAL:coordinates are [[18, 12], [18, 13], [18, 14], [19, 12], [19, 14], [20, 12], [20, 13], [20, 14]]
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 18, '_left_c': 44, '_seq_id': 14, '_sum_id': -4, '_isVisible': False, '_score_bounty': 4, '_power_factor': 0, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 48, '_seq_id': 14, '_sum_id': -5, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 48, '_seq_id': 14, '_sum_id': -5, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 44, '_seq_id': 14, '_sum_id': -5, '_isVisible': True, '_score_bounty': 1, '_power_factor': 0, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 44, '_seq_id': 14, '_sum_id': -5, '_isVisible': False, '_score_bounty': 1, '_power_factor': 0, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[18, 13], [18, 14], [18, 15], [19, 13], [19, 15], [20, 13], [20, 14], [20, 15]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 51, '_seq_id': 15, '_sum_id': -4, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 51, '_seq_id': 15, '_sum_id': -4, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 20, '_left_c': 38, '_seq_id': 12, '_sum_id': -8, '_isVisible': True, '_score_bounty': 3, '_power_factor': 0, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 20, '_left_c': 38, '_seq_id': 12, '_sum_id': -8, '_isVisible': False, '_score_bounty': 3, '_power_factor': 0, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[18, 14], [18, 15], [18, 16], [19, 14], [19, 16], [20, 14], [20, 15], [20, 16]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 54, '_seq_id': 16, '_sum_id': -3, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 54, '_seq_id': 16, '_sum_id': -3, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 20, '_left_c': 41, '_seq_id': 13, '_sum_id': -7, '_isVisible': True, '_score_bounty': 2, '_power_factor': 0, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 20, '_left_c': 41, '_seq_id': 13, '_sum_id': -7, '_isVisible': False, '_score_bounty': 2, '_power_factor': 0, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
+CRITICAL:coordinates are [[18, 15], [18, 16], [18, 17], [19, 15], [19, 17], [20, 15], [20, 16], [20, 17]]
+INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 57, '_seq_id': 17, '_sum_id': -2, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
+ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 57, '_seq_id': 17, '_sum_id': -2, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
 DEBUG:############################
-INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 20, '_left_c': 44, '_seq_id': 14, '_sum_id': -6, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 20, '_left_c': 44, '_seq_id': 14, '_sum_id': -6, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
-DEBUG:############################
-CRITICAL:coordinates are [[19, 13], [19, 14], [19, 15], [20, 13], [20, 15], [21, 13], [21, 14], [21, 15]]
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 19, '_left_c': 47, '_seq_id': 15, '_sum_id': -4, '_isVisible': False, '_score_bounty': 4, '_power_factor': 0, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 20, '_left_c': 47, '_seq_id': 15, '_sum_id': -5, '_isVisible': True, '_score_bounty': 1, '_power_factor': 0, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 20, '_left_c': 47, '_seq_id': 15, '_sum_id': -5, '_isVisible': False, '_score_bounty': 1, '_power_factor': 0, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 21, '_left_c': 41, '_seq_id': 13, '_sum_id': -8, '_isVisible': True, '_score_bounty': 3, '_power_factor': 0, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 21, '_left_c': 41, '_seq_id': 13, '_sum_id': -8, '_isVisible': False, '_score_bounty': 3, '_power_factor': 0, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 21, '_left_c': 44, '_seq_id': 14, '_sum_id': -7, '_isVisible': True, '_score_bounty': 2, '_power_factor': 0, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 21, '_left_c': 44, '_seq_id': 14, '_sum_id': -7, '_isVisible': False, '_score_bounty': 2, '_power_factor': 0, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 21, '_left_c': 47, '_seq_id': 15, '_sum_id': -6, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 21, '_left_c': 47, '_seq_id': 15, '_sum_id': -6, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
-DEBUG:############################
-CRITICAL:coordinates are [[20, 14], [20, 15], [20, 16], [21, 14], [21, 16], [22, 14], [22, 15], [22, 16]]
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 20, '_left_c': 50, '_seq_id': 16, '_sum_id': -4, '_isVisible': False, '_score_bounty': 4, '_power_factor': 0, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 21, '_left_c': 50, '_seq_id': 16, '_sum_id': -5, '_isVisible': True, '_score_bounty': 1, '_power_factor': 0, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 21, '_left_c': 50, '_seq_id': 16, '_sum_id': -5, '_isVisible': False, '_score_bounty': 1, '_power_factor': 0, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 22, '_left_c': 44, '_seq_id': 14, '_sum_id': -8, '_isVisible': True, '_score_bounty': 3, '_power_factor': 0, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 22, '_left_c': 44, '_seq_id': 14, '_sum_id': -8, '_isVisible': False, '_score_bounty': 3, '_power_factor': 0, '_ascii_repr': array([['[', '3', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 22, '_left_c': 47, '_seq_id': 15, '_sum_id': -7, '_isVisible': True, '_score_bounty': 2, '_power_factor': 0, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 22, '_left_c': 47, '_seq_id': 15, '_sum_id': -7, '_isVisible': False, '_score_bounty': 2, '_power_factor': 0, '_ascii_repr': array([['[', '2', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:EXPLOSIVE BROKEN with {'_len_c': 3, '_len_r': 1, '_left_r': 22, '_left_c': 50, '_seq_id': 16, '_sum_id': -6, '_isVisible': True, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 22, '_left_c': 50, '_seq_id': 16, '_sum_id': -6, '_isVisible': False, '_score_bounty': 5, '_power_factor': 0, '_ascii_repr': array([['[', '5', ']']], dtype='<U1')}
-DEBUG:############################
-CRITICAL:coordinates are [[21, 15], [21, 16], [21, 17], [22, 15], [22, 17], [23, 15], [23, 16], [23, 17]]
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 21, '_left_c': 53, '_seq_id': 17, '_sum_id': -4, '_isVisible': False, '_score_bounty': 4, '_power_factor': 0, '_ascii_repr': array([['[', '4', ']']], dtype='<U1')}
-DEBUG:############################
-INFO:Brick trying to break has stuff like {'_len_c': 3, '_len_r': 1, '_left_r': 22, '_left_c': 53, '_seq_id': 17, '_sum_id': -5, '_isVisible': True, '_score_bounty': 1, '_power_factor': 0, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
-ERROR:Inside finish brick for {'_len_c': 3, '_len_r': 1, '_left_r': 22, '_left_c': 53, '_seq_id': 17, '_sum_id': -5, '_isVisible': False, '_score_bounty': 1, '_power_factor': 0, '_ascii_repr': array([['[', '1', ']']], dtype='<U1')}
-DEBUG:############################
+CRITICAL:coordinates are [[18, 16], [18, 17], [18, 18], [19, 16], [19, 18], [20, 16], [20, 17], [20, 18]]
 DEBUG:Vertical Collision with BRICK
 CRITICAL:Vertical velocity FLIPPED
-INFO:horizontal prediction called
-INFO:Returning 30
-INFO:horizontal prediction called
-INFO:Returning 29
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 51
-INFO:Curr right x is 65
-INFO:horizontal prediction called
-INFO:Returning 28
-INFO:vertical prediction called
-INFO:Returning 13
-CRITICAL:Vertical row of ball is 13
-INFO:horizontal prediction called
-INFO:Returning 27
-INFO:horizontal prediction called
-INFO:Returning 26
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 47
-INFO:Curr right x is 61
-INFO:horizontal prediction called
-INFO:Returning 25
-INFO:vertical prediction called
-INFO:Returning 12
-CRITICAL:Vertical row of ball is 12
-INFO:horizontal prediction called
-INFO:Returning 24
-INFO:horizontal prediction called
-INFO:Returning 23
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 43
-INFO:Curr right x is 57
-INFO:horizontal prediction called
-INFO:Returning 22
-INFO:vertical prediction called
-INFO:Returning 11
-CRITICAL:Vertical row of ball is 11
-INFO:horizontal prediction called
-INFO:Returning 21
-INFO:horizontal prediction called
-INFO:Returning 20
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 39
-INFO:Curr right x is 53
-INFO:horizontal prediction called
-INFO:Returning 19
-INFO:vertical prediction called
-INFO:Returning 10
-CRITICAL:Vertical row of ball is 10
-INFO:horizontal prediction called
-INFO:Returning 18
-INFO:horizontal prediction called
-INFO:Returning 17
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 35
-INFO:Curr right x is 49
-INFO:horizontal prediction called
-INFO:Returning 16
-INFO:vertical prediction called
-INFO:Returning 9
-CRITICAL:Vertical row of ball is 9
-INFO:horizontal prediction called
-INFO:Returning 15
-INFO:horizontal prediction called
-INFO:Returning 14
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 31
-INFO:Curr right x is 45
-INFO:horizontal prediction called
-INFO:Returning 13
-INFO:vertical prediction called
-INFO:Returning 8
-CRITICAL:Vertical row of ball is 8
-INFO:horizontal prediction called
-INFO:Returning 12
-INFO:horizontal prediction called
-INFO:Returning 11
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 27
-INFO:Curr right x is 41
-INFO:horizontal prediction called
-INFO:Returning 10
-INFO:vertical prediction called
-INFO:Returning 7
-CRITICAL:Vertical row of ball is 7
-INFO:horizontal prediction called
-INFO:Returning 9
-INFO:horizontal prediction called
-INFO:Returning 8
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 23
-INFO:Curr right x is 37
-INFO:horizontal prediction called
-INFO:Returning 7
-INFO:vertical prediction called
-INFO:Returning 6
-CRITICAL:Vertical row of ball is 6
-INFO:horizontal prediction called
-INFO:Returning 6
-INFO:horizontal prediction called
-INFO:Returning 5
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 19
-INFO:Curr right x is 33
-INFO:horizontal prediction called
-INFO:Returning 4
-INFO:vertical prediction called
-INFO:Returning 5
-CRITICAL:Vertical row of ball is 5
-INFO:horizontal prediction called
-INFO:Returning 3
-INFO:horizontal prediction called
-INFO:Returning 2
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 15
-INFO:Curr right x is 29
-INFO:horizontal prediction called
-INFO:Returning 1
-INFO:vertical prediction called
-INFO:Returning 4
-CRITICAL:Vertical row of ball is 4
-INFO:horizontal prediction called
-INFO:Returning 0
-INFO:horizontal prediction called
-INFO:Returning -1
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 11
-INFO:Curr right x is 25
-INFO:horizontal prediction called
-INFO:Returning 1
-INFO:vertical prediction called
-INFO:Returning 3
-CRITICAL:Vertical row of ball is 3
-INFO:horizontal prediction called
-INFO:Returning 2
-INFO:horizontal prediction called
-INFO:Returning 3
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 7
-INFO:Curr right x is 21
-INFO:horizontal prediction called
-INFO:Returning 4
-INFO:vertical prediction called
-INFO:Returning 2
-CRITICAL:Vertical row of ball is 2
-INFO:horizontal prediction called
-INFO:Returning 5
-INFO:horizontal prediction called
-INFO:Returning 6
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 3
-INFO:Curr right x is 17
-INFO:horizontal prediction called
-INFO:Returning 7
-INFO:vertical prediction called
-INFO:Returning 1
-CRITICAL:Vertical row of ball is 1
-INFO:horizontal prediction called
-INFO:Returning 8
-INFO:horizontal prediction called
-INFO:Returning 9
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is -1
-INFO:Curr right x is 13
-INFO:horizontal prediction called
-INFO:Returning 10
-INFO:vertical prediction called
-INFO:Returning 0
-DEBUG:speed inc is 3
-INFO:Is paddle magnetic : 0
-DEBUG:Vertical Collision with PADDLE
-CRITICAL:Vertical velocity FLIPPED
-INFO:horizontal prediction called
-INFO:Returning 11
-INFO:horizontal prediction called
-INFO:Returning 12
-INFO:horizontal prediction called
-INFO:Returning 13
-INFO:horizontal prediction called
-INFO:Returning 14
-INFO:vertical prediction called
-INFO:Returning 2
-CRITICAL:Vertical row of ball is 2
-INFO:horizontal prediction called
-INFO:Returning 15
-INFO:horizontal prediction called
-INFO:Returning 16
-INFO:horizontal prediction called
-INFO:Returning 17
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is -4
-INFO:Curr right x is 10
-INFO:horizontal prediction called
-INFO:Returning 18
-INFO:vertical prediction called
-INFO:Returning 3
-CRITICAL:Vertical row of ball is 3
-INFO:horizontal prediction called
-INFO:Returning 19
-INFO:horizontal prediction called
-INFO:Returning 20
-INFO:horizontal prediction called
-INFO:Returning 21
-INFO:horizontal prediction called
-INFO:Returning 22
-INFO:vertical prediction called
-INFO:Returning 4
-CRITICAL:Vertical row of ball is 4
-INFO:horizontal prediction called
-INFO:Returning 23
-INFO:horizontal prediction called
-INFO:Returning 24
-INFO:horizontal prediction called
-INFO:Returning 25
-INFO:horizontal prediction called
-INFO:Returning 26
-INFO:vertical prediction called
-INFO:Returning 5
-CRITICAL:Vertical row of ball is 5
-INFO:horizontal prediction called
-INFO:Returning 27
-INFO:horizontal prediction called
-INFO:Returning 28
-INFO:horizontal prediction called
-INFO:Returning 29
-INFO:horizontal prediction called
-INFO:Returning 30
-INFO:vertical prediction called
-INFO:Returning 6
-CRITICAL:Vertical row of ball is 6
-INFO:horizontal prediction called
-INFO:Returning 31
-INFO:horizontal prediction called
-INFO:Returning 32
-INFO:horizontal prediction called
-INFO:Returning 33
-INFO:horizontal prediction called
-INFO:Returning 34
-INFO:vertical prediction called
-INFO:Returning 7
-CRITICAL:Vertical row of ball is 7
-INFO:horizontal prediction called
-INFO:Returning 35
-INFO:horizontal prediction called
-INFO:Returning 36
-INFO:horizontal prediction called
-INFO:Returning 37
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 4
-INFO:Curr right x is 18
-INFO:horizontal prediction called
-INFO:Returning 38
-INFO:vertical prediction called
-INFO:Returning 8
-CRITICAL:Vertical row of ball is 8
-INFO:horizontal prediction called
-INFO:Returning 39
-INFO:horizontal prediction called
-INFO:Returning 40
-INFO:horizontal prediction called
-INFO:Returning 41
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 8
-INFO:Curr right x is 22
-INFO:horizontal prediction called
-INFO:Returning 42
-INFO:vertical prediction called
-INFO:Returning 9
-CRITICAL:Vertical row of ball is 9
-INFO:horizontal prediction called
-INFO:Returning 43
-INFO:horizontal prediction called
-INFO:Returning 44
-INFO:horizontal prediction called
-INFO:Returning 45
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 12
-INFO:Curr right x is 26
-INFO:horizontal prediction called
-INFO:Returning 46
-INFO:vertical prediction called
-INFO:Returning 10
-CRITICAL:Vertical row of ball is 10
-INFO:horizontal prediction called
-INFO:Returning 47
-INFO:horizontal prediction called
-INFO:Returning 48
-INFO:horizontal prediction called
-INFO:Returning 49
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 16
-INFO:Curr right x is 30
-INFO:horizontal prediction called
-INFO:Returning 50
-INFO:vertical prediction called
-INFO:Returning 11
-CRITICAL:Vertical row of ball is 11
-INFO:horizontal prediction called
-INFO:Returning 51
-INFO:horizontal prediction called
-INFO:Returning 52
-INFO:horizontal prediction called
-INFO:Returning 53
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 20
-INFO:Curr right x is 34
-INFO:horizontal prediction called
-INFO:Returning 54
-INFO:vertical prediction called
-INFO:Returning 12
-CRITICAL:Vertical row of ball is 12
-INFO:horizontal prediction called
-INFO:Returning 55
-INFO:horizontal prediction called
-INFO:Returning 56
-INFO:horizontal prediction called
-INFO:Returning 57
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 24
-INFO:Curr right x is 38
-INFO:horizontal prediction called
-INFO:Returning 58
-INFO:vertical prediction called
-INFO:Returning 13
-CRITICAL:Vertical row of ball is 13
-INFO:horizontal prediction called
-INFO:Returning 59
-INFO:horizontal prediction called
-INFO:Returning 60
-INFO:horizontal prediction called
-INFO:Returning 61
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 28
-INFO:Curr right x is 42
-INFO:horizontal prediction called
-INFO:Returning 62
-INFO:vertical prediction called
-INFO:Returning 14
-CRITICAL:Vertical row of ball is 14
-INFO:horizontal prediction called
-INFO:Returning 63
-INFO:horizontal prediction called
-INFO:Returning 64
-INFO:horizontal prediction called
-INFO:Returning 65
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 32
-INFO:Curr right x is 46
-INFO:horizontal prediction called
-INFO:Returning 66
-INFO:vertical prediction called
-INFO:Returning 15
-DEBUG:Vertical Collision with BRICK
-CRITICAL:Vertical velocity FLIPPED
-INFO:horizontal prediction called
-INFO:Returning 67
-INFO:horizontal prediction called
-INFO:Returning 68
-INFO:horizontal prediction called
-INFO:Returning 69
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 36
-INFO:Curr right x is 50
-INFO:horizontal prediction called
-INFO:Returning 70
-INFO:vertical prediction called
-INFO:Returning 13
-CRITICAL:Vertical row of ball is 13
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 72
-INFO:horizontal prediction called
-INFO:Returning 73
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 40
-INFO:Curr right x is 54
-INFO:horizontal prediction called
-INFO:Returning 74
-INFO:vertical prediction called
-INFO:Returning 12
-CRITICAL:Vertical row of ball is 12
-INFO:horizontal prediction called
-INFO:Returning 75
-INFO:horizontal prediction called
-INFO:Returning 76
-INFO:horizontal prediction called
-INFO:Returning 77
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 44
-INFO:Curr right x is 58
-INFO:horizontal prediction called
-INFO:Returning 78
-INFO:vertical prediction called
-INFO:Returning 11
-CRITICAL:Vertical row of ball is 11
-INFO:horizontal prediction called
-INFO:Returning 79
-INFO:horizontal prediction called
-INFO:Returning 80
-INFO:horizontal prediction called
-INFO:Returning 81
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 48
-INFO:Curr right x is 62
-INFO:horizontal prediction called
-INFO:Returning 82
-INFO:vertical prediction called
-INFO:Returning 10
-CRITICAL:Vertical row of ball is 10
-INFO:horizontal prediction called
-INFO:Returning 83
-INFO:horizontal prediction called
-INFO:Returning 84
-INFO:horizontal prediction called
-INFO:Returning 85
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 52
-INFO:Curr right x is 66
-INFO:horizontal prediction called
-INFO:Returning 86
-INFO:vertical prediction called
-INFO:Returning 9
-CRITICAL:Vertical row of ball is 9
-INFO:horizontal prediction called
-INFO:Returning 87
-INFO:horizontal prediction called
-INFO:Returning 88
-INFO:horizontal prediction called
-INFO:Returning 89
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 56
-INFO:Curr right x is 70
-INFO:horizontal prediction called
-INFO:Returning 90
-INFO:vertical prediction called
-INFO:Returning 8
-CRITICAL:Vertical row of ball is 8
-INFO:horizontal prediction called
-INFO:Returning 91
-INFO:horizontal prediction called
-INFO:Returning 92
-INFO:horizontal prediction called
-INFO:Returning 93
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 60
-INFO:Curr right x is 74
-INFO:horizontal prediction called
-INFO:Returning 94
-INFO:vertical prediction called
-INFO:Returning 7
-CRITICAL:Vertical row of ball is 7
-INFO:horizontal prediction called
-INFO:Returning 95
-INFO:horizontal prediction called
-INFO:Returning 96
-INFO:horizontal prediction called
-INFO:Returning 97
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 64
-INFO:Curr right x is 78
-INFO:horizontal prediction called
-INFO:Returning 98
-INFO:vertical prediction called
-INFO:Returning 6
-CRITICAL:Vertical row of ball is 6
-INFO:horizontal prediction called
-INFO:Returning 99
-INFO:horizontal prediction called
-INFO:Returning 100
-INFO:horizontal prediction called
-INFO:Returning 101
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 68
-INFO:Curr right x is 82
-INFO:horizontal prediction called
-INFO:Returning 102
-INFO:vertical prediction called
-INFO:Returning 5
-CRITICAL:Vertical row of ball is 5
-INFO:horizontal prediction called
-INFO:Returning 103
-INFO:horizontal prediction called
-INFO:Returning 104
-INFO:horizontal prediction called
-INFO:Returning 105
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 72
-INFO:Curr right x is 86
-INFO:horizontal prediction called
-INFO:Returning 106
-INFO:vertical prediction called
-INFO:Returning 4
-CRITICAL:Vertical row of ball is 4
-INFO:horizontal prediction called
-INFO:Returning 107
-INFO:horizontal prediction called
-INFO:Returning 108
-INFO:horizontal prediction called
-INFO:Returning 109
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 76
-INFO:Curr right x is 90
-INFO:horizontal prediction called
-INFO:Returning 110
-INFO:vertical prediction called
-INFO:Returning 3
-CRITICAL:Vertical row of ball is 3
-INFO:horizontal prediction called
-INFO:Returning 111
-INFO:horizontal prediction called
-INFO:Returning 112
-INFO:horizontal prediction called
-INFO:Returning 113
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 80
-INFO:Curr right x is 94
-INFO:horizontal prediction called
-INFO:Returning 114
-INFO:vertical prediction called
-INFO:Returning 2
-CRITICAL:Vertical row of ball is 2
-INFO:horizontal prediction called
-INFO:Returning 115
-INFO:horizontal prediction called
-INFO:Returning 116
-INFO:horizontal prediction called
-INFO:Returning 117
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 84
-INFO:Curr right x is 98
-INFO:horizontal prediction called
-INFO:Returning 118
-INFO:vertical prediction called
-INFO:Returning 1
-CRITICAL:Vertical row of ball is 1
-INFO:horizontal prediction called
-INFO:Returning 119
-INFO:horizontal prediction called
-INFO:Returning 120
-INFO:horizontal prediction called
-INFO:Returning 121
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 88
-INFO:Curr right x is 102
-INFO:horizontal prediction called
-INFO:Returning 122
-INFO:vertical prediction called
-INFO:Returning 0
-CRITICAL:Vertical row of ball is 0
-INFO:horizontal prediction called
-INFO:Returning 123
-INFO:horizontal prediction called
-INFO:Returning 124
-INFO:horizontal prediction called
-INFO:Returning 125
-INFO:
-[PRESSED d]
-
-INFO:Curr left x is 92
-INFO:Curr right x is 106
-INFO:horizontal prediction called
-INFO:Returning 126
-INFO:vertical prediction called
-INFO:Returning -1
+INFO:moving to next level
+INFO:slf curr level is 2
 INFO:Inside init() of paddle class with attributes
-{'_len_c': 15, '_len_r': 1, '_left_c': 59, '_left_r': 0, '_is_magnet': 0, '_ascii_repr': array([['[', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-',
+{'_len_c': 15, '_len_r': 1, '_left_c': 30, '_left_r': 0, '_is_magnet': 0, '_ascii_repr': array([['[', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-',
         '-', ']']], dtype='<U1')}
 
 INFO:Inside init() of BALL class with attributes
-{'_len_c': 1, '_len_r': 1, '_left_c': 71, '_left_r': 1, '_is_stuck': True, 'offset_from_center': 2, '_isVisible': True, '_vel_r': 1, '_vel_c': 2, 'is_boss_cnt': 0, 'ball_last_tended_h': 50991.463196046, 'ball_last_tended_v': 50991.463197073, 'ascii_repr': array([['O']], dtype='<U1')}
+{'_len_c': 1, '_len_r': 1, '_left_c': 44, '_left_r': 1, '_is_stuck': True, 'offset_from_center': 3, '_isVisible': True, '_vel_r': 1, '_vel_c': 3, 'is_boss_cnt': 0, 'ball_last_tended_h': 78316.932990803, 'ball_last_tended_v': 78316.932991105, 'ascii_repr': array([['O']], dtype='<U1')}
 
-ERROR:
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-BALL TOUCHED GROUND
-$$$$$$$$$$$$$$$$$$
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:vertical prediction called
-INFO:Returning 1
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:horizontal prediction called
-INFO:Returning 71
-INFO:vertical prediction called
-INFO:Returning 1
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:
+[PRESSED b]
+
+INFO:attempt to move to next level automatically
+INFO:moving to next level automated
+INFO:slf curr level is 3
+INFO:Inside init() of paddle class with attributes
+{'_len_c': 15, '_len_r': 1, '_left_c': 30, '_left_r': 0, '_is_magnet': 0, '_ascii_repr': array([['[', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-',
+        '-', ']']], dtype='<U1')}
+
+INFO:Inside init() of BALL class with attributes
+{'_len_c': 1, '_len_r': 1, '_left_c': 44, '_left_r': 1, '_is_stuck': True, 'offset_from_center': 3, '_isVisible': True, '_vel_r': 1, '_vel_c': 3, 'is_boss_cnt': 0, 'ball_last_tended_h': 78317.67156161, 'ball_last_tended_v': 78317.671561795, 'ascii_repr': array([['O']], dtype='<U1')}
+
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:Color code is 5
+INFO:
+[PRESSED b]
+
+INFO:attempt to move to next level automatically
+INFO:moving to next level automated
+INFO:Inside game over with message Congrats! You broke all the breakable bricks OVER ALL LEVELS

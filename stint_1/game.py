@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 import math,random
 import numpy as np
 import colorama
@@ -71,18 +72,53 @@ class Game:
         self._screen = Canvas(self._just_game_rows, self.just_game_cols,
                               self._info_box_height)
 
-        #############################################################################
         self._input_stream = InputHelper()
+        
+        
+        #############################################################################
+        
         self._score = 0
         self._lives_left = conf.TOT_LIVES
         self._overall_start_time = clock()
+        self.curr_level=1
 
         self._available_powerups=[ExpandPaddle, ShrinkPaddle, FastBall, ThruBall,BallMultiplier,PaddleGrab]
         # self._available_powerups=[PaddleGrab]
         self.bricks_list = []
-        self.init_new_life()
+        self.init_new_level()
 
         ######################################################################
+
+    def init_new_level(self):
+
+        '''IMPLEMENT FUNCTION TO GENERATE NEW BRICK COORDINATES HERE'''
+        self.level_start_time=clock()
+        self.init_new_life()
+
+
+        # The first display of the canvas
+        BricksClass.tot_breakable_bricks=0
+        self.generate_brick_coordinates()
+        self.paint_objs()
+        self._screen.print_board()
+
+
+
+        # The first painting on the canvas
+        #print(f"{Style.BRIGHT}")
+
+
+
+    def next_level(self):
+        if self.curr_level==conf.TOT_LEVELS:
+            self._score+=conf.SCORE_LIFE_BONUS*self._lives_left
+            self.game_over_screen("Congrats! You broke all the breakable bricks OVER ALL LEVELS")
+        else:
+            self.curr_level+=1
+            logging.info(f"slf curr level is {self.curr_level}")
+            self.init_new_level()
+
+
 
     def init_new_life(self):
         '''Initializes values for the current life'''
@@ -160,7 +196,8 @@ class Game:
         str_print=str_print[:lim]
         print(f"Score now is {str(self._score).ljust(10)}", end='')
         print(f"Lives left  is {str(self._lives_left).ljust(4)}")
-        print(f"Balls Horizontal vel(INERTIA): {str_print}")
+        # print(f"Balls Horizontal vel(INERTIA): {str_print}")
+        print(f" Current level is :{self.curr_level}")
         print(f"Time elapsed:{str(time_stats[0]).ljust(4)} | Time left:{time_stats[1]}")        
         print(f"No of active powerups is {str(PowerupsClass.tot_active_powerups).ljust(3)}|", end='')
         #print(f"Paddle length is {str(self._game_paddle.len_c).ljust(4)}")
@@ -171,16 +208,19 @@ class Game:
     def generate_brick_coordinates(self):
         '''Designing layout of bricks'''
 
+        self.bricks_list=[]
+
         # rows go from 0 to tot_r-1 , start from 10, go till end-2
         # cols go from 0 to tot_c-1 , go from 5 to end-5
         first_code = 0
-        for i in range(15, self._just_game_rows - 2):
+        for i in range(19, self._just_game_rows - 5):
             first_idx = (first_code - i)
             seq_in_row = 0
-            for j in range(5, self.just_game_cols - 5, 3):
+            for j in range(9, self.just_game_cols - 15, 3):
                 seq_in_row += 1
                 #logging.info(f"Coordinates are {i}:{j}")
                 color_code = ((first_idx + seq_in_row) % 5 + 5) % 5 + 1
+                color_code=5
                 if color_code == 4:
                     color_code = 2
                 elif color_code == 2:
@@ -191,6 +231,7 @@ class Game:
                     decided_class = UnbreakableBrick
                 elif color_code == 5:
                     decided_class = ExplosiveBrick
+                logging.info(f"Color code is {color_code}")
                 self.bricks_list.append(
                     decided_class(i, j, seq_in_row, (seq_in_row - i),
                                   color_code))
@@ -207,17 +248,20 @@ class Game:
                 paddle_new_details = self._game_paddle.change_x(
                     -1, self.just_game_cols)
                 # DEAL WITH CASE WHEN BALL IS STUCK ALSO
-                ret_val = True
+                ret_val = False
             elif inp == 'd':
                 paddle_new_details = self._game_paddle.change_x(
                     1, self.just_game_cols)
                 # DEAL WITH CASE WHEN BALL IS STUCK ALSO
-                ret_val = True
+                ret_val = False
             elif inp == 's':
                 for this_ball in self.balls_list:
                     if this_ball.is_stuck == True:
                         this_ball.release()
-                        ret_val = True
+                        ret_val = False
+            elif inp == 'b':
+                logging.info("attempt to move to next level automatically")
+                ret_val=True
 
             if paddle_new_details is not None:
                 for ball_obj in self.balls_list:
@@ -241,6 +285,7 @@ class Game:
 
     def game_over_screen(self, msg):
         '''Prints GAME OVER SCREEN'''
+        logging.info(f"Inside game over with message {msg}")
         print(self.CLEAR_ANSI)
         print(self.RESET_CURSOR_ANSI)
         print(f"{Fore.GREEN}{Back.YELLOW}{Style.BRIGHT}")
@@ -250,8 +295,9 @@ class Game:
         print(f"{msg}".center(os.get_terminal_size().columns))
         print(f"Your score is {self._score}".center(
             os.get_terminal_size().columns))
+        # time.sleep(10)
         sys.exit()
-        pass
+        #pass
 
     def did_ball_collide_with_paddle(self, prob_c, prob_r, ball_obj):
         '''Checks if the ball collided with the paddle, 
@@ -477,8 +523,8 @@ class Game:
 
     def start_game(self):
         logging.info("#### ## Inside play function of GAME class ## ######")
-        print("+++++++++++++++++++++++++++++++++++++++++++++++")
-        self.generate_brick_coordinates()
+        #print("+++++++++++++++++++++++++++++++++++++++++++++++")
+        #self.generate_brick_coordinates()
         time_unit_duration = 0.1
 
         # The first painting on the canvas
@@ -494,8 +540,7 @@ class Game:
             assert (
                 self._game_paddle.len_c == self._game_paddle.ascii_repr.shape[1])
 
-            if self.handle_input():  # found a keystroke
-                pass
+            
 
             # bricks_length_initial = len(self.bricks_list)
             while clock() - paddle_last_tended < time_unit_duration:
@@ -540,9 +585,15 @@ class Game:
             self._screen.print_board()
             self.print_game_details()
 
-            if BricksClass.tot_breakable_bricks==0:
-                self._score+=conf.SCORE_LIFE_BONUS*self._lives_left
-                self.game_over_screen("Congrats! You broke all the breakable bricks")
+
+            if self.handle_input():  # found a keystroke
+                logging.info("moving to next level automated")
+                self.next_level()
+                
+            elif BricksClass.tot_breakable_bricks==0:
+                logging.info("moving to next level")
+                self.next_level()
+                #break
 
             if self.get_time_left()[1] < 0:
                 self.game_over_screen("You LOST ON TIME !!!")

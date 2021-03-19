@@ -78,15 +78,15 @@ class BallClass:
 
     def get_horizontal_prediction(self):
         # move only if unstuck
-        logging.info("horizontal prediction called")
+        #logging.info("horizontal prediction called")
         if self._is_stuck == True:
-            logging.info(f"Returning {self._left_c}")
+            #logging.info(f"Returning {self._left_c}")
             return self._left_c
         vel_sign = 0
         if self._vel_c != 0:
             vel_sign = 1 if (self._vel_c > 0) else -1
         prob_c = self._left_c + vel_sign
-        logging.info(f"Returning {prob_c}")
+        #logging.info(f"Returning {prob_c}")
         return prob_c
 
     def move_horizontally(self):
@@ -103,15 +103,15 @@ class BallClass:
 
     def get_vertical_prediction(self):
         # move only if unstuck
-        logging.info("vertical prediction called")
+        #logging.info("vertical prediction called")
         if self._is_stuck == True:
-            logging.info(f"Returning {self._left_r}")
+            #logging.info(f"Returning {self._left_r}")
             return self._left_r
         vel_sign = 0
         if self._vel_r != 0:
             vel_sign = 1 if (self._vel_r > 0) else -1
         prob_r = self._left_r + vel_sign
-        logging.info(f"Returning {prob_r}")
+        #logging.info(f"Returning {prob_r}")
         return prob_r
 
     def move_vertically(self):
