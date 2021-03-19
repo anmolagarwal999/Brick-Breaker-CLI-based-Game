@@ -23,7 +23,7 @@ class UFOClass:
         self.ascii_repr = np.array([         
                      
             ['(','-','(','-','_','(','-','_','-',')','_','-',')','-',')'],
-            ['(','-','(','-','_','(','-','_','-',')','_','-',')','-',')']             
+            ['(','-','(','-','_','(','-','-','-',')','_','-',')','-',')']             
             
             ])
 
@@ -70,7 +70,7 @@ class BombClass:
         self._status="in_air" # in_air,active, inactive
         self._vel_r=-1
         self._ascii_repr=np.array([
-            ["Q"]
+            ["U"]
         ])
         logging.info(f"Inside init() of BOMB  class with attributes\n{self.__dict__}\n")
 

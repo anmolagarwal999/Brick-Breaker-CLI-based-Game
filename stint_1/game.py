@@ -22,6 +22,7 @@ from powerups import PowerupsClass, ExpandPaddle, ShrinkPaddle, FastBall, ThruBa
 import logging
 
 from ufo_class import UFOClass
+from ufo_class import BombClass
 
 
 # tail -f your.log
@@ -89,10 +90,12 @@ class Game:
         # self._available_powerups=[ExpandPaddle, ShrinkPaddle, FastBall, ThruBall,BallMultiplier,PaddleGrab, PaddleShoot]
         self._available_powerups = [PaddleShoot]
 
+        self.recent_bomb_time=clock()
+
         self.bricks_list = []
         self.curr_bullets_list = []
         self.init_new_level()
-        self.bombs_list=[]
+        self.curr_bombs_list=[]
 
         self.did_any_ball_hit_the_paddle = False
 
@@ -134,7 +137,7 @@ class Game:
         ThruBall.cnt = 0
         PaddleGrab.cnt = 0
         PaddleShoot.cnt = 0
-        self.bombs_list=[]
+        self.curr_bombs_list=[]
         # Making the game paddle
         self._game_paddle = PaddleClass(self.just_game_cols // 2)
 
@@ -179,6 +182,13 @@ class Game:
         if self.game_ufo is not None:
             self._screen.add_entity(self.game_ufo.left_c, self.game_ufo.left_r, self.game_ufo.len_c,\
                 self.game_ufo.len_r,self.game_ufo.ascii_repr, "")
+
+        for send_bomb in self.curr_bombs_list:
+            if send_bomb.status == "in_air":
+                self._screen.add_entity(send_bomb.left_c, send_bomb.left_r, send_bomb.len_c,\
+                    send_bomb.len_r,send_bomb.ascii_repr, "")
+
+        
 
 
     def get_time_left(self):
@@ -560,7 +570,15 @@ class Game:
         ###  Collision with paddle ########################
         # (TECHNICALLY impossible as collision with paddle can happen only vertically)
 
-    
+    def claim_life(self):
+        self._lives_left -= 1
+        sleep(0.7)
+        if self._lives_left == 0:
+            self.game_over_screen("All lives are over")
+        self.init_new_life()
+        termios.tcflush(
+            sys.stdin, termios.TCIOFLUSH
+        )  # to prevent character accumulation in buffer coz  input rate might be faster than frame rate
 
     def move_ball_vertically(self, ball_obj):
 
@@ -655,6 +673,15 @@ class Game:
             return True
         return False
 
+    def did_bomb_collide_with_paddle(self, curr_bomb):
+        # just_game_rows, just_game_cols
+        dc = curr_bomb.left_c - self._game_paddle.left_c
+        '''This works bcoz bombs have size 1 x 1, reimplement if you change BOMB size'''
+        if self._game_paddle.left_r == curr_bomb.left_r and (
+                dc >= 0 and dc < self._game_paddle.len_c):
+            return True
+        return False
+
 
     def get_max_shooting_time_left(self):
         curr_max=0
@@ -702,6 +729,34 @@ class Game:
                         eliminate_list.append(curr_powerup)
         for i in eliminate_list:
             self.curr_powerups_list.remove(i)
+
+
+    def move_bombs(self):
+        eliminate_list = []
+        should_eliminate=True
+        # this list contains both types of bombs, in_air and activated
+        for curr_bomb in self.curr_bombs_list:
+            if curr_bomb.status == "in_air":
+                curr_bomb.move()
+
+                # if bomb touched the paddle
+                if curr_bomb.left_r == 0:
+
+                    # valid contact between paddle and bomb=> activate bomb
+                    if self.did_bomb_collide_with_paddle(curr_bomb):
+                        '''CLAIM HIS LIFE'''
+                        logging.info("Bomb collided with paddle")
+                        self.claim_life() # will empty all the lists and hence, eliminating from emty ist would be bad
+                        should_eliminate=False    
+                    
+                    curr_bomb.eliminate()
+                    eliminate_list.append(curr_bomb)
+
+        if should_eliminate:
+            for i in eliminate_list:
+                logging.info(f"Bomb list is {self.curr_bombs_list}")
+                logging.info(f"Bomb TO remove is {self.curr_bombs_list}")
+                self.curr_bombs_list.remove(i)
 
     def descend_bricks(self):
         ########COMMENT THIS##########
@@ -796,6 +851,13 @@ class Game:
     
 
             self.move_powerups()
+            self.move_bombs()
+
+            if self.curr_level==3:
+                if clock()-self.recent_bomb_time>conf.TIME_BETWEEN_BOMBS:
+                    self.recent_bomb_time=clock()
+                    new_bomb=BombClass(self.game_ufo.left_r, self.game_ufo.left_c+self.game_ufo.len_c//2)
+                    self.curr_bombs_list.append(new_bomb)
 
             dup_list = self.balls_list.copy()
             # for this_ball in dup_list:
