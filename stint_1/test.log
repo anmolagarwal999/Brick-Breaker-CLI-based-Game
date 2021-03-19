@@ -13,13 +13,13 @@ INFO:Inside init() of paddle class with attributes
         '-', ']']], dtype='<U1')}
 
 INFO:Inside init() of BALL class with attributes
-{'_len_c': 1, '_len_r': 1, '_left_c': 45, '_left_r': 1, '_is_stuck': True, 'offset_from_center': 2, '_isVisible': True, '_vel_r': 1, '_vel_c': 2, 'is_boss_cnt': 0, 'ball_last_tended_h': 1130.553974092, 'ball_last_tended_v': 1130.553974878, 'ascii_repr': array([['O']], dtype='<U1')}
+{'_len_c': 1, '_len_r': 1, '_left_c': 43, '_left_r': 1, '_is_stuck': True, 'offset_from_center': 1, '_isVisible': True, '_vel_r': 1, '_vel_c': 1, 'is_boss_cnt': 0, 'ball_last_tended_h': 2667.979798364, 'ball_last_tended_v': 2667.97979911, 'ascii_repr': array([['O']], dtype='<U1')}
 
 INFO:Inside init() of UFO class with attributes
 {'ascii_repr': array([['(', '-', '(', '-', '_', '(', '-', '_', '-', ')', '_', '-', ')',
         '-', ')'],
        ['(', '-', '(', '-', '_', '(', '-', '_', '-', ')', '_', '-', ')',
-        '-', ')']], dtype='<U1'), 'len_c': 15, 'len_r': 2, 'left_c': 34, 'left_r': 18}
+        '-', ')']], dtype='<U1'), 'len_c': 15, 'len_r': 2, 'left_c': 34, 'left_r': 20}
 
 INFO:Color code is 4
 INFO:Color code is 4
@@ -51,14 +51,39 @@ INFO:
 
 INFO:Curr left x is 38
 INFO:Curr right x is 52
-INFO:
-[PRESSED a]
-
-INFO:Curr left x is 34
-INFO:Curr right x is 48
+INFO:Inside chasing paddle with col 45
+INFO:Curr left x is 38
+INFO:Curr right x is 52
 INFO:
 [PRESSED d]
 
+INFO:Curr left x is 42
+INFO:Curr right x is 56
+INFO:Inside chasing paddle with col 49
+INFO:Curr left x is 42
+INFO:Curr right x is 56
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 46
+INFO:Curr right x is 60
+INFO:Inside chasing paddle with col 53
+INFO:Curr left x is 46
+INFO:Curr right x is 60
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 42
+INFO:Curr right x is 56
+INFO:Inside chasing paddle with col 49
+INFO:Curr left x is 42
+INFO:Curr right x is 56
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 38
+INFO:Curr right x is 52
+INFO:Inside chasing paddle with col 45
 INFO:Curr left x is 38
 INFO:Curr right x is 52
 INFO:
@@ -66,9 +91,15 @@ INFO:
 
 INFO:Curr left x is 34
 INFO:Curr right x is 48
+INFO:Inside chasing paddle with col 41
+INFO:Curr left x is 34
+INFO:Curr right x is 48
 INFO:
 [PRESSED a]
 
+INFO:Curr left x is 30
+INFO:Curr right x is 44
+INFO:Inside chasing paddle with col 37
 INFO:Curr left x is 30
 INFO:Curr right x is 44
 INFO:
@@ -76,11 +107,185 @@ INFO:
 
 INFO:Curr left x is 26
 INFO:Curr right x is 40
+INFO:Inside chasing paddle with col 33
+INFO:Curr left x is 26
+INFO:Curr right x is 40
 INFO:
 [PRESSED a]
 
 INFO:Curr left x is 22
 INFO:Curr right x is 36
+INFO:Inside chasing paddle with col 29
+INFO:Curr left x is 22
+INFO:Curr right x is 36
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 18
+INFO:Curr right x is 32
+INFO:Inside chasing paddle with col 25
+INFO:Curr left x is 18
+INFO:Curr right x is 32
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 14
+INFO:Curr right x is 28
+INFO:Inside chasing paddle with col 21
+INFO:Curr left x is 14
+INFO:Curr right x is 28
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 10
+INFO:Curr right x is 24
+INFO:Inside chasing paddle with col 17
+INFO:Curr left x is 10
+INFO:Curr right x is 24
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 6
+INFO:Curr right x is 20
+INFO:Inside chasing paddle with col 13
+INFO:Curr left x is 6
+INFO:Curr right x is 20
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 2
+INFO:Curr right x is 16
+INFO:Inside chasing paddle with col 9
+INFO:Curr left x is 2
+INFO:Curr right x is 16
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is -2
+INFO:Curr right x is 12
+INFO:Inside chasing paddle with col 7
+INFO:Curr left x is 0
+INFO:Curr right x is 14
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is -4
+INFO:Curr right x is 10
+INFO:Inside chasing paddle with col 7
+INFO:Curr left x is 0
+INFO:Curr right x is 14
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is -4
+INFO:Curr right x is 10
+INFO:Inside chasing paddle with col 7
+INFO:Curr left x is 0
+INFO:Curr right x is 14
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 4
+INFO:Curr right x is 18
+INFO:Inside chasing paddle with col 11
+INFO:Curr left x is 4
+INFO:Curr right x is 18
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 8
+INFO:Curr right x is 22
+INFO:Inside chasing paddle with col 15
+INFO:Curr left x is 8
+INFO:Curr right x is 22
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 12
+INFO:Curr right x is 26
+INFO:Inside chasing paddle with col 19
+INFO:Curr left x is 12
+INFO:Curr right x is 26
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 16
+INFO:Curr right x is 30
+INFO:Inside chasing paddle with col 23
+INFO:Curr left x is 16
+INFO:Curr right x is 30
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 20
+INFO:Curr right x is 34
+INFO:Inside chasing paddle with col 27
+INFO:Curr left x is 20
+INFO:Curr right x is 34
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 24
+INFO:Curr right x is 38
+INFO:Inside chasing paddle with col 31
+INFO:Curr left x is 24
+INFO:Curr right x is 38
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 28
+INFO:Curr right x is 42
+INFO:Inside chasing paddle with col 35
+INFO:Curr left x is 28
+INFO:Curr right x is 42
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 32
+INFO:Curr right x is 46
+INFO:Inside chasing paddle with col 39
+INFO:Curr left x is 32
+INFO:Curr right x is 46
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 36
+INFO:Curr right x is 50
+INFO:Inside chasing paddle with col 43
+INFO:Curr left x is 36
+INFO:Curr right x is 50
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 40
+INFO:Curr right x is 54
+INFO:Inside chasing paddle with col 47
+INFO:Curr left x is 40
+INFO:Curr right x is 54
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 44
+INFO:Curr right x is 58
+INFO:Inside chasing paddle with col 51
+INFO:Curr left x is 44
+INFO:Curr right x is 58
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 48
+INFO:Curr right x is 62
+INFO:Inside chasing paddle with col 55
+INFO:Curr left x is 48
+INFO:Curr right x is 62
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 52
+INFO:Curr right x is 66
+INFO:Inside chasing paddle with col 59
+INFO:Curr left x is 52
+INFO:Curr right x is 66
 INFO:
 [PRESSED s]
 
@@ -89,76 +294,328 @@ CRITICAL:Vertical row of ball is 3
 CRITICAL:Vertical row of ball is 4
 CRITICAL:Vertical row of ball is 5
 CRITICAL:Vertical row of ball is 6
-CRITICAL:Vertical row of ball is 7
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+INFO:
+[PRESSED s]
+
+CRITICAL:Vertical row of ball is 5
+CRITICAL:Vertical row of ball is 4
+CRITICAL:Vertical row of ball is 3
 INFO:
 [PRESSED d]
 
-INFO:Curr left x is 26
-INFO:Curr right x is 40
+INFO:Curr left x is 56
+INFO:Curr right x is 70
+INFO:Inside chasing paddle with col 63
+INFO:Curr left x is 56
+INFO:Curr right x is 70
+CRITICAL:Vertical row of ball is 2
+CRITICAL:Vertical row of ball is 1
+CRITICAL:Vertical row of ball is 0
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 60
+INFO:Curr right x is 74
+INFO:Inside chasing paddle with col 67
+INFO:Curr left x is 60
+INFO:Curr right x is 74
+CRITICAL:Vertical velocity FLIPPED
+ERROR:
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+BALL TOUCHED GROUND
+$$$$$$$$$$$$$$$$$$
+CRITICAL:Vertical row of ball is 1
+CRITICAL:Vertical row of ball is 2
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 64
+INFO:Curr right x is 78
+INFO:Inside chasing paddle with col 71
+INFO:Curr left x is 64
+INFO:Curr right x is 78
+CRITICAL:Vertical row of ball is 3
+CRITICAL:Vertical row of ball is 4
+CRITICAL:Vertical row of ball is 5
+CRITICAL:Vertical row of ball is 6
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 60
+INFO:Curr right x is 74
+INFO:Inside chasing paddle with col 67
+INFO:Curr left x is 60
+INFO:Curr right x is 74
+CRITICAL:Vertical row of ball is 7
 CRITICAL:Vertical row of ball is 8
 CRITICAL:Vertical row of ball is 9
 CRITICAL:Vertical row of ball is 10
 INFO:
 [PRESSED a]
 
-INFO:Curr left x is 22
-INFO:Curr right x is 36
+INFO:Curr left x is 56
+INFO:Curr right x is 70
+INFO:Inside chasing paddle with col 63
+INFO:Curr left x is 56
+INFO:Curr right x is 70
+CRITICAL:Vertical row of ball is 11
+CRITICAL:Vertical row of ball is 12
+CRITICAL:Vertical row of ball is 13
+CRITICAL:Vertical row of ball is 14
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 52
+INFO:Curr right x is 66
+INFO:Inside chasing paddle with col 59
+INFO:Curr left x is 52
+INFO:Curr right x is 66
+CRITICAL:Vertical row of ball is 15
+CRITICAL:Vertical row of ball is 16
+CRITICAL:Vertical row of ball is 17
+CRITICAL:Vertical row of ball is 18
+CRITICAL:Vertical row of ball is 19
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 56
+INFO:Curr right x is 70
+INFO:Inside chasing paddle with col 63
+INFO:Curr left x is 56
+INFO:Curr right x is 70
+CRITICAL:Vertical row of ball is 20
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 60
+INFO:Curr right x is 74
+INFO:Inside chasing paddle with col 67
+INFO:Curr left x is 60
+INFO:Curr right x is 74
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of ball is 23
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 64
+INFO:Curr right x is 78
+INFO:Inside chasing paddle with col 71
+INFO:Curr left x is 64
+INFO:Curr right x is 78
+CRITICAL:Vertical row of ball is 24
+DEBUG:Vertical Collision with wall
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of ball is 23
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 60
+INFO:Curr right x is 74
+INFO:Inside chasing paddle with col 67
+INFO:Curr left x is 60
+INFO:Curr right x is 74
+CRITICAL:Vertical row of ball is 22
+CRITICAL:Vertical row of ball is 21
+CRITICAL:Vertical row of ball is 20
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 56
+INFO:Curr right x is 70
+INFO:Inside chasing paddle with col 63
+INFO:Curr left x is 56
+INFO:Curr right x is 70
+CRITICAL:Vertical row of ball is 19
+CRITICAL:Vertical row of ball is 18
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 52
+INFO:Curr right x is 66
+INFO:Inside chasing paddle with col 59
+INFO:Curr left x is 52
+INFO:Curr right x is 66
+CRITICAL:Vertical row of ball is 17
+CRITICAL:Vertical row of ball is 16
+CRITICAL:Vertical row of ball is 15
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 48
+INFO:Curr right x is 62
+INFO:Inside chasing paddle with col 55
+INFO:Curr left x is 48
+INFO:Curr right x is 62
+CRITICAL:Vertical row of ball is 14
+CRITICAL:Vertical row of ball is 13
+CRITICAL:Vertical row of ball is 12
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 44
+INFO:Curr right x is 58
+INFO:Inside chasing paddle with col 51
+INFO:Curr left x is 44
+INFO:Curr right x is 58
+CRITICAL:Vertical row of ball is 11
+CRITICAL:Vertical row of ball is 10
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 40
+INFO:Curr right x is 54
+INFO:Inside chasing paddle with col 47
+INFO:Curr left x is 40
+INFO:Curr right x is 54
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of ball is 8
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 36
+INFO:Curr right x is 50
+INFO:Inside chasing paddle with col 43
+INFO:Curr left x is 36
+INFO:Curr right x is 50
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of ball is 10
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 32
+INFO:Curr right x is 46
+INFO:Inside chasing paddle with col 39
+INFO:Curr left x is 32
+INFO:Curr right x is 46
+CRITICAL:Vertical row of ball is 11
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 28
+INFO:Curr right x is 42
+INFO:Inside chasing paddle with col 35
+INFO:Curr left x is 28
+INFO:Curr right x is 42
+CRITICAL:Vertical row of ball is 10
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of ball is 8
+DEBUG:Vertical Collision with BRICK
+CRITICAL:Vertical velocity FLIPPED
+CRITICAL:Vertical row of ball is 9
+CRITICAL:Vertical row of ball is 10
 CRITICAL:Vertical row of ball is 11
 CRITICAL:Vertical row of ball is 12
 INFO:
 [PRESSED d]
 
-INFO:Curr left x is 26
-INFO:Curr right x is 40
+INFO:Curr left x is 32
+INFO:Curr right x is 46
+INFO:Inside chasing paddle with col 39
+INFO:Curr left x is 32
+INFO:Curr right x is 46
 CRITICAL:Vertical row of ball is 13
 CRITICAL:Vertical row of ball is 14
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 36
+INFO:Curr right x is 50
+INFO:Inside chasing paddle with col 43
+INFO:Curr left x is 36
+INFO:Curr right x is 50
 CRITICAL:Vertical row of ball is 15
 CRITICAL:Vertical row of ball is 16
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 40
+INFO:Curr right x is 54
+INFO:Inside chasing paddle with col 47
+INFO:Curr left x is 40
+INFO:Curr right x is 54
 CRITICAL:Vertical row of ball is 17
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 44
+INFO:Curr right x is 58
+INFO:Inside chasing paddle with col 51
+INFO:Curr left x is 44
+INFO:Curr right x is 58
 CRITICAL:Vertical row of ball is 18
 CRITICAL:Vertical row of ball is 19
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 48
+INFO:Curr right x is 62
+INFO:Inside chasing paddle with col 55
+INFO:Curr left x is 48
+INFO:Curr right x is 62
 CRITICAL:Vertical row of ball is 20
 CRITICAL:Vertical row of ball is 21
+INFO:
+[PRESSED d]
+
+INFO:Curr left x is 52
+INFO:Curr right x is 66
+INFO:Inside chasing paddle with col 59
+INFO:Curr left x is 52
+INFO:Curr right x is 66
 CRITICAL:Vertical row of ball is 22
 CRITICAL:Vertical row of ball is 23
 CRITICAL:Vertical row of ball is 24
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 48
+INFO:Curr right x is 62
+INFO:Inside chasing paddle with col 55
+INFO:Curr left x is 48
+INFO:Curr right x is 62
 DEBUG:Vertical Collision with wall
 CRITICAL:Vertical velocity FLIPPED
 CRITICAL:Vertical row of ball is 23
 CRITICAL:Vertical row of ball is 22
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 44
+INFO:Curr right x is 58
+INFO:Inside chasing paddle with col 51
+INFO:Curr left x is 44
+INFO:Curr right x is 58
 CRITICAL:Vertical row of ball is 21
 CRITICAL:Vertical row of ball is 20
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 40
+INFO:Curr right x is 54
+INFO:Inside chasing paddle with col 47
+INFO:Curr left x is 40
+INFO:Curr right x is 54
 CRITICAL:Vertical row of ball is 19
 CRITICAL:Vertical row of ball is 18
+INFO:
+[PRESSED a]
+
+INFO:Curr left x is 36
+INFO:Curr right x is 50
+INFO:Inside chasing paddle with col 43
+INFO:Curr left x is 36
+INFO:Curr right x is 50
 CRITICAL:Vertical row of ball is 17
 CRITICAL:Vertical row of ball is 16
 CRITICAL:Vertical row of ball is 15
 CRITICAL:Vertical row of ball is 14
 CRITICAL:Vertical row of ball is 13
 CRITICAL:Vertical row of ball is 12
-DEBUG:Vertical Collision with BRICK
-CRITICAL:Vertical velocity FLIPPED
-CRITICAL:Vertical row of ball is 13
-CRITICAL:Vertical row of ball is 14
-CRITICAL:Vertical row of ball is 15
-CRITICAL:Vertical row of ball is 16
-CRITICAL:Vertical row of ball is 17
-CRITICAL:Vertical row of ball is 18
-CRITICAL:Vertical row of ball is 19
-CRITICAL:Vertical row of ball is 20
-CRITICAL:Vertical row of ball is 21
-CRITICAL:Vertical row of ball is 22
-CRITICAL:Vertical row of ball is 23
-CRITICAL:Vertical row of ball is 24
-DEBUG:Vertical Collision with wall
-CRITICAL:Vertical velocity FLIPPED
-CRITICAL:Vertical row of ball is 23
-CRITICAL:Vertical row of ball is 22
-CRITICAL:Vertical row of ball is 21
-CRITICAL:Vertical row of ball is 20
-CRITICAL:Vertical row of ball is 19
-CRITICAL:Vertical row of ball is 18
-CRITICAL:Vertical row of ball is 17
-CRITICAL:Vertical row of ball is 16
-CRITICAL:Vertical row of ball is 15
-CRITICAL:Vertical row of ball is 14
+CRITICAL:Vertical row of ball is 11

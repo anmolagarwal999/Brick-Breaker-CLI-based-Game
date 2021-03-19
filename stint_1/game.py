@@ -92,6 +92,7 @@ class Game:
         self.bricks_list = []
         self.curr_bullets_list = []
         self.init_new_level()
+        self.bombs_list=[]
 
         self.did_any_ball_hit_the_paddle = False
 
@@ -133,7 +134,7 @@ class Game:
         ThruBall.cnt = 0
         PaddleGrab.cnt = 0
         PaddleShoot.cnt = 0
-
+        self.bombs_list=[]
         # Making the game paddle
         self._game_paddle = PaddleClass(self.just_game_cols // 2)
 
@@ -370,11 +371,19 @@ class Game:
                 logging.info("attempt to move to next level automatically")
                 ret_val = True
 
+
+            #################################################################################
             if paddle_new_details is not None:
+                #############################
                 for ball_obj in self.balls_list:
                     if ball_obj.is_stuck == True:
                         ball_obj.follow_paddle(paddle_new_details[0] +
                                                paddle_new_details[1] // 2)
+                ###############################
+                if self.game_ufo is not None:
+                    self.game_ufo.chase_paddle(paddle_new_details[0] +
+                                               paddle_new_details[1] // 2,  self.just_game_cols)
+                ############################
 
             termios.tcflush(
                 sys.stdin, termios.TCIOFLUSH
@@ -550,6 +559,8 @@ class Game:
 
         ###  Collision with paddle ########################
         # (TECHNICALLY impossible as collision with paddle can happen only vertically)
+
+    
 
     def move_ball_vertically(self, ball_obj):
 
