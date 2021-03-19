@@ -30,7 +30,8 @@ class UFOClass:
         self.len_c=self.ascii_repr.shape[1]
         self.len_r=self.ascii_repr.shape[0]
         self.left_c=paddle_center_c-self.len_c//2
-        self.left_r=20
+        self.left_r=22
+        self.curr_health=conf.UFO_TOTAL_HEALTH
 
         logging.info(f"Inside init() of UFO class with attributes\n{self.__dict__}\n")
 
@@ -52,6 +53,9 @@ class UFOClass:
             logging.info(f"My details are {self.__dict__}\nRight limit is {right_limit}")
 
         return [self.left_c, self.len_c]
+
+    def reduce_health(self):
+        self.curr_health-=1
 
     
 

@@ -112,6 +112,8 @@ class Game:
         # The first display of the canvas
         BricksClass.tot_breakable_bricks = 0
         self.generate_brick_coordinates()
+        # self.generate_defense(1)
+        # self.generate_defense(2)
         self.paint_objs()
         self._screen.print_board()
 
@@ -229,9 +231,16 @@ class Game:
         print(f"Lives left  is {str(self._lives_left).ljust(4)}")
         # print(f"Balls Horizontal vel(INERTIA): {str_print}")
         print(f" Current level is :{self.curr_level}")
-        print(
-            f"Time elapsed:{str(time_stats[0]).ljust(4)} | Time left:{time_stats[1]}"
-        )
+
+        if self.curr_level<3:
+            print(
+                f"Time elapsed:{str(time_stats[0]).ljust(4)} | Time left:{time_stats[1]}"
+            )
+        else:
+            print(
+                f"Health left: {self.game_ufo.curr_health}"
+            )
+
         time_before_bricks_descend = conf.TIME_BEFORE_BRICKS_DESCEND - (
             clock() - self.level_start_time)
         print(f"Time before bricks descend is {time_before_bricks_descend}")
@@ -318,10 +327,10 @@ class Game:
                         color_code = 6
                     elif color_code == 6:
                         color_code = 2
+
+
                     if color_code==4:
-                    # if color_code==6:
-                    #     color_code=2
-                    #logging.critical(f"{seq_in_row-i}:{color_code}")
+                        '''ONLY UNBREAKABLE BRICKS INITIALLY'''                 
                         decided_class = NormalBrick
                         logging.info(f"Color code is {color_code}")
                         if color_code == 4:
@@ -335,7 +344,7 @@ class Game:
                         self.bricks_list.append(
                             decided_class(i, j, seq_in_row, (seq_in_row - i),
                                         color_code))
-                #logging.critical("\n")
+                logging.critical("\n")
 
 
 
@@ -471,7 +480,19 @@ class Game:
         ufo_height=self.game_ufo.len_r
         for offset in range(0, ufo_height):
             if self.game_ufo.left_r+offset == prob_r and (
-                    dc >= 0 and dc < self.game_ufo.len_c):            
+                    dc >= 0 and dc < self.game_ufo.len_c): 
+                earlier_ratio=self.game_ufo.curr_health/conf.UFO_TOTAL_HEALTH
+                self.game_ufo.reduce_health()
+                now_ratio=self.game_ufo.curr_health/conf.UFO_TOTAL_HEALTH
+                logging.info(f"Ratios are {earlier_ratio}  ::  {now_ratio}")
+                if self.game_ufo.curr_health<=0:
+                    self._score+=conf.KILLING_BOSS_SCORE
+                    self.game_over_screen("You have killed the BOSS !")
+                elif earlier_ratio>conf.SECOND_THRESHOLD and now_ratio<=conf.SECOND_THRESHOLD:
+                    self.generate_defense(2)
+                elif earlier_ratio>conf.FIRST_THRESHOLD and now_ratio<=conf.FIRST_THRESHOLD:
+                    self.generate_defense(1)             
+              
                 return True
         return False
 
@@ -493,7 +514,7 @@ class Game:
 
     def try_powerup_generation(self, prob_r, prob_c):
 
-        if self.random_yes_or_no() is False:
+        if self.random_yes_or_no() is False or self.curr_level>=3:
             return
 
             ##########################
@@ -565,6 +586,25 @@ class Game:
                 self.hit_brick(a_brick, (ball_obj.is_boss_cnt > 0))
                 return True
         return False
+
+    def generate_defense(self, level_of_defense):
+        logging.info(f"Employing level of defense as {level_of_defense}")
+        if level_of_defense==1:
+            row_of_defense=self.game_ufo.left_r-3
+            default_code=1
+        else:
+            row_of_defense=self.game_ufo.left_r-6
+            default_code=2
+          
+        i=row_of_defense
+        seq_in_row = 0
+        for j in range(5, self.just_game_cols - 10, 3):
+            seq_in_row += 1
+            color_code = default_code + (1 if (j%2==0) else 0)    
+            decided_class = NormalBrick            
+            self.bricks_list.append(
+                decided_class(i, j, seq_in_row, (seq_in_row - i),
+                            color_code))
 
     def move_ball_horizontally(self, ball_obj):
 
